@@ -16,38 +16,57 @@ NO_REPLICATE = -1
 def romaddr(bank, ramaddr):
     return 0x4000 * bank + (ramaddr % 0x4000)
 
+FDX = -6
+FDY = 0
+
 # for pushing different regions apart
 special_transitions = {
-    (0xc55, BIT_WEST): (-25, 1), # area 3?
     
-    # area 2?
-    (0xB81, BIT_EAST): (1, -2),
+    # landing site
+    (0xF77, BIT_EAST): (11, -6),
     
-    # area 3?
+    # area 1
+    (0xF50, BIT_EAST): (4, 4),
+    
+    # area 2
+    (0xC1C, BIT_EAST): (2, 0),
+    (0xC20, BIT_EAST): (1, -2),
+    
+    # area 3
+    (0xc55, BIT_WEST): (-2, 0),
     #(0xD39, BIT_NORTH): (9, 4),
     
-    # area 4?
-    (0x9DA, BIT_EAST): (1, -6),
-    (0xE7A, BIT_EAST): (8, -1),
+    # area 4
+    (0x9DA, BIT_EAST): (3, 0),
+    #(0x9C6, BIT_SOUTH): (5, 5),
+    #(0xE7A, BIT_EAST): (8, -1),
+    (0xC50, BIT_EAST): (2, 0),
+    (0xC52, BIT_EAST): (2, 3),
+    (0xB6A, BIT_NORTH): (-2, -3),
     
     # cave fork
     #0x1A0: (-5, 5),
-    (0xA06, BIT_WEST): (-14, 10),
+    (0xA06, BIT_WEST): (-2, 12),
     
     # double acid cave
-    (0xA2E, BIT_WEST): (-5, 10),
-    (0xA0E, BIT_WEST): (-5, 10),
+    (0xA2E, BIT_WEST): (-5, 12),
+    (0xA0E, BIT_WEST): (-5, 12),
     
-    # "A"
-    (0xCA0, BIT_WEST): (-21, 5),
+    # area 5
+    (0xCA0, BIT_WEST): (-2, 0),
     (0x907, BIT_EAST): (0, -1),
     
-    # ~"B"
-    (0xF1C, BIT_SOUTH): (5, -10),
+    # area 6
+    (0xCBA, BIT_WEST): (-5, 2),
+    
+    # area 7
+    (0xF1C, BIT_SOUTH): (1, -12),
     
     # Final area
-    (0xE22, BIT_SOUTH): (5, -1),
-    (0xE31, BIT_SOUTH): (-5, 1),
+    (0xD13, BIT_WEST): (FDX, FDY),
+    (0xE43, BIT_EAST): (-FDX, -FDY),
+    (0xFEF, BIT_WEST): (FDX, FDY),
+    (0xF8A, BIT_EAST): (-FDX, -FDY),
 }
 
 # no warp, but we count it anyway
@@ -67,6 +86,15 @@ exceptional_null_transitions = {
     0xD9B,
     0xD9C,
     0xD23,
+    0xD6C,
+    0xD6D,
+    0xCC4,
+    0xE48,
+    0xAC9,
+    0xAD9,
+    0xAAB,
+    0xABB,
+    0xACB,
 }
 
 suppress_transition = {
@@ -75,6 +103,8 @@ suppress_transition = {
     0xA89: {BIT_NORTH, BIT_SOUTH},
     0xAB9: {BIT_NORTH, BIT_SOUTH},
     0xADB: {BIT_NORTH, BIT_SOUTH},
+    0xAAB: {BIT_NORTH},
+    0xACA: {BIT_NORTH},
     
     0xB1A: {BIT_SOUTH, BIT_NORTH},
     0xB2A: {BIT_EAST, BIT_NORTH},
