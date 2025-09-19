@@ -55,14 +55,24 @@ def display_grid(grid, jumps, cells=None, output_path="grid_output.png"):
                 draw.rectangle([x1, y1, x2, y2], fill='white', outline='black')
             else:
                 
-                if len(cell_value) == 1 and cells:
-                    ridx, bank, x, y = cell_value[0]
-                    cell = cells[(bank, x, y)]
-                    collision = cell.collision
-                    for j in range(32):
-                        for i in range(32):
-                            if collision[j][i] == 1:
-                                draw.rectangle([x1 + i*tile_size, y1 + j*tile_size, x1 + i*tile_size + tile_size, y1 + j*tile_size + tile_size], fill='blue')
+                if cells:
+                    color = (100, 100, 100) if len(cell_value) >= 2 else 'blue'
+                    altcolor = 'pink'
+                    altcolor2 = (100, 40, 40) if len(cell_value) >= 2 else 'brown'
+                    for celli, v in enumerate(cell_value):
+                        ridx, bank, x, y = v
+                        cell = cells[(bank, x, y)]
+                        collision = cell.collision
+                        colflags = cell.colflags
+                        for j in range(32):
+                            for i in range(32):
+                                rect = [x1 + i*tile_size, y1 + j*tile_size, x1 + i*tile_size + tile_size, y1 + j*tile_size + tile_size]
+                                if collision[j][i] == 1:
+                                    draw.rectangle(rect, fill=color)
+                                    if colflags[j][i] != 0:
+                                        draw.rectangle(rect, fill=altcolor2)
+                                elif colflags[j][i] != 0:
+                                    draw.rectangle(rect, fill=altcolor)
                 else:
                     draw.rectangle([x1, y1, x2, y2], fill='lightblue' if len(cell_value) <= 1 else 'gray', outline='black')
                 
@@ -103,6 +113,6 @@ def display_grid(grid, jumps, cells=None, output_path="grid_output.png"):
                     draw_arrow(draw, [(start_x, start_y), (end_x, end_y)], fill=color, width=2)
     
     img.save(output_path)
-    img.show()
+    #img.show()
     
     return img

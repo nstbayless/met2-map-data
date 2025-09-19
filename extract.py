@@ -11,32 +11,43 @@ BIT_WEST = 2
 BIT_NORTH = 4
 BIT_SOUTH = 8
 
+NO_REPLICATE = -1
+
 def romaddr(bank, ramaddr):
     return 0x4000 * bank + (ramaddr % 0x4000)
 
 # for pushing different regions apart
 special_transitions = {
-    0x80: (-17, 1), # area 3?
-    0x1b3: (0, 6), # caves
+    (0xc55, BIT_WEST): (-25, 1), # area 3?
     
     # area 2?
-    0x5A: (5, -6),
-    0x6F: (5, 3),
+    (0xB81, BIT_EAST): (1, -2),
+    
+    # area 3?
+    #(0xD39, BIT_NORTH): (9, 4),
+    
+    # area 4?
+    (0x9DA, BIT_EAST): (1, -6),
+    (0xE7A, BIT_EAST): (8, -1),
     
     # cave fork
-    0x1A0: (-5, 15),
-    0x33: (-10, -2),
+    #0x1A0: (-5, 5),
+    (0xA06, BIT_WEST): (-14, 10),
     
     # double acid cave
-    0x189: (-25, -15),
-    0x3B: (-25, -15),
+    (0xA2E, BIT_WEST): (-5, 10),
+    (0xA0E, BIT_WEST): (-5, 10),
     
     # "A"
-    0xA6: (-25, -8),
+    (0xCA0, BIT_WEST): (-21, 5),
+    (0x907, BIT_EAST): (0, -1),
     
     # ~"B"
-    0x7A: (-25, 5),
-    #0xD4: (-15, 0),
+    (0xF1C, BIT_SOUTH): (5, -10),
+    
+    # Final area
+    (0xE22, BIT_SOUTH): (5, -1),
+    (0xE31, BIT_SOUTH): (-5, 1),
 }
 
 # no warp, but we count it anyway
@@ -49,6 +60,13 @@ exceptional_null_transitions = {
     0xD54,
     0xDB5,
     0xB4E,
+    0xE2B,
+    0xD26,
+    0xD79,
+    0xD8A,
+    0xD9B,
+    0xD9C,
+    0xD23,
 }
 
 suppress_transition = {
@@ -83,17 +101,38 @@ suppress_transition = {
     0xC8E: BIT_NORTH,
     0xC8F: {BIT_EAST, BIT_SOUTH},
     
-    0xD36: {BIT_EAST},
+    0xD36: {BIT_EAST, NO_REPLICATE},
+    0xD45: {BIT_NORTH, BIT_SOUTH},
     0xD54: {BIT_NORTH, BIT_SOUTH},
     0xD64: {BIT_NORTH, BIT_SOUTH},
+    0xD97: {BIT_WEST, BIT_SOUTH, NO_REPLICATE},
+    0xD77: {BIT_EAST, NO_REPLICATE},
     
-    0xEB8: {BIT_SOUTH, BIT_NORTH},
-    0xEB9: {BIT_SOUTH, BIT_NORTH},
+    0xE1A: {BIT_SOUTH, BIT_NORTH},
+    0xE2A: {BIT_SOUTH, BIT_NORTH},
+    0xE31: {BIT_NORTH, BIT_EAST},
+    
+    # larva room
+    0xE12: {BIT_WEST, NO_REPLICATE},
+    0xE22: {BIT_EAST, NO_REPLICATE},
+    0xF8A: {BIT_SOUTH, NO_REPLICATE},
+    0xF7A: {BIT_SOUTH, NO_REPLICATE},
+    
+    # queen absent
+    0xFFF: {BIT_EAST, BIT_NORTH, BIT_WEST, NO_REPLICATE},
+    
+    # queen fight
+    0xFEF: {BIT_EAST, BIT_NORTH, NO_REPLICATE},
+    
+    # queen endgame
+    0xF9A: {BIT_EAST, BIT_NORTH, BIT_SOUTH, NO_REPLICATE},
 }
 
 # bank,x,y versions of the above
 for t in list(exceptional_null_transitions):
     exceptional_null_transitions.add((t >> 8, (t >> 4) & 0xF, t & 0xF))
+for (t, bit), v in copy.copy(special_transitions).items():
+    special_transitions[((t >> 8, (t >> 4) & 0xF, t & 0xF), bit)] = v
 for t, bit in copy.copy(suppress_transition).items():
     if type(bit) == int:
         bit = {bit}
@@ -255,7 +294,7 @@ class Transition:
                 op.x = yx & 0x0F
                 op.y = yx >> 4
             elif opcode == 0x50:
-                op.type = "queen-escape"
+                op.type = "queen-retreat"
             elif opcode == 0x60:
                 op.type = "damage"
                 op.acid = read_u8()
@@ -269,6 +308,8 @@ class Transition:
                 op.camera_x = read_u16()
                 op.samus_y = read_u16()
                 op.samus_x = read_u16()
+                op.x = op.samus_x >> 8
+                op.y = op.samus_y >> 8
             elif opcode == 0x90:
                 op.type = "if-metroid"
                 op.threshold = read_u8()
@@ -308,6 +349,9 @@ def get_transition_locations_styles(idx, exit_bit, style, warp):
     dx = 0
     dy = 0
     
+    is_queen_retreat = False
+    is_queen_exit = False
+    
     if exit_bit:
         if warp in suppress_transition and exit_bit in suppress_transition[warp]:
             return []
@@ -318,6 +362,12 @@ def get_transition_locations_styles(idx, exit_bit, style, warp):
             out += get_transition_locations_styles(op.transition, exit_bit, style, (warp[0], (warp[1] - dx + 16) % 16, (warp[2] - dy + 16) % 16))
         elif op.type == "warp":
             warp = (op.bank, (op.x + dx + 16) % 16, (op.y + dy + 16) % 16)
+        elif op.type == "queen-enter":
+            warp = (op.bank, op.x, op.y)
+        elif op.type == "queen-retreat":
+            is_queen_retreat = True
+        elif op.type == "queen-exit":
+            is_queen_exit = True
         elif op.type == "bg":
             style[STYLE_IDX_BGROM] = op.src
         elif op.type == "spr":
@@ -330,7 +380,12 @@ def get_transition_locations_styles(idx, exit_bit, style, warp):
             style[STYLE_IDX_MTT] = op.value
     
     if warp:
-        out.append((warp, style))
+        if is_queen_retreat and exit_bit != BIT_SOUTH:
+            pass
+        elif is_queen_exit and exit_bit != BIT_WEST:
+            pass
+        else:
+            out.append((warp, style))
     else:
         print(f"Note: missing warp for transition {idx:3x}")
         
@@ -450,6 +505,7 @@ class Cell:
         samus_threshold, projectile_threshold, enemy_threshold = solthresh
         
         self.collision = [[0 for _ in range(CELL_TILE_SIZE)] for _ in range(CELL_TILE_SIZE)]
+        self.colflags = [[0 for _ in range(CELL_TILE_SIZE)] for _ in range(CELL_TILE_SIZE)]
         
         for y in range(0, CELL_MT_SIZE):
             for x in range(0, CELL_MT_SIZE):
@@ -477,6 +533,8 @@ class Cell:
                             self.collision[y*2 + yi][x*2 + xi] = 0
                         else:
                             self.collision[y*2 + yi][x*2 + xi] = 1
+                            
+                        self.colflags[y*2 + yi][x*2 + xi] |= colt
         
 class Room:
     def __init__(self, idx, bank, style):
@@ -531,7 +589,8 @@ def infer_suppressions():
                     idx = 16*y + x
                     tiles_addr = romaddr(bank, peek_u16(bank, 2*idx))
                     if (bank, x, y) in suppress_transition:
-                        suppress_transition[tiles_addr] = suppress_transition[(bank, x, y)]
+                        if NO_REPLICATE not in suppress_transition[(bank, x, y)]:
+                            suppress_transition[tiles_addr] = suppress_transition[(bank, x, y)]
                     if tiles_addr in suppress_transition:
                         suppress_transition[(bank, x, y)] = suppress_transition[tiles_addr]
 
@@ -650,8 +709,8 @@ def rooms_layout():
                     for tr_loc_style in get_transition_locations_styles(cell.transition, exit_bit, room.style, (cell.bank, cell.x, cell.y)):
                         tr_loc, tr_style = tr_loc_style
                         nbank, nx, ny = tr_loc
-                        if cell.transition in special_transitions:
-                            stdx, stdy = special_transitions[cell.transition]
+                        if ((room.bank, cx, cy), exit_bit) in special_transitions:
+                            stdx, stdy = special_transitions[((room.bank, cx, cy), exit_bit)]
                             jumps.append((True, mapx + 0.5 + dx/2, mapy + 0.5 + dy/2, mapx + 0.5 + stdx + dx/2, mapy + stdy + 0.5 + dy/2))
                         else:
                             stdx, stdy = 0, 0
