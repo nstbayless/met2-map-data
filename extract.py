@@ -55,6 +55,87 @@ area_names = [
     FINAL_AREA
 ]
 
+room_names = {
+    0xF55: "Landing Site",
+    0xA44: "Surface Corridor",
+    0xFA6: "Morph Tutorial",
+    0xC12: "Aim-Down Tutorial",
+    0xF30: "First Save",
+    0xF51: "Shallow Slime",
+    0xF01: "First Alpha",
+    0xBD0: "Wading Pool",
+    0xA00: "First Acid",
+    0xA90: "No Swimming Zone",
+    0xA22: "No Diving Zone",
+    0xB31: "Acid Pancakes",
+    0xB11: "Temple Access",
+    0xBA1: "Cullugg Pillar Room",
+    0x95D: "Temple Exterior",
+    0xD62: "Temple Save",
+    0xD81: "Double Armory",
+    0xD83: "Bomb Tutorial",
+    0xDBD: "Wallfire Shaft",
+    0xD54: "Bomb Access",
+    0xD95: "Ice Beam Access",
+    0xDC4: "Triple Armory",
+    0xB1A: "Spider Access",
+    0xE70: "Post-Spider Alpha",
+    0xC31: "Cobweb's Treasure",
+    0xBAB: "Pancake Room",
+    0xB5C: "Not Pancake Room",
+    0xB42: "Septogg Sandpits",
+    0xB22: "Cawron Alpha",
+    0x9D3: "Hydro Exterior",
+    0xD75: "Hydro Save East",
+    0xD25: "Hydro Save West",
+    0xD7D: "High Jump Cache",
+    0xA47: "Caves Fork",
+    0xBBF: "Lower Octroll Alley",
+    0xCA5: "Octroll Alley Shaft",
+    0xB04: "Upper Octroll Alley",
+    0xC40: "East Caves Entrance",
+    0xA06: "Acid Dive Start",
+    0xC9C: "Acid Dive Main Climb",
+    0xC47: "Acid Dive Left Climb",
+    0xC66: "Acid Dive Right Climb",
+    0xB12: "Flying Flittway",
+    0xA61: "Acid Alpha",
+    0xB5F: "Vanishing Flittway",
+    0xA62: "Acid Gamma",
+    0x977: "Facility Exterior",
+    0xE0B: "Autom E-Tank Room",
+    0xE2B: "Autom Alpha",
+    0xE7B: "Autom Alley",
+    0xE3A: "Plasma Gamma",
+    0xBCC: "Jungle Save",
+    0xC3A: "Jungle Entrance",
+    0xB7A: "Jungle Exit",
+    0xC60: "Jungle Heart",
+    0xB83: "Entangled Alpha",
+    0xBB3: "Entangled Gamma",
+    0xC91: "Jungle Descent",
+    0xC88: "Jungle Floor",
+    0xA66: "Missile Block Room",
+    0x911: "Tower Exterior",
+    0x912: "Dark Chamber",
+    0xEA2: "Screw Attack Room",
+    0xEA3: "Screw Zeta",
+    0xEA4: "Non-Euclidean Room",
+    0xEB5: "Tower Shaft",
+    0xB76: "Tower Access",
+    0xEAA: "Tower Save",
+    0xA7E: "Loop Acid",
+    0xC09: "Spike Barrier Room",
+    0xAD8: "Jail",
+    0xA99: "Final Save",
+    0xFCB: "Soda Fountain",
+    0xD02: "Egg Viewing Shaft",
+    0xE3D: "Queen Recharge Room",
+    0xE1D: "Queen's Retreat",
+    0xE31: "Throne Room",
+    0xF1F: "Queen Fight",
+}
+
 #FDX = -6
 #FDY = 0
 FDX = 5
@@ -288,6 +369,8 @@ SPECIAL_DISPLAY = {
     0xD93: HPIPE,
     0x95F: EMPTY,
     0x96F: EMPTY,
+    0x9DF: EMPTY,
+    0x9EF: EMPTY,
     
     # area 3
     0xD8D: HPIPE,
@@ -295,6 +378,8 @@ SPECIAL_DISPLAY = {
     0xD79: VPIPE,
     0xD37: VPIPE,
     0xD38: VPIPE,
+    0x9E6: EMPTY,
+    0x9F6: EMPTY,
     
     # eastern caves
     0xA15: EMPTY,
@@ -742,6 +827,7 @@ class Cell:
 class Room:
     def __init__(self, idx, bank, style):
         self.idx = idx
+        self.name = None
         self.bank = bank
         self.style = style
         self.offset = None
@@ -763,9 +849,12 @@ class Room:
         self.exits[key].add((transition, bank, cx, cy))
     
     def add_cell(self, x, y):
+        cloc = compressed_location(self.bank, x, y)
         self.cells.add((x, y))
         cell = Cell(self.bank, x, y, self.style)
         cell.room = self
+        if cloc in room_names:
+            self.name = room_names[cloc]
         loc = (self.bank, x, y)
         assert loc not in cells
         cells[loc] = cell
@@ -1074,6 +1163,9 @@ def layout_to_json(layout: Table, path="met2.json"):
             
             "doors": [],
         }
+        
+        if room.name:
+            jroom["name"] = room.name
         
         combined_doors = dict()
         
