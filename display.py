@@ -24,6 +24,9 @@ def draw_arrow(draw, xy, fill=None, width=2):
     draw.line([(x1, y1), (left_x, left_y)], fill=fill, width=width)
     draw.line([(x1, y1), (right_x, right_y)], fill=fill, width=width)
 
+def combine_colors(a, b):
+    return (a[0]//2 + b[0]//2, a[1]//2 + b[1]//2, a[2]//2 + b[2]//2)
+
 def display_grid(grid, jumps, cells=None, output_path="grid_output.png"):
     rows = len(grid)
     cols = len(grid[0])
@@ -54,14 +57,19 @@ def display_grid(grid, jumps, cells=None, output_path="grid_output.png"):
             if cell_value is None:
                 draw.rectangle([x1, y1, x2, y2], fill='white', outline='black')
             else:
-                
                 if cells:
-                    color = (100, 100, 100) if len(cell_value) >= 2 else 'blue'
-                    altcolor = 'pink'
-                    altcolor2 = (100, 40, 40) if len(cell_value) >= 2 else 'brown'
                     for celli, v in enumerate(cell_value):
                         ridx, bank, x, y = v
                         cell = cells[(bank, x, y)]
+                        
+                        color = (100, 100, 100) if len(cell_value) >= 2 else cell.color
+                        altcolor = (230, 190, 100)
+                        altcolor2 = (100, 40, 40) if len(cell_value) >= 2 else (100, 30, 60)
+                        
+                        color = combine_colors(color, cell.color)
+                        altcolor = combine_colors(altcolor, cell.color)
+                        altcolor2 = combine_colors(altcolor2, cell.color)
+                        
                         collision = cell.collision
                         colflags = cell.colflags
                         for j in range(32):
@@ -80,7 +88,8 @@ def display_grid(grid, jumps, cells=None, output_path="grid_output.png"):
                 for entry in cell_value:
                     if entry:
                         ridx, bank, x, y = entry
-                        hex_strings.append(f"{ridx:x}:{bank:x}{x:x}{y:x}")
+                        #hex_strings.append(f"{ridx:x}:{bank:x}{x:x}{y:x}")
+                        hex_strings.append(f"{bank:x}{x:x}{y:x}")
                 
                 if hex_strings:
                     text = "\n".join(hex_strings)

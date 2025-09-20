@@ -4,6 +4,8 @@ from collections import deque
 from table import Table
 from display import *
 from typing import Dict, Tuple
+import json
+import re
 import copy
 
 BIT_EAST = 1
@@ -11,69 +13,148 @@ BIT_WEST = 2
 BIT_NORTH = 4
 BIT_SOUTH = 8
 
+REVERSE_DIRECTIONS = {
+    BIT_EAST : BIT_WEST,
+    BIT_WEST : BIT_EAST,
+    BIT_NORTH : BIT_SOUTH,
+    BIT_SOUTH : BIT_NORTH,
+}
+
 NO_REPLICATE = -1
 
 def romaddr(bank, ramaddr):
     return 0x4000 * bank + (ramaddr % 0x4000)
 
-FDX = -6
-FDY = 0
+SPAWN_ROOM_IDX = 1
+SPAWN_AREA = "Surface"
+AREA_2_LOWER = "Lower Chozo Temple"
+AREA_2_UPPER = "Upper Chozo Temple"
+AREA_3 = "Hydro Station"
+AREA_4_UPPER = "Weapons Facility"
+AREA_4_LOWER = "Jungle"
+AREA_5 = "Beam Tower"
+AREA_6 = "Omega Environment"
+FINAL_AREA = "Metroid Nest"
+
+CAVES_1 = "Upper Acid Caves"
+CAVES_2 = "Eastern Acid Caves"
+CAVES_3 = "Lower Acid Caves"
+
+area_names = [
+    SPAWN_AREA,
+    CAVES_1,
+    AREA_2_LOWER,
+    AREA_2_UPPER,
+    AREA_3,
+    CAVES_2,
+    AREA_4_LOWER,
+    AREA_4_UPPER,
+    CAVES_3,
+    AREA_5,
+    AREA_6,
+    FINAL_AREA
+]
+
+#FDX = -6
+#FDY = 0
+FDX = 5
+FDY = -6
+
+AREA_COLORS = {
+    SPAWN_AREA: (100, 130, 200),
+    
+    AREA_2_LOWER: (130, 100, 90),
+    AREA_2_UPPER: (150, 130, 60),
+    
+    AREA_3: (100, 130, 170),
+    
+    CAVES_1: (150, 80, 50),
+    CAVES_2: (140, 80, 100),
+    
+    AREA_4_UPPER: (160, 160, 80),
+    AREA_4_LOWER: (40, 100, 30),
+    
+    CAVES_3: (130, 40, 20),
+    
+    AREA_5: (60, 90, 50),
+    
+    AREA_6: (140, 50, 140),
+    FINAL_AREA: (90, 10, 30),
+}
 
 # for pushing different regions apart
 special_transitions = {
     
     # landing site
-    (0xF77, BIT_EAST): (11, -6),
+    # (0xF77, BIT_EAST): (11, -6, None),
     
     # area 1
-    (0xF50, BIT_EAST): (4, 4),
+    (0xF50, BIT_EAST): (4, 4, CAVES_1),
     
     # area 2
-    (0xC1C, BIT_EAST): (2, 0),
-    (0xC20, BIT_EAST): (1, -2),
+    (0xC1C, BIT_EAST): (2, 0, AREA_2_LOWER),
+    (0xC20, BIT_EAST): (1, -2, AREA_2_UPPER),
     
     # area 3
-    (0xc55, BIT_WEST): (-2, 0),
-    #(0xD39, BIT_NORTH): (9, 4),
+    (0xc55, BIT_WEST): (-2, 0, AREA_3),
+    #(0xD39, BIT_NORTH): (9, 4, None),
+    
+    # caves east
+    (0xA58, BIT_EAST): (7, 14, CAVES_2),
+    (0xA06, BIT_WEST): (-6, 0, None),
     
     # area 4
-    (0x9DA, BIT_EAST): (3, 0),
-    #(0x9C6, BIT_SOUTH): (5, 5),
-    #(0xE7A, BIT_EAST): (8, -1),
-    (0xC50, BIT_EAST): (2, 0),
-    (0xC52, BIT_EAST): (2, 3),
-    (0xB6A, BIT_NORTH): (-2, -3),
+    (0xC50, BIT_EAST): (2, 0, AREA_4_UPPER),
+    (0xC52, BIT_EAST): (2, 3, AREA_4_LOWER),
+    (0xB6A, BIT_NORTH): (-2, -3, None),
+    (0x9DA, BIT_EAST): (3, 0, None),
     
-    # cave fork
-    #0x1A0: (-5, 5),
-    (0xA06, BIT_WEST): (-2, 12),
-    
-    # double acid cave
-    (0xA2E, BIT_WEST): (-5, 12),
-    (0xA0E, BIT_WEST): (-5, 12),
+    # caves south
+    (0xA2E, BIT_WEST): (-5, 12, CAVES_3),
+    (0xA0E, BIT_WEST): (-5, 12, CAVES_3),
     
     # area 5
-    (0xCA0, BIT_WEST): (-2, 0),
-    (0x907, BIT_EAST): (0, -1),
+    (0xCA0, BIT_WEST): (-2, 0, AREA_5),
+    (0x907, BIT_EAST): (0, -1, None),
     
     # area 6
-    (0xCBA, BIT_WEST): (-5, 2),
+    (0xCBA, BIT_WEST): (-5, 2, AREA_6),
     
     # area 7
-    (0xF1C, BIT_SOUTH): (1, -12),
+    (0xF1C, BIT_SOUTH): (1, -12, FINAL_AREA),
     
     # Final area
-    (0xD13, BIT_WEST): (FDX, FDY),
-    (0xE43, BIT_EAST): (-FDX, -FDY),
-    (0xFEF, BIT_WEST): (FDX, FDY),
-    (0xF8A, BIT_EAST): (-FDX, -FDY),
+    (0xD13, BIT_WEST): (FDX, FDY, SPAWN_AREA),
+    (0xE43, BIT_EAST): (-FDX, -FDY, FINAL_AREA),
+    (0xFEF, BIT_WEST): (FDX, FDY, SPAWN_AREA),
+    (0xF8A, BIT_EAST): (-FDX, -FDY, FINAL_AREA),
 }
 
 # no warp, but we count it anyway
 exceptional_null_transitions = {
+    0xE38,
+    0xE1B,
+    0xD22,
     0xB8C,
+    0xB8B,
+    0xBAB,
+    0xD16,
+    0xD9A,
+    0xDAB,
+    0xD8C,
+    0xD5C,
+    0xD5D,
+    0xB7D,
+    0xD7C,
+    0xD54,
+    0xD44,
+    0xDA5,
+    0xD06,
+    0xD7A,
     0xB8D,
     0xB9B,
+    0xB4C,
+    0xA44,
     0xE7A,
     0xD36,
     0xD54,
@@ -95,6 +176,7 @@ exceptional_null_transitions = {
     0xAAB,
     0xABB,
     0xACB,
+    0xB9B,
 }
 
 suppress_transition = {
@@ -104,7 +186,7 @@ suppress_transition = {
     0xAB9: {BIT_NORTH, BIT_SOUTH},
     0xADB: {BIT_NORTH, BIT_SOUTH},
     0xAAB: {BIT_NORTH},
-    0xACA: {BIT_NORTH},
+    0xACA: {BIT_NORTH, BIT_WEST, BIT_EAST},
     
     0xB1A: {BIT_SOUTH, BIT_NORTH},
     0xB2A: {BIT_EAST, BIT_NORTH},
@@ -133,6 +215,7 @@ suppress_transition = {
     
     0xD36: {BIT_EAST, NO_REPLICATE},
     0xD45: {BIT_NORTH, BIT_SOUTH},
+    0xD7A: {BIT_SOUTH},
     0xD54: {BIT_NORTH, BIT_SOUTH},
     0xD64: {BIT_NORTH, BIT_SOUTH},
     0xD97: {BIT_WEST, BIT_SOUTH, NO_REPLICATE},
@@ -142,7 +225,7 @@ suppress_transition = {
     0xE2A: {BIT_SOUTH, BIT_NORTH},
     0xE31: {BIT_NORTH, BIT_EAST},
     
-    # larva room
+    # egg room
     0xE12: {BIT_WEST, NO_REPLICATE},
     0xE22: {BIT_EAST, NO_REPLICATE},
     0xF8A: {BIT_SOUTH, NO_REPLICATE},
@@ -157,6 +240,89 @@ suppress_transition = {
     # queen endgame
     0xF9A: {BIT_EAST, BIT_NORTH, BIT_SOUTH, NO_REPLICATE},
 }
+
+COMBINE_ROOMS = [
+    {0xF55, 0xFD3}, # surface
+    {0xD97, 0xD77}, # hydro station
+    {0xA28, 0xA08}, # double cave
+    
+    # lower caves
+    {0xB26, 0xBE9},
+    {0xCB8, 0xC79},
+    {0xB86, 0xBF8},
+    {0xCD0, 0xCE0},
+    {0xA4B, 0xA86},
+    
+    # nest's acid caves
+    {0xC08, 0xCF8},
+    
+    # queen
+    {0xFFF, 0xFEF, 0xF9A},
+    
+    # egg
+    {0xE12, 0xF7A},
+]
+
+EMPTY = -1
+NORMAL = 1
+HPIPE = 2
+VPIPE = 3
+DARK = 4
+
+SPECIAL_DISPLAY = {
+    
+    # upper caves
+    0xA02: EMPTY,
+    0xA81: EMPTY,
+    0xA91: EMPTY,
+    0xAB2: EMPTY,
+    0xAB3: EMPTY,
+    0xA57: EMPTY,
+    0xA39: EMPTY, 0xA19: EMPTY,
+    0xA3B: EMPTY, 0xA1B: EMPTY,
+    0xA3D: EMPTY, 0xA1D: EMPTY,
+    
+    # area 2
+    0xC30: VPIPE,
+    0xDE4: HPIPE,
+    0xD93: HPIPE,
+    0x95F: EMPTY,
+    0x96F: EMPTY,
+    
+    # area 3
+    0xD8D: HPIPE,
+    0xD78: VPIPE,
+    0xD79: VPIPE,
+    0xD37: VPIPE,
+    0xD38: VPIPE,
+    
+    # eastern caves
+    0xA15: EMPTY,
+    0xA16: EMPTY,
+    
+    # area 4
+    0xE5B: HPIPE,
+    0xE4B: HPIPE,
+    
+    # area 5
+    0xEA1: DARK,
+    0xEB1: DARK,
+    
+    # lower caves
+    0xA76: EMPTY,
+    0xA78: EMPTY,
+    0xA4C: EMPTY, 0xA87: EMPTY,
+    
+    # nest
+    0xACA: VPIPE,
+    0xADA: VPIPE,
+}
+
+def compressed_location(bank, x, y):
+    return (bank << 8) | (x << 4) | y
+
+def uncompressed_location(v):
+    return (v >> 8), (v >> 4) & 0xF, v & 0xF
 
 # bank,x,y versions of the above
 for t in list(exceptional_null_transitions):
@@ -194,8 +360,6 @@ SCROLL_DATA = 1 * 16*16*2
 TRANSITION_INDICES = 16*16*3
 
 data = None
-
-SPAWN_ROOM_IDX = 1
 
 side_bit_name = {
     BIT_EAST: "East",
@@ -235,8 +399,9 @@ STYLE_IDX_SPRROM = 1
 STYLE_IDX_COLT = 2
 STYLE_IDX_SOLT = 3
 STYLE_IDX_MTT = 4
+STYLE_IDX_NAME = 5
 
-# Style: (bgrom, sprrom, coltable, soltable, mttable, [to be continued...])
+# Style: (bgrom, sprrom, coltable, soltable, mttable, name)
 
 # -> spawn, style
 def load_init_save():
@@ -261,7 +426,7 @@ def load_init_save():
         if peek_u16(MTTABLE + 2*i) == mtaddr:
             mt = i
     
-    style = (bgrom, spraddr, col, sol, mt)
+    style = (bgrom, spraddr, col, sol, mt, SPAWN_AREA)
     spawn = (bank, x, y)
     return (spawn, style)
 
@@ -385,7 +550,12 @@ def get_transition_locations_styles(idx, exit_bit, style, warp):
     if exit_bit:
         if warp in suppress_transition and exit_bit in suppress_transition[warp]:
             return []
+        stidx = (compressed_location(warp[0], warp[1], warp[2]), exit_bit)
         dx, dy = bit_direction[exit_bit]
+        if stidx in special_transitions:
+            stdx, stdy, name = special_transitions[stidx]
+            if name:
+                style[STYLE_IDX_NAME] = name
     warp = (warp[0], (warp[1] + dx + 16) % 16, (warp[2] + dy + 16) % 16)
     for op in transition.ops:
         if op.type == "if-metroid":
@@ -436,8 +606,8 @@ def pretty_rom_addr(rom):
     else:
         return f"{bank:x}:{0x4000 + (rom % 0x4000):04x}"
 def pretty_style(style):
-    bgrom, sprrom, col, sol, mt = style
-    return f"bg={pretty_rom_addr(bgrom)}, spr={pretty_rom_addr(sprrom)}, col={col}, sol={sol}, mt={mt}"
+    bgrom, sprrom, col, sol, mt, name = style
+    return f"name={name} bg={pretty_rom_addr(bgrom)}, spr={pretty_rom_addr(sprrom)}, col={col}, sol={sol}, mt={mt}"
 
 class Cell:
     def __init__(self, bank, x, y, style):
@@ -564,6 +734,9 @@ class Cell:
                         else:
                             self.collision[y*2 + yi][x*2 + xi] = 1
                             
+                        if (t < 4):
+                            self.colflags[y*2 + yi][x*2 + xi] |= 0x100
+                            
                         self.colflags[y*2 + yi][x*2 + xi] |= colt
         
 class Room:
@@ -572,8 +745,23 @@ class Room:
         self.bank = bank
         self.style = style
         self.offset = None
+        self.duplicates = None
+        self.entrances = dict() # (cx, cy, direction) -> {(transition, bank, cx, cy)}
+        self.exits = dict() # (cx, cy, direction) -> {(transition, bank, cx, cy)}
         self.cells: set[Cell] = set()
+    
+    def add_entrance(self, cx, cy, direction, transition, src_bank, src_cx, src_cy):
+        key = (cx, cy, direction)
+        if key not in self.entrances:
+            self.entrances[key] = set()
+        self.entrances[key].add((transition, src_bank, src_cx, src_cy))
         
+    def add_exit(self, src_cx, src_cy, direction, transition, bank, cx, cy):
+        key = (src_cx, src_cy, direction)
+        if key not in self.exits:
+            self.exits[key] = set()
+        self.exits[key].add((transition, bank, cx, cy))
+    
     def add_cell(self, x, y):
         self.cells.add((x, y))
         cell = Cell(self.bank, x, y, self.style)
@@ -607,7 +795,7 @@ def coords_add(c1, c2):
     return (c1[0] + c2[0], c1[1] + c2[1])
 
 def read_style(style):
-    bgaddr, spraddr, col, sol, mt = style
+    bgaddr, spraddr, col, sol, mt, name = style
     solthresh = (peek_u8(SOLTABLE + sol*4 + 0), peek_u8(SOLTABLE + sol*4 + 1), peek_u8(SOLTABLE + sol*4 + 2))
     return bgaddr, spraddr, romaddr(8, peek_u16(COLTABLE + col*2)), solthresh, romaddr(8, peek_u16(MTTABLE + mt*2))
 
@@ -695,6 +883,53 @@ def identify_rooms():
                 cell: Cell = cells[(room.bank, cell_loc[0], cell_loc[1])]
                 cell.print()
 
+def identify_duplicate_rooms():
+    for ridx, room in rooms.items():
+        for (cx, cy) in room.cells:
+            cloc = compressed_location(room.bank, cx, cy)
+            for duplicate_set in COMBINE_ROOMS:
+                if cloc in duplicate_set:
+                    if not room.duplicates:
+                        room.duplicates = []
+                    for cloc_other in duplicate_set:
+                        if cloc_other != cloc:
+                            cell_other = cells[uncompressed_location(cloc_other)]
+                            room.duplicates.append(cell_other.room)
+
+class Area:
+    def __init__(self, name):
+        self.name = name
+        self.minx = None
+        self.maxx = None
+        self.miny = None
+        self.maxy = None
+        self.rooms = []
+        
+    def add_room(self, room):
+        self.rooms.append(room)
+        for (cx, cy) in room.cells:
+            x = cx + room.offset[0]
+            y = cy + room.offset[1]
+            
+            if self.minx is None:
+                self.minx = x
+                self.miny = y
+                self.maxx = x + 1
+                self.maxy = y + 1
+            else:
+                self.minx = min(x, self.minx)
+                self.miny = min(y, self.miny)
+                self.maxx = max(x+1, self.maxx)
+                self.maxy = max(y+1, self.maxy)
+
+def define_areas():
+    areas = [Area(name) for name in area_names]
+    for ridx, room in rooms.items():
+        for area in areas:
+            if area.name == room.style[STYLE_IDX_NAME]:
+                area.add_room(room)
+    return areas
+
 def rooms_layout():
     minx = 0
     miny = 0
@@ -715,10 +950,26 @@ def rooms_layout():
         room = rooms[ridx]
         rox, roy = room.offset
         
+        room.minx = None
+        room.miny = None
+        room.maxx = None
+        room.maxy = None
+        
         for cell_loc in room.cells:
             cx, cy = cell_loc
             mapx = cx + rox
             mapy = cy + roy
+            
+            if room.minx is None:
+                room.minx = mapx
+                room.miny = mapy
+                room.maxx = mapx+1
+                room.maxy = mapy+1
+            else:
+                room.minx = min(room.minx, mapx)
+                room.miny = min(room.miny, mapy)
+                room.maxx = max(room.maxx, mapx+1)
+                room.maxy = max(room.maxy, mapy+1)
             
             room_info = (ridx, room.bank, cx, cy)
             if (mapx, mapy) not in assigned_room:
@@ -732,6 +983,7 @@ def rooms_layout():
             maxy = max(maxy, mapy+1)
             
             cell = cells[(room.bank, cx, cy)]
+            cell.color = AREA_COLORS[cell.style[STYLE_IDX_NAME]]
             
             if cell.exit_bits:
                 for exit_bit in cell.exit_bits:
@@ -740,7 +992,8 @@ def rooms_layout():
                         tr_loc, tr_style = tr_loc_style
                         nbank, nx, ny = tr_loc
                         if ((room.bank, cx, cy), exit_bit) in special_transitions:
-                            stdx, stdy = special_transitions[((room.bank, cx, cy), exit_bit)]
+                            stidx = ((room.bank, cx, cy), exit_bit)
+                            stdx, stdy, _ = special_transitions[stidx]
                             jumps.append((True, mapx + 0.5 + dx/2, mapy + 0.5 + dy/2, mapx + 0.5 + stdx + dx/2, mapy + stdy + 0.5 + dy/2))
                         else:
                             stdx, stdy = 0, 0
@@ -757,14 +1010,198 @@ def rooms_layout():
                             jumps.append((False, mapx + 0.5 + dx*(0.4), mapy + 0.5 + dy*(0.4), mapx + 0.5 + dx*0.75 + offset_jdx, mapy + 0.5 + dy*0.75 + offset_jdy))
                         
                         frontier.append(nroom.idx)
+                        
+                        room.add_exit(cx, cy, exit_bit, cell.transition, nbank, nx, ny)
+                        nroom.add_entrance(nx, ny, REVERSE_DIRECTIONS[exit_bit], cell.transition, room.bank, cx, cy)
     
-    w = maxx - minx
-    h = maxy - miny
-    grid = [[None for _ in range(w)] for _ in range(h)]
-    for (x, y), v in assigned_room.items():
-        grid[y - miny][x - minx] = v
+    layout = Table()
+    
+    layout.jumps = jumps
+    layout.assigned_room = assigned_room
+    layout.maxx = maxx
+    layout.minx = minx
+    layout.maxy = maxy
+    layout.miny = miny
+    layout.areas = define_areas()
+    
+    layout.w = maxx - minx
+    layout.h = maxy - miny
+    
+    return layout
         
-    display_grid(grid, [(b, x - minx, y - miny, x2 - minx, y2 - miny) for b, x, y, x2, y2 in jumps], cells)
+def rooms_display(layout: Table):
+    grid = [[None for _ in range(layout.w)] for _ in range(layout.h)]
+    for (x, y), v in layout.assigned_room.items():
+        grid[y - layout.miny][x - layout.minx] = v
+    display_grid(grid, [(b, x - layout.minx, y - layout.miny, x2 - layout.minx, y2 - layout.miny) for b, x, y, x2, y2 in layout.jumps], cells)
+
+def layout_to_json(layout: Table, path="met2.json"):
+    j = {"areas": [], "rooms": [], "world": {"w": layout.w, "h": layout.h}}
+    
+    # define rooms
+    handled = set()
+    has_special = set()
+    layout_idx = dict()
+    layout_idx_reverse = dict()
+    for ridx, room in rooms.items():
+        if room.idx:
+            handled.add(ridx)
+        idx = len(layout_idx)
+        layout_idx[room.idx] = idx
+        layout_idx_reverse[idx] = room.idx
+        
+        myrooms: list[Room] = [room]
+        
+        if room.duplicates:
+            for r in room.duplicates:
+                handled.add(r.idx)
+                myrooms.append(r)
+        
+        x0 = min(r.minx for r in myrooms)
+        y0 = min(r.miny for r in myrooms)
+        x1 = max(r.maxx for r in myrooms)
+        y1 = max(r.maxy for r in myrooms)
+        
+        jroom = {
+            "x": x0 - layout.minx,
+            "y": y0 - layout.miny,
+            "w": x1 - x0,
+            "h": y1 - y0,
+            "cells": [[0 for _ in range(x1-x0)] for _2 in range(y1-y0)],
+            
+            # one for each duplicate
+            "states": [],
+            
+            "doors": [],
+        }
+        
+        combined_doors = dict()
+        
+        for i, r in enumerate(myrooms):
+            statebit = 1 << i
+            embedding = [[0 for _ in range(x1-x0)] for _2 in range(y1-y0)]
+            for (cx, cy) in r.cells:
+                mapx = cx + r.offset[0] 
+                mapy = cy + r.offset[1]
+                roomx = mapx - x0
+                roomy = mapy - y0
+                
+                tile = 1
+                cloc = compressed_location(r.bank, cx, cy)
+                if cloc in SPECIAL_DISPLAY:
+                    tile = SPECIAL_DISPLAY[cloc]
+                    has_special.add(ridx)
+                
+                #print("r", hex(r.idx))
+                #print(f"room range [{x0}, {x1}] × [{y0}, {y1}]; dimensions {x1-x0}×{y1-y0}")
+                #print(f"cell cx={cx:x},cy={cy:x}, mx={mapx},my={mapy} rx={roomx},ry={roomy}")
+                
+                jroom["cells"][roomy][roomx] = tile
+                embedding[roomy][roomx] = 1
+            
+            jroom["states"].append({
+                "bank": r.bank,
+                "x": x0 - r.offset[0],
+                "y": y0 - r.offset[1],
+                "cells": embedding
+            })
+            
+            def add_door(entrance, cx, cy, direction, instance):
+                mapx = cx + r.offset[0]
+                mapy = cy + r.offset[1]
+                roomx = mapx - x0
+                roomy = mapy - y0
+                key = (roomx, roomy, direction)
+                
+                transition, nbank, nx, ny = instance
+                ncell = cells[(nbank, nx, ny)]
+                nroom = ncell.room
+                nmapx = nx + nroom.offset[0]
+                nmapy = ny + nroom.offset[1]
+                
+                # todo: record destination
+                if key not in combined_doors:
+                    combined_doors[key] = {
+                        "x": roomx,
+                        "y": roomy,
+                        "dir": direction,
+                        "entrance_states": 0,
+                        "exit_states": 0,
+                        "transitions": [],
+                    }
+                
+                door = combined_doors[key]
+                if transition not in door["transitions"]:
+                    door["transitions"].append(transition)
+                door["entrance_states" if entrance else "exit_states"] |= statebit
+                if ncell.room.style[STYLE_IDX_NAME] != room.style[STYLE_IDX_NAME] and not entrance:
+                    door["to-area"] = area_names.index(ncell.room.style[STYLE_IDX_NAME])
+                elif abs(nmapx - mapx) + abs(nmapy - mapy) > 1 and not entrance:
+                    door["jump"] = [nmapx - mapx, nmapy - mapy]
+            
+            # add entrances
+            for (cx, cy, direction), instances in r.entrances.items():
+                for instance in instances:
+                    add_door(True, cx, cy, direction, instance)
+            
+            # add exits
+            for (cx, cy, direction), instances in r.exits.items():
+                for instance in instances:
+                    add_door(False, cx, cy, direction, instance)
+        
+        jroom["doors"] += [info for key, info in combined_doors.items()]
+                
+        j["rooms"].append(jroom)
+        
+    # swap index of any room containing a special tile to the end of the room list;
+    # this ensures the special tiles will be drawn last 
+    for ridx, room in rooms.items():
+        lidx = layout_idx[ridx]
+        if ridx in has_special:
+            for i in range(len(j["rooms"])-1, 0, -1):
+                ridx_swap = layout_idx_reverse[i]
+                if ridx_swap not in has_special:
+                    jroom = j["rooms"][lidx]
+                    jroom_swap = j["rooms"][i]
+                    j["rooms"][lidx] = jroom_swap
+                    j["rooms"][i] = jroom
+                    layout_idx[ridx] = i
+                    layout_idx[ridx_swap] = lidx
+                    layout_idx_reverse[i] = ridx
+                    layout_idx_reverse[lidx] = ridx_swap
+                    assert layout_idx_reverse[i] in has_special
+                    break
+    
+    # define areas
+    for area in layout.areas:
+        j["areas"].append({
+            "name": area.name,
+            "x0": area.minx - layout.minx,
+            "x1": area.maxx - layout.minx,
+            "y0": area.miny - layout.miny,
+            "y1": area.maxy - layout.miny,
+            "rooms": sorted([
+                layout_idx[room.idx] for room in area.rooms if (not room.duplicates or all(room.idx < duplicate.idx for duplicate in room.duplicates))
+            ])
+        })
+    
+    with open(path, 'w') as json_file:
+        s = json.dumps(j, indent=2)
+
+        def collapse_numeric_lists(match):
+            full = match.group(0)           # like "[ 1,\n  2,\n  3 ]"
+            inner = full[1:-1]              # strip [ and ]
+            items = re.split(r",\s*", inner.strip())
+            return "[" + ", ".join(items) + "]"
+
+        s = re.sub(
+            r"\[(?:\s*\d+(?:\.\d+)?\s*,?)+\s*\]",
+            collapse_numeric_lists,
+            s
+        )
+
+        json_file.write(s)
+        
 
 def main(rom_path):
     global data
@@ -773,7 +1210,10 @@ def main(rom_path):
     
     infer_suppressions()
     identify_rooms()
-    rooms_layout()
+    identify_duplicate_rooms()
+    layout = rooms_layout()
+    layout_to_json(layout)
+    rooms_display(layout)
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:

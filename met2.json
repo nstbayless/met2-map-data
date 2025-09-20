@@ -1,0 +1,9110 @@
+{
+  "areas": [
+    {
+      "name": "Surface",
+      "x0": 8,
+      "x1": 27,
+      "y0": 0,
+      "y1": 14,
+      "rooms": [0, 1, 2, 3, 4, 5, 7, 9, 11, 56, 73, 85]
+    },
+    {
+      "name": "Upper Acid Caves",
+      "x0": 30,
+      "x1": 44,
+      "y0": 14,
+      "y1": 33,
+      "rooms": [6, 10, 13, 14, 15, 17, 24, 29, 43, 57, 208, 209, 210, 211]
+    },
+    {
+      "name": "Lower Chozo Temple",
+      "x0": 46,
+      "x1": 60,
+      "y0": 14,
+      "y1": 19,
+      "rooms": [22, 27, 34, 51, 69, 70, 86, 87, 88, 113]
+    },
+    {
+      "name": "Upper Chozo Temple",
+      "x0": 50,
+      "x1": 65,
+      "y0": 9,
+      "y1": 16,
+      "rooms": [33, 64, 65, 66, 67, 68, 83, 84, 110, 111, 197, 199, 200, 203]
+    },
+    {
+      "name": "Hydro Station",
+      "x0": 10,
+      "x1": 35,
+      "y0": 15,
+      "y1": 25,
+      "rooms": [18, 23, 28, 35, 37, 38, 39, 40, 41, 42, 52, 53, 54, 55, 71, 72, 74, 89, 90, 91, 92, 93, 114, 115, 116, 117, 118, 133, 134, 135, 136, 150, 194, 201, 204]
+    },
+    {
+      "name": "Eastern Acid Caves",
+      "x0": 36,
+      "x1": 53,
+      "y0": 36,
+      "y1": 44,
+      "rooms": [21, 31, 32, 46, 47, 60, 61, 77, 78, 206]
+    },
+    {
+      "name": "Jungle",
+      "x0": 54,
+      "x1": 64,
+      "y0": 42,
+      "y1": 54,
+      "rooms": [48, 62, 79, 80, 105, 130, 131, 146, 147, 155, 161, 165, 169]
+    },
+    {
+      "name": "Weapons Facility",
+      "x0": 55,
+      "x1": 72,
+      "y0": 34,
+      "y1": 43,
+      "rooms": [49, 63, 81, 106, 107, 108, 109, 132, 148, 149, 156, 157, 162, 163, 166, 170, 174, 190, 193]
+    },
+    {
+      "name": "Lower Acid Caves",
+      "x0": 11,
+      "x1": 33,
+      "y0": 40,
+      "y1": 54,
+      "rooms": [25, 44, 45, 59, 76, 104, 125, 128, 141, 142, 144, 152, 153, 158, 159, 160, 196, 205]
+    },
+    {
+      "name": "Beam Tower",
+      "x0": 11,
+      "x1": 28,
+      "y0": 26,
+      "y1": 42,
+      "rooms": [58, 75, 94, 95, 97, 98, 99, 100, 101, 102, 103, 119, 120, 121, 122, 123, 124, 137, 138, 139, 140, 198]
+    },
+    {
+      "name": "Omega Environment",
+      "x0": 0,
+      "x1": 19,
+      "y0": 37,
+      "y1": 49,
+      "rooms": [164, 168, 172, 173, 176, 177, 180, 181, 183, 184, 186, 187]
+    },
+    {
+      "name": "Metroid Nest",
+      "x0": 3,
+      "x1": 11,
+      "y0": 14,
+      "y1": 34,
+      "rooms": [19, 20, 26, 30, 36, 50, 82, 96, 112, 126, 127, 151, 167, 171, 175, 178, 182, 185, 188, 189, 191, 192]
+    }
+  ],
+  "rooms": [
+    {
+      "x": 8,
+      "y": 0,
+      "w": 10,
+      "h": 11,
+      "cells": [
+        [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+        [0, 0, 0, 1, 0, 0, 0, 1, 1, 1],
+        [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
+        [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": -2,
+          "y": 2,
+          "cells": [
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
+            [0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
+            [0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+          ]
+        },
+        {
+          "bank": 15,
+          "x": 6,
+          "y": 0,
+          "cells": [
+            [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+            [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+            [0, 0, 0, 1, 0, 0, 0, 1, 1, 1],
+            [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 9,
+          "y": 5,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [214, 479]
+        },
+        {
+          "x": 2,
+          "y": 10,
+          "dir": 1,
+          "entrance_states": 2,
+          "exit_states": 2,
+          "transitions": [492, 414, 491],
+          "to-area": 11
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 5,
+      "w": 5,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 4,
+          "y": 4,
+          "cells": [
+            [1, 1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [479, 214]
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [83, 82]
+        }
+      ]
+    },
+    {
+      "x": 22,
+      "y": 6,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 10,
+          "y": 6,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [82, 83]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [176, 84]
+        }
+      ]
+    },
+    {
+      "x": 24,
+      "y": 7,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 1,
+          "y": 2,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [84, 176]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [73, 186]
+        }
+      ]
+    },
+    {
+      "x": 23,
+      "y": 10,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 2,
+          "y": 0,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [186, 73]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [486, 485]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [85, 74],
+          "to-area": 1
+        }
+      ]
+    },
+    {
+      "x": 21,
+      "y": 10,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 0,
+          "y": 0,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [485, 486]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [192, 72]
+        }
+      ]
+    },
+    {
+      "x": 31,
+      "y": 14,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 13,
+          "y": 0,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [74, 85],
+          "to-area": 0
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [33, 86]
+        }
+      ]
+    },
+    {
+      "x": 20,
+      "y": 10,
+      "w": 1,
+      "h": 4,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 1,
+          "y": 5,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [72, 192]
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [78, 201]
+        }
+      ]
+    },
+    {
+      "x": 6,
+      "y": 16,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 9,
+          "y": 10,
+          "cells": [
+            [1]
+          ]
+        },
+        {
+          "bank": 15,
+          "x": 14,
+          "y": 15,
+          "cells": [
+            [1]
+          ]
+        },
+        {
+          "bank": 15,
+          "x": 15,
+          "y": 15,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 3,
+          "transitions": [491, 492, 414],
+          "to-area": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 6,
+          "exit_states": 0,
+          "transitions": [315]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 6,
+          "transitions": [414, 384]
+        }
+      ]
+    },
+    {
+      "x": 16,
+      "y": 13,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 2,
+          "y": 1,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [201, 78]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [487, 463]
+        }
+      ]
+    },
+    {
+      "x": 35,
+      "y": 16,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 1,
+          "y": 10,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [39, 209]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [37, 217]
+        }
+      ]
+    },
+    {
+      "x": 14,
+      "y": 13,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 0,
+          "y": 1,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [463, 487]
+        }
+      ]
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "w": 10,
+      "h": 11,
+      "cells": [
+        [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+        [0, 0, 0, 1, 0, 0, 0, 1, 1, 1],
+        [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
+        [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 6,
+          "y": 0,
+          "cells": [
+            [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+            [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+            [0, 0, 0, 1, 0, 0, 0, 1, 1, 1],
+            [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+          ]
+        },
+        {
+          "bank": 14,
+          "x": 0,
+          "y": -8,
+          "cells": [
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+          ]
+        },
+        {
+          "bank": 15,
+          "x": -2,
+          "y": 2,
+          "cells": [
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
+            [0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
+            [0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 10,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [492, 414, 491],
+          "to-area": 11
+        },
+        {
+          "x": 1,
+          "y": 10,
+          "dir": 8,
+          "entrance_states": 2,
+          "exit_states": 2,
+          "transitions": [255, 322]
+        },
+        {
+          "x": 2,
+          "y": 10,
+          "dir": 8,
+          "entrance_states": 2,
+          "exit_states": 2,
+          "transitions": [354, 353]
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "dir": 1,
+          "entrance_states": 4,
+          "exit_states": 4,
+          "transitions": [214, 479]
+        }
+      ]
+    },
+    {
+      "x": 38,
+      "y": 21,
+      "w": 2,
+      "h": 3,
+      "cells": [
+        [1, 1],
+        [1, 1],
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 2,
+          "y": 2,
+          "cells": [
+            [1, 1],
+            [1, 1],
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [34, 42]
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [35, 435]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [159, 45]
+        }
+      ]
+    },
+    {
+      "x": 40,
+      "y": 17,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 3,
+          "y": 1,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [38, 420]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [233, 88]
+        }
+      ]
+    },
+    {
+      "x": 37,
+      "y": 20,
+      "w": 1,
+      "h": 4,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 5,
+          "y": 5,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [45, 159]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [94, 128],
+          "to-area": 4
+        }
+      ]
+    },
+    {
+      "x": 6,
+      "y": 16,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 15,
+          "y": 15,
+          "cells": [
+            [1]
+          ]
+        },
+        {
+          "bank": 15,
+          "x": 9,
+          "y": 10,
+          "cells": [
+            [1]
+          ]
+        },
+        {
+          "bank": 15,
+          "x": 14,
+          "y": 15,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 5,
+          "exit_states": 0,
+          "transitions": [315]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 5,
+          "transitions": [384, 414]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 2,
+          "exit_states": 6,
+          "transitions": [491, 492, 414],
+          "to-area": 0
+        }
+      ]
+    },
+    {
+      "x": 43,
+      "y": 15,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 1,
+          "y": 12,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [88, 233]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [87, 222],
+          "to-area": 2
+        }
+      ]
+    },
+    {
+      "x": 33,
+      "y": 20,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 4,
+          "y": 2,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [128, 94],
+          "to-area": 1
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [421, 422]
+        }
+      ]
+    },
+    {
+      "x": 6,
+      "y": 16,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 14,
+          "y": 15,
+          "cells": [
+            [1]
+          ]
+        },
+        {
+          "bank": 15,
+          "x": 9,
+          "y": 10,
+          "cells": [
+            [1]
+          ]
+        },
+        {
+          "bank": 15,
+          "x": 15,
+          "y": 15,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 5,
+          "exit_states": 0,
+          "transitions": [315]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 5,
+          "transitions": [414, 384]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 2,
+          "exit_states": 3,
+          "transitions": [414, 491, 492],
+          "to-area": 0
+        }
+      ]
+    },
+    {
+      "x": 4,
+      "y": 15,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 1,
+          "y": 1,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [249, 314]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [315]
+        }
+      ]
+    },
+    {
+      "x": 49,
+      "y": 40,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 4,
+          "y": 0,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [54, 162],
+          "to-area": 1
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [330, 427]
+        }
+      ]
+    },
+    {
+      "x": 46,
+      "y": 15,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 1,
+          "y": 1,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [222, 87],
+          "to-area": 1
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [170, 419]
+        }
+      ]
+    },
+    {
+      "x": 30,
+      "y": 20,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 1,
+          "y": 2,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [422, 421]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [25, 93]
+        }
+      ]
+    },
+    {
+      "x": 31,
+      "y": 28,
+      "w": 7,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 9,
+          "y": 15,
+          "cells": [
+            [1, 1, 1, 1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 6,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [393, 59, 102]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [429, 436]
+        }
+      ]
+    },
+    {
+      "x": 29,
+      "y": 44,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 1,
+          "y": 5,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [397, 75, 110],
+          "to-area": 1
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [53, 109]
+        }
+      ]
+    },
+    {
+      "x": 3,
+      "y": 14,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 0,
+          "y": 0,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [309, 243]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [314, 249]
+        }
+      ]
+    },
+    {
+      "x": 48,
+      "y": 14,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 2,
+          "y": 0,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [419, 170]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [91, 111]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [89, 160],
+          "to-area": 3
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 15,
+      "w": 12,
+      "h": 7,
+      "cells": [
+        [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+        [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+        [1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0],
+        [1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1],
+        [1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1],
+        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 9,
+          "x": 4,
+          "y": 0,
+          "cells": [
+            [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+            [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+            [1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0],
+            [1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1],
+            [1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1],
+            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 11,
+          "y": 5,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [93, 25]
+        },
+        {
+          "x": 2,
+          "y": 6,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [259, 19]
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [263, 24]
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [258, 18]
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [261, 22]
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [210, 16]
+        },
+        {
+          "x": 0,
+          "y": 5,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [223, 17]
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [262, 23]
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [409, 20]
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [260, 21]
+        }
+      ]
+    },
+    {
+      "x": 30,
+      "y": 26,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 10,
+          "y": 4,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [436, 429]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [46, 191]
+        }
+      ]
+    },
+    {
+      "x": 4,
+      "y": 14,
+      "w": 5,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 1,
+          "y": 0,
+          "cells": [
+            [1, 1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 4,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [250, 310]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [243, 309]
+        }
+      ]
+    },
+    {
+      "x": 43,
+      "y": 38,
+      "w": 1,
+      "h": 6,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 9,
+          "y": 9,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 5,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [51, 238],
+          "jump": [7, 0]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [136, 177]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [135, 206]
+        }
+      ]
+    },
+    {
+      "x": 52,
+      "y": 37,
+      "w": 1,
+      "h": 5,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 5,
+          "y": 0,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 4,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [331, 332]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [334, 333],
+          "to-area": 6
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [336]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [95, 163],
+          "to-area": 7
+        }
+      ]
+    },
+    {
+      "x": 50,
+      "y": 12,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 6,
+          "y": 1,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [160, 89],
+          "to-area": 2
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [32, 90]
+        }
+      ]
+    },
+    {
+      "x": 49,
+      "y": 16,
+      "w": 5,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 10,
+          "y": 1,
+          "cells": [
+            [1, 1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [111, 91]
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [144, 92]
+        }
+      ]
+    },
+    {
+      "x": 26,
+      "y": 20,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 6,
+          "y": 5,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [24, 263]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [323, 345]
+        }
+      ]
+    },
+    {
+      "x": 9,
+      "y": 14,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 3,
+          "y": 1,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [310, 250]
+        }
+      ]
+    },
+    {
+      "x": 24,
+      "y": 17,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 1,
+          "y": 12,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [22, 261]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [291, 327]
+        }
+      ]
+    },
+    {
+      "x": 19,
+      "y": 16,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 4,
+          "y": 0,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [20, 409]
+        }
+      ]
+    },
+    {
+      "x": 17,
+      "y": 18,
+      "w": 1,
+      "h": 5,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 2,
+          "y": 10,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [16, 210]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [17, 223]
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [153, 234]
+        }
+      ]
+    },
+    {
+      "x": 21,
+      "y": 20,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 1,
+          "y": 5,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [18, 258]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [430, 344]
+        }
+      ]
+    },
+    {
+      "x": 21,
+      "y": 21,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 0,
+          "y": 8,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [19, 259]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [287, 288]
+        }
+      ]
+    },
+    {
+      "x": 23,
+      "y": 18,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 5,
+          "y": 7,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [21, 260]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [284, 283]
+        }
+      ]
+    },
+    {
+      "x": 31,
+      "y": 26,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 0,
+          "y": 4,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [191, 46]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [426, 496]
+        }
+      ]
+    },
+    {
+      "x": 26,
+      "y": 40,
+      "w": 1,
+      "h": 4,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 10,
+          "y": 0,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [47, 184]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [113, 166],
+          "to-area": 9
+        }
+      ]
+    },
+    {
+      "x": 25,
+      "y": 47,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 11,
+          "y": 9,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [60, 139]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [213, 138]
+        }
+      ]
+    },
+    {
+      "x": 42,
+      "y": 38,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 4,
+          "y": 5,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [177, 136]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [155, 120]
+        }
+      ]
+    },
+    {
+      "x": 44,
+      "y": 36,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 6,
+          "y": 4,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [206, 135]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [156, 119]
+        }
+      ]
+    },
+    {
+      "x": 55,
+      "y": 42,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 12,
+          "y": 12,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [333, 334],
+          "to-area": 5
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [211, 134]
+        }
+      ]
+    },
+    {
+      "x": 55,
+      "y": 37,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 6,
+          "y": 2,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [163, 95],
+          "to-area": 5
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [424, 423]
+        }
+      ]
+    },
+    {
+      "x": 8,
+      "y": 16,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 2,
+          "y": 3,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [326, 267],
+          "to-area": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 54,
+      "y": 16,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 9,
+          "y": 10,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [92, 144]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 23,
+      "y": 20,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 3,
+          "y": 5,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [345, 323]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [344, 430]
+        }
+      ]
+    },
+    {
+      "x": 23,
+      "y": 17,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 0,
+          "y": 12,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [327, 291]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 22,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 11,
+          "y": 12,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [234, 153]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [152, 151]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [195, 151]
+        }
+      ]
+    },
+    {
+      "x": 22,
+      "y": 22,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 1,
+          "y": 9,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [288, 287]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [285, 286]
+        }
+      ]
+    },
+    {
+      "x": 10,
+      "y": 11,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 2,
+          "y": 3,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [353, 354]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [267, 326],
+          "to-area": 11
+        }
+      ]
+    },
+    {
+      "x": 35,
+      "y": 26,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 4,
+          "y": 4,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [496, 426]
+        }
+      ]
+    },
+    {
+      "x": 22,
+      "y": 40,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 7,
+          "y": 5,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [166, 113],
+          "to-area": 8
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [15, 112]
+        }
+      ]
+    },
+    {
+      "x": 24,
+      "y": 47,
+      "w": 1,
+      "h": 5,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 6,
+          "y": 10,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [138, 213]
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [62, 193]
+        }
+      ]
+    },
+    {
+      "x": 38,
+      "y": 38,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 1,
+          "y": 15,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [120, 155]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [36, 154]
+        }
+      ]
+    },
+    {
+      "x": 45,
+      "y": 36,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 5,
+          "y": 15,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [119, 156]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [41, 157]
+        }
+      ]
+    },
+    {
+      "x": 57,
+      "y": 43,
+      "w": 1,
+      "h": 5,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 3,
+          "y": 10,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [134, 211]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [455, 182]
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [145, 188]
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [97]
+        }
+      ]
+    },
+    {
+      "x": 57,
+      "y": 37,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 8,
+          "y": 2,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [423, 424]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [28, 96]
+        }
+      ]
+    },
+    {
+      "x": 55,
+      "y": 12,
+      "w": 2,
+      "h": 3,
+      "cells": [
+        [1, 1],
+        [0, 1],
+        [0, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 6,
+          "y": 2,
+          "cells": [
+            [1, 1],
+            [0, 1],
+            [0, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [180, 268]
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [324, 476]
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [477, 325]
+        }
+      ]
+    },
+    {
+      "x": 57,
+      "y": 11,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 8,
+          "y": 1,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [244, 269]
+        }
+      ]
+    },
+    {
+      "x": 60,
+      "y": 11,
+      "w": 1,
+      "h": 5,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 11,
+          "y": 1,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [245, 270]
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 63,
+      "y": 11,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 7,
+          "y": 0,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [246, 271]
+        }
+      ]
+    },
+    {
+      "x": 63,
+      "y": 12,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 1,
+          "y": 10,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [247, 140]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [161, 141]
+        }
+      ]
+    },
+    {
+      "x": 55,
+      "y": 17,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 10,
+          "y": 11,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [149, 446]
+        }
+      ]
+    },
+    {
+      "x": 53,
+      "y": 17,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 8,
+          "y": 11,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [142, 448]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [143, 448]
+        }
+      ]
+    },
+    {
+      "x": 19,
+      "y": 23,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 12,
+          "y": 13,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [151, 195]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [425, 205]
+        }
+      ]
+    },
+    {
+      "x": 15,
+      "y": 23,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 8,
+          "y": 13,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [151, 152]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "w": 10,
+      "h": 11,
+      "cells": [
+        [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+        [0, 0, 0, 1, 0, 0, 0, 1, 1, 1],
+        [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
+        [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 0,
+          "y": -8,
+          "cells": [
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+          ]
+        },
+        {
+          "bank": 15,
+          "x": 6,
+          "y": 0,
+          "cells": [
+            [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+            [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+            [0, 0, 0, 1, 0, 0, 0, 1, 1, 1],
+            [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 10,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [255, 322]
+        },
+        {
+          "x": 2,
+          "y": 10,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [354, 353]
+        },
+        {
+          "x": 2,
+          "y": 10,
+          "dir": 1,
+          "entrance_states": 2,
+          "exit_states": 2,
+          "transitions": [492, 414, 491],
+          "to-area": 11
+        }
+      ]
+    },
+    {
+      "x": 23,
+      "y": 21,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 5,
+          "y": 10,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [289, 290]
+        }
+      ]
+    },
+    {
+      "x": 17,
+      "y": 26,
+      "w": 5,
+      "h": 16,
+      "cells": [
+        [1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 0],
+        [1, 0, 0, 1, 0],
+        [1, 0, 0, 1, 0],
+        [1, 0, 0, 1, 0],
+        [1, 0, 0, 1, 0],
+        [1, 0, 0, 1, 0],
+        [1, 0, 0, 1, 1],
+        [1, 0, 0, 1, 1],
+        [1, 0, 0, 1, 1],
+        [1, 0, 0, 1, 1],
+        [1, 0, 0, 1, 1],
+        [1, 0, 0, 1, 1],
+        [1, 0, 0, 1, 1],
+        [1, 0, 0, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 9,
+          "x": 0,
+          "y": 0,
+          "cells": [
+            [1, 1, 1, 1, 0],
+            [1, 1, 1, 1, 0],
+            [1, 1, 1, 1, 0],
+            [1, 0, 0, 1, 0],
+            [1, 0, 0, 1, 0],
+            [1, 0, 0, 1, 0],
+            [1, 0, 0, 1, 0],
+            [1, 0, 0, 1, 0],
+            [1, 0, 0, 1, 1],
+            [1, 0, 0, 1, 1],
+            [1, 0, 0, 1, 1],
+            [1, 0, 0, 1, 1],
+            [1, 0, 0, 1, 1],
+            [1, 0, 0, 1, 1],
+            [1, 0, 0, 1, 1],
+            [1, 0, 0, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 4,
+          "y": 14,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [112, 15]
+        },
+        {
+          "x": 3,
+          "y": 14,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [434, 14]
+        },
+        {
+          "x": 0,
+          "y": 12,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [257, 11]
+        },
+        {
+          "x": 0,
+          "y": 9,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [106, 9]
+        },
+        {
+          "x": 4,
+          "y": 10,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [114, 13]
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [252, 5]
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [248, 4]
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [235, 3]
+        },
+        {
+          "x": 0,
+          "y": 7,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [251, 6],
+          "jump": [
+            1,
+            -1
+          ]
+        },
+        {
+          "x": 0,
+          "y": 11,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [254, 10]
+        },
+        {
+          "x": 4,
+          "y": 8,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [253, 8]
+        },
+        {
+          "x": 0,
+          "y": 14,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [220, 12]
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [107, 2]
+        }
+      ]
+    },
+    {
+      "x": 20,
+      "y": 51,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 0,
+          "y": 12,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [193, 62]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [77, 63]
+        }
+      ]
+    },
+    {
+      "x": 36,
+      "y": 38,
+      "w": 2,
+      "h": 2,
+      "cells": [
+        [1, 1],
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 6,
+          "y": 0,
+          "cells": [
+            [1, 1],
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [154, 36]
+        }
+      ]
+    },
+    {
+      "x": 49,
+      "y": 36,
+      "w": 2,
+      "h": 2,
+      "cells": [
+        [1, 1],
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 6,
+          "y": 2,
+          "cells": [
+            [1, 1],
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [157, 41]
+        }
+      ]
+    },
+    {
+      "x": 54,
+      "y": 45,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 6,
+          "y": 10,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [182, 455]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [336],
+          "to-area": 5
+        }
+      ]
+    },
+    {
+      "x": 58,
+      "y": 46,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 11,
+          "y": 10,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [188, 145]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [178, 146]
+        }
+      ]
+    },
+    {
+      "x": 60,
+      "y": 34,
+      "w": 8,
+      "h": 6,
+      "cells": [
+        [0, 0, 0, 1, 1, 1, 1, 1],
+        [0, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 0, 0, 1],
+        [1, 1, 0, 1, 1, 0, 0, 1],
+        [1, 1, 0, 1, 1, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 0, 1]
+      ],
+      "states": [
+        {
+          "bank": 9,
+          "x": 6,
+          "y": 5,
+          "cells": [
+            [0, 0, 0, 1, 1, 1, 1, 1],
+            [0, 1, 1, 1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1, 0, 0, 1],
+            [1, 1, 0, 1, 1, 0, 0, 1],
+            [1, 1, 0, 1, 1, 0, 0, 1],
+            [1, 0, 0, 0, 0, 0, 0, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [96, 28]
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [385, 29]
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [165, 31],
+          "jump": [4, 0]
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [264, 26]
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [265, 30]
+        }
+      ]
+    },
+    {
+      "x": 6,
+      "y": 17,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 1,
+          "y": 13,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [359, 465]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [414, 384]
+        }
+      ]
+    },
+    {
+      "x": 54,
+      "y": 14,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 5,
+          "y": 4,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [325, 477]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 58,
+      "y": 15,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 9,
+          "y": 5,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [279, 280]
+        }
+      ]
+    },
+    {
+      "x": 9,
+      "y": 11,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 0,
+          "y": 2,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [358, 357],
+          "to-area": 11
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [322, 255]
+        }
+      ]
+    },
+    {
+      "x": 58,
+      "y": 17,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 13,
+          "y": 11,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [446, 149]
+        }
+      ]
+    },
+    {
+      "x": 54,
+      "y": 18,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 9,
+          "y": 12,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [448, 143]
+        }
+      ]
+    },
+    {
+      "x": 50,
+      "y": 18,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 5,
+          "y": 12,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [448, 142]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0, 447]
+        }
+      ]
+    },
+    {
+      "x": 21,
+      "y": 23,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 14,
+          "y": 13,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [205, 425]
+        }
+      ]
+    },
+    {
+      "x": 14,
+      "y": 23,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 7,
+          "y": 13,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [349, 450]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [350, 450]
+        }
+      ]
+    },
+    {
+      "x": 23,
+      "y": 19,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 2,
+          "y": 6,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 22,
+      "y": 21,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 4,
+          "y": 10,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [290, 289]
+        }
+      ]
+    },
+    {
+      "x": 27,
+      "y": 21,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 9,
+          "y": 10,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 38,
+      "w": 2,
+      "h": 3,
+      "cells": [
+        [1, 1],
+        [0, 1],
+        [0, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 10,
+          "cells": [
+            [1, 1],
+            [0, 1],
+            [0, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [14, 434]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [11, 257]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 31,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 3,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [5, 252]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [294, 295]
+        }
+      ]
+    },
+    {
+      "x": 7,
+      "y": 19,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 3,
+          "y": 13,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [382, 462]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 32,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 4,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [6, 251],
+          "jump": [
+            -1,
+            1
+          ]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [298, 362]
+        }
+      ]
+    },
+    {
+      "x": 13,
+      "y": 35,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 9,
+          "y": 4,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [9, 106]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [52, 105]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 37,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 9,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [10, 254]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [307, 308]
+        }
+      ]
+    },
+    {
+      "x": 15,
+      "y": 40,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 0,
+          "y": 13,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [12, 220]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [50, 61]
+        }
+      ]
+    },
+    {
+      "x": 21,
+      "y": 27,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 13,
+          "y": 4,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [2, 107]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [79, 108]
+        }
+      ]
+    },
+    {
+      "x": 21,
+      "y": 33,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 8,
+          "y": 0,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [8, 253]
+        }
+      ]
+    },
+    {
+      "x": 22,
+      "y": 36,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 9,
+          "y": 5,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [13, 114]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [339, 442]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 49,
+      "w": 2,
+      "h": 3,
+      "cells": [
+        [1, 1],
+        [1, 1],
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 6,
+          "y": 12,
+          "cells": [
+            [1, 1],
+            [1, 1],
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [63, 77]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [402, 115, 69]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [232, 76]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [418, 390, 417]
+        }
+      ]
+    },
+    {
+      "x": 60,
+      "y": 44,
+      "w": 1,
+      "h": 4,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 6,
+          "y": 0,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [146, 178]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [101, 164]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [147, 171]
+        }
+      ]
+    },
+    {
+      "x": 62,
+      "y": 37,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 1,
+          "y": 6,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [29, 385]
+        }
+      ]
+    },
+    {
+      "x": 65,
+      "y": 36,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 4,
+          "y": 5,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [26, 264]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [329, 328]
+        }
+      ]
+    },
+    {
+      "x": 66,
+      "y": 37,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 5,
+          "y": 6,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [30, 265]
+        }
+      ]
+    },
+    {
+      "x": 71,
+      "y": 39,
+      "w": 1,
+      "h": 4,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 8,
+          "y": 0,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [31, 165],
+          "jump": [
+            -4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "x": 53,
+      "y": 14,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 4,
+          "y": 4,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 57,
+      "y": 15,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 8,
+          "y": 5,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [280, 279]
+        }
+      ]
+    },
+    {
+      "x": 6,
+      "y": 18,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 1,
+          "y": 1,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [381, 256]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [465, 359]
+        }
+      ]
+    },
+    {
+      "x": 49,
+      "y": 18,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 4,
+          "y": 12,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [447, 0]
+        }
+      ]
+    },
+    {
+      "x": 15,
+      "y": 24,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 8,
+          "y": 14,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [450, 350]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [451, 351]
+        }
+      ]
+    },
+    {
+      "x": 11,
+      "y": 24,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 4,
+          "y": 14,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [450, 349]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [449, 0]
+        }
+      ]
+    },
+    {
+      "x": 21,
+      "y": 19,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 0,
+          "y": 6,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 28,
+      "y": 22,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 10,
+          "y": 11,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [352, 460]
+        }
+      ]
+    },
+    {
+      "x": 24,
+      "y": 23,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 6,
+          "y": 12,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 30,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 2,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [295, 294]
+        }
+      ]
+    },
+    {
+      "x": 19,
+      "y": 33,
+      "w": 1,
+      "h": 4,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 11,
+          "y": 5,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [362, 298]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [296, 299]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [297, 298]
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [311, 307]
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [308, 307]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [300, 301]
+        }
+      ]
+    },
+    {
+      "x": 11,
+      "y": 35,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 0,
+          "y": 0,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [105, 52]
+        }
+      ]
+    },
+    {
+      "x": 13,
+      "y": 40,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 3,
+          "y": 0,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [61, 50]
+        }
+      ]
+    },
+    {
+      "x": 23,
+      "y": 27,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 4,
+          "y": 15,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [108, 79]
+        }
+      ]
+    },
+    {
+      "x": 26,
+      "y": 36,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 8,
+          "y": 15,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [442, 339]
+        }
+      ]
+    },
+    {
+      "x": 17,
+      "y": 51,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 13,
+          "y": 13,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [76, 232]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [56, 242]
+        }
+      ]
+    },
+    {
+      "x": 5,
+      "y": 18,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 1,
+          "y": 3,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [380, 266]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [357, 358],
+          "to-area": 0
+        }
+      ]
+    },
+    {
+      "x": 4,
+      "y": 20,
+      "w": 5,
+      "h": 5,
+      "cells": [
+        [1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1],
+        [0, 1, 1, 1, 0]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 10,
+          "y": 11,
+          "cells": [
+            [1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1],
+            [0, 1, 1, 1, 0]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 4,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [55, 383]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [256, 381]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [266, 380]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [462, 382]
+        }
+      ]
+    },
+    {
+      "x": 20,
+      "y": 49,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 2,
+          "y": 6,
+          "cells": [
+            [1, 1]
+          ]
+        },
+        {
+          "bank": 11,
+          "x": 14,
+          "y": 9,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [69, 115, 402]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [207, 116, 410, 403]
+        }
+      ]
+    },
+    {
+      "x": 20,
+      "y": 49,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 14,
+          "y": 9,
+          "cells": [
+            [1, 1]
+          ]
+        },
+        {
+          "bank": 11,
+          "x": 2,
+          "y": 6,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [69, 402, 115]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [410, 403, 207, 116]
+        }
+      ]
+    },
+    {
+      "x": 61,
+      "y": 45,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 13,
+          "y": 10,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [171, 147]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [173, 148]
+        }
+      ]
+    },
+    {
+      "x": 60,
+      "y": 43,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 8,
+          "y": 3,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [164, 101]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [441, 440]
+        }
+      ]
+    },
+    {
+      "x": 65,
+      "y": 37,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 4,
+          "y": 6,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [328, 329]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [305, 304]
+        }
+      ]
+    },
+    {
+      "x": 17,
+      "y": 24,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 10,
+          "y": 14,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [351, 451]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [453, 452]
+        }
+      ]
+    },
+    {
+      "x": 10,
+      "y": 24,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 3,
+          "y": 14,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0, 449]
+        }
+      ]
+    },
+    {
+      "x": 27,
+      "y": 24,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 9,
+          "y": 13,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [459, 352]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [460, 352]
+        }
+      ]
+    },
+    {
+      "x": 23,
+      "y": 23,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 5,
+          "y": 12,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 33,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 5,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [298, 297]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 34,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 6,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [299, 296]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 35,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 7,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [301, 300]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 36,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 8,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [307, 311]
+        }
+      ]
+    },
+    {
+      "x": 13,
+      "y": 53,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 7,
+          "y": 9,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [242, 56]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [130, 49]
+        }
+      ]
+    },
+    {
+      "x": 15,
+      "y": 47,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 13,
+          "y": 0,
+          "cells": [
+            [1],
+            [1]
+          ]
+        },
+        {
+          "bank": 12,
+          "x": 14,
+          "y": 0,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [66, 175, 389, 407]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [117, 168, 400, 405]
+        }
+      ]
+    },
+    {
+      "x": 15,
+      "y": 47,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 14,
+          "y": 0,
+          "cells": [
+            [1],
+            [1]
+          ]
+        },
+        {
+          "bank": 12,
+          "x": 13,
+          "y": 0,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [389, 407, 66, 175]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [400, 405, 117, 168]
+        }
+      ]
+    },
+    {
+      "x": 22,
+      "y": 48,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 11,
+          "y": 8,
+          "cells": [
+            [1],
+            [1]
+          ]
+        },
+        {
+          "bank": 12,
+          "x": 7,
+          "y": 8,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [116, 207, 403, 410]
+        }
+      ]
+    },
+    {
+      "x": 22,
+      "y": 48,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 7,
+          "y": 8,
+          "cells": [
+            [1],
+            [1]
+          ]
+        },
+        {
+          "bank": 12,
+          "x": 11,
+          "y": 8,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [403, 410, 116, 207]
+        }
+      ]
+    },
+    {
+      "x": 63,
+      "y": 45,
+      "w": 1,
+      "h": 7,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 9,
+          "y": 1,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [148, 173]
+        },
+        {
+          "x": 0,
+          "y": 6,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [347, 457]
+        }
+      ]
+    },
+    {
+      "x": 63,
+      "y": 43,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 11,
+          "y": 3,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [440, 441]
+        }
+      ]
+    },
+    {
+      "x": 66,
+      "y": 38,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 5,
+          "y": 7,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [304, 305]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [306, 386]
+        }
+      ]
+    },
+    {
+      "x": 63,
+      "y": 39,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 2,
+          "y": 8,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [302, 303]
+        }
+      ]
+    },
+    {
+      "x": 21,
+      "y": 24,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 14,
+          "y": 14,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [452, 453]
+        }
+      ]
+    },
+    {
+      "x": 5,
+      "y": 25,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 8,
+          "y": 9,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [219, 133]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [383, 55]
+        }
+      ]
+    },
+    {
+      "x": 12,
+      "y": 50,
+      "w": 1,
+      "h": 4,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 10,
+          "y": 9,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [49, 130]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [239, 40]
+        }
+      ]
+    },
+    {
+      "x": 16,
+      "y": 47,
+      "w": 5,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 4,
+          "y": 6,
+          "cells": [
+            [1, 1, 1, 1, 1]
+          ]
+        },
+        {
+          "bank": 11,
+          "x": 11,
+          "y": 8,
+          "cells": [
+            [1, 1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [168, 117, 405, 400]
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [200, 118, 408, 401]
+        }
+      ]
+    },
+    {
+      "x": 16,
+      "y": 47,
+      "w": 5,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 11,
+          "y": 8,
+          "cells": [
+            [1, 1, 1, 1, 1]
+          ]
+        },
+        {
+          "bank": 11,
+          "x": 4,
+          "y": 6,
+          "cells": [
+            [1, 1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [405, 400, 168, 117]
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [408, 401, 200, 118]
+        }
+      ]
+    },
+    {
+      "x": 62,
+      "y": 48,
+      "w": 1,
+      "h": 6,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 8,
+          "y": 4,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [457, 347]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [456, 346]
+        }
+      ]
+    },
+    {
+      "x": 66,
+      "y": 41,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 5,
+          "y": 10,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [386, 306]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [360, 306]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 62,
+      "y": 39,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 1,
+          "y": 8,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [303, 302]
+        }
+      ]
+    },
+    {
+      "x": 11,
+      "y": 46,
+      "w": 1,
+      "h": 5,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 11,
+          "y": 10,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 4,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [40, 239]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [228, 129],
+          "to-area": 10
+        }
+      ]
+    },
+    {
+      "x": 21,
+      "y": 47,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 10,
+          "y": 7,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [118, 200]
+        }
+      ]
+    },
+    {
+      "x": 21,
+      "y": 47,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 6,
+          "y": 7,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [401, 408]
+        }
+      ]
+    },
+    {
+      "x": 61,
+      "y": 47,
+      "w": 1,
+      "h": 4,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 7,
+          "y": 3,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [346, 456]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [98, 190]
+        }
+      ]
+    },
+    {
+      "x": 64,
+      "y": 41,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 3,
+          "y": 10,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [306, 360]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [317, 318]
+        }
+      ]
+    },
+    {
+      "x": 69,
+      "y": 40,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 8,
+          "y": 9,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [274, 275]
+        }
+      ]
+    },
+    {
+      "x": 5,
+      "y": 42,
+      "w": 1,
+      "h": 7,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 12,
+          "y": 6,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 6,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [129, 228],
+          "to-area": 8
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [221, 197]
+        }
+      ]
+    },
+    {
+      "x": 59,
+      "y": 48,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 13,
+          "y": 2,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [190, 98]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [438, 348]
+        }
+      ]
+    },
+    {
+      "x": 62,
+      "y": 41,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 1,
+          "y": 10,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [318, 317]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [313, 316]
+        }
+      ]
+    },
+    {
+      "x": 4,
+      "y": 25,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 7,
+          "y": 11,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [57, 225]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [133, 219]
+        }
+      ]
+    },
+    {
+      "x": 6,
+      "y": 40,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 13,
+          "y": 9,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [197, 221]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [121, 216]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [125, 208]
+        }
+      ]
+    },
+    {
+      "x": 57,
+      "y": 48,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 11,
+          "y": 2,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [348, 438]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [97]
+        }
+      ]
+    },
+    {
+      "x": 61,
+      "y": 41,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 0,
+          "y": 10,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [316, 313]
+        }
+      ]
+    },
+    {
+      "x": 5,
+      "y": 26,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 11,
+          "y": 9,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [237, 58]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [225, 57]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 7,
+      "y": 41,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 0,
+          "y": 12,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [216, 121]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [185, 123]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [203, 122],
+          "to-area": 11
+        }
+      ]
+    },
+    {
+      "x": 2,
+      "y": 40,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 2,
+          "y": 14,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [208, 125]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [342, 343]
+        }
+      ]
+    },
+    {
+      "x": 61,
+      "y": 40,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 0,
+          "y": 11,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 9,
+      "y": 30,
+      "w": 1,
+      "h": 4,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 4,
+          "y": 8,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [122, 203],
+          "to-area": 10
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [229, 412, 212]
+        }
+      ]
+    },
+    {
+      "x": 11,
+      "y": 38,
+      "w": 1,
+      "h": 5,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 12,
+          "y": 0,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [123, 185]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [126, 174]
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "dir": 1,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 0,
+      "y": 40,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 0,
+          "y": 14,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [343, 342]
+        }
+      ]
+    },
+    {
+      "x": 10,
+      "y": 28,
+      "w": 1,
+      "h": 6,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 15,
+          "y": 8,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        },
+        {
+          "bank": 12,
+          "x": 0,
+          "y": 8,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 5,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [212, 412, 229]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 3,
+          "transitions": [71, 169, 137]
+        }
+      ]
+    },
+    {
+      "x": 10,
+      "y": 28,
+      "w": 1,
+      "h": 6,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 0,
+          "y": 8,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        },
+        {
+          "bank": 12,
+          "x": 15,
+          "y": 8,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 5,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [212, 229, 412]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 2,
+          "exit_states": 3,
+          "transitions": [137, 71, 169]
+        }
+      ]
+    },
+    {
+      "x": 11,
+      "y": 37,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 0,
+          "y": 8,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [174, 126]
+        }
+      ]
+    },
+    {
+      "x": 12,
+      "y": 42,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 13,
+          "y": 4,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [48, 198]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [124, 194]
+        }
+      ]
+    },
+    {
+      "x": 4,
+      "y": 28,
+      "w": 6,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 9,
+          "y": 12,
+          "cells": [
+            [1, 1, 1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 5,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [137, 169, 71]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [231, 70]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [0]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [65, 0]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [0, 64]
+        }
+      ]
+    },
+    {
+      "x": 13,
+      "y": 43,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 0,
+          "y": 13,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [194, 124]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [337, 338]
+        }
+      ]
+    },
+    {
+      "x": 8,
+      "y": 44,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 2,
+          "y": 11,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [198, 48]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [355, 356]
+        }
+      ]
+    },
+    {
+      "x": 3,
+      "y": 27,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 8,
+          "y": 12,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [70, 231]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [67, 226]
+        }
+      ]
+    },
+    {
+      "x": 17,
+      "y": 43,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 5,
+          "y": 7,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [338, 337]
+        }
+      ]
+    },
+    {
+      "x": 6,
+      "y": 44,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 0,
+          "y": 11,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [356, 355]
+        }
+      ]
+    },
+    {
+      "x": 4,
+      "y": 27,
+      "w": 5,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 9,
+          "y": 11,
+          "cells": [
+            [1, 1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [226, 67]
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [241, 68]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 7,
+      "y": 27,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [3]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 13,
+          "y": 10,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [65]
+        }
+      ]
+    },
+    {
+      "x": 63,
+      "y": 40,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 2]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 2,
+          "y": 11,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [320, 319]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 6,
+      "y": 27,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [3]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 12,
+          "y": 10,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [64]
+        }
+      ]
+    },
+    {
+      "x": 9,
+      "y": 26,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 8,
+          "y": 14,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [68, 241]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [58, 237]
+        }
+      ]
+    },
+    {
+      "x": 66,
+      "y": 40,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [2, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 5,
+          "y": 11,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [275, 274]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [319, 320]
+        }
+      ]
+    },
+    {
+      "x": 24,
+      "y": 24,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 2]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 6,
+          "y": 13,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [352, 459]
+        }
+      ]
+    },
+    {
+      "x": 16,
+      "y": 48,
+      "w": 2,
+      "h": 2,
+      "cells": [
+        [1, 1],
+        [
+          -1,
+          1
+        ]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 8,
+          "y": 6,
+          "cells": [
+            [1, 1],
+            [1, 1]
+          ]
+        },
+        {
+          "bank": 10,
+          "x": 4,
+          "y": 11,
+          "cells": [
+            [1, 1],
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [417, 390, 418]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [407, 389, 175, 66]
+        }
+      ]
+    },
+    {
+      "x": 16,
+      "y": 48,
+      "w": 2,
+      "h": 2,
+      "cells": [
+        [1, 1],
+        [
+          -1,
+          1
+        ]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 4,
+          "y": 11,
+          "cells": [
+            [1, 1],
+            [1, 1]
+          ]
+        },
+        {
+          "bank": 10,
+          "x": 8,
+          "y": 6,
+          "cells": [
+            [1, 1],
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [417, 418, 390]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [175, 66, 407, 389]
+        }
+      ]
+    },
+    {
+      "x": 61,
+      "y": 14,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 2]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 12,
+          "y": 4,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [276, 272]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 29,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [4, 4]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 1,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [4, 248]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [3, 235]
+        }
+      ]
+    },
+    {
+      "x": 64,
+      "y": 13,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [3],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 3,
+          "y": 0,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [141, 161]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [272, 276]
+        }
+      ]
+    },
+    {
+      "x": 57,
+      "y": 13,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 2, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 8,
+          "y": 3,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [476, 324]
+        }
+      ]
+    },
+    {
+      "x": 24,
+      "y": 19,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [3],
+        [3]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 3,
+          "y": 6,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [286, 285]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 25,
+      "y": 18,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [3],
+        [3]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 7,
+          "y": 7,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        },
+        {
+          "bank": 13,
+          "x": 9,
+          "y": 7,
+          "cells": [
+            [1],
+            [0],
+            [0]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [283, 284]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 2,
+          "exit_states": 2,
+          "transitions": [23, 262]
+        }
+      ]
+    },
+    {
+      "x": 53,
+      "y": 9,
+      "w": 10,
+      "h": 5,
+      "cells": [
+        [0, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 0, 0, 0, 0, 1, 1],
+        [1, 1, 0, 0, 0, 0, 0, 0, 1, 1],
+        [
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "states": [
+        {
+          "bank": 9,
+          "x": 5,
+          "y": 11,
+          "cells": [
+            [0, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 0, 0, 0, 0, 1, 1],
+            [1, 1, 0, 0, 0, 0, 0, 0, 1, 1],
+            [1, 1, 0, 0, 0, 0, 0, 0, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [90, 32]
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [269, 244]
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [140, 247]
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [268, 180]
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [270, 245]
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [271, 246]
+        }
+      ]
+    },
+    {
+      "x": 25,
+      "y": 18,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [3],
+        [3]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 9,
+          "y": 7,
+          "cells": [
+            [1],
+            [0],
+            [0]
+          ]
+        },
+        {
+          "bank": 13,
+          "x": 7,
+          "y": 7,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [23, 262]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 2,
+          "exit_states": 2,
+          "transitions": [283, 284]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 8,
+          "entrance_states": 2,
+          "exit_states": 2,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 27,
+      "y": 43,
+      "w": 2,
+      "h": 5,
+      "cells": [
+        [
+          1,
+          -1
+        ],
+        [1, 1],
+        [
+          1,
+          -1
+        ],
+        [1, 1],
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 6,
+          "y": 6,
+          "cells": [
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [109, 53]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [184, 47]
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [139, 60]
+        }
+      ]
+    },
+    {
+      "x": 50,
+      "y": 41,
+      "w": 2,
+      "h": 3,
+      "cells": [
+        [1, 1],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 0,
+          "y": 4,
+          "cells": [
+            [1, 1],
+            [1, 1],
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [427, 330]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [238, 51],
+          "jump": [
+            -7,
+            0
+          ]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [332, 331]
+        }
+      ]
+    },
+    {
+      "x": 38,
+      "y": 26,
+      "w": 2,
+      "h": 7,
+      "cells": [
+        [1, 1],
+        [
+          1,
+          -1
+        ],
+        [1, 1],
+        [
+          1,
+          -1
+        ],
+        [1, 1],
+        [
+          1,
+          -1
+        ],
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 2,
+          "y": 8,
+          "cells": [
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1]
+          ]
+        },
+        {
+          "bank": 10,
+          "x": 0,
+          "y": 8,
+          "cells": [
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [416, 437, 391]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [102, 59, 393]
+        },
+        {
+          "x": 0,
+          "y": 6,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [110, 75, 397],
+          "to-area": 8
+        }
+      ]
+    },
+    {
+      "x": 38,
+      "y": 26,
+      "w": 2,
+      "h": 7,
+      "cells": [
+        [1, 1],
+        [
+          1,
+          -1
+        ],
+        [1, 1],
+        [
+          1,
+          -1
+        ],
+        [1, 1],
+        [
+          1,
+          -1
+        ],
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 0,
+          "y": 8,
+          "cells": [
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1]
+          ]
+        },
+        {
+          "bank": 10,
+          "x": 2,
+          "y": 8,
+          "cells": [
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [416, 391, 437]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [102, 393, 59]
+        },
+        {
+          "x": 0,
+          "y": 6,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [110, 397, 75],
+          "to-area": 8
+        }
+      ]
+    },
+    {
+      "x": 40,
+      "y": 23,
+      "w": 2,
+      "h": 4,
+      "cells": [
+        [1, 1],
+        [1, 1],
+        [
+          1,
+          -1
+        ],
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 4,
+          "y": 5,
+          "cells": [
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [435, 35]
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [437, 391, 416]
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [162, 54],
+          "to-area": 5
+        }
+      ]
+    },
+    {
+      "x": 36,
+      "y": 17,
+      "w": 4,
+      "h": 4,
+      "cells": [
+        [1, 1, 1, 1],
+        [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1
+        ]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 8,
+          "y": 0,
+          "cells": [
+            [1, 1, 1, 1],
+            [1, 1, 1, 1],
+            [0, 0, 1, 1],
+            [0, 0, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [217, 37]
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [42, 34]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [420, 38]
+        }
+      ]
+    },
+    {
+      "x": 33,
+      "y": 14,
+      "w": 2,
+      "h": 3,
+      "cells": [
+        [1, 1],
+        [1, 1],
+        [
+          -1,
+          1
+        ]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 0,
+          "y": 0,
+          "cells": [
+            [1, 1],
+            [1, 1],
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [86, 33]
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [209, 39]
+        }
+      ]
+    }
+  ],
+  "world": {
+    "w": 72,
+    "h": 54
+  }
+}
