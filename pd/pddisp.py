@@ -3,6 +3,10 @@ from PIL import Image
 import os
 import sys
 
+if not os.path.exists("pd/pdimg.png"):
+    print("Please run from the root directory")
+    sys.exit(1)
+
 halfgrid_x = 8
 halfgrid_y = 8
 
@@ -15,6 +19,8 @@ def split_image_into_tiles(image_path):
     img = Image.open(image_path)
     width, height = img.size
     tiles = {}
+    
+    print(f"{width}×{height}")
 
     for y in range(0, height, halfgrid_y):
         for x in range(0, width, halfgrid_x):
@@ -24,9 +30,10 @@ def split_image_into_tiles(image_path):
 
     return tiles
 
-tiles = split_image_into_tiles("pdimg.png" if len(sys.argv) < 2 else sys.argv[1])
+tiles = split_image_into_tiles("pd/pdimg.png" if len(sys.argv) < 2 else sys.argv[1])
 
-output_dir = 'pd'
+
+output_dir = 'pd/preview'
 os.makedirs(output_dir, exist_ok=True)
 
 with open('met2.json', 'r') as f:
@@ -80,6 +87,57 @@ DARK_DOOR_NORTH = 19
 DARK_DOOR_WEST = 20
 DARK_DOOR_SOUTH = 21
 DARK_DOOR_EAST = 22
+
+RECHARGE_ENERGY = 23
+RECHARGE_MISSILE = 24
+RECHARGE_BOTH = 25
+ITEM = 26
+SAVE = 27
+ALPHA = 28
+GAMMA = 29
+ZETA = 30
+OMEGA = 31
+LARVA = 32
+QUEEN = 33
+UNKNOWN = 34
+GUNSHIP_LEFT = 35
+GUNSHIP_RIGHT = 36
+
+FEATURE_TILES = {
+    "missile-tank": ITEM,
+    "energy-tank": ITEM,
+    "screw-attack": ITEM,
+    "bombs": ITEM,
+    "ice": ITEM,
+    "wave": ITEM,
+    "spazer": ITEM,
+    "plasma": ITEM,
+    "bomb": ITEM,
+    "spider": ITEM,
+    "varia": ITEM,
+    "high-jump": ITEM,
+    "spring-ball": ITEM,
+    "space-jump": ITEM,
+    "screw-attack": ITEM,
+    
+    "save": SAVE,
+    
+    "energy-recharge": RECHARGE_ENERGY,
+    "missile-recharge": RECHARGE_MISSILE,
+    "both-recharge": RECHARGE_BOTH,
+    
+    "alpha": ALPHA,
+    "gamma": GAMMA,
+    "zeta": ZETA,
+    "omega": OMEGA,
+    "larva": LARVA,
+    "queen": QUEEN,
+    "egg": UNKNOWN,
+    "unknown": UNKNOWN,
+    
+    "ship-left": GUNSHIP_LEFT,
+    "ship-right": GUNSHIP_RIGHT,
+}
 
 DOOR_TILE = {
     BIT_WEST: DOOR_WEST,
@@ -186,6 +244,34 @@ def draw_tile(dst, x, y, type, edgebits=0):
         idx = idx2x2(16, 0)
     if type == NE_SHUNT_UPPER:
         idx = idx2x2(16, 2)
+    if type == ITEM:
+        idx = idx2x2(20, 0)
+    if type == SAVE:
+        idx = idx2x2(20, 2)
+    if type == RECHARGE_ENERGY:
+        idx = idx2x2(22, 0)
+    if type == RECHARGE_MISSILE:
+        idx = idx2x2(22, 2)
+    if type == RECHARGE_BOTH:
+        idx = idx2x2(24, 0)
+    if type == ALPHA:
+        idx = idx2x2(24, 2)
+    if type == GAMMA:
+        idx = idx2x2(26, 0)
+    if type == ZETA:
+        idx = idx2x2(26, 2)
+    if type == OMEGA:
+        idx = idx2x2(28, 0)
+    if type == LARVA:
+        idx = idx2x2(28, 2)
+    if type == QUEEN:
+        idx = idx2x2(30, 0)
+    if type == UNKNOWN:
+        idx = idx2x2(30, 2)
+    if type == GUNSHIP_LEFT:
+        idx = idx2x2(32, 0)
+    if type == GUNSHIP_RIGHT:
+        idx = idx2x2(32, 2)
     
     for yi in range(2):
         for xi in range(2):
@@ -271,5 +357,35 @@ for area in met2["areas"] + [None]:
                     draw_tile(area_img, x + 0.5, y, NE_SHUNT_LOWER)
                 elif ndy == 1 and ndx == -1:
                     draw_tile(area_img, x - 0.5, y, NE_SHUNT_UPPER)
+                    
+    # features
+    for ridx in rooms:
+        room = met2["rooms"][ridx]
+        roomfeatures = dict()
+        for feature in room["features"]:
+            ftype, slot, roomx, roomy = feature
+            x = roomx + room["x"] - x0
+            y = roomy + room["y"] - y0
+            if ftype in FEATURE_TILES:
+                if (x, y) not in roomfeatures:
+                    roomfeatures[(x, y)] = set()
+                roomfeatures[(x, y)].add(ftype)
+            elif ftype == "ship":
+                roomfeatures[(x,y)] = {"ship-left"}
+                roomfeatures[(x+1,y)] = {"ship-right"}
+            else:
+                print(f"unrecognized feature: {ftype}")
+        
+        for (x, y), roomfeature in roomfeatures.items():
+            if "energy-recharge" in roomfeature and "missile-recharge" in roomfeature:
+                roomfeature.add("both-recharge")
+            if "alpha" in roomfeature and "omega" in roomfeature:
+                roomfeature.add("unknown")
+            if "spring-ball" in roomfeature:
+                roomfeature.add("unknown")
+            
+            tile = max(FEATURE_TILES[feature] for feature in roomfeature)
+            if tile >= 0:
+                draw_tile(area_img, x, y, tile)
     
     area_img.save(os.path.join(output_dir, f"{name}.png"))

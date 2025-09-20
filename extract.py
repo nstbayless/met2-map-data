@@ -72,12 +72,10 @@ room_names = {
     0xBA1: "Cullugg Pillar Room",
     0x95D: "Temple Exterior",
     0xD62: "Temple Save",
-    0xD81: "Double Armory",
     0xD83: "Bomb Tutorial",
     0xDBD: "Wallfire Shaft",
     0xD54: "Bomb Access",
     0xD95: "Ice Beam Access",
-    0xDC4: "Triple Armory",
     0xB1A: "Spider Access",
     0xE70: "Post-Spider Alpha",
     0xC31: "Cobweb's Treasure",
@@ -121,7 +119,11 @@ room_names = {
     0xEA2: "Screw Attack Room",
     0xEA3: "Screw Zeta",
     0xEA4: "Non-Euclidean Room",
-    0xEB5: "Tower Shaft",
+    0xEB5: "Armory Shaft",
+    0xEA5: "Armory Plasma Room",
+    0xEA6: "Armory Spazer Room",
+    0xEA7: "Armory Wave Beam Room",
+    0xEA8: "Armory Ice Beam Room",
     0xB76: "Tower Access",
     0xEAA: "Tower Save",
     0xA7E: "Loop Acid",
@@ -134,6 +136,34 @@ room_names = {
     0xE1D: "Queen's Retreat",
     0xE31: "Throne Room",
     0xF1F: "Queen Fight",
+}
+
+object_names = {
+    0x80: "plasma",
+    0x82: "ice",
+    0x84: "wave",
+    0x86: "spazer",
+    0x88: "bombs",
+    0x8A: "screw-attack",
+    0x8C: "varia",
+    0x8E: "high-jump",
+    
+    0x90: "space-jump",
+    0x93: "spider",
+    0x97: "energy-tank",
+    0x99: "missile-tank",
+    0x9B: "energy-recharge",
+    0x9C: "spring-ball",
+    0x9D: "missile-recharge",
+    
+    0xA0: "alpha",
+    0xA3: "gamma",
+    0xA6: "egg",
+    0xAD: "zeta",
+    0xB3: "omega",
+    0xCE: "larva",
+    
+    #0xDB: "fake-egg",
 }
 
 #FDX = -6
@@ -161,6 +191,14 @@ AREA_COLORS = {
     
     AREA_6: (140, 50, 140),
     FINAL_AREA: (90, 10, 30),
+}
+
+special_objects = {
+    0xFEF: [("queen", None, 0x80, 0x80)],
+    0xF57: [("ship", None, 0x80, 0x80)],
+    0xFD5: [],
+    0xF67: [],
+    0xFE5: [],
 }
 
 # for pushing different regions apart
@@ -378,6 +416,7 @@ SPECIAL_DISPLAY = {
     0xD79: VPIPE,
     0xD37: VPIPE,
     0xD38: VPIPE,
+    0xD6A: HPIPE,
     0x9E6: EMPTY,
     0x9F6: EMPTY,
     
@@ -423,6 +462,7 @@ SOLTABLE = romaddr(8, 0x7EFA)
 COLTABLE = romaddr(8, 0x7EEA)
 MTTABLE = romaddr(8, 0x7F1A)
 TRANSITION_TABLE = romaddr(5, 0x42E5)
+OBJECT_TABLE = romaddr(3, 0x42E0)
 
 INITSAVE = romaddr(0x1, 0x4e64)
 
@@ -708,13 +748,41 @@ class Cell:
         self.tiles_addr = peek_u16(self.bank, idx*2)
         self.scroll_blockers = peek_u8(self.bank, 0x200 + idx)
         self.transition = peek_u16(self.bank, 0x300 + idx*2) & 0x1FF
+        self.objects_rom = romaddr(3, peek_u16(OBJECT_TABLE + 2*(idx + 0x100*(self.bank-9))))
         
         # TODO: what's in the upper 7 bits?
         
+        self.contents = []
+        self.has_save = False
         self.load_cell_collision_data()
+        
+        cloc = compressed_location(bank, x, y)
+        
+        if cloc in special_objects:
+            self.contents = copy.copy(special_objects[cloc])
+        else:
+            self.load_objects()
         
         if not null_transition(self.transition) or (bank, x, y) in exceptional_null_transitions:
             self.identify_plausible_exits()
+            
+    def load_objects(self):
+        addr = self.objects_rom
+        while True:
+            objn = peek_u8(addr)
+            if objn == 0xFF:
+                break
+            objt = peek_u8(addr + 1)
+            objx = peek_u8(addr + 2)
+            objy = peek_u8(addr + 3)
+            addr += 4
+            
+            if objt in object_names:
+                self.contents.append((
+                    object_names[objt],
+                    objn, objx, objy
+                ))
+                
             
     def print(self):
         print(f"Cell ({self.bank:x}:{self.x},{self.y}), {pretty_style(self.style)}:")
@@ -802,6 +870,9 @@ class Cell:
                         # TODO: maybe transpose?
                         t = peek_u8(mtrom + mt*4 + yi*2 + xi)
                         colt = peek_u8(colrom + t)
+                        
+                        if (colt & 0x80):
+                            self.has_save = True
                         
                         # t < 4: shot block
                         
@@ -1162,6 +1233,8 @@ def layout_to_json(layout: Table, path="met2.json"):
             "states": [],
             
             "doors": [],
+            
+            "features": [],
         }
         
         if room.name:
@@ -1173,10 +1246,16 @@ def layout_to_json(layout: Table, path="met2.json"):
             statebit = 1 << i
             embedding = [[0 for _ in range(x1-x0)] for _2 in range(y1-y0)]
             for (cx, cy) in r.cells:
+                cell = cells[(r.bank, cx, cy)]
                 mapx = cx + r.offset[0] 
                 mapy = cy + r.offset[1]
                 roomx = mapx - x0
                 roomy = mapy - y0
+                
+                if cell.has_save:
+                    jroom["features"].append(["save", None, roomx, roomy])
+                for feature in cell.contents:
+                    jroom["features"].append([feature[0], feature[1], roomx, roomy])
                 
                 tile = 1
                 cloc = compressed_location(r.bank, cx, cy)
