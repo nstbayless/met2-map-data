@@ -1325,7 +1325,14 @@
           "transitions": [25, 93]
         }
       ],
-      "features": [],
+      "features": [
+        [
+          "alpha",
+          64,
+          1,
+          0
+        ]
+      ],
       "name": "Flying Flittway"
     },
     {
@@ -2030,6 +2037,12 @@
         [
           "energy-recharge",
           15,
+          0,
+          0
+        ],
+        [
+          "alpha",
+          70,
           0,
           0
         ]
@@ -2776,6 +2789,12 @@
       ],
       "features": [
         [
+          "alpha",
+          69,
+          2,
+          0
+        ],
+        [
           "missile-tank",
           109,
           0,
@@ -3357,7 +3376,14 @@
           "transitions": [246, 271]
         }
       ],
-      "features": [],
+      "features": [
+        [
+          "alpha",
+          73,
+          0,
+          0
+        ]
+      ],
       "name": "Post-Spider Alpha"
     },
     {
@@ -3560,7 +3586,14 @@
           "transitions": [0]
         }
       ],
-      "features": []
+      "features": [
+        [
+          "alpha",
+          83,
+          1,
+          0
+        ]
+      ]
     },
     {
       "x": 6,
@@ -3921,6 +3954,12 @@
           "energy-recharge",
           15,
           0,
+          1
+        ],
+        [
+          "alpha",
+          64,
+          1,
           1
         ]
       ],
@@ -4347,7 +4386,14 @@
           "transitions": [446, 149]
         }
       ],
-      "features": []
+      "features": [
+        [
+          "alpha",
+          80,
+          1,
+          0
+        ]
+      ]
     },
     {
       "x": 54,
@@ -4377,7 +4423,14 @@
           "transitions": [448, 143]
         }
       ],
-      "features": []
+      "features": [
+        [
+          "alpha",
+          82,
+          1,
+          0
+        ]
+      ]
     },
     {
       "x": 50,
@@ -5498,7 +5551,14 @@
           "transitions": [447, 0]
         }
       ],
-      "features": []
+      "features": [
+        [
+          "alpha",
+          81,
+          0,
+          0
+        ]
+      ]
     },
     {
       "x": 15,
@@ -6270,7 +6330,14 @@
           "transitions": [441, 440]
         }
       ],
-      "features": [],
+      "features": [
+        [
+          "alpha",
+          67,
+          1,
+          0
+        ]
+      ],
       "name": "Entangled Alpha"
     },
     {
@@ -6359,7 +6426,14 @@
           "transitions": [453, 452]
         }
       ],
-      "features": []
+      "features": [
+        [
+          "alpha",
+          86,
+          2,
+          0
+        ]
+      ]
     },
     {
       "x": 10,
@@ -8801,7 +8875,14 @@
           "transitions": [0]
         }
       ],
-      "features": [],
+      "features": [
+        [
+          "alpha",
+          72,
+          0,
+          0
+        ]
+      ],
       "name": "Autom Alpha"
     },
     {

@@ -139,6 +139,9 @@ room_names = {
 }
 
 object_names = {
+    #0x75: "missile-block",
+    #0xf8: "missile-door",
+    
     0x80: "plasma",
     0x82: "ice",
     0x84: "wave",
@@ -158,6 +161,7 @@ object_names = {
     
     0xA0: "alpha",
     0xA3: "gamma",
+    0xA4: "alpha",
     0xA6: "egg",
     0xAD: "zeta",
     0xB3: "omega",
@@ -782,6 +786,8 @@ class Cell:
                     object_names[objt],
                     objn, objx, objy
                 ))
+            elif objn in range(0x40, 0x80):
+                print(f"unrecognized object: {objt:x}, {self.bank:x}:{self.x},{self.y}")
                 
             
     def print(self):
