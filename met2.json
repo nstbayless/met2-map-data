@@ -6,7 +6,7 @@
       "x1": 27,
       "y0": 0,
       "y1": 14,
-      "rooms": [0, 1, 2, 3, 4, 5, 7, 9, 11, 50, 56, 74]
+      "rooms": [0, 1, 2, 3, 4, 5, 7, 9, 11, 29, 35, 71]
     },
     {
       "name": "Upper Acid Caves",
@@ -14,7 +14,7 @@
       "x1": 44,
       "y0": 14,
       "y1": 33,
-      "rooms": [6, 10, 13, 14, 15, 17, 24, 29, 43, 57, 208, 209, 210, 211]
+      "rooms": [6, 10, 13, 14, 15, 17, 23, 28, 42, 55, 197, 198, 199, 200]
     },
     {
       "name": "Lower Chozo Temple",
@@ -22,7 +22,7 @@
       "x1": 60,
       "y0": 14,
       "y1": 19,
-      "rooms": [22, 27, 34, 51, 69, 70, 86, 87, 88, 113]
+      "rooms": [21, 26, 33, 50, 67, 68, 85, 86, 87, 111]
     },
     {
       "name": "Upper Chozo Temple",
@@ -30,7 +30,7 @@
       "x1": 65,
       "y0": 9,
       "y1": 16,
-      "rooms": [33, 64, 65, 66, 67, 68, 83, 84, 110, 111, 195, 197, 198, 202]
+      "rooms": [32, 62, 63, 64, 65, 66, 81, 83, 109, 110, 187, 188, 189, 192]
     },
     {
       "name": "Hydro Station",
@@ -38,7 +38,7 @@
       "x1": 35,
       "y0": 15,
       "y1": 25,
-      "rooms": [18, 23, 35, 37, 38, 39, 40, 41, 42, 52, 53, 54, 55, 71, 72, 89, 90, 91, 92, 93, 114, 115, 116, 117, 118, 133, 134, 135, 136, 150, 190, 199, 200, 203, 205]
+      "rooms": [18, 22, 34, 36, 37, 38, 39, 40, 41, 51, 52, 53, 54, 69, 70, 88, 89, 90, 91, 92, 112, 113, 114, 115, 116, 129, 130, 131, 132, 144, 182, 190, 191, 193, 195]
     },
     {
       "name": "Eastern Acid Caves",
@@ -46,7 +46,7 @@
       "x1": 53,
       "y0": 36,
       "y1": 44,
-      "rooms": [21, 31, 32, 46, 47, 60, 61, 77, 78, 206]
+      "rooms": [20, 30, 31, 45, 46, 58, 59, 75, 76, 196]
     },
     {
       "name": "Jungle",
@@ -54,7 +54,7 @@
       "x1": 64,
       "y0": 42,
       "y1": 54,
-      "rooms": [48, 62, 79, 80, 105, 130, 131, 146, 147, 155, 161, 165, 169]
+      "rooms": [47, 60, 77, 78, 104, 126, 127, 140, 141, 148, 154, 158, 162]
     },
     {
       "name": "Weapons Facility",
@@ -62,7 +62,7 @@
       "x1": 72,
       "y0": 34,
       "y1": 43,
-      "rooms": [49, 63, 81, 106, 107, 108, 109, 132, 148, 149, 156, 157, 162, 163, 166, 170, 174, 188, 189]
+      "rooms": [48, 61, 79, 105, 106, 107, 108, 128, 142, 143, 149, 150, 155, 156, 159, 163, 167, 180, 181]
     },
     {
       "name": "Lower Acid Caves",
@@ -70,15 +70,15 @@
       "x1": 33,
       "y0": 40,
       "y1": 54,
-      "rooms": [25, 44, 45, 59, 76, 104, 125, 128, 141, 142, 144, 152, 153, 158, 159, 160, 194, 204]
+      "rooms": [24, 43, 44, 57, 74, 103, 123, 125, 137, 138, 139, 146, 147, 151, 152, 153, 185, 194]
     },
     {
-      "name": "Beam Tower",
+      "name": "Tower",
       "x0": 11,
       "x1": 28,
       "y0": 26,
       "y1": 42,
-      "rooms": [58, 75, 94, 95, 97, 98, 99, 100, 101, 102, 103, 119, 120, 121, 122, 123, 124, 137, 138, 139, 140, 196]
+      "rooms": [56, 73, 93, 94, 96, 97, 98, 99, 100, 101, 102, 117, 118, 119, 120, 121, 122, 133, 134, 135, 136, 186]
     },
     {
       "name": "Omega Environment",
@@ -86,7 +86,7 @@
       "x1": 19,
       "y0": 37,
       "y1": 49,
-      "rooms": [164, 168, 172, 173, 176, 177, 180, 181, 183, 184, 186, 192]
+      "rooms": [157, 161, 165, 166, 169, 170, 172, 173, 175, 176, 178, 184]
     },
     {
       "name": "Metroid Nest",
@@ -94,7 +94,7 @@
       "x1": 11,
       "y0": 14,
       "y1": 34,
-      "rooms": [19, 20, 26, 28, 30, 36, 73, 82, 85, 96, 112, 126, 127, 151, 167, 171, 175, 178, 182, 185, 187, 191]
+      "rooms": [8, 12, 16, 19, 25, 27, 49, 72, 80, 82, 84, 95, 124, 145, 160, 164, 168, 171, 174, 177, 179, 183]
     }
   ],
   "rooms": [
@@ -174,18 +174,20 @@
         }
       ],
       "features": [
-        [
-          "ship",
-          null,
-          7,
-          5
-        ],
-        [
-          "egg",
-          66,
-          1,
-          10
-        ]
+        {
+          "type": "ship",
+          "slot": null,
+          "state": 0,
+          "x": 7,
+          "y": 5
+        },
+        {
+          "type": "egg",
+          "slot": 66,
+          "state": 1,
+          "x": 1,
+          "y": 10
+        }
       ],
       "name": "Landing Site"
     },
@@ -225,7 +227,6 @@
           "transitions": [83, 82]
         }
       ],
-      "features": [],
       "name": "Surface Corridor"
     },
     {
@@ -264,7 +265,6 @@
           "transitions": [176, 84]
         }
       ],
-      "features": [],
       "name": "Morph Tutorial"
     },
     {
@@ -307,7 +307,6 @@
           "transitions": [73, 186]
         }
       ],
-      "features": [],
       "name": "Aim-Down Tutorial"
     },
     {
@@ -356,12 +355,11 @@
         }
       ],
       "features": [
-        [
-          "save",
-          null,
-          2,
-          0
-        ]
+        {
+          "type": "save",
+          "x": 2,
+          "y": 0
+        }
       ],
       "name": "First Save"
     },
@@ -400,8 +398,7 @@
           "exit_states": 1,
           "transitions": [192, 72]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 31,
@@ -440,7 +437,6 @@
           "transitions": [33, 86]
         }
       ],
-      "features": [],
       "name": "Wading Pool"
     },
     {
@@ -484,619 +480,7 @@
           "exit_states": 1,
           "transitions": [78, 201]
         }
-      ],
-      "features": []
-    },
-    {
-      "x": 6,
-      "y": 16,
-      "w": 1,
-      "h": 1,
-      "cells": [
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 15,
-          "x": 9,
-          "y": 10,
-          "cells": [
-            [1]
-          ]
-        },
-        {
-          "bank": 15,
-          "x": 14,
-          "y": 15,
-          "cells": [
-            [1]
-          ]
-        },
-        {
-          "bank": 15,
-          "x": 15,
-          "y": 15,
-          "cells": [
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 3,
-          "transitions": [491, 492, 414],
-          "to-area": 0
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 6,
-          "exit_states": 0,
-          "transitions": [315]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 0,
-          "exit_states": 6,
-          "transitions": [414, 384]
-        }
-      ],
-      "features": [
-        [
-          "queen",
-          null,
-          0,
-          0
-        ]
       ]
-    },
-    {
-      "x": 16,
-      "y": 13,
-      "w": 4,
-      "h": 1,
-      "cells": [
-        [1, 1, 1, 1]
-      ],
-      "states": [
-        {
-          "bank": 15,
-          "x": 2,
-          "y": 1,
-          "cells": [
-            [1, 1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 3,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [201, 78]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [487, 463]
-        }
-      ],
-      "features": [],
-      "name": "Shallow Slime"
-    },
-    {
-      "x": 35,
-      "y": 16,
-      "w": 1,
-      "h": 2,
-      "cells": [
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 1,
-          "y": 10,
-          "cells": [
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [39, 209]
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [37, 217]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 14,
-      "y": 13,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 15,
-          "x": 0,
-          "y": 1,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [463, 487]
-        }
-      ],
-      "features": [
-        [
-          "alpha",
-          65,
-          0,
-          0
-        ],
-        [
-          "energy-recharge",
-          14,
-          0,
-          0
-        ],
-        [
-          "missile-recharge",
-          15,
-          0,
-          0
-        ]
-      ],
-      "name": "First Alpha"
-    },
-    {
-      "x": 8,
-      "y": 0,
-      "w": 10,
-      "h": 11,
-      "cells": [
-        [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-        [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
-        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
-        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
-        [0, 0, 0, 1, 0, 0, 0, 1, 1, 1],
-        [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
-        [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
-        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
-        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
-      ],
-      "states": [
-        {
-          "bank": 15,
-          "x": 6,
-          "y": 0,
-          "cells": [
-            [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-            [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
-            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
-            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
-            [0, 0, 0, 1, 0, 0, 0, 1, 1, 1],
-            [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
-            [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
-            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
-            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
-          ]
-        },
-        {
-          "bank": 14,
-          "x": 0,
-          "y": -8,
-          "cells": [
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 1, 1, 0, 0, 0, 0, 0, 0, 0]
-          ]
-        },
-        {
-          "bank": 15,
-          "x": -2,
-          "y": 2,
-          "cells": [
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
-            [0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
-            [0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 2,
-          "y": 10,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [492, 414, 491],
-          "to-area": 11
-        },
-        {
-          "x": 1,
-          "y": 10,
-          "dir": 8,
-          "entrance_states": 2,
-          "exit_states": 2,
-          "transitions": [255, 322]
-        },
-        {
-          "x": 2,
-          "y": 10,
-          "dir": 8,
-          "entrance_states": 2,
-          "exit_states": 2,
-          "transitions": [354, 353]
-        },
-        {
-          "x": 9,
-          "y": 5,
-          "dir": 1,
-          "entrance_states": 4,
-          "exit_states": 4,
-          "transitions": [214, 479]
-        }
-      ],
-      "features": [
-        [
-          "egg",
-          66,
-          1,
-          10
-        ],
-        [
-          "ship",
-          null,
-          7,
-          5
-        ]
-      ]
-    },
-    {
-      "x": 38,
-      "y": 21,
-      "w": 2,
-      "h": 3,
-      "cells": [
-        [1, 1],
-        [1, 1],
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 10,
-          "x": 2,
-          "y": 2,
-          "cells": [
-            [1, 1],
-            [1, 1],
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [34, 42]
-        },
-        {
-          "x": 1,
-          "y": 2,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [35, 435]
-        },
-        {
-          "x": 0,
-          "y": 2,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [159, 45]
-        }
-      ],
-      "features": [],
-      "name": "No Diving Zone"
-    },
-    {
-      "x": 40,
-      "y": 17,
-      "w": 3,
-      "h": 1,
-      "cells": [
-        [1, 1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 3,
-          "y": 1,
-          "cells": [
-            [1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [38, 420]
-        },
-        {
-          "x": 2,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [233, 88]
-        }
-      ],
-      "features": [],
-      "name": "Acid Pancakes"
-    },
-    {
-      "x": 37,
-      "y": 20,
-      "w": 1,
-      "h": 4,
-      "cells": [
-        [1],
-        [1],
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 5,
-          "y": 5,
-          "cells": [
-            [1],
-            [1],
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 3,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [45, 159]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [94, 128],
-          "to-area": 4
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 6,
-      "y": 16,
-      "w": 1,
-      "h": 1,
-      "cells": [
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 15,
-          "x": 15,
-          "y": 15,
-          "cells": [
-            [1]
-          ]
-        },
-        {
-          "bank": 15,
-          "x": 9,
-          "y": 10,
-          "cells": [
-            [1]
-          ]
-        },
-        {
-          "bank": 15,
-          "x": 14,
-          "y": 15,
-          "cells": [
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 5,
-          "exit_states": 0,
-          "transitions": [315]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 0,
-          "exit_states": 5,
-          "transitions": [384, 414]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 2,
-          "exit_states": 6,
-          "transitions": [491, 492, 414],
-          "to-area": 0
-        }
-      ],
-      "features": [
-        [
-          "queen",
-          null,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 43,
-      "y": 15,
-      "w": 1,
-      "h": 3,
-      "cells": [
-        [1],
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 1,
-          "y": 12,
-          "cells": [
-            [1],
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 2,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [88, 233]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [87, 222],
-          "to-area": 2
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 33,
-      "y": 20,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 4,
-          "y": 2,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [128, 94],
-          "to-area": 1
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [421, 422]
-        }
-      ],
-      "features": [],
-      "name": "Septogg Sandpits"
     },
     {
       "x": 6,
@@ -1160,13 +544,145 @@
         }
       ],
       "features": [
-        [
-          "queen",
-          null,
-          0,
-          0
-        ]
+        {
+          "type": "queen",
+          "slot": null,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "name": "Queen Fight"
+    },
+    {
+      "x": 16,
+      "y": 13,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 2,
+          "y": 1,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [201, 78]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [487, 463]
+        }
+      ],
+      "name": "Shallow Slime"
+    },
+    {
+      "x": 35,
+      "y": 16,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 1,
+          "y": 10,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [39, 209]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [37, 217]
+        }
       ]
+    },
+    {
+      "x": 14,
+      "y": 13,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 0,
+          "y": 1,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [463, 487]
+        }
+      ],
+      "features": [
+        {
+          "type": "alpha",
+          "slot": 65,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "energy-recharge",
+          "slot": 14,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "missile-recharge",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "name": "First Alpha"
     },
     {
       "x": 4,
@@ -1204,65 +720,26 @@
           "transitions": [315]
         }
       ],
-      "features": [],
       "name": "Throne Room"
     },
     {
-      "x": 49,
-      "y": 40,
-      "w": 1,
-      "h": 2,
-      "cells": [
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 4,
-          "y": 0,
-          "cells": [
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [54, 162],
-          "to-area": 1
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [330, 427]
-        }
-      ],
-      "features": [],
-      "name": "East Caves Entrance"
-    },
-    {
-      "x": 46,
-      "y": 15,
+      "x": 38,
+      "y": 21,
       "w": 2,
-      "h": 1,
+      "h": 3,
       "cells": [
+        [1, 1],
+        [1, 1],
         [1, 1]
       ],
       "states": [
         {
-          "bank": 11,
-          "x": 1,
-          "y": 1,
+          "bank": 10,
+          "x": 2,
+          "y": 2,
           "cells": [
+            [1, 1],
+            [1, 1],
             [1, 1]
           ]
         }
@@ -1271,27 +748,33 @@
         {
           "x": 0,
           "y": 0,
-          "dir": 2,
+          "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [222, 87],
-          "to-area": 1
+          "transitions": [34, 42]
         },
         {
           "x": 1,
-          "y": 0,
+          "y": 2,
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [170, 419]
+          "transitions": [35, 435]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [159, 45]
         }
       ],
-      "features": [],
-      "name": "Temple Access"
+      "name": "No Diving Zone"
     },
     {
-      "x": 30,
-      "y": 20,
+      "x": 40,
+      "y": 17,
       "w": 3,
       "h": 1,
       "cells": [
@@ -1300,8 +783,8 @@
       "states": [
         {
           "bank": 11,
-          "x": 1,
-          "y": 2,
+          "x": 3,
+          "y": 1,
           "cells": [
             [1, 1, 1]
           ]
@@ -1309,98 +792,56 @@
       ],
       "doors": [
         {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [38, 420]
+        },
+        {
           "x": 2,
           "y": 0,
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [422, 421]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [25, 93]
+          "transitions": [233, 88]
         }
       ],
-      "features": [
-        [
-          "alpha",
-          64,
-          1,
-          0
-        ]
-      ],
-      "name": "Flying Flittway"
+      "name": "Acid Pancakes"
     },
     {
-      "x": 31,
-      "y": 28,
-      "w": 7,
-      "h": 1,
+      "x": 37,
+      "y": 20,
+      "w": 1,
+      "h": 4,
       "cells": [
-        [1, 1, 1, 1, 1, 1, 1]
+        [1],
+        [1],
+        [1],
+        [1]
       ],
       "states": [
         {
-          "bank": 11,
-          "x": 9,
-          "y": 15,
-          "cells": [
-            [1, 1, 1, 1, 1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 6,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [393, 59, 102]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [429, 436]
-        }
-      ],
-      "features": [],
-      "name": "Lower Octroll Alley"
-    },
-    {
-      "x": 29,
-      "y": 44,
-      "w": 4,
-      "h": 1,
-      "cells": [
-        [1, 1, 1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 1,
+          "bank": 12,
+          "x": 5,
           "y": 5,
           "cells": [
-            [1, 1, 1, 1]
+            [1],
+            [1],
+            [1],
+            [1]
           ]
         }
       ],
       "doors": [
         {
-          "x": 3,
-          "y": 0,
+          "x": 0,
+          "y": 3,
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [397, 75, 110],
-          "to-area": 1
+          "transitions": [45, 159]
         },
         {
           "x": 0,
@@ -1408,10 +849,10 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [53, 109]
+          "transitions": [94, 128],
+          "to-area": 4
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 3,
@@ -1452,18 +893,414 @@
         }
       ],
       "features": [
-        [
-          "larva",
-          64,
-          0,
-          1
-        ],
-        [
-          "larva",
-          71,
-          0,
-          0
-        ]
+        {
+          "type": "larva",
+          "slot": 64,
+          "state": 0,
+          "x": 0,
+          "y": 1
+        },
+        {
+          "type": "larva",
+          "slot": 71,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 43,
+      "y": 15,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 1,
+          "y": 12,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [88, 233]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [87, 222],
+          "to-area": 2
+        }
+      ]
+    },
+    {
+      "x": 33,
+      "y": 20,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 4,
+          "y": 2,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [128, 94],
+          "to-area": 1
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [421, 422]
+        }
+      ],
+      "name": "Septogg Sandpits"
+    },
+    {
+      "x": 4,
+      "y": 14,
+      "w": 5,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 1,
+          "y": 0,
+          "cells": [
+            [1, 1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 4,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [250, 310]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [243, 309]
+        }
+      ],
+      "features": [
+        {
+          "type": "larva",
+          "slot": 65,
+          "state": 0,
+          "x": 2,
+          "y": 0
+        },
+        {
+          "type": "larva",
+          "slot": 66,
+          "state": 0,
+          "x": 4,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 49,
+      "y": 40,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 4,
+          "y": 0,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [54, 162],
+          "to-area": 1
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [330, 427]
+        }
+      ],
+      "name": "East Caves Entrance"
+    },
+    {
+      "x": 46,
+      "y": 15,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 1,
+          "y": 1,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [222, 87],
+          "to-area": 1
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [170, 419]
+        }
+      ],
+      "name": "Temple Access"
+    },
+    {
+      "x": 30,
+      "y": 20,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 1,
+          "y": 2,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [422, 421]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [25, 93]
+        }
+      ],
+      "features": [
+        {
+          "type": "alpha",
+          "slot": 64,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
+      ],
+      "name": "Flying Flittway"
+    },
+    {
+      "x": 31,
+      "y": 28,
+      "w": 7,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 9,
+          "y": 15,
+          "cells": [
+            [1, 1, 1, 1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 6,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [393, 59, 102]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [429, 436]
+        }
+      ],
+      "name": "Lower Octroll Alley"
+    },
+    {
+      "x": 29,
+      "y": 44,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 1,
+          "y": 5,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [397, 75, 110],
+          "to-area": 1
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [53, 109]
+        }
+      ]
+    },
+    {
+      "x": 9,
+      "y": 14,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 3,
+          "y": 1,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [310, 250]
+        }
+      ],
+      "features": [
+        {
+          "type": "larva",
+          "slot": 65,
+          "state": 0,
+          "x": 0,
+          "y": 1
+        },
+        {
+          "type": "larva",
+          "slot": 66,
+          "state": 0,
+          "x": 0,
+          "y": 2
+        }
       ]
     },
     {
@@ -1514,58 +1351,55 @@
           "transitions": [89, 160],
           "to-area": 3
         }
-      ],
-      "features": []
+      ]
     },
     {
-      "x": 4,
-      "y": 14,
-      "w": 5,
-      "h": 1,
+      "x": 8,
+      "y": 16,
+      "w": 1,
+      "h": 2,
       "cells": [
-        [1, 1, 1, 1, 1]
+        [1],
+        [1]
       ],
       "states": [
         {
-          "bank": 14,
-          "x": 1,
-          "y": 0,
+          "bank": 13,
+          "x": 2,
+          "y": 3,
           "cells": [
-            [1, 1, 1, 1, 1]
+            [1],
+            [1]
           ]
         }
       ],
       "doors": [
         {
-          "x": 4,
-          "y": 0,
-          "dir": 1,
+          "x": 0,
+          "y": 1,
+          "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [250, 310]
+          "transitions": [326, 267],
+          "to-area": 0
         },
         {
           "x": 0,
           "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
+          "dir": 1,
+          "entrance_states": 0,
           "exit_states": 1,
-          "transitions": [243, 309]
+          "transitions": [0]
         }
       ],
       "features": [
-        [
-          "larva",
-          65,
-          2,
-          0
-        ],
-        [
-          "larva",
-          66,
-          4,
-          0
-        ]
+        {
+          "type": "larva",
+          "slot": 67,
+          "state": 0,
+          "x": 0,
+          "y": 1
+        }
       ]
     },
     {
@@ -1608,62 +1442,53 @@
           "transitions": [46, 191]
         }
       ],
-      "features": [],
       "name": "Octroll Alley Shaft"
     },
     {
-      "x": 9,
-      "y": 14,
-      "w": 1,
-      "h": 3,
+      "x": 10,
+      "y": 11,
+      "w": 3,
+      "h": 1,
       "cells": [
-        [1],
-        [1],
-        [1]
+        [1, 1, 1]
       ],
       "states": [
         {
-          "bank": 13,
-          "x": 3,
-          "y": 1,
+          "bank": 14,
+          "x": 2,
+          "y": 3,
           "cells": [
-            [1],
-            [1],
-            [1]
+            [1, 1, 1]
           ]
         }
       ],
       "doors": [
         {
           "x": 0,
-          "y": 2,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 0,
-          "transitions": [0]
-        },
-        {
-          "x": 0,
           "y": 0,
-          "dir": 2,
+          "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [310, 250]
+          "transitions": [353, 354]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [267, 326],
+          "to-area": 11
         }
       ],
       "features": [
-        [
-          "larva",
-          65,
-          0,
-          1
-        ],
-        [
-          "larva",
-          66,
-          0,
-          2
-        ]
+        {
+          "type": "larva",
+          "slot": 68,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ]
     },
     {
@@ -1721,7 +1546,6 @@
           "transitions": [135, 206]
         }
       ],
-      "features": [],
       "name": "Acid Dive Main Climb"
     },
     {
@@ -1785,8 +1609,7 @@
           "transitions": [95, 163],
           "to-area": 7
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 50,
@@ -1824,8 +1647,7 @@
           "exit_states": 1,
           "transitions": [32, 90]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 49,
@@ -1864,12 +1686,13 @@
         }
       ],
       "features": [
-        [
-          "energy-recharge",
-          15,
-          2,
-          0
-        ]
+        {
+          "type": "energy-recharge",
+          "slot": 15,
+          "state": 0,
+          "x": 2,
+          "y": 0
+        }
       ],
       "name": "Cullugg Pillar Room"
     },
@@ -1910,897 +1733,13 @@
         }
       ],
       "features": [
-        [
-          "save",
-          null,
-          1,
-          0
-        ]
+        {
+          "type": "save",
+          "x": 1,
+          "y": 0
+        }
       ],
       "name": "Hydro Save East"
-    },
-    {
-      "x": 8,
-      "y": 16,
-      "w": 1,
-      "h": 2,
-      "cells": [
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 2,
-          "y": 3,
-          "cells": [
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [326, 267],
-          "to-area": 0
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 0,
-          "exit_states": 1,
-          "transitions": [0]
-        }
-      ],
-      "features": [
-        [
-          "larva",
-          67,
-          0,
-          1
-        ]
-      ]
-    },
-    {
-      "x": 24,
-      "y": 17,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 1,
-          "y": 12,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [22, 261]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [291, 327]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 19,
-      "y": 16,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 4,
-          "y": 0,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [20, 409]
-        }
-      ],
-      "features": [
-        [
-          "energy-recharge",
-          15,
-          0,
-          0
-        ],
-        [
-          "alpha",
-          70,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 17,
-      "y": 18,
-      "w": 1,
-      "h": 5,
-      "cells": [
-        [1],
-        [1],
-        [1],
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 2,
-          "y": 10,
-          "cells": [
-            [1],
-            [1],
-            [1],
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [16, 210]
-        },
-        {
-          "x": 0,
-          "y": 2,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [17, 223]
-        },
-        {
-          "x": 0,
-          "y": 4,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [153, 234]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 21,
-      "y": 20,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 1,
-          "y": 5,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [18, 258]
-        },
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [430, 344]
-        }
-      ],
-      "features": [
-        [
-          "save",
-          null,
-          0,
-          0
-        ]
-      ],
-      "name": "Hydro Save West"
-    },
-    {
-      "x": 21,
-      "y": 21,
-      "w": 1,
-      "h": 2,
-      "cells": [
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 0,
-          "y": 8,
-          "cells": [
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [19, 259]
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [287, 288]
-        }
-      ],
-      "features": [
-        [
-          "missile-tank",
-          120,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 23,
-      "y": 18,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 5,
-          "y": 7,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [21, 260]
-        },
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [284, 283]
-        }
-      ],
-      "features": [
-        [
-          "alpha",
-          68,
-          1,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 31,
-      "y": 26,
-      "w": 4,
-      "h": 1,
-      "cells": [
-        [1, 1, 1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 0,
-          "y": 4,
-          "cells": [
-            [1, 1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [191, 46]
-        },
-        {
-          "x": 3,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [426, 496]
-        }
-      ],
-      "features": [],
-      "name": "Upper Octroll Alley"
-    },
-    {
-      "x": 26,
-      "y": 40,
-      "w": 1,
-      "h": 4,
-      "cells": [
-        [1],
-        [1],
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 10,
-          "y": 0,
-          "cells": [
-            [1],
-            [1],
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 3,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [47, 184]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [113, 166],
-          "to-area": 9
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 25,
-      "y": 47,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 11,
-          "y": 9,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [60, 139]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [213, 138]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 42,
-      "y": 38,
-      "w": 1,
-      "h": 3,
-      "cells": [
-        [1],
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 4,
-          "y": 5,
-          "cells": [
-            [1],
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 2,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [177, 136]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [155, 120]
-        }
-      ],
-      "features": [],
-      "name": "Acid Dive Left Climb"
-    },
-    {
-      "x": 44,
-      "y": 36,
-      "w": 1,
-      "h": 3,
-      "cells": [
-        [1],
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 6,
-          "y": 4,
-          "cells": [
-            [1],
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 2,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [206, 135]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [156, 119]
-        }
-      ],
-      "features": [],
-      "name": "Acid Dive Right Climb"
-    },
-    {
-      "x": 55,
-      "y": 42,
-      "w": 3,
-      "h": 1,
-      "cells": [
-        [1, 1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 12,
-          "y": 12,
-          "cells": [
-            [1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [333, 334],
-          "to-area": 5
-        },
-        {
-          "x": 2,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [211, 134]
-        }
-      ],
-      "features": [
-        [
-          "save",
-          null,
-          2,
-          0
-        ]
-      ],
-      "name": "Jungle Save"
-    },
-    {
-      "x": 55,
-      "y": 37,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 6,
-          "y": 2,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [163, 95],
-          "to-area": 5
-        },
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [424, 423]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 10,
-      "y": 11,
-      "w": 3,
-      "h": 1,
-      "cells": [
-        [1, 1, 1]
-      ],
-      "states": [
-        {
-          "bank": 14,
-          "x": 2,
-          "y": 3,
-          "cells": [
-            [1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [353, 354]
-        },
-        {
-          "x": 2,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [267, 326],
-          "to-area": 11
-        }
-      ],
-      "features": [
-        [
-          "larva",
-          68,
-          1,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 54,
-      "y": 16,
-      "w": 1,
-      "h": 2,
-      "cells": [
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 9,
-          "y": 10,
-          "cells": [
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [92, 144]
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [0]
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [0]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 23,
-      "y": 20,
-      "w": 3,
-      "h": 1,
-      "cells": [
-        [1, 1, 1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 3,
-          "y": 5,
-          "cells": [
-            [1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 2,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [345, 323]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [344, 430]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 23,
-      "y": 17,
-      "w": 1,
-      "h": 1,
-      "cells": [
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 0,
-          "y": 12,
-          "cells": [
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [327, 291]
-        }
-      ],
-      "features": [
-        [
-          "spring-ball",
-          112,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 18,
-      "y": 22,
-      "w": 1,
-      "h": 2,
-      "cells": [
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 11,
-          "y": 12,
-          "cells": [
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [234, 153]
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [152, 151]
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [195, 151]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 22,
-      "y": 22,
-      "w": 3,
-      "h": 1,
-      "cells": [
-        [1, 1, 1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 1,
-          "y": 9,
-          "cells": [
-            [1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [288, 287]
-        },
-        {
-          "x": 2,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [285, 286]
-        }
-      ],
-      "features": [
-        [
-          "alpha",
-          69,
-          2,
-          0
-        ],
-        [
-          "missile-tank",
-          109,
-          0,
-          0
-        ]
-      ]
     },
     {
       "x": 8,
@@ -2886,12 +1825,843 @@
         }
       ],
       "features": [
-        [
-          "egg",
-          66,
-          1,
-          10
-        ]
+        {
+          "type": "egg",
+          "slot": 66,
+          "state": 1,
+          "x": 1,
+          "y": 10
+        }
+      ]
+    },
+    {
+      "x": 24,
+      "y": 17,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 1,
+          "y": 12,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [22, 261]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [291, 327]
+        }
+      ]
+    },
+    {
+      "x": 19,
+      "y": 16,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 4,
+          "y": 0,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [20, 409]
+        }
+      ],
+      "features": [
+        {
+          "type": "energy-recharge",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "alpha",
+          "slot": 70,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 17,
+      "y": 18,
+      "w": 1,
+      "h": 5,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 2,
+          "y": 10,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [16, 210]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [17, 223]
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [153, 234]
+        }
+      ]
+    },
+    {
+      "x": 21,
+      "y": 20,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 1,
+          "y": 5,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [18, 258]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [430, 344]
+        }
+      ],
+      "features": [
+        {
+          "type": "save",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "name": "Hydro Save West"
+    },
+    {
+      "x": 21,
+      "y": 21,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 0,
+          "y": 8,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [19, 259]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [287, 288]
+        }
+      ],
+      "features": [
+        {
+          "type": "missile-tank",
+          "slot": 120,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 23,
+      "y": 18,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 5,
+          "y": 7,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [21, 260]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [284, 283]
+        }
+      ],
+      "features": [
+        {
+          "type": "alpha",
+          "slot": 68,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 31,
+      "y": 26,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 0,
+          "y": 4,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [191, 46]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [426, 496]
+        }
+      ],
+      "name": "Upper Octroll Alley"
+    },
+    {
+      "x": 26,
+      "y": 40,
+      "w": 1,
+      "h": 4,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 10,
+          "y": 0,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [47, 184]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [113, 166],
+          "to-area": 9
+        }
+      ]
+    },
+    {
+      "x": 25,
+      "y": 47,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 11,
+          "y": 9,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [60, 139]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [213, 138]
+        }
+      ]
+    },
+    {
+      "x": 42,
+      "y": 38,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 4,
+          "y": 5,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [177, 136]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [155, 120]
+        }
+      ],
+      "name": "Acid Dive Left Climb"
+    },
+    {
+      "x": 44,
+      "y": 36,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 6,
+          "y": 4,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [206, 135]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [156, 119]
+        }
+      ],
+      "name": "Acid Dive Right Climb"
+    },
+    {
+      "x": 55,
+      "y": 42,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 12,
+          "y": 12,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [333, 334],
+          "to-area": 5
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [211, 134]
+        }
+      ],
+      "features": [
+        {
+          "type": "save",
+          "x": 2,
+          "y": 0
+        }
+      ],
+      "name": "Jungle Save"
+    },
+    {
+      "x": 55,
+      "y": 37,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 6,
+          "y": 2,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [163, 95],
+          "to-area": 5
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [424, 423]
+        }
+      ]
+    },
+    {
+      "x": 6,
+      "y": 17,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 1,
+          "y": 13,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [359, 465]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [414, 384]
+        }
+      ],
+      "features": [
+        {
+          "type": "ice",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "name": "Queen's Retreat"
+    },
+    {
+      "x": 54,
+      "y": 16,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 9,
+          "y": 10,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [92, 144]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 23,
+      "y": 20,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 3,
+          "y": 5,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [345, 323]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [344, 430]
+        }
+      ]
+    },
+    {
+      "x": 23,
+      "y": 17,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 0,
+          "y": 12,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [327, 291]
+        }
+      ],
+      "features": [
+        {
+          "type": "spring-ball",
+          "slot": 112,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 22,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 11,
+          "y": 12,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [234, 153]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [152, 151]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [195, 151]
+        }
+      ]
+    },
+    {
+      "x": 22,
+      "y": 22,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 1,
+          "y": 9,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [288, 287]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [285, 286]
+        }
+      ],
+      "features": [
+        {
+          "type": "alpha",
+          "slot": 69,
+          "state": 0,
+          "x": 2,
+          "y": 0
+        },
+        {
+          "type": "missile-tank",
+          "slot": 109,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -2923,12 +2693,13 @@
         }
       ],
       "features": [
-        [
-          "gamma",
-          69,
-          1,
-          0
-        ]
+        {
+          "type": "gamma",
+          "slot": 69,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ]
     },
     {
@@ -2969,12 +2740,13 @@
         }
       ],
       "features": [
-        [
-          "gamma",
-          71,
-          0,
-          0
-        ]
+        {
+          "type": "gamma",
+          "slot": 71,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -3020,8 +2792,7 @@
           "exit_states": 1,
           "transitions": [62, 193]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 38,
@@ -3058,8 +2829,7 @@
           "exit_states": 1,
           "transitions": [36, 154]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 45,
@@ -3097,7 +2867,6 @@
           "transitions": [41, 157]
         }
       ],
-      "features": [],
       "name": "Vanishing Flittway"
     },
     {
@@ -3160,7 +2929,6 @@
           "transitions": [97]
         }
       ],
-      "features": [],
       "name": "Jungle Entrance"
     },
     {
@@ -3198,8 +2966,7 @@
           "exit_states": 1,
           "transitions": [28, 96]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 55,
@@ -3250,12 +3017,11 @@
         }
       ],
       "features": [
-        [
-          "save",
-          null,
-          0,
-          0
-        ]
+        {
+          "type": "save",
+          "x": 0,
+          "y": 0
+        }
       ],
       "name": "Temple Save"
     },
@@ -3288,18 +3054,20 @@
         }
       ],
       "features": [
-        [
-          "missile-tank",
-          97,
-          2,
-          0
-        ],
-        [
-          "missile-tank",
-          96,
-          0,
-          0
-        ]
+        {
+          "type": "missile-tank",
+          "slot": 97,
+          "state": 0,
+          "x": 2,
+          "y": 0
+        },
+        {
+          "type": "missile-tank",
+          "slot": 96,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -3339,14 +3107,29 @@
         },
         {
           "x": 0,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
           "y": 4,
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
           "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 63,
@@ -3377,12 +3160,13 @@
         }
       ],
       "features": [
-        [
-          "alpha",
-          73,
-          0,
-          0
-        ]
+        {
+          "type": "alpha",
+          "slot": 73,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ],
       "name": "Post-Spider Alpha"
     },
@@ -3422,7 +3206,6 @@
           "transitions": [161, 141]
         }
       ],
-      "features": [],
       "name": "Spider Access"
     },
     {
@@ -3461,7 +3244,6 @@
           "transitions": [149, 446]
         }
       ],
-      "features": [],
       "name": "Pancake Room"
     },
     {
@@ -3509,8 +3291,7 @@
           "exit_states": 1,
           "transitions": [143, 448]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 19,
@@ -3547,8 +3328,7 @@
           "exit_states": 1,
           "transitions": [425, 205]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 15,
@@ -3587,59 +3367,14 @@
         }
       ],
       "features": [
-        [
-          "alpha",
-          83,
-          1,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 6,
-      "y": 17,
-      "w": 1,
-      "h": 1,
-      "cells": [
-        [1]
-      ],
-      "states": [
         {
-          "bank": 14,
+          "type": "alpha",
+          "slot": 83,
+          "state": 0,
           "x": 1,
-          "y": 13,
-          "cells": [
-            [1]
-          ]
+          "y": 0
         }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [359, 465]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 0,
-          "transitions": [414, 384]
-        }
-      ],
-      "features": [
-        [
-          "ice",
-          15,
-          0,
-          0
-        ]
-      ],
-      "name": "Queen's Retreat"
+      ]
     },
     {
       "x": 9,
@@ -3680,8 +3415,53 @@
           "transitions": [322, 255]
         }
       ],
-      "features": [],
       "name": "Egg Viewing Shaft"
+    },
+    {
+      "x": 7,
+      "y": 19,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 3,
+          "y": 13,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [382, 462]
+        }
+      ],
+      "features": [
+        {
+          "type": "energy-recharge",
+          "slot": 14,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "missile-recharge",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "name": "Queen Recharge Room"
     },
     {
       "x": 17,
@@ -3842,42 +3622,48 @@
         }
       ],
       "features": [
-        [
-          "missile-recharge",
-          15,
-          3,
-          7
-        ],
-        [
-          "energy-tank",
-          96,
-          2,
-          2
-        ],
-        [
-          "missile-tank",
-          101,
-          1,
-          0
-        ],
-        [
-          "missile-tank",
-          97,
-          4,
-          8
-        ],
-        [
-          "missile-tank",
-          99,
-          3,
-          15
-        ],
-        [
-          "energy-tank",
-          103,
-          2,
-          0
-        ]
+        {
+          "type": "missile-recharge",
+          "slot": 15,
+          "state": 0,
+          "x": 3,
+          "y": 7
+        },
+        {
+          "type": "energy-tank",
+          "slot": 96,
+          "state": 0,
+          "x": 2,
+          "y": 2
+        },
+        {
+          "type": "missile-tank",
+          "slot": 101,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        },
+        {
+          "type": "missile-tank",
+          "slot": 97,
+          "state": 0,
+          "x": 4,
+          "y": 8
+        },
+        {
+          "type": "missile-tank",
+          "slot": 99,
+          "state": 0,
+          "x": 3,
+          "y": 15
+        },
+        {
+          "type": "energy-tank",
+          "slot": 103,
+          "state": 0,
+          "x": 2,
+          "y": 0
+        }
       ],
       "name": "Tower Exterior"
     },
@@ -3916,8 +3702,7 @@
           "exit_states": 1,
           "transitions": [77, 63]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 36,
@@ -3950,18 +3735,20 @@
         }
       ],
       "features": [
-        [
-          "energy-recharge",
-          15,
-          0,
-          1
-        ],
-        [
-          "alpha",
-          64,
-          1,
-          1
-        ]
+        {
+          "type": "energy-recharge",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 1
+        },
+        {
+          "type": "alpha",
+          "slot": 64,
+          "state": 0,
+          "x": 1,
+          "y": 1
+        }
       ],
       "name": "Acid Alpha"
     },
@@ -3996,18 +3783,20 @@
         }
       ],
       "features": [
-        [
-          "gamma",
-          65,
-          0,
-          1
-        ],
-        [
-          "missile-recharge",
-          15,
-          1,
-          1
-        ]
+        {
+          "type": "gamma",
+          "slot": 65,
+          "state": 0,
+          "x": 0,
+          "y": 1
+        },
+        {
+          "type": "missile-recharge",
+          "slot": 15,
+          "state": 0,
+          "x": 1,
+          "y": 1
+        }
       ],
       "name": "Acid Gamma"
     },
@@ -4049,12 +3838,13 @@
         }
       ],
       "features": [
-        [
-          "gamma",
-          70,
-          1,
-          0
-        ]
+        {
+          "type": "gamma",
+          "slot": 70,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ],
       "name": "Jungle Exit"
     },
@@ -4095,12 +3885,13 @@
         }
       ],
       "features": [
-        [
-          "gamma",
-          79,
-          0,
-          0
-        ]
+        {
+          "type": "gamma",
+          "slot": 79,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -4175,148 +3966,29 @@
         }
       ],
       "features": [
-        [
-          "missile-tank",
-          98,
-          7,
-          3
-        ],
-        [
-          "missile-recharge",
-          15,
-          0,
-          5
-        ],
-        [
-          "energy-recharge",
-          15,
-          6,
-          0
-        ]
+        {
+          "type": "missile-tank",
+          "slot": 98,
+          "state": 0,
+          "x": 7,
+          "y": 3
+        },
+        {
+          "type": "missile-recharge",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 5
+        },
+        {
+          "type": "energy-recharge",
+          "slot": 15,
+          "state": 0,
+          "x": 6,
+          "y": 0
+        }
       ],
       "name": "Facility Exterior"
-    },
-    {
-      "x": 7,
-      "y": 19,
-      "w": 1,
-      "h": 1,
-      "cells": [
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 14,
-          "x": 3,
-          "y": 13,
-          "cells": [
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [382, 462]
-        }
-      ],
-      "features": [
-        [
-          "energy-recharge",
-          14,
-          0,
-          0
-        ],
-        [
-          "missile-recharge",
-          15,
-          0,
-          0
-        ]
-      ],
-      "name": "Queen Recharge Room"
-    },
-    {
-      "x": 54,
-      "y": 14,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 5,
-          "y": 4,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [325, 477]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [0]
-        }
-      ],
-      "features": [],
-      "name": "Bomb Access"
-    },
-    {
-      "x": 58,
-      "y": 15,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 9,
-          "y": 5,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [0]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [279, 280]
-        }
-      ],
-      "features": [],
-      "name": "Ice Beam Access"
     },
     {
       "x": 6,
@@ -4355,49 +4027,11 @@
           "exit_states": 1,
           "transitions": [465, 359]
         }
-      ],
-      "features": []
-    },
-    {
-      "x": 58,
-      "y": 17,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 13,
-          "y": 11,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [446, 149]
-        }
-      ],
-      "features": [
-        [
-          "alpha",
-          80,
-          1,
-          0
-        ]
       ]
     },
     {
       "x": 54,
-      "y": 18,
+      "y": 14,
       "w": 2,
       "h": 1,
       "cells": [
@@ -4405,345 +4039,9 @@
       ],
       "states": [
         {
-          "bank": 11,
-          "x": 9,
-          "y": 12,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [448, 143]
-        }
-      ],
-      "features": [
-        [
-          "alpha",
-          82,
-          1,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 50,
-      "y": 18,
-      "w": 3,
-      "h": 1,
-      "cells": [
-        [1, 1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
+          "bank": 13,
           "x": 5,
-          "y": 12,
-          "cells": [
-            [1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 2,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [448, 142]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [0, 447]
-        }
-      ],
-      "features": [],
-      "name": "Not Pancake Room"
-    },
-    {
-      "x": 21,
-      "y": 23,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 14,
-          "y": 13,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [205, 425]
-        }
-      ],
-      "features": [
-        [
-          "gamma",
-          84,
-          1,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 14,
-      "y": 23,
-      "w": 1,
-      "h": 2,
-      "cells": [
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 7,
-          "y": 13,
-          "cells": [
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [0]
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [349, 450]
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [350, 450]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 23,
-      "y": 19,
-      "w": 1,
-      "h": 1,
-      "cells": [
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 2,
-          "y": 6,
-          "cells": [
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [0]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [0]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 22,
-      "y": 21,
-      "w": 1,
-      "h": 1,
-      "cells": [
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 4,
-          "y": 10,
-          "cells": [
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [290, 289]
-        }
-      ],
-      "features": [
-        [
-          "wave",
-          15,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 27,
-      "y": 21,
-      "w": 1,
-      "h": 3,
-      "cells": [
-        [1],
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 9,
-          "y": 10,
-          "cells": [
-            [1],
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [0]
-        },
-        {
-          "x": 0,
-          "y": 2,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [0]
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [0]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 18,
-      "y": 38,
-      "w": 2,
-      "h": 3,
-      "cells": [
-        [1, 1],
-        [0, 1],
-        [0, 1]
-      ],
-      "states": [
-        {
-          "bank": 14,
-          "x": 10,
-          "y": 10,
-          "cells": [
-            [1, 1],
-            [0, 1],
-            [0, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 2,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [14, 434]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [11, 257]
-        }
-      ],
-      "features": [
-        [
-          "save",
-          null,
-          0,
-          0
-        ]
-      ],
-      "name": "Tower Save"
-    },
-    {
-      "x": 18,
-      "y": 31,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 14,
-          "x": 10,
-          "y": 3,
+          "y": 4,
           "cells": [
             [1, 1]
           ]
@@ -4756,26 +4054,18 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [5, 252]
+          "transitions": [325, 477]
         },
         {
           "x": 0,
           "y": 0,
-          "dir": 4,
+          "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [294, 295]
+          "transitions": [0]
         }
       ],
-      "features": [
-        [
-          "zeta",
-          69,
-          0,
-          0
-        ]
-      ],
-      "name": "Screw Zeta"
+      "name": "Bomb Access"
     },
     {
       "x": 5,
@@ -4815,650 +4105,45 @@
           "transitions": [357, 358],
           "to-area": 0
         }
-      ],
-      "features": []
-    },
-    {
-      "x": 18,
-      "y": 32,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 14,
-          "x": 10,
-          "y": 4,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [6, 251],
-          "jump": [
-            -1,
-            1
-          ]
-        },
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [298, 362]
-        }
-      ],
-      "features": [],
-      "name": "Non-Euclidean Room"
-    },
-    {
-      "x": 13,
-      "y": 35,
-      "w": 4,
-      "h": 1,
-      "cells": [
-        [1, 1, 1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 9,
-          "y": 4,
-          "cells": [
-            [1, 1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 3,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [9, 106]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [52, 105]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 18,
-      "y": 37,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 14,
-          "x": 10,
-          "y": 9,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [10, 254]
-        },
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [307, 308]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 15,
-      "y": 40,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 0,
-          "y": 13,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [12, 220]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [50, 61]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 21,
-      "y": 27,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 13,
-          "y": 4,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [2, 107]
-        },
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [79, 108]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 21,
-      "y": 33,
-      "w": 1,
-      "h": 1,
-      "cells": [
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 14,
-          "x": 8,
-          "y": 0,
-          "cells": [
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [8, 253]
-        }
-      ],
-      "features": [
-        [
-          "energy-recharge",
-          15,
-          0,
-          0
-        ],
-        [
-          "gamma",
-          74,
-          0,
-          0
-        ]
       ]
     },
     {
-      "x": 22,
-      "y": 36,
-      "w": 4,
-      "h": 1,
-      "cells": [
-        [1, 1, 1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 9,
-          "y": 5,
-          "cells": [
-            [1, 1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [13, 114]
-        },
-        {
-          "x": 3,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [339, 442]
-        }
-      ],
-      "features": []
-    },
-    {
-      "x": 18,
-      "y": 49,
-      "w": 2,
-      "h": 3,
-      "cells": [
-        [1, 1],
-        [1, 1],
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 10,
-          "x": 6,
-          "y": 12,
-          "cells": [
-            [1, 1],
-            [1, 1],
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 2,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [63, 77]
-        },
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [402, 115, 69]
-        },
-        {
-          "x": 0,
-          "y": 2,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [232, 76]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [418, 390, 417]
-        }
-      ],
-      "features": [],
-      "name": "Loop Acid"
-    },
-    {
-      "x": 60,
-      "y": 44,
-      "w": 1,
-      "h": 4,
-      "cells": [
-        [1],
-        [1],
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 6,
-          "y": 0,
-          "cells": [
-            [1],
-            [1],
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 2,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [146, 178]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [101, 164]
-        },
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [147, 171]
-        }
-      ],
-      "features": [],
-      "name": "Jungle Heart"
-    },
-    {
-      "x": 62,
-      "y": 37,
-      "w": 1,
-      "h": 2,
-      "cells": [
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 14,
-          "x": 1,
-          "y": 6,
-          "cells": [
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [29, 385]
-        }
-      ],
-      "features": [
-        [
-          "space-jump",
-          99,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 65,
-      "y": 36,
+      "x": 58,
+      "y": 15,
       "w": 2,
       "h": 1,
       "cells": [
         [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 14,
-          "x": 4,
-          "y": 5,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [26, 264]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [329, 328]
-        }
-      ],
-      "features": [
-        [
-          "save",
-          null,
-          0,
-          0
-        ],
-        [
-          "missile-tank",
-          109,
-          1,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 66,
-      "y": 37,
-      "w": 1,
-      "h": 1,
-      "cells": [
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 14,
-          "x": 5,
-          "y": 6,
-          "cells": [
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [30, 265]
-        }
-      ],
-      "features": [
-        [
-          "energy-tank",
-          100,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 71,
-      "y": 39,
-      "w": 1,
-      "h": 4,
-      "cells": [
-        [1],
-        [1],
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 8,
-          "y": 0,
-          "cells": [
-            [1],
-            [1],
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [31, 165],
-          "jump": [
-            -4,
-            0
-          ]
-        }
-      ],
-      "features": [
-        [
-          "gamma",
-          65,
-          0,
-          3
-        ]
-      ]
-    },
-    {
-      "x": 53,
-      "y": 14,
-      "w": 1,
-      "h": 1,
-      "cells": [
-        [1]
       ],
       "states": [
         {
           "bank": 13,
-          "x": 4,
-          "y": 4,
+          "x": 9,
+          "y": 5,
           "cells": [
-            [1]
+            [1, 1]
           ]
         }
       ],
       "doors": [
         {
-          "x": 0,
+          "x": 1,
           "y": 0,
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
           "transitions": [0]
-        }
-      ],
-      "features": [
-        [
-          "bombs",
-          99,
-          0,
-          0
-        ],
-        [
-          "missile-tank",
-          122,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 57,
-      "y": 15,
-      "w": 1,
-      "h": 1,
-      "cells": [
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 8,
-          "y": 5,
-          "cells": [
-            [1]
-          ]
-        }
-      ],
-      "doors": [
+        },
         {
           "x": 0,
           "y": 0,
-          "dir": 1,
+          "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [280, 279]
+          "transitions": [279, 280]
         }
       ],
-      "features": [
-        [
-          "ice",
-          15,
-          0,
-          0
-        ]
-      ]
+      "name": "Ice Beam Access"
     },
     {
       "x": 4,
@@ -5520,8 +4205,1113 @@
           "transitions": [462, 382]
         }
       ],
-      "features": [],
       "name": "Soda Fountain"
+    },
+    {
+      "x": 58,
+      "y": 17,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 13,
+          "y": 11,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [446, 149]
+        }
+      ],
+      "features": [
+        {
+          "type": "alpha",
+          "slot": 80,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 54,
+      "y": 18,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 9,
+          "y": 12,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [448, 143]
+        }
+      ],
+      "features": [
+        {
+          "type": "alpha",
+          "slot": 82,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 50,
+      "y": 18,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 5,
+          "y": 12,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [448, 142]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0, 447]
+        }
+      ],
+      "name": "Not Pancake Room"
+    },
+    {
+      "x": 21,
+      "y": 23,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 14,
+          "y": 13,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [205, 425]
+        }
+      ],
+      "features": [
+        {
+          "type": "gamma",
+          "slot": 84,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 14,
+      "y": 23,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 7,
+          "y": 13,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [349, 450]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [350, 450]
+        }
+      ]
+    },
+    {
+      "x": 23,
+      "y": 19,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 2,
+          "y": 6,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 22,
+      "y": 21,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 4,
+          "y": 10,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [290, 289]
+        }
+      ],
+      "features": [
+        {
+          "type": "wave",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 27,
+      "y": 21,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 9,
+          "y": 10,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 38,
+      "w": 2,
+      "h": 3,
+      "cells": [
+        [1, 1],
+        [0, 1],
+        [0, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 10,
+          "cells": [
+            [1, 1],
+            [0, 1],
+            [0, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [14, 434]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [11, 257]
+        }
+      ],
+      "features": [
+        {
+          "type": "save",
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "name": "Tower Save"
+    },
+    {
+      "x": 18,
+      "y": 31,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 3,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [5, 252]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [294, 295]
+        }
+      ],
+      "features": [
+        {
+          "type": "zeta",
+          "slot": 69,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "name": "Screw Zeta"
+    },
+    {
+      "x": 5,
+      "y": 25,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 8,
+          "y": 9,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [219, 133]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [383, 55]
+        }
+      ],
+      "features": [
+        {
+          "type": "save",
+          "x": 1,
+          "y": 0
+        }
+      ],
+      "name": "Final Save"
+    },
+    {
+      "x": 18,
+      "y": 32,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 4,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [6, 251],
+          "jump": [
+            -1,
+            1
+          ]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [298, 362]
+        }
+      ],
+      "name": "Non-Euclidean Room"
+    },
+    {
+      "x": 13,
+      "y": 35,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 9,
+          "y": 4,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [9, 106]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [52, 105]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 37,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 10,
+          "y": 9,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [10, 254]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [307, 308]
+        }
+      ]
+    },
+    {
+      "x": 15,
+      "y": 40,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 0,
+          "y": 13,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [12, 220]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [50, 61]
+        }
+      ]
+    },
+    {
+      "x": 21,
+      "y": 27,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 13,
+          "y": 4,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [2, 107]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [79, 108]
+        }
+      ]
+    },
+    {
+      "x": 21,
+      "y": 33,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 8,
+          "y": 0,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [8, 253]
+        }
+      ],
+      "features": [
+        {
+          "type": "energy-recharge",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "gamma",
+          "slot": 74,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 22,
+      "y": 36,
+      "w": 4,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 11,
+          "x": 9,
+          "y": 5,
+          "cells": [
+            [1, 1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [13, 114]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [339, 442]
+        }
+      ]
+    },
+    {
+      "x": 18,
+      "y": 49,
+      "w": 2,
+      "h": 3,
+      "cells": [
+        [1, 1],
+        [1, 1],
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 6,
+          "y": 12,
+          "cells": [
+            [1, 1],
+            [1, 1],
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [63, 77]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [402, 115, 69]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [232, 76]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [418, 390, 417]
+        }
+      ],
+      "name": "Loop Acid"
+    },
+    {
+      "x": 60,
+      "y": 44,
+      "w": 1,
+      "h": 4,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 6,
+          "y": 0,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [146, 178]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [101, 164]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [147, 171]
+        }
+      ],
+      "name": "Jungle Heart"
+    },
+    {
+      "x": 62,
+      "y": 37,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 1,
+          "y": 6,
+          "cells": [
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [29, 385]
+        }
+      ],
+      "features": [
+        {
+          "type": "space-jump",
+          "slot": 99,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 65,
+      "y": 36,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 4,
+          "y": 5,
+          "cells": [
+            [1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [26, 264]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [329, 328]
+        }
+      ],
+      "features": [
+        {
+          "type": "save",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "missile-tank",
+          "slot": 109,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 66,
+      "y": 37,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 5,
+          "y": 6,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [30, 265]
+        }
+      ],
+      "features": [
+        {
+          "type": "energy-tank",
+          "slot": 100,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 71,
+      "y": 39,
+      "w": 1,
+      "h": 4,
+      "cells": [
+        [1],
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 8,
+          "y": 0,
+          "cells": [
+            [1],
+            [1],
+            [1],
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [31, 165],
+          "jump": [
+            -4,
+            0
+          ]
+        }
+      ],
+      "features": [
+        {
+          "type": "gamma",
+          "slot": 65,
+          "state": 0,
+          "x": 0,
+          "y": 3
+        }
+      ]
+    },
+    {
+      "x": 53,
+      "y": 14,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 4,
+          "y": 4,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ],
+      "features": [
+        {
+          "type": "bombs",
+          "slot": 99,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "missile-tank",
+          "slot": 122,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 57,
+      "y": 15,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 8,
+          "y": 5,
+          "cells": [
+            [1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [280, 279]
+        }
+      ],
+      "features": [
+        {
+          "type": "ice",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ]
     },
     {
       "x": 49,
@@ -5552,12 +5342,13 @@
         }
       ],
       "features": [
-        [
-          "alpha",
-          81,
-          0,
-          0
-        ]
+        {
+          "type": "alpha",
+          "slot": 81,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -5595,8 +5386,7 @@
           "exit_states": 1,
           "transitions": [451, 351]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 11,
@@ -5635,12 +5425,13 @@
         }
       ],
       "features": [
-        [
-          "gamma",
-          85,
-          0,
-          0
-        ]
+        {
+          "type": "gamma",
+          "slot": 85,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -5672,12 +5463,13 @@
         }
       ],
       "features": [
-        [
-          "varia",
-          105,
-          0,
-          0
-        ]
+        {
+          "type": "varia",
+          "slot": 105,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -5719,8 +5511,7 @@
           "exit_states": 1,
           "transitions": [352, 460]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 24,
@@ -5759,18 +5550,20 @@
         }
       ],
       "features": [
-        [
-          "missile-tank",
-          114,
-          1,
-          0
-        ],
-        [
-          "missile-tank",
-          115,
-          1,
-          0
-        ]
+        {
+          "type": "missile-tank",
+          "slot": 114,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        },
+        {
+          "type": "missile-tank",
+          "slot": 115,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ]
     },
     {
@@ -5802,12 +5595,13 @@
         }
       ],
       "features": [
-        [
-          "screw-attack",
-          97,
-          1,
-          0
-        ]
+        {
+          "type": "screw-attack",
+          "slot": 97,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ],
       "name": "Screw Attack Room"
     },
@@ -5885,7 +5679,6 @@
           "transitions": [300, 301]
         }
       ],
-      "features": [],
       "name": "Armory Shaft"
     },
     {
@@ -5917,12 +5710,13 @@
         }
       ],
       "features": [
-        [
-          "gamma",
-          66,
-          1,
-          0
-        ]
+        {
+          "type": "gamma",
+          "slot": 66,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ]
     },
     {
@@ -5954,12 +5748,13 @@
         }
       ],
       "features": [
-        [
-          "zeta",
-          78,
-          1,
-          0
-        ]
+        {
+          "type": "zeta",
+          "slot": 78,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ]
     },
     {
@@ -5991,12 +5786,13 @@
         }
       ],
       "features": [
-        [
-          "gamma",
-          68,
-          1,
-          0
-        ]
+        {
+          "type": "gamma",
+          "slot": 68,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ]
     },
     {
@@ -6028,12 +5824,13 @@
         }
       ],
       "features": [
-        [
-          "zeta",
-          69,
-          0,
-          0
-        ]
+        {
+          "type": "zeta",
+          "slot": 69,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -6075,54 +5872,7 @@
           "exit_states": 1,
           "transitions": [56, 242]
         }
-      ],
-      "features": []
-    },
-    {
-      "x": 5,
-      "y": 25,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 10,
-          "x": 8,
-          "y": 9,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [219, 133]
-        },
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [383, 55]
-        }
-      ],
-      "features": [
-        [
-          "save",
-          null,
-          1,
-          0
-        ]
-      ],
-      "name": "Final Save"
+      ]
     },
     {
       "x": 4,
@@ -6161,8 +5911,7 @@
           "exit_states": 1,
           "transitions": [133, 219]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 20,
@@ -6207,54 +5956,7 @@
           "exit_states": 3,
           "transitions": [207, 116, 410, 403]
         }
-      ],
-      "features": []
-    },
-    {
-      "x": 20,
-      "y": 49,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 14,
-          "y": 9,
-          "cells": [
-            [1, 1]
-          ]
-        },
-        {
-          "bank": 11,
-          "x": 2,
-          "y": 6,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [69, 402, 115]
-        },
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [410, 403, 207, 116]
-        }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 61,
@@ -6291,8 +5993,7 @@
           "exit_states": 1,
           "transitions": [173, 148]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 60,
@@ -6331,12 +6032,13 @@
         }
       ],
       "features": [
-        [
-          "alpha",
-          67,
-          1,
-          0
-        ]
+        {
+          "type": "alpha",
+          "slot": 67,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ],
       "name": "Entangled Alpha"
     },
@@ -6387,8 +6089,7 @@
           "exit_states": 1,
           "transitions": [305, 304]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 17,
@@ -6427,12 +6128,13 @@
         }
       ],
       "features": [
-        [
-          "alpha",
-          86,
-          2,
-          0
-        ]
+        {
+          "type": "alpha",
+          "slot": 86,
+          "state": 0,
+          "x": 2,
+          "y": 0
+        }
       ]
     },
     {
@@ -6464,12 +6166,13 @@
         }
       ],
       "features": [
-        [
-          "energy-recharge",
-          15,
-          0,
-          0
-        ]
+        {
+          "type": "energy-recharge",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -6509,12 +6212,13 @@
         }
       ],
       "features": [
-        [
-          "high-jump",
-          117,
-          0,
-          0
-        ]
+        {
+          "type": "high-jump",
+          "slot": 117,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -6554,8 +6258,7 @@
           "exit_states": 1,
           "transitions": [0]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 18,
@@ -6586,12 +6289,13 @@
         }
       ],
       "features": [
-        [
-          "plasma",
-          15,
-          0,
-          0
-        ]
+        {
+          "type": "plasma",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ],
       "name": "Armory Plasma Room"
     },
@@ -6624,12 +6328,13 @@
         }
       ],
       "features": [
-        [
-          "spazer",
-          15,
-          0,
-          0
-        ]
+        {
+          "type": "spazer",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ],
       "name": "Armory Spazer Room"
     },
@@ -6662,12 +6367,13 @@
         }
       ],
       "features": [
-        [
-          "wave",
-          15,
-          0,
-          0
-        ]
+        {
+          "type": "wave",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ],
       "name": "Armory Wave Beam Room"
     },
@@ -6700,12 +6406,13 @@
         }
       ],
       "features": [
-        [
-          "ice",
-          15,
-          0,
-          0
-        ]
+        {
+          "type": "ice",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ],
       "name": "Armory Ice Beam Room"
     },
@@ -6744,8 +6451,7 @@
           "exit_states": 1,
           "transitions": [130, 49]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 15,
@@ -6793,57 +6499,7 @@
           "exit_states": 3,
           "transitions": [117, 168, 400, 405]
         }
-      ],
-      "features": []
-    },
-    {
-      "x": 15,
-      "y": 47,
-      "w": 1,
-      "h": 2,
-      "cells": [
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 14,
-          "y": 0,
-          "cells": [
-            [1],
-            [1]
-          ]
-        },
-        {
-          "bank": 12,
-          "x": 13,
-          "y": 0,
-          "cells": [
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 1,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [389, 407, 66, 175]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [400, 405, 117, 168]
-        }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 22,
@@ -6883,49 +6539,7 @@
           "exit_states": 3,
           "transitions": [116, 207, 403, 410]
         }
-      ],
-      "features": []
-    },
-    {
-      "x": 22,
-      "y": 48,
-      "w": 1,
-      "h": 2,
-      "cells": [
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 7,
-          "y": 8,
-          "cells": [
-            [1],
-            [1]
-          ]
-        },
-        {
-          "bank": 12,
-          "x": 11,
-          "y": 8,
-          "cells": [
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 2,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [403, 410, 116, 207]
-        }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 63,
@@ -6975,7 +6589,6 @@
           "transitions": [347, 457]
         }
       ],
-      "features": [],
       "name": "Jungle Descent"
     },
     {
@@ -7007,12 +6620,13 @@
         }
       ],
       "features": [
-        [
-          "gamma",
-          68,
-          0,
-          0
-        ]
+        {
+          "type": "gamma",
+          "slot": 68,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ],
       "name": "Entangled Gamma"
     },
@@ -7057,18 +6671,20 @@
         }
       ],
       "features": [
-        [
-          "missile-tank",
-          110,
-          0,
-          0
-        ],
-        [
-          "gamma",
-          70,
-          0,
-          1
-        ]
+        {
+          "type": "missile-tank",
+          "slot": 110,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "gamma",
+          "slot": 70,
+          "state": 0,
+          "x": 0,
+          "y": 1
+        }
       ]
     },
     {
@@ -7106,8 +6722,7 @@
           "exit_states": 1,
           "transitions": [302, 303]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 21,
@@ -7136,8 +6751,7 @@
           "exit_states": 1,
           "transitions": [452, 453]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 5,
@@ -7190,8 +6804,7 @@
           "exit_states": 1,
           "transitions": [0]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 12,
@@ -7234,8 +6847,7 @@
           "exit_states": 1,
           "transitions": [239, 40]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 16,
@@ -7282,79 +6894,22 @@
         }
       ],
       "features": [
-        [
-          "alpha",
-          73,
-          2,
-          0
-        ],
-        [
-          "omega",
-          76,
-          2,
-          0
-        ]
+        {
+          "type": "alpha",
+          "slot": 73,
+          "state": 0,
+          "x": 2,
+          "y": 0
+        },
+        {
+          "type": "omega",
+          "slot": 76,
+          "state": 1,
+          "x": 2,
+          "y": 0
+        }
       ],
       "name": "Tower Access"
-    },
-    {
-      "x": 16,
-      "y": 47,
-      "w": 5,
-      "h": 1,
-      "cells": [
-        [1, 1, 1, 1, 1]
-      ],
-      "states": [
-        {
-          "bank": 11,
-          "x": 11,
-          "y": 8,
-          "cells": [
-            [1, 1, 1, 1, 1]
-          ]
-        },
-        {
-          "bank": 11,
-          "x": 4,
-          "y": 6,
-          "cells": [
-            [1, 1, 1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [405, 400, 168, 117]
-        },
-        {
-          "x": 4,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [408, 401, 200, 118]
-        }
-      ],
-      "features": [
-        [
-          "omega",
-          76,
-          2,
-          0
-        ],
-        [
-          "alpha",
-          73,
-          2,
-          0
-        ]
-      ]
     },
     {
       "x": 62,
@@ -7403,18 +6958,20 @@
         }
       ],
       "features": [
-        [
-          "gamma",
-          64,
-          0,
-          4
-        ],
-        [
-          "energy-recharge",
-          15,
-          0,
-          5
-        ]
+        {
+          "type": "gamma",
+          "slot": 64,
+          "state": 0,
+          "x": 0,
+          "y": 4
+        },
+        {
+          "type": "energy-recharge",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 5
+        }
       ],
       "name": "Jungle Floor"
     },
@@ -7463,12 +7020,13 @@
         }
       ],
       "features": [
-        [
-          "missile-tank",
-          112,
-          1,
-          0
-        ]
+        {
+          "type": "missile-tank",
+          "slot": 112,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ]
     },
     {
@@ -7500,12 +7058,13 @@
         }
       ],
       "features": [
-        [
-          "spazer",
-          15,
-          0,
-          0
-        ]
+        {
+          "type": "spazer",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -7552,8 +7111,7 @@
           "transitions": [228, 129],
           "to-area": 10
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 21,
@@ -7584,8 +7142,7 @@
           "exit_states": 1,
           "transitions": [118, 200]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 21,
@@ -7616,8 +7173,7 @@
           "exit_states": 1,
           "transitions": [401, 408]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 61,
@@ -7660,8 +7216,7 @@
           "exit_states": 1,
           "transitions": [98, 190]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 64,
@@ -7700,12 +7255,13 @@
         }
       ],
       "features": [
-        [
-          "gamma",
-          71,
-          1,
-          0
-        ]
+        {
+          "type": "gamma",
+          "slot": 71,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ],
       "name": "Plasma Gamma"
     },
@@ -7746,8 +7302,7 @@
           "exit_states": 1,
           "transitions": [274, 275]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 5,
@@ -7799,12 +7354,11 @@
         }
       ],
       "features": [
-        [
-          "save",
-          null,
-          0,
-          6
-        ]
+        {
+          "type": "save",
+          "x": 0,
+          "y": 6
+        }
       ]
     },
     {
@@ -7844,12 +7398,13 @@
         }
       ],
       "features": [
-        [
-          "gamma",
-          65,
-          1,
-          0
-        ]
+        {
+          "type": "gamma",
+          "slot": 65,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ]
     },
     {
@@ -7887,8 +7442,7 @@
           "exit_states": 1,
           "transitions": [313, 316]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 9,
@@ -7927,8 +7481,7 @@
           "exit_states": 1,
           "transitions": [58, 237]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 6,
@@ -7977,8 +7530,7 @@
           "exit_states": 1,
           "transitions": [125, 208]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 57,
@@ -8015,8 +7567,7 @@
           "exit_states": 1,
           "transitions": [97]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 61,
@@ -8047,12 +7598,13 @@
         }
       ],
       "features": [
-        [
-          "plasma",
-          15,
-          0,
-          0
-        ]
+        {
+          "type": "plasma",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -8114,8 +7666,7 @@
           "exit_states": 1,
           "transitions": [0]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 7,
@@ -8161,8 +7712,7 @@
           "transitions": [203, 122],
           "to-area": 11
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 2,
@@ -8199,8 +7749,7 @@
           "exit_states": 1,
           "transitions": [342, 343]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 61,
@@ -8231,12 +7780,13 @@
         }
       ],
       "features": [
-        [
-          "energy-tank",
-          106,
-          0,
-          0
-        ]
+        {
+          "type": "energy-tank",
+          "slot": 106,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ],
       "name": "Autom E-Tank Room"
     },
@@ -8282,8 +7832,7 @@
           "exit_states": 1,
           "transitions": [229, 412, 212]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 11,
@@ -8336,8 +7885,7 @@
           "exit_states": 1,
           "transitions": [0]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 0,
@@ -8368,12 +7916,13 @@
         }
       ],
       "features": [
-        [
-          "omega",
-          64,
-          0,
-          0
-        ]
+        {
+          "type": "omega",
+          "slot": 64,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -8435,68 +7984,6 @@
           "transitions": [71, 169, 137]
         }
       ],
-      "features": []
-    },
-    {
-      "x": 10,
-      "y": 28,
-      "w": 1,
-      "h": 6,
-      "cells": [
-        [1],
-        [1],
-        [1],
-        [1],
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 0,
-          "y": 8,
-          "cells": [
-            [1],
-            [1],
-            [1],
-            [1],
-            [1],
-            [1]
-          ]
-        },
-        {
-          "bank": 12,
-          "x": 15,
-          "y": 8,
-          "cells": [
-            [1],
-            [1],
-            [1],
-            [1],
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 5,
-          "dir": 2,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [212, 229, 412]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 2,
-          "exit_states": 3,
-          "transitions": [137, 71, 169]
-        }
-      ],
-      "features": [],
       "name": "Spike Barrier Room"
     },
     {
@@ -8528,12 +8015,11 @@
         }
       ],
       "features": [
-        [
-          "save",
-          null,
-          0,
-          0
-        ]
+        {
+          "type": "save",
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -8583,8 +8069,7 @@
           "exit_states": 1,
           "transitions": [124, 194]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 4,
@@ -8645,8 +8130,7 @@
           "exit_states": 0,
           "transitions": [0, 64]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 13,
@@ -8683,8 +8167,7 @@
           "exit_states": 1,
           "transitions": [337, 338]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 8,
@@ -8721,8 +8204,7 @@
           "exit_states": 1,
           "transitions": [355, 356]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 3,
@@ -8761,8 +8243,7 @@
           "exit_states": 1,
           "transitions": [67, 226]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 17,
@@ -8793,12 +8274,13 @@
         }
       ],
       "features": [
-        [
-          "omega",
-          74,
-          1,
-          0
-        ]
+        {
+          "type": "omega",
+          "slot": 74,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ]
     },
     {
@@ -8836,8 +8318,7 @@
           "exit_states": 1,
           "transitions": [65]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 63,
@@ -8876,12 +8357,13 @@
         }
       ],
       "features": [
-        [
-          "alpha",
-          72,
-          0,
-          0
-        ]
+        {
+          "type": "alpha",
+          "slot": 72,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
       ],
       "name": "Autom Alpha"
     },
@@ -8921,7 +8403,6 @@
           "transitions": [319, 320]
         }
       ],
-      "features": [],
       "name": "Autom Alley"
     },
     {
@@ -8961,24 +8442,27 @@
         }
       ],
       "features": [
-        [
-          "missile-tank",
-          123,
-          0,
-          0
-        ],
-        [
-          "missile-tank",
-          116,
-          1,
-          0
-        ],
-        [
-          "energy-tank",
-          119,
-          1,
-          0
-        ]
+        {
+          "type": "missile-tank",
+          "slot": 123,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "missile-tank",
+          "slot": 116,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        },
+        {
+          "type": "energy-tank",
+          "slot": 119,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ],
       "name": "High Jump Cache"
     },
@@ -9017,8 +8501,7 @@
           "exit_states": 1,
           "transitions": [64]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 6,
@@ -9049,65 +8532,14 @@
         }
       ],
       "features": [
-        [
-          "omega",
-          67,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "x": 16,
-      "y": 48,
-      "w": 2,
-      "h": 2,
-      "cells": [
-        [1, 1],
-        [
-          -1,
-          1
-        ]
-      ],
-      "states": [
         {
-          "bank": 10,
-          "x": 8,
-          "y": 6,
-          "cells": [
-            [1, 1],
-            [1, 1]
-          ]
-        },
-        {
-          "bank": 10,
-          "x": 4,
-          "y": 11,
-          "cells": [
-            [1, 1],
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 1,
-          "dir": 1,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [417, 390, 418]
-        },
-        {
+          "type": "omega",
+          "slot": 67,
+          "state": 0,
           "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [407, 389, 175, 66]
+          "y": 0
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 16,
@@ -9158,56 +8590,6 @@
           "exit_states": 3,
           "transitions": [175, 66, 407, 389]
         }
-      ],
-      "features": []
-    },
-    {
-      "x": 61,
-      "y": 14,
-      "w": 3,
-      "h": 1,
-      "cells": [
-        [1, 1, 2]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 12,
-          "y": 4,
-          "cells": [
-            [1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 2,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [276, 272]
-        }
-      ],
-      "features": [
-        [
-          "missile-tank",
-          101,
-          0,
-          0
-        ],
-        [
-          "missile-tank",
-          102,
-          1,
-          0
-        ],
-        [
-          "missile-tank",
-          103,
-          1,
-          0
-        ]
       ]
     },
     {
@@ -9247,12 +8629,13 @@
         }
       ],
       "features": [
-        [
-          "missile-tank",
-          96,
-          1,
-          0
-        ]
+        {
+          "type": "missile-tank",
+          "slot": 96,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
       ]
     },
     {
@@ -9294,14 +8677,75 @@
         }
       ],
       "features": [
-        [
-          "spider",
-          96,
-          0,
-          1
-        ]
+        {
+          "type": "spider",
+          "slot": 96,
+          "state": 0,
+          "x": 0,
+          "y": 1
+        }
       ],
       "name": "Cobweb's Treasure"
+    },
+    {
+      "x": 61,
+      "y": 14,
+      "w": 3,
+      "h": 1,
+      "cells": [
+        [1, 1, 2]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 12,
+          "y": 4,
+          "cells": [
+            [1, 1, 1]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [276, 272]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ],
+      "features": [
+        {
+          "type": "missile-tank",
+          "slot": 101,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "missile-tank",
+          "slot": 102,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        },
+        {
+          "type": "missile-tank",
+          "slot": 103,
+          "state": 0,
+          "x": 1,
+          "y": 0
+        }
+      ]
     },
     {
       "x": 57,
@@ -9323,6 +8767,14 @@
       ],
       "doors": [
         {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
           "x": 0,
           "y": 0,
           "dir": 2,
@@ -9332,12 +8784,13 @@
         }
       ],
       "features": [
-        [
-          "energy-tank",
-          98,
-          2,
-          0
-        ]
+        {
+          "type": "energy-tank",
+          "slot": 98,
+          "state": 0,
+          "x": 2,
+          "y": 0
+        }
       ],
       "name": "Bomb Tutorial"
     },
@@ -9384,8 +8837,7 @@
           "exit_states": 1,
           "transitions": [289, 290]
         }
-      ],
-      "features": []
+      ]
     },
     {
       "x": 24,
@@ -9426,80 +8878,6 @@
           "exit_states": 1,
           "transitions": [0]
         }
-      ],
-      "features": []
-    },
-    {
-      "x": 25,
-      "y": 18,
-      "w": 1,
-      "h": 3,
-      "cells": [
-        [1],
-        [3],
-        [3]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 7,
-          "y": 7,
-          "cells": [
-            [1],
-            [1],
-            [1]
-          ]
-        },
-        {
-          "bank": 13,
-          "x": 9,
-          "y": 7,
-          "cells": [
-            [1],
-            [0],
-            [0]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [283, 284]
-        },
-        {
-          "x": 0,
-          "y": 2,
-          "dir": 8,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [0]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 2,
-          "exit_states": 2,
-          "transitions": [23, 262]
-        }
-      ],
-      "features": [
-        [
-          "missile-tank",
-          108,
-          0,
-          0
-        ],
-        [
-          "missile-tank",
-          108,
-          0,
-          0
-        ]
       ]
     },
     {
@@ -9565,20 +8943,20 @@
           "transitions": [140, 247]
         },
         {
-          "x": 1,
-          "y": 3,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [268, 180]
-        },
-        {
           "x": 8,
           "y": 3,
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
           "transitions": [270, 245]
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [268, 180]
         },
         {
           "x": 9,
@@ -9590,18 +8968,20 @@
         }
       ],
       "features": [
-        [
-          "missile-recharge",
-          14,
-          3,
-          0
-        ],
-        [
-          "energy-recharge",
-          15,
-          7,
-          0
-        ]
+        {
+          "type": "missile-recharge",
+          "slot": 14,
+          "state": 0,
+          "x": 3,
+          "y": 0
+        },
+        {
+          "type": "energy-recharge",
+          "slot": 15,
+          "state": 0,
+          "x": 7,
+          "y": 0
+        }
       ],
       "name": "Temple Exterior"
     },
@@ -9664,18 +9044,20 @@
         }
       ],
       "features": [
-        [
-          "missile-tank",
-          108,
-          0,
-          0
-        ],
-        [
-          "missile-tank",
-          108,
-          0,
-          0
-        ]
+        {
+          "type": "missile-tank",
+          "slot": 108,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "missile-tank",
+          "slot": 108,
+          "state": 1,
+          "x": 0,
+          "y": 0
+        }
       ]
     },
     {
@@ -9736,7 +9118,6 @@
           "transitions": [139, 60]
         }
       ],
-      "features": [],
       "name": "Missile Block Room"
     },
     {
@@ -9865,12 +9246,13 @@
         }
       ],
       "features": [
-        [
-          "missile-tank",
-          102,
-          2,
-          2
-        ]
+        {
+          "type": "missile-tank",
+          "slot": 102,
+          "state": 0,
+          "x": 2,
+          "y": 2
+        }
       ],
       "name": "Hydro Exterior"
     },
@@ -9932,90 +9314,7 @@
           "transitions": [332, 331]
         }
       ],
-      "features": [],
       "name": "Acid Dive Start"
-    },
-    {
-      "x": 38,
-      "y": 26,
-      "w": 2,
-      "h": 7,
-      "cells": [
-        [1, 1],
-        [
-          1,
-          -1
-        ],
-        [1, 1],
-        [
-          1,
-          -1
-        ],
-        [1, 1],
-        [
-          1,
-          -1
-        ],
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 10,
-          "x": 2,
-          "y": 8,
-          "cells": [
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1]
-          ]
-        },
-        {
-          "bank": 10,
-          "x": 0,
-          "y": 8,
-          "cells": [
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [416, 437, 391]
-        },
-        {
-          "x": 0,
-          "y": 2,
-          "dir": 2,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [102, 59, 393]
-        },
-        {
-          "x": 0,
-          "y": 6,
-          "dir": 2,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [110, 75, 397],
-          "to-area": 8
-        }
-      ],
-      "features": []
     },
     {
       "x": 38,
@@ -10097,7 +9396,7 @@
           "to-area": 8
         }
       ],
-      "features": []
+      "name": "Quad-state Room"
     },
     {
       "x": 40,
@@ -10153,7 +9452,6 @@
           "to-area": 5
         }
       ],
-      "features": [],
       "name": "Caves Fork"
     },
     {
@@ -10221,7 +9519,6 @@
           "transitions": [420, 38]
         }
       ],
-      "features": [],
       "name": "No Swimming Zone"
     },
     {
@@ -10267,7 +9564,6 @@
           "transitions": [209, 39]
         }
       ],
-      "features": [],
       "name": "First Acid"
     }
   ],

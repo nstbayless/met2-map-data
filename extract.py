@@ -32,7 +32,7 @@ AREA_2_UPPER = "Upper Chozo Temple"
 AREA_3 = "Hydro Station"
 AREA_4_UPPER = "Weapons Facility"
 AREA_4_LOWER = "Jungle"
-AREA_5 = "Beam Tower"
+AREA_5 = "Tower"
 AREA_6 = "Omega Environment"
 FINAL_AREA = "Metroid Nest"
 
@@ -113,6 +113,7 @@ room_names = {
     0xBB3: "Entangled Gamma",
     0xC91: "Jungle Descent",
     0xC88: "Jungle Floor",
+    0xA28: "Quad-state Room",
     0xA66: "Missile Block Room",
     0x911: "Tower Exterior",
     0x912: "Dark Chamber",
@@ -135,12 +136,13 @@ room_names = {
     0xE3D: "Queen Recharge Room",
     0xE1D: "Queen's Retreat",
     0xE31: "Throne Room",
-    0xF1F: "Queen Fight",
+    0xFEF: "Queen Fight",
 }
 
 object_names = {
     #0x75: "missile-block",
-    #0xf8: "missile-door",
+    #0xF8: "missile-door",
+    #0x6D: "metroid-surprise",
     
     0x80: "plasma",
     0x82: "ice",
@@ -198,8 +200,8 @@ AREA_COLORS = {
 }
 
 special_objects = {
-    0xFEF: [("queen", None, 0x80, 0x80)],
-    0xF57: [("ship", None, 0x80, 0x80)],
+    0xFEF: [("queen", None, None, 0x80, 0x80)],
+    0xF57: [("ship", None, None, 0x80, 0x80)],
     0xFD5: [],
     0xF67: [],
     0xFE5: [],
@@ -260,6 +262,8 @@ exceptional_null_transitions = {
     0xD22,
     0xB8C,
     0xB8B,
+    0xDA3, 0xDB3,
+    0xDB4, 0xDC4,
     0xBAB,
     0xD16,
     0xD9A,
@@ -1210,18 +1214,22 @@ def layout_to_json(layout: Table, path="met2.json"):
     layout_idx = dict()
     layout_idx_reverse = dict()
     for ridx, room in rooms.items():
-        if room.idx:
-            handled.add(ridx)
+        if ridx in handled:
+            continue
+        handled.add(ridx)
         idx = len(layout_idx)
         layout_idx[room.idx] = idx
         layout_idx_reverse[idx] = room.idx
         
         myrooms: list[Room] = [room]
         
+        name = room.name
         if room.duplicates:
             for r in room.duplicates:
                 handled.add(r.idx)
                 myrooms.append(r)
+                if r.name is not None:
+                    name = r.name
         
         x0 = min(r.minx for r in myrooms)
         y0 = min(r.miny for r in myrooms)
@@ -1243,8 +1251,8 @@ def layout_to_json(layout: Table, path="met2.json"):
             "features": [],
         }
         
-        if room.name:
-            jroom["name"] = room.name
+        if name:
+            jroom["name"] = name
         
         combined_doors = dict()
         
@@ -1259,9 +1267,9 @@ def layout_to_json(layout: Table, path="met2.json"):
                 roomy = mapy - y0
                 
                 if cell.has_save:
-                    jroom["features"].append(["save", None, roomx, roomy])
+                    jroom["features"].append({"type": "save", "x": roomx, "y": roomy})
                 for feature in cell.contents:
-                    jroom["features"].append([feature[0], feature[1], roomx, roomy])
+                    jroom["features"].append({"type": feature[0], "slot": feature[1], "state": i, "x": roomx, "y": roomy})
                 
                 tile = 1
                 cloc = compressed_location(r.bank, cx, cy)
@@ -1327,27 +1335,30 @@ def layout_to_json(layout: Table, path="met2.json"):
                     add_door(False, cx, cy, direction, instance)
         
         jroom["doors"] += [info for key, info in combined_doors.items()]
-                
+        
+        if len(jroom["features"]) == 0:
+            del jroom["features"]
         j["rooms"].append(jroom)
         
     # swap index of any room containing a special tile to the end of the room list;
     # this ensures the special tiles will be drawn last 
     for ridx, room in rooms.items():
-        lidx = layout_idx[ridx]
-        if ridx in has_special:
-            for i in range(len(j["rooms"])-1, 0, -1):
-                ridx_swap = layout_idx_reverse[i]
-                if ridx_swap not in has_special:
-                    jroom = j["rooms"][lidx]
-                    jroom_swap = j["rooms"][i]
-                    j["rooms"][lidx] = jroom_swap
-                    j["rooms"][i] = jroom
-                    layout_idx[ridx] = i
-                    layout_idx[ridx_swap] = lidx
-                    layout_idx_reverse[i] = ridx
-                    layout_idx_reverse[lidx] = ridx_swap
-                    assert layout_idx_reverse[i] in has_special
-                    break
+        if ridx in layout_idx:
+            lidx = layout_idx[ridx]
+            if ridx in has_special:
+                for i in range(len(j["rooms"])-1, 0, -1):
+                    ridx_swap = layout_idx_reverse[i]
+                    if ridx_swap not in has_special:
+                        jroom = j["rooms"][lidx]
+                        jroom_swap = j["rooms"][i]
+                        j["rooms"][lidx] = jroom_swap
+                        j["rooms"][i] = jroom
+                        layout_idx[ridx] = i
+                        layout_idx[ridx_swap] = lidx
+                        layout_idx_reverse[i] = ridx
+                        layout_idx_reverse[lidx] = ridx_swap
+                        assert layout_idx_reverse[i] in has_special
+                        break
     
     # define areas
     for area in layout.areas:
@@ -1358,7 +1369,7 @@ def layout_to_json(layout: Table, path="met2.json"):
             "y0": area.miny - layout.miny,
             "y1": area.maxy - layout.miny,
             "rooms": sorted([
-                layout_idx[room.idx] for room in area.rooms if (not room.duplicates or all(room.idx < duplicate.idx for duplicate in room.duplicates))
+                layout_idx[room.idx] for room in area.rooms if (room.idx in layout_idx)
             ])
         })
     

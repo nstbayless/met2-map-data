@@ -362,19 +362,22 @@ for area in met2["areas"] + [None]:
     for ridx in rooms:
         room = met2["rooms"][ridx]
         roomfeatures = dict()
-        for feature in room["features"]:
-            ftype, slot, roomx, roomy = feature
-            x = roomx + room["x"] - x0
-            y = roomy + room["y"] - y0
-            if ftype in FEATURE_TILES:
-                if (x, y) not in roomfeatures:
-                    roomfeatures[(x, y)] = set()
-                roomfeatures[(x, y)].add(ftype)
-            elif ftype == "ship":
-                roomfeatures[(x,y)] = {"ship-left"}
-                roomfeatures[(x+1,y)] = {"ship-right"}
-            else:
-                print(f"unrecognized feature: {ftype}")
+        if "features" in room:
+            for feature in room["features"]:
+                ftype = feature["type"]
+                roomx = feature["x"]
+                roomy = feature["y"]
+                x = roomx + room["x"] - x0
+                y = roomy + room["y"] - y0
+                if ftype in FEATURE_TILES:
+                    if (x, y) not in roomfeatures:
+                        roomfeatures[(x, y)] = set()
+                    roomfeatures[(x, y)].add(ftype)
+                elif ftype == "ship":
+                    roomfeatures[(x,y)] = {"ship-left"}
+                    roomfeatures[(x+1,y)] = {"ship-right"}
+                else:
+                    print(f"unrecognized feature: {ftype}")
         
         for (x, y), roomfeature in roomfeatures.items():
             if "energy-recharge" in roomfeature and "missile-recharge" in roomfeature:
