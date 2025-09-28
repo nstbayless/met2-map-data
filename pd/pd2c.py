@@ -26,10 +26,10 @@ out(
 #define TILE_EXIT_WEST 10
 #define TILE_EXIT_SOUTH 11
 #define TILE_EXIT_EAST 12
-#define TILE_SHUNT_UL 13
-#define TILE_SHUNT_UR 14
-#define TILE_SHUNT_BL 15
-#define TILE_SHUNT_BR 16
+#define TILE_SHUNT 13
+#define TILE_BEAM 14
+
+
 #define TILE_HJUMP 17
 #define TILE_ITEM 18
 #define TILE_SAVE 19
@@ -55,6 +55,7 @@ struct SpecialTile {
     uint8_t object_slot : 7;
     uint8_t dark : 1;
     uint8_t embedding : 2;
+    uint8_t bank : 4;
     uint8_t ridx; // or 255 if not associated with a room
 };
 
@@ -174,11 +175,11 @@ door_dirs_to_exit_name = {
 }
 
 feature_name_to_tile_name = {
-    "plasma": ("items", "TILE_ITEM"),
+    "plasma": ("fixtures", "TILE_BEAM"),
+    "ice": ("fixtures", "TILE_BEAM"),
+    "spazer": ("fixtures", "TILE_BEAM"),
+    "wave": ("fixtures", "TILE_BEAM"),
     "varia": ("items", "TILE_ITEM"),
-    "ice": ("items", "TILE_ITEM"),
-    "spazer": ("items", "TILE_ITEM"),
-    "wave": ("items", "TILE_ITEM"),
     "high-jump": ("items", "TILE_ITEM"),
     "screw-attack": ("items", "TILE_ITEM"),
     "space-jump": ("items", "TILE_ITEM"),
@@ -207,7 +208,7 @@ bit_direction = {
     BIT_SOUTH: (0, 1),
 }
 
-def add_special_tile(area_idx, _ridx, category, name, x, y, object_slot=None, object_embedding=None):
+def add_special_tile(area_idx, _ridx, category, name, x, y, object_slot=None, object_embedding=None, object_bank=None):
     dark = 0;
     if _ridx is None:
         _ridx = 255
@@ -221,7 +222,8 @@ f""".area_x = {x},
 .type = {name},
 .object_slot = 0x{0 if object_slot is None else object_slot:02x},
 .dark = {dark},
-.embedding = {0 if object_embedding is None else object_embedding:02x},
+.embedding = {0 if object_embedding is None else object_embedding},
+.bank = {0 if object_bank is None else object_bank},
 .ridx = {_ridx},
 """ + "},\n"
         
@@ -273,11 +275,11 @@ for ridx, room in enumerate(met2["rooms"]):
                         for i in range(min(door_x, door_x + dx)+1, max(door_x, door_x + dx)):
                             add_special_tile(area_idx, door_x, "tiles", "TILE_HJUMP", i, door_y)
                     elif dy == 1 and dx == -1:
-                        add_special_tile(area_idx, ridx, "doors", "TILE_SHUNT_UR", door_x, door_y)
-                        add_special_tile(area_idx, ridx, "doors", "TILE_SHUNT_UL", door_x-1, door_y)
+                        add_special_tile(area_idx, 0, "doors", "TILE_SHUNT", door_x-1, door_y)
+                        add_special_tile(area_idx, 1, "doors", "TILE_SHUNT", door_x, door_y)
                     elif dy == -1 and dx == 1:
-                        add_special_tile(area_idx, ridx, "doors", "TILE_SHUNT_BL", door_x, door_y)
-                        add_special_tile(area_idx, ridx, "doors", "TILE_SHUNT_BR", door_x+1, door_y)
+                        add_special_tile(area_idx, 2, "doors", "TILE_SHUNT", door_x, door_y)
+                        add_special_tile(area_idx, 3, "doors", "TILE_SHUNT", door_x+1, door_y)
                     else:
                         assert False, f"unable to render jump of displacement {(dx, dy)}"
                 
@@ -313,7 +315,7 @@ for ridx, room in enumerate(met2["rooms"]):
                     add_special_tile(area_idx, None, "fixtures", "TILE_SHIP_RIGHT", x + xoff + 1, y + yoff)
                 elif name in feature_name_to_tile_name:
                     feature_category, feature_tile_name = feature_name_to_tile_name[name]
-                    add_special_tile(area_idx, ridx, feature_category, feature_tile_name, x + xoff, y + yoff, slot, feature_em)
+                    add_special_tile(area_idx, ridx, feature_category, feature_tile_name, x + xoff, y + yoff, slot, feature_em, room["states"][feature_em]["bank"] if feature_em is not None else 0)
                 else:
                     assert False, f"unknown feature: {feature}"
     out_rooms += "},\n"

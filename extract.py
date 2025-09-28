@@ -39,6 +39,7 @@ FINAL_AREA = "Metroid Nest"
 CAVES_1 = "Upper Acid Caves"
 CAVES_2 = "Eastern Acid Caves"
 CAVES_3 = "Lower Acid Caves"
+CAVES_4 = "Western Acid Caves"
 
 area_names = [
     SPAWN_AREA,
@@ -52,6 +53,7 @@ area_names = [
     CAVES_3,
     AREA_5,
     AREA_6,
+    CAVES_4,
     FINAL_AREA
 ]
 
@@ -196,7 +198,10 @@ AREA_COLORS = {
     AREA_5: (60, 90, 50),
     
     AREA_6: (140, 50, 140),
-    FINAL_AREA: (90, 10, 30),
+    
+    CAVES_4: (170, 40, 60),
+    
+    FINAL_AREA: (90, 70, 30),
 }
 
 special_objects = {
@@ -246,7 +251,10 @@ special_transitions = {
     (0xCBA, BIT_WEST): (-5, 2, AREA_6),
     
     # area 7
-    (0xF1C, BIT_SOUTH): (1, -12, FINAL_AREA),
+    (0xF1C, BIT_SOUTH): (0, -10, CAVES_4),
+    
+    # caves west
+    (0xA99, BIT_NORTH): (1, -2, FINAL_AREA),
     
     # Final area
     (0xD13, BIT_WEST): (FDX, FDY, SPAWN_AREA),
@@ -399,15 +407,13 @@ DARK = 4
 SPECIAL_DISPLAY = {
     
     # upper caves
+    0xA01: EMPTY, # questionable
     0xA02: EMPTY,
     0xA81: EMPTY,
     0xA91: EMPTY,
     0xAB2: EMPTY,
     0xAB3: EMPTY,
-    0xA57: EMPTY,
-    0xA39: EMPTY, 0xA19: EMPTY,
-    0xA3B: EMPTY, 0xA1B: EMPTY,
-    0xA3D: EMPTY, 0xA1D: EMPTY,
+    0xA57: EMPTY, # questionable
     
     # area 2
     0xC30: VPIPE,
@@ -1284,11 +1290,19 @@ def layout_to_json(layout: Table, path="met2.json"):
                 jroom["cells"][roomy][roomx] = tile
                 embedding[roomy][roomx] = 1
             
+            bgrom, sprrom, col, sol, mt, area_name = r.style
             jroom["states"].append({
                 "bank": r.bank,
                 "x": x0 - r.offset[0],
                 "y": y0 - r.offset[1],
-                "cells": embedding
+                "cells": embedding,
+                "style": {
+                    "bgrom": bgrom,
+                    "sprrom": sprrom,
+                    "collision": col,
+                    "solidity": sol,
+                    "metatiles": mt,
+                }
             })
             
             def add_door(entrance, cx, cy, direction, instance):

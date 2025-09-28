@@ -6,7 +6,7 @@
       "x1": 27,
       "y0": 0,
       "y1": 14,
-      "rooms": [0, 1, 2, 3, 4, 5, 7, 9, 11, 29, 35, 71]
+      "rooms": [0, 1, 2, 3, 4, 5, 7, 9, 11, 35, 49, 72]
     },
     {
       "name": "Upper Acid Caves",
@@ -14,7 +14,7 @@
       "x1": 44,
       "y0": 14,
       "y1": 33,
-      "rooms": [6, 10, 13, 14, 15, 17, 23, 28, 42, 55, 197, 198, 199, 200]
+      "rooms": [6, 10, 13, 14, 15, 17, 19, 23, 28, 42, 55, 198, 199, 200]
     },
     {
       "name": "Lower Chozo Temple",
@@ -30,7 +30,7 @@
       "x1": 65,
       "y0": 9,
       "y1": 16,
-      "rooms": [32, 62, 63, 64, 65, 66, 81, 83, 109, 110, 187, 188, 189, 192]
+      "rooms": [32, 62, 63, 64, 65, 66, 81, 83, 109, 110, 188, 189, 190, 193]
     },
     {
       "name": "Hydro Station",
@@ -38,7 +38,7 @@
       "x1": 35,
       "y0": 15,
       "y1": 25,
-      "rooms": [18, 22, 34, 36, 37, 38, 39, 40, 41, 51, 52, 53, 54, 69, 70, 88, 89, 90, 91, 92, 112, 113, 114, 115, 116, 129, 130, 131, 132, 144, 182, 190, 191, 193, 195]
+      "rooms": [18, 22, 34, 36, 37, 38, 39, 40, 41, 51, 52, 53, 54, 69, 70, 88, 89, 90, 91, 92, 112, 113, 114, 115, 116, 129, 130, 131, 132, 144, 185, 191, 192, 194, 196]
     },
     {
       "name": "Eastern Acid Caves",
@@ -46,7 +46,7 @@
       "x1": 53,
       "y0": 36,
       "y1": 44,
-      "rooms": [20, 30, 31, 45, 46, 58, 59, 75, 76, 196]
+      "rooms": [20, 30, 31, 45, 46, 58, 59, 75, 76, 197]
     },
     {
       "name": "Jungle",
@@ -62,7 +62,7 @@
       "x1": 72,
       "y0": 34,
       "y1": 43,
-      "rooms": [48, 61, 79, 105, 106, 107, 108, 128, 142, 143, 149, 150, 155, 156, 159, 163, 167, 180, 181]
+      "rooms": [48, 61, 79, 105, 106, 107, 108, 128, 142, 143, 149, 150, 155, 156, 159, 163, 167, 181, 182]
     },
     {
       "name": "Lower Acid Caves",
@@ -70,7 +70,7 @@
       "x1": 33,
       "y0": 40,
       "y1": 54,
-      "rooms": [24, 43, 44, 57, 74, 103, 123, 125, 137, 138, 139, 146, 147, 151, 152, 153, 185, 194]
+      "rooms": [24, 43, 44, 57, 74, 103, 123, 125, 137, 138, 139, 146, 147, 151, 152, 153, 186, 195]
     },
     {
       "name": "Tower",
@@ -78,7 +78,7 @@
       "x1": 28,
       "y0": 26,
       "y1": 42,
-      "rooms": [56, 73, 93, 94, 96, 97, 98, 99, 100, 101, 102, 117, 118, 119, 120, 121, 122, 133, 134, 135, 136, 186]
+      "rooms": [56, 73, 93, 94, 96, 97, 98, 99, 100, 101, 102, 117, 118, 119, 120, 121, 122, 133, 134, 135, 136, 187]
     },
     {
       "name": "Omega Environment",
@@ -86,15 +86,23 @@
       "x1": 19,
       "y0": 37,
       "y1": 49,
-      "rooms": [157, 161, 165, 166, 169, 170, 172, 173, 175, 176, 178, 184]
+      "rooms": [157, 161, 165, 166, 169, 170, 172, 173, 175, 176, 178, 179]
+    },
+    {
+      "name": "Western Acid Caves",
+      "x0": 2,
+      "x1": 10,
+      "y0": 27,
+      "y1": 36,
+      "rooms": [124, 145, 160, 164, 168, 171, 174, 177, 180, 183, 184]
     },
     {
       "name": "Metroid Nest",
       "x0": 3,
-      "x1": 11,
+      "x1": 10,
       "y0": 14,
-      "y1": 34,
-      "rooms": [8, 12, 16, 19, 25, 27, 49, 72, 80, 82, 84, 95, 124, 145, 160, 164, 168, 171, 174, 177, 179, 183]
+      "y1": 25,
+      "rooms": [8, 12, 16, 25, 27, 29, 71, 80, 82, 84, 95]
     }
   ],
   "rooms": [
@@ -133,7 +141,14 @@
             [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-          ]
+          ],
+          "style": {
+            "bgrom": 122880,
+            "sprrom": 111904,
+            "collision": 4,
+            "solidity": 4,
+            "metatiles": 5
+          }
         },
         {
           "bank": 15,
@@ -151,7 +166,14 @@
             [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
             [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
             [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
-          ]
+          ],
+          "style": {
+            "bgrom": 122880,
+            "sprrom": 111904,
+            "collision": 4,
+            "solidity": 4,
+            "metatiles": 5
+          }
         }
       ],
       "doors": [
@@ -170,7 +192,7 @@
           "entrance_states": 2,
           "exit_states": 2,
           "transitions": [492, 414, 491],
-          "to-area": 11
+          "to-area": 12
         }
       ],
       "features": [
@@ -206,7 +228,14 @@
           "y": 4,
           "cells": [
             [1, 1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 104736,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
@@ -244,7 +273,14 @@
           "y": 6,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 104736,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
@@ -286,7 +322,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 104736,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
@@ -324,7 +367,14 @@
           "y": 0,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 104736,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
@@ -378,7 +428,14 @@
           "y": 0,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 104736,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
@@ -415,7 +472,14 @@
           "y": 0,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -460,7 +524,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 104736,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
@@ -497,7 +568,14 @@
           "y": 15,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 118784,
+            "sprrom": 137660,
+            "collision": 2,
+            "solidity": 2,
+            "metatiles": 3
+          }
         },
         {
           "bank": 15,
@@ -505,7 +583,14 @@
           "y": 10,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 118784,
+            "sprrom": 111904,
+            "collision": 2,
+            "solidity": 2,
+            "metatiles": 3
+          }
         },
         {
           "bank": 15,
@@ -513,7 +598,14 @@
           "y": 15,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 118784,
+            "sprrom": 137660,
+            "collision": 2,
+            "solidity": 2,
+            "metatiles": 3
+          }
         }
       ],
       "doors": [
@@ -569,7 +661,14 @@
           "y": 1,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 104736,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
@@ -609,7 +708,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -646,7 +752,14 @@
           "y": 1,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 137660,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
@@ -699,7 +812,14 @@
           "y": 1,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 143804,
+            "sprrom": 137660,
+            "collision": 7,
+            "solidity": 7,
+            "metatiles": 0
+          }
         }
       ],
       "doors": [
@@ -741,7 +861,14 @@
             [1, 1],
             [1, 1],
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -787,7 +914,14 @@
           "y": 1,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 105760,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -831,7 +965,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 104736,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -871,7 +1012,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 143804,
+            "sprrom": 137660,
+            "collision": 7,
+            "solidity": 7,
+            "metatiles": 0
+          }
         }
       ],
       "doors": [
@@ -928,7 +1076,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 105760,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -966,7 +1121,14 @@
           "y": 2,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 104736,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -991,57 +1153,91 @@
       "name": "Septogg Sandpits"
     },
     {
-      "x": 4,
-      "y": 14,
-      "w": 5,
-      "h": 1,
+      "x": 38,
+      "y": 26,
+      "w": 2,
+      "h": 7,
       "cells": [
-        [1, 1, 1, 1, 1]
+        [1, 1],
+        [1, 1],
+        [1, 1],
+        [1, 1],
+        [1, 1],
+        [1, 1],
+        [1, 1]
       ],
       "states": [
         {
-          "bank": 14,
-          "x": 1,
-          "y": 0,
+          "bank": 10,
+          "x": 0,
+          "y": 8,
           "cells": [
-            [1, 1, 1, 1, 1]
-          ]
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
+        },
+        {
+          "bank": 10,
+          "x": 2,
+          "y": 8,
+          "cells": [
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [1, 1]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
         {
-          "x": 4,
+          "x": 1,
           "y": 0,
           "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [250, 310]
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [416, 391, 437]
         },
         {
           "x": 0,
-          "y": 0,
+          "y": 2,
           "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [243, 309]
-        }
-      ],
-      "features": [
-        {
-          "type": "larva",
-          "slot": 65,
-          "state": 0,
-          "x": 2,
-          "y": 0
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [102, 393, 59]
         },
         {
-          "type": "larva",
-          "slot": 66,
-          "state": 0,
-          "x": 4,
-          "y": 0
+          "x": 0,
+          "y": 6,
+          "dir": 2,
+          "entrance_states": 3,
+          "exit_states": 3,
+          "transitions": [110, 397, 75],
+          "to-area": 8
         }
-      ]
+      ],
+      "name": "Quad-state Room"
     },
     {
       "x": 49,
@@ -1060,7 +1256,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -1099,7 +1302,14 @@
           "y": 1,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 105760,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -1138,7 +1348,14 @@
           "y": 2,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 137660,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -1185,7 +1402,14 @@
           "y": 15,
           "cells": [
             [1, 1, 1, 1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 107808,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -1223,7 +1447,14 @@
           "y": 5,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 104736,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -1247,6 +1478,123 @@
       ]
     },
     {
+      "x": 4,
+      "y": 14,
+      "w": 5,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 1,
+          "y": 0,
+          "cells": [
+            [1, 1, 1, 1, 1]
+          ],
+          "style": {
+            "bgrom": 143804,
+            "sprrom": 137660,
+            "collision": 7,
+            "solidity": 7,
+            "metatiles": 0
+          }
+        }
+      ],
+      "doors": [
+        {
+          "x": 4,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [250, 310]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [243, 309]
+        }
+      ],
+      "features": [
+        {
+          "type": "larva",
+          "slot": 65,
+          "state": 0,
+          "x": 2,
+          "y": 0
+        },
+        {
+          "type": "larva",
+          "slot": 66,
+          "state": 0,
+          "x": 4,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 48,
+      "y": 14,
+      "w": 1,
+      "h": 3,
+      "cells": [
+        [1],
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 12,
+          "x": 2,
+          "y": 0,
+          "cells": [
+            [1],
+            [1],
+            [1]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 105760,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [419, 170]
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [91, 111]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [89, 160],
+          "to-area": 3
+        }
+      ]
+    },
+    {
       "x": 9,
       "y": 14,
       "w": 1,
@@ -1265,7 +1613,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 143804,
+            "sprrom": 137660,
+            "collision": 7,
+            "solidity": 7,
+            "metatiles": 0
+          }
         }
       ],
       "doors": [
@@ -1304,8 +1659,8 @@
       ]
     },
     {
-      "x": 48,
-      "y": 14,
+      "x": 30,
+      "y": 26,
       "w": 1,
       "h": 3,
       "cells": [
@@ -1316,31 +1671,30 @@
       "states": [
         {
           "bank": 12,
-          "x": 2,
-          "y": 0,
+          "x": 10,
+          "y": 4,
           "cells": [
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 107808,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
-        {
-          "x": 0,
-          "y": 1,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [419, 170]
-        },
         {
           "x": 0,
           "y": 2,
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [91, 111]
+          "transitions": [436, 429]
         },
         {
           "x": 0,
@@ -1348,10 +1702,10 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [89, 160],
-          "to-area": 3
+          "transitions": [46, 191]
         }
-      ]
+      ],
+      "name": "Octroll Alley Shaft"
     },
     {
       "x": 8,
@@ -1370,7 +1724,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 143804,
+            "sprrom": 137660,
+            "collision": 7,
+            "solidity": 7,
+            "metatiles": 0
+          }
         }
       ],
       "doors": [
@@ -1403,95 +1764,6 @@
       ]
     },
     {
-      "x": 30,
-      "y": 26,
-      "w": 1,
-      "h": 3,
-      "cells": [
-        [1],
-        [1],
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 12,
-          "x": 10,
-          "y": 4,
-          "cells": [
-            [1],
-            [1],
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 2,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [436, 429]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [46, 191]
-        }
-      ],
-      "name": "Octroll Alley Shaft"
-    },
-    {
-      "x": 10,
-      "y": 11,
-      "w": 3,
-      "h": 1,
-      "cells": [
-        [1, 1, 1]
-      ],
-      "states": [
-        {
-          "bank": 14,
-          "x": 2,
-          "y": 3,
-          "cells": [
-            [1, 1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [353, 354]
-        },
-        {
-          "x": 2,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [267, 326],
-          "to-area": 11
-        }
-      ],
-      "features": [
-        {
-          "type": "larva",
-          "slot": 68,
-          "state": 0,
-          "x": 1,
-          "y": 0
-        }
-      ]
-    },
-    {
       "x": 43,
       "y": 38,
       "w": 1,
@@ -1516,7 +1788,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -1571,7 +1850,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -1626,7 +1912,14 @@
           "y": 1,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 105760,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -1664,7 +1957,14 @@
           "y": 1,
           "cells": [
             [1, 1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 105760,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -1711,7 +2011,14 @@
           "y": 5,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 105760,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -1742,95 +2049,56 @@
       "name": "Hydro Save East"
     },
     {
-      "x": 8,
-      "y": 0,
-      "w": 10,
-      "h": 11,
+      "x": 10,
+      "y": 11,
+      "w": 3,
+      "h": 1,
       "cells": [
-        [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-        [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
-        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
-        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
-        [0, 0, 0, 1, 0, 0, 0, 1, 1, 1],
-        [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
-        [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
-        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
-        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+        [1, 1, 1]
       ],
       "states": [
         {
           "bank": 14,
-          "x": 0,
-          "y": -8,
+          "x": 2,
+          "y": 3,
           "cells": [
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 1, 1, 0, 0, 0, 0, 0, 0, 0]
-          ]
-        },
-        {
-          "bank": 15,
-          "x": 6,
-          "y": 0,
-          "cells": [
-            [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-            [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
-            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
-            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
-            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
-            [0, 0, 0, 1, 0, 0, 0, 1, 1, 1],
-            [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
-            [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
-            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
-            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
-          ]
+            [1, 1, 1]
+          ],
+          "style": {
+            "bgrom": 143804,
+            "sprrom": 137660,
+            "collision": 7,
+            "solidity": 7,
+            "metatiles": 0
+          }
         }
       ],
       "doors": [
         {
-          "x": 1,
-          "y": 10,
-          "dir": 8,
+          "x": 0,
+          "y": 0,
+          "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [255, 322]
+          "transitions": [353, 354]
         },
         {
           "x": 2,
-          "y": 10,
-          "dir": 8,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [354, 353]
-        },
-        {
-          "x": 2,
-          "y": 10,
+          "y": 0,
           "dir": 1,
-          "entrance_states": 2,
-          "exit_states": 2,
-          "transitions": [492, 414, 491],
-          "to-area": 11
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [267, 326],
+          "to-area": 12
         }
       ],
       "features": [
         {
-          "type": "egg",
-          "slot": 66,
-          "state": 1,
+          "type": "larva",
+          "slot": 68,
+          "state": 0,
           "x": 1,
-          "y": 10
+          "y": 0
         }
       ]
     },
@@ -1849,7 +2117,14 @@
           "y": 12,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 105760,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -1886,7 +2161,14 @@
           "y": 0,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 137660,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -1939,7 +2221,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 104736,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -1984,7 +2273,14 @@
           "y": 5,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 105760,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -2031,7 +2327,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 105760,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -2077,7 +2380,14 @@
           "y": 7,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 137660,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -2123,7 +2433,14 @@
           "y": 4,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 107808,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -2167,7 +2484,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -2205,7 +2529,14 @@
           "y": 9,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 127584,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -2246,7 +2577,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -2288,7 +2626,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -2326,7 +2671,14 @@
           "y": 12,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 109856,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -2372,7 +2724,14 @@
           "y": 2,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 109856,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -2396,51 +2755,111 @@
       ]
     },
     {
-      "x": 6,
-      "y": 17,
-      "w": 1,
-      "h": 1,
+      "x": 8,
+      "y": 0,
+      "w": 10,
+      "h": 11,
       "cells": [
-        [1]
+        [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+        [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+        [0, 0, 0, 1, 0, 0, 0, 1, 1, 1],
+        [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
+        [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+        [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
       ],
       "states": [
         {
           "bank": 14,
-          "x": 1,
-          "y": 13,
+          "x": 0,
+          "y": -8,
           "cells": [
-            [1]
-          ]
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+          ],
+          "style": {
+            "bgrom": 143804,
+            "sprrom": 111904,
+            "collision": 7,
+            "solidity": 7,
+            "metatiles": 0
+          }
+        },
+        {
+          "bank": 15,
+          "x": 6,
+          "y": 0,
+          "cells": [
+            [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+            [0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
+            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+            [0, 0, 1, 1, 1, 0, 0, 1, 1, 1],
+            [0, 0, 0, 1, 0, 0, 0, 1, 1, 1],
+            [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+          ],
+          "style": {
+            "bgrom": 122880,
+            "sprrom": 111904,
+            "collision": 4,
+            "solidity": 4,
+            "metatiles": 5
+          }
         }
       ],
       "doors": [
         {
-          "x": 0,
-          "y": 0,
+          "x": 1,
+          "y": 10,
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [359, 465]
+          "transitions": [255, 322]
         },
         {
-          "x": 0,
-          "y": 0,
-          "dir": 4,
+          "x": 2,
+          "y": 10,
+          "dir": 8,
           "entrance_states": 1,
-          "exit_states": 0,
-          "transitions": [414, 384]
+          "exit_states": 1,
+          "transitions": [354, 353]
+        },
+        {
+          "x": 2,
+          "y": 10,
+          "dir": 1,
+          "entrance_states": 2,
+          "exit_states": 2,
+          "transitions": [492, 414, 491],
+          "to-area": 12
         }
       ],
       "features": [
         {
-          "type": "ice",
-          "slot": 15,
-          "state": 0,
-          "x": 0,
-          "y": 0
+          "type": "egg",
+          "slot": 66,
+          "state": 1,
+          "x": 1,
+          "y": 10
         }
-      ],
-      "name": "Queen's Retreat"
+      ]
     },
     {
       "x": 54,
@@ -2459,7 +2878,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 105760,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -2504,7 +2930,14 @@
           "y": 5,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -2541,7 +2974,14 @@
           "y": 12,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 110880,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -2581,7 +3021,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 104736,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -2626,7 +3073,14 @@
           "y": 9,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 137660,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -2679,7 +3133,14 @@
           "y": 4,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 138684,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -2717,7 +3178,14 @@
           "y": 5,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 138684,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -2772,7 +3240,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 127584,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -2809,7 +3284,14 @@
           "y": 15,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -2846,7 +3328,14 @@
           "y": 15,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -2892,7 +3381,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 109856,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -2946,7 +3442,14 @@
           "y": 2,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 106784,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -2987,7 +3490,14 @@
             [1, 1],
             [0, 1],
             [0, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 105760,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -3040,7 +3550,14 @@
           "y": 1,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -3093,7 +3610,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -3146,7 +3670,14 @@
           "y": 0,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 137660,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -3185,7 +3716,14 @@
           "y": 10,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 105760,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -3223,7 +3761,14 @@
           "y": 11,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 105760,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -3263,7 +3808,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 105760,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -3308,7 +3860,14 @@
           "y": 13,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 137660,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -3345,7 +3904,14 @@
           "y": 13,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 137660,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -3377,6 +3943,60 @@
       ]
     },
     {
+      "x": 6,
+      "y": 17,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 14,
+          "x": 1,
+          "y": 13,
+          "cells": [
+            [1]
+          ],
+          "style": {
+            "bgrom": 143804,
+            "sprrom": 104736,
+            "collision": 7,
+            "solidity": 7,
+            "metatiles": 0
+          }
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [359, 465]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [414, 384]
+        }
+      ],
+      "features": [
+        {
+          "type": "ice",
+          "slot": 15,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "name": "Queen's Retreat"
+    },
+    {
       "x": 9,
       "y": 11,
       "w": 1,
@@ -3393,7 +4013,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 143804,
+            "sprrom": 104736,
+            "collision": 7,
+            "solidity": 7,
+            "metatiles": 0
+          }
         }
       ],
       "doors": [
@@ -3404,7 +4031,7 @@
           "entrance_states": 1,
           "exit_states": 1,
           "transitions": [358, 357],
-          "to-area": 11
+          "to-area": 12
         },
         {
           "x": 0,
@@ -3416,52 +4043,6 @@
         }
       ],
       "name": "Egg Viewing Shaft"
-    },
-    {
-      "x": 7,
-      "y": 19,
-      "w": 1,
-      "h": 1,
-      "cells": [
-        [1]
-      ],
-      "states": [
-        {
-          "bank": 14,
-          "x": 3,
-          "y": 13,
-          "cells": [
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [382, 462]
-        }
-      ],
-      "features": [
-        {
-          "type": "energy-recharge",
-          "slot": 14,
-          "state": 0,
-          "x": 0,
-          "y": 0
-        },
-        {
-          "type": "missile-recharge",
-          "slot": 15,
-          "state": 0,
-          "x": 0,
-          "y": 0
-        }
-      ],
-      "name": "Queen Recharge Room"
     },
     {
       "x": 17,
@@ -3508,7 +4089,14 @@
             [1, 0, 0, 1, 1],
             [1, 0, 0, 1, 1],
             [1, 0, 0, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 109856,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -3682,7 +4270,14 @@
           "y": 12,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 127584,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -3721,7 +4316,14 @@
           "cells": [
             [1, 1],
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 137660,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -3769,7 +4371,14 @@
           "cells": [
             [1, 1],
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 138684,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -3815,7 +4424,14 @@
           "y": 10,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 138684,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -3863,7 +4479,14 @@
           "y": 10,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 138684,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -3919,7 +4542,14 @@
             [1, 1, 0, 1, 1, 0, 0, 1],
             [1, 1, 0, 1, 1, 0, 0, 1],
             [1, 0, 0, 0, 0, 0, 0, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 109856,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -3991,43 +4621,57 @@
       "name": "Facility Exterior"
     },
     {
-      "x": 6,
-      "y": 18,
+      "x": 7,
+      "y": 19,
       "w": 1,
-      "h": 2,
+      "h": 1,
       "cells": [
-        [1],
         [1]
       ],
       "states": [
         {
-          "bank": 13,
-          "x": 1,
-          "y": 1,
+          "bank": 14,
+          "x": 3,
+          "y": 13,
           "cells": [
-            [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 104736,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
         {
           "x": 0,
-          "y": 1,
+          "y": 0,
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [381, 256]
+          "transitions": [382, 462]
+        }
+      ],
+      "features": [
+        {
+          "type": "energy-recharge",
+          "slot": 14,
+          "state": 0,
+          "x": 0,
+          "y": 0
         },
         {
+          "type": "missile-recharge",
+          "slot": 15,
+          "state": 0,
           "x": 0,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [465, 359]
+          "y": 0
         }
-      ]
+      ],
+      "name": "Queen Recharge Room"
     },
     {
       "x": 54,
@@ -4044,7 +4688,14 @@
           "y": 4,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 105760,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -4068,6 +4719,97 @@
       "name": "Bomb Access"
     },
     {
+      "x": 6,
+      "y": 18,
+      "w": 1,
+      "h": 2,
+      "cells": [
+        [1],
+        [1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 1,
+          "y": 1,
+          "cells": [
+            [1],
+            [1]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 104736,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 8,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [381, 256]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [465, 359]
+        }
+      ]
+    },
+    {
+      "x": 58,
+      "y": 15,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 13,
+          "x": 9,
+          "y": 5,
+          "cells": [
+            [1, 1]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [279, 280]
+        }
+      ],
+      "name": "Ice Beam Access"
+    },
+    {
       "x": 5,
       "y": 18,
       "w": 1,
@@ -4084,7 +4826,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 104736,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
@@ -4109,106 +4858,6 @@
     },
     {
       "x": 58,
-      "y": 15,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 13,
-          "x": 9,
-          "y": 5,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [0]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [279, 280]
-        }
-      ],
-      "name": "Ice Beam Access"
-    },
-    {
-      "x": 4,
-      "y": 20,
-      "w": 5,
-      "h": 5,
-      "cells": [
-        [1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1],
-        [0, 1, 1, 1, 0]
-      ],
-      "states": [
-        {
-          "bank": 15,
-          "x": 10,
-          "y": 11,
-          "cells": [
-            [1, 1, 1, 1, 1],
-            [1, 1, 1, 1, 1],
-            [1, 1, 1, 1, 1],
-            [1, 1, 1, 1, 1],
-            [0, 1, 1, 1, 0]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 2,
-          "y": 4,
-          "dir": 8,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [55, 383]
-        },
-        {
-          "x": 2,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [256, 381]
-        },
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [266, 380]
-        },
-        {
-          "x": 3,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [462, 382]
-        }
-      ],
-      "name": "Soda Fountain"
-    },
-    {
-      "x": 58,
       "y": 17,
       "w": 2,
       "h": 1,
@@ -4222,7 +4871,14 @@
           "y": 11,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 137660,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -4260,7 +4916,14 @@
           "y": 12,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 137660,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -4298,7 +4961,14 @@
           "y": 12,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 137660,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -4336,7 +5006,14 @@
           "y": 13,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 138684,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -4376,7 +5053,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 137660,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -4421,7 +5105,14 @@
           "y": 6,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 137660,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -4458,7 +5149,14 @@
           "y": 10,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -4500,7 +5198,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -4549,7 +5254,14 @@
             [1, 1],
             [0, 1],
             [0, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 109856,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -4594,7 +5306,14 @@
           "y": 3,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 139708,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -4627,31 +5346,55 @@
       "name": "Screw Zeta"
     },
     {
-      "x": 5,
-      "y": 25,
-      "w": 2,
-      "h": 1,
+      "x": 4,
+      "y": 20,
+      "w": 5,
+      "h": 5,
       "cells": [
-        [1, 1]
+        [1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1],
+        [0, 1, 1, 1, 0]
       ],
       "states": [
         {
-          "bank": 10,
-          "x": 8,
-          "y": 9,
+          "bank": 15,
+          "x": 10,
+          "y": 11,
           "cells": [
-            [1, 1]
-          ]
+            [1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1],
+            [0, 1, 1, 1, 0]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 104736,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
         {
-          "x": 0,
-          "y": 0,
-          "dir": 2,
+          "x": 2,
+          "y": 4,
+          "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [219, 133]
+          "transitions": [55, 383],
+          "to-area": 11
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [256, 381]
         },
         {
           "x": 1,
@@ -4659,17 +5402,18 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [383, 55]
-        }
-      ],
-      "features": [
+          "transitions": [266, 380]
+        },
         {
-          "type": "save",
-          "x": 1,
-          "y": 0
+          "x": 3,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [462, 382]
         }
       ],
-      "name": "Final Save"
+      "name": "Soda Fountain"
     },
     {
       "x": 18,
@@ -4686,7 +5430,14 @@
           "y": 4,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 109856,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -4728,7 +5479,14 @@
           "y": 4,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 138684,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -4765,7 +5523,14 @@
           "y": 9,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 109856,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -4802,7 +5567,14 @@
           "y": 13,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 139708,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -4839,7 +5611,14 @@
           "y": 4,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 138684,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -4876,7 +5655,14 @@
           "y": 0,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 138684,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -4921,7 +5707,14 @@
           "y": 5,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 139708,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -4962,7 +5755,14 @@
             [1, 1],
             [1, 1],
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 127584,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -5022,7 +5822,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 108832,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -5070,7 +5877,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 109856,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -5108,7 +5922,14 @@
           "y": 5,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 109856,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -5159,7 +5980,14 @@
           "y": 6,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 109856,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -5203,7 +6031,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 138684,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -5245,7 +6080,14 @@
           "y": 4,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 105760,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -5290,7 +6132,14 @@
           "y": 5,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -5328,7 +6177,14 @@
           "y": 12,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 137660,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -5366,7 +6222,14 @@
           "y": 14,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 138684,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -5403,7 +6266,14 @@
           "y": 14,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 138684,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -5449,7 +6319,14 @@
           "y": 6,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 137660,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -5491,7 +6368,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -5528,7 +6412,14 @@
           "y": 12,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -5581,7 +6472,14 @@
           "y": 2,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 139708,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -5626,7 +6524,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 108832,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -5696,7 +6601,14 @@
           "y": 0,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 138684,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -5734,7 +6646,14 @@
           "y": 0,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 139708,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -5772,7 +6691,14 @@
           "y": 15,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 138684,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -5810,7 +6736,14 @@
           "y": 15,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 139708,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -5852,7 +6785,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 127584,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 7
+          }
         }
       ],
       "doors": [
@@ -5876,42 +6816,56 @@
     },
     {
       "x": 4,
-      "y": 25,
-      "w": 1,
-      "h": 2,
+      "y": 27,
+      "w": 2,
+      "h": 1,
       "cells": [
-        [1],
-        [1]
+        [1, 1]
       ],
       "states": [
         {
-          "bank": 12,
-          "x": 7,
-          "y": 11,
+          "bank": 10,
+          "x": 8,
+          "y": 9,
           "cells": [
-            [1],
-            [1]
-          ]
+            [1, 1]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 109856,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
         {
           "x": 0,
-          "y": 1,
-          "dir": 1,
+          "y": 0,
+          "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [57, 225]
+          "transitions": [219, 133]
         },
         {
-          "x": 0,
+          "x": 1,
           "y": 0,
-          "dir": 1,
+          "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [133, 219]
+          "transitions": [383, 55],
+          "to-area": 12
         }
-      ]
+      ],
+      "features": [
+        {
+          "type": "save",
+          "x": 1,
+          "y": 0
+        }
+      ],
+      "name": "Final Save"
     },
     {
       "x": 20,
@@ -5928,7 +6882,14 @@
           "y": 6,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         },
         {
           "bank": 11,
@@ -5936,7 +6897,14 @@
           "y": 9,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -5973,7 +6941,14 @@
           "y": 10,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 109856,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -6010,7 +6985,14 @@
           "y": 3,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 137660,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -6061,7 +7043,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -6106,7 +7095,14 @@
           "y": 14,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 137660,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -6152,7 +7148,14 @@
           "y": 14,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 138684,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -6190,7 +7193,14 @@
           "y": 13,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -6238,7 +7248,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -6275,7 +7292,14 @@
           "y": 5,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 108832,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -6314,7 +7338,14 @@
           "y": 6,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 108832,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -6353,7 +7384,14 @@
           "y": 7,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 108832,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -6392,7 +7430,14 @@
           "y": 8,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 108832,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -6431,7 +7476,14 @@
           "y": 9,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 127584,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -6470,7 +7522,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         },
         {
           "bank": 12,
@@ -6479,7 +7538,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -6518,7 +7584,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         },
         {
           "bank": 12,
@@ -6527,7 +7600,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -6568,7 +7648,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 109856,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -6606,7 +7693,14 @@
           "y": 3,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 138684,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -6649,7 +7743,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 138684,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -6702,7 +7803,14 @@
           "y": 8,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -6739,7 +7847,14 @@
           "y": 14,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 138684,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -6754,55 +7869,48 @@
       ]
     },
     {
-      "x": 5,
-      "y": 26,
-      "w": 4,
-      "h": 1,
+      "x": 3,
+      "y": 27,
+      "w": 1,
+      "h": 2,
       "cells": [
-        [1, 1, 1, 1]
+        [1],
+        [1]
       ],
       "states": [
         {
-          "bank": 10,
-          "x": 11,
-          "y": 9,
+          "bank": 12,
+          "x": 7,
+          "y": 11,
           "cells": [
-            [1, 1, 1, 1]
-          ]
+            [1],
+            [1]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 109856,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
         {
-          "x": 3,
-          "y": 0,
+          "x": 0,
+          "y": 1,
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [237, 58]
+          "transitions": [57, 225]
         },
         {
           "x": 0,
           "y": 0,
-          "dir": 2,
+          "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [225, 57]
-        },
-        {
-          "x": 2,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 0,
-          "exit_states": 1,
-          "transitions": [0]
-        },
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 0,
-          "exit_states": 1,
-          "transitions": [0]
+          "transitions": [133, 219]
         }
       ]
     },
@@ -6827,7 +7935,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 127584,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -6864,7 +7979,14 @@
           "y": 6,
           "cells": [
             [1, 1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 137660,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         },
         {
           "bank": 11,
@@ -6872,7 +7994,14 @@
           "y": 8,
           "cells": [
             [1, 1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 140732,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -6936,7 +8065,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 138684,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -6990,7 +8126,14 @@
           "y": 10,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -7044,7 +8187,14 @@
           "y": 8,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -7090,7 +8240,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 127584,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -7130,7 +8287,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -7161,7 +8325,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -7196,7 +8367,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 107808,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -7233,7 +8411,14 @@
           "y": 10,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 138684,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -7282,7 +8467,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -7331,7 +8523,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 106784,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -7376,7 +8575,14 @@
           "y": 2,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 138684,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -7422,7 +8628,14 @@
           "y": 10,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -7445,33 +8658,38 @@
       ]
     },
     {
-      "x": 9,
-      "y": 26,
-      "w": 1,
-      "h": 2,
+      "x": 4,
+      "y": 28,
+      "w": 4,
+      "h": 1,
       "cells": [
-        [1],
-        [1]
+        [1, 1, 1, 1]
       ],
       "states": [
         {
-          "bank": 12,
-          "x": 8,
-          "y": 14,
+          "bank": 10,
+          "x": 11,
+          "y": 9,
           "cells": [
-            [1],
-            [1]
-          ]
+            [1, 1, 1, 1]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 109856,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
         {
-          "x": 0,
-          "y": 1,
-          "dir": 2,
+          "x": 3,
+          "y": 0,
+          "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [68, 241]
+          "transitions": [237, 58]
         },
         {
           "x": 0,
@@ -7479,7 +8697,23 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [58, 237]
+          "transitions": [225, 57]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [0]
         }
       ]
     },
@@ -7502,7 +8736,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 109856,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -7547,7 +8788,14 @@
           "y": 2,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 109856,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -7584,7 +8832,14 @@
           "y": 10,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -7608,63 +8863,48 @@
       ]
     },
     {
-      "x": 4,
-      "y": 27,
-      "w": 5,
-      "h": 1,
+      "x": 8,
+      "y": 28,
+      "w": 1,
+      "h": 2,
       "cells": [
-        [1, 1, 1, 1, 1]
+        [1],
+        [1]
       ],
       "states": [
         {
-          "bank": 10,
-          "x": 9,
-          "y": 11,
+          "bank": 12,
+          "x": 8,
+          "y": 14,
           "cells": [
-            [1, 1, 1, 1, 1]
-          ]
+            [1],
+            [1]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 109856,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
+        {
+          "x": 0,
+          "y": 1,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [68, 241]
+        },
         {
           "x": 0,
           "y": 0,
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [226, 67]
-        },
-        {
-          "x": 4,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [241, 68]
-        },
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 0,
-          "exit_states": 1,
-          "transitions": [0]
-        },
-        {
-          "x": 3,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 0,
-          "exit_states": 1,
-          "transitions": [0]
-        },
-        {
-          "x": 2,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 0,
-          "exit_states": 1,
-          "transitions": [0]
+          "transitions": [58, 237]
         }
       ]
     },
@@ -7683,7 +8923,14 @@
           "y": 12,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 109856,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -7729,7 +8976,14 @@
           "y": 14,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 109856,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -7766,7 +9020,14 @@
           "y": 11,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 137660,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -7791,8 +9052,8 @@
       "name": "Autom E-Tank Room"
     },
     {
-      "x": 9,
-      "y": 30,
+      "x": 8,
+      "y": 32,
       "w": 1,
       "h": 4,
       "cells": [
@@ -7811,7 +9072,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -7857,7 +9125,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 109856,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -7902,7 +9177,14 @@
           "y": 14,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 140732,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -7926,8 +9208,8 @@
       ]
     },
     {
-      "x": 10,
-      "y": 28,
+      "x": 9,
+      "y": 30,
       "w": 1,
       "h": 6,
       "cells": [
@@ -7950,7 +9232,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         },
         {
           "bank": 12,
@@ -7963,7 +9252,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 8
+          }
         }
       ],
       "doors": [
@@ -8001,7 +9297,14 @@
           "y": 8,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 109856,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -8041,7 +9344,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 109856,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -8072,8 +9382,8 @@
       ]
     },
     {
-      "x": 4,
-      "y": 28,
+      "x": 3,
+      "y": 30,
       "w": 6,
       "h": 1,
       "cells": [
@@ -8086,7 +9396,14 @@
           "y": 12,
           "cells": [
             [1, 1, 1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 109856,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
@@ -8147,7 +9464,14 @@
           "y": 13,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 109856,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -8184,7 +9508,14 @@
           "y": 11,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 109856,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -8207,8 +9538,8 @@
       ]
     },
     {
-      "x": 3,
-      "y": 27,
+      "x": 2,
+      "y": 29,
       "w": 1,
       "h": 2,
       "cells": [
@@ -8223,7 +9554,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 109856,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
@@ -8260,7 +9598,14 @@
           "y": 7,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 140732,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
         }
       ],
       "doors": [
@@ -8284,8 +9629,53 @@
       ]
     },
     {
-      "x": 7,
-      "y": 27,
+      "x": 6,
+      "y": 44,
+      "w": 2,
+      "h": 1,
+      "cells": [
+        [1, 1]
+      ],
+      "states": [
+        {
+          "bank": 15,
+          "x": 0,
+          "y": 11,
+          "cells": [
+            [1, 1]
+          ],
+          "style": {
+            "bgrom": 114688,
+            "sprrom": 140732,
+            "collision": 0,
+            "solidity": 0,
+            "metatiles": 2
+          }
+        }
+      ],
+      "doors": [
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [356, 355]
+        }
+      ],
+      "features": [
+        {
+          "type": "omega",
+          "slot": 67,
+          "state": 0,
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "x": 6,
+      "y": 29,
       "w": 1,
       "h": 1,
       "cells": [
@@ -8298,7 +9688,14 @@
           "y": 10,
           "cells": [
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 109856,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
         }
       ],
       "doors": [
@@ -8335,7 +9732,14 @@
           "y": 11,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 137660,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -8382,7 +9786,14 @@
           "y": 11,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 108832,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -8406,6 +9817,118 @@
       "name": "Autom Alley"
     },
     {
+      "x": 5,
+      "y": 29,
+      "w": 1,
+      "h": 1,
+      "cells": [
+        [3]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 12,
+          "y": 10,
+          "cells": [
+            [1]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 109856,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 0,
+          "transitions": [0]
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [64]
+        }
+      ]
+    },
+    {
+      "x": 3,
+      "y": 29,
+      "w": 5,
+      "h": 1,
+      "cells": [
+        [1, 1, 1, 1, 1]
+      ],
+      "states": [
+        {
+          "bank": 10,
+          "x": 9,
+          "y": 11,
+          "cells": [
+            [1, 1, 1, 1, 1]
+          ],
+          "style": {
+            "bgrom": 120832,
+            "sprrom": 109856,
+            "collision": 3,
+            "solidity": 3,
+            "metatiles": 4
+          }
+        }
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [226, 67]
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "transitions": [241, 68]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [0]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 8,
+          "entrance_states": 0,
+          "exit_states": 1,
+          "transitions": [0]
+        }
+      ]
+    },
+    {
       "x": 24,
       "y": 24,
       "w": 3,
@@ -8420,7 +9943,14 @@
           "y": 13,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -8467,81 +9997,6 @@
       "name": "High Jump Cache"
     },
     {
-      "x": 6,
-      "y": 27,
-      "w": 1,
-      "h": 1,
-      "cells": [
-        [3]
-      ],
-      "states": [
-        {
-          "bank": 10,
-          "x": 12,
-          "y": 10,
-          "cells": [
-            [1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 0,
-          "transitions": [0]
-        },
-        {
-          "x": 0,
-          "y": 0,
-          "dir": 8,
-          "entrance_states": 0,
-          "exit_states": 1,
-          "transitions": [64]
-        }
-      ]
-    },
-    {
-      "x": 6,
-      "y": 44,
-      "w": 2,
-      "h": 1,
-      "cells": [
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 15,
-          "x": 0,
-          "y": 11,
-          "cells": [
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "transitions": [356, 355]
-        }
-      ],
-      "features": [
-        {
-          "type": "omega",
-          "slot": 67,
-          "state": 0,
-          "x": 0,
-          "y": 0
-        }
-      ]
-    },
-    {
       "x": 16,
       "y": 48,
       "w": 2,
@@ -8561,7 +10016,14 @@
           "cells": [
             [1, 1],
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         },
         {
           "bank": 10,
@@ -8570,7 +10032,14 @@
           "cells": [
             [1, 1],
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -8607,7 +10076,14 @@
           "y": 1,
           "cells": [
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 109856,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -8655,7 +10131,14 @@
           "cells": [
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 105760,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -8702,7 +10185,14 @@
           "y": 4,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -8762,7 +10252,14 @@
           "y": 3,
           "cells": [
             [1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -8809,7 +10306,14 @@
           "y": 10,
           "cells": [
             [1, 1, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -8858,7 +10362,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 137660,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -8914,7 +10425,14 @@
             [1, 1, 1, 1, 0, 0, 0, 0, 1, 1],
             [1, 1, 0, 0, 0, 0, 0, 0, 1, 1],
             [1, 1, 0, 0, 0, 0, 0, 0, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 105760,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -9004,7 +10522,14 @@
             [1],
             [0],
             [0]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 105760,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         },
         {
           "bank": 13,
@@ -9014,7 +10539,14 @@
             [1],
             [1],
             [1]
-          ]
+          ],
+          "style": {
+            "bgrom": 116736,
+            "sprrom": 107808,
+            "collision": 1,
+            "solidity": 1,
+            "metatiles": 1
+          }
         }
       ],
       "doors": [
@@ -9089,7 +10621,14 @@
             [1, 1],
             [1, 1],
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -9160,7 +10699,14 @@
             [1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1],
             [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1],
             [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 141756,
+            "sprrom": 105760,
+            "collision": 6,
+            "solidity": 6,
+            "metatiles": 9
+          }
         }
       ],
       "doors": [
@@ -9281,7 +10827,14 @@
             [1, 1],
             [1, 1],
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 126256,
+            "sprrom": 109856,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -9317,88 +10870,6 @@
       "name": "Acid Dive Start"
     },
     {
-      "x": 38,
-      "y": 26,
-      "w": 2,
-      "h": 7,
-      "cells": [
-        [1, 1],
-        [
-          1,
-          -1
-        ],
-        [1, 1],
-        [
-          1,
-          -1
-        ],
-        [1, 1],
-        [
-          1,
-          -1
-        ],
-        [1, 1]
-      ],
-      "states": [
-        {
-          "bank": 10,
-          "x": 0,
-          "y": 8,
-          "cells": [
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1]
-          ]
-        },
-        {
-          "bank": 10,
-          "x": 2,
-          "y": 8,
-          "cells": [
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1],
-            [1, 1]
-          ]
-        }
-      ],
-      "doors": [
-        {
-          "x": 1,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [416, 391, 437]
-        },
-        {
-          "x": 0,
-          "y": 2,
-          "dir": 2,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [102, 393, 59]
-        },
-        {
-          "x": 0,
-          "y": 6,
-          "dir": 2,
-          "entrance_states": 3,
-          "exit_states": 3,
-          "transitions": [110, 397, 75],
-          "to-area": 8
-        }
-      ],
-      "name": "Quad-state Room"
-    },
-    {
       "x": 40,
       "y": 23,
       "w": 2,
@@ -9422,7 +10893,14 @@
             [1, 1],
             [1, 1],
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -9490,7 +10968,14 @@
             [1, 1, 1, 1],
             [0, 0, 1, 1],
             [0, 0, 1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
@@ -9528,7 +11013,10 @@
       "h": 3,
       "cells": [
         [1, 1],
-        [1, 1],
+        [
+          -1,
+          1
+        ],
         [
           -1,
           1
@@ -9543,7 +11031,14 @@
             [1, 1],
             [1, 1],
             [1, 1]
-          ]
+          ],
+          "style": {
+            "bgrom": 124928,
+            "sprrom": 106784,
+            "collision": 5,
+            "solidity": 5,
+            "metatiles": 6
+          }
         }
       ],
       "doors": [
