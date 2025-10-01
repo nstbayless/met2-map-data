@@ -66,10 +66,12 @@ room_names = {
     0xF51: "Shallow Slime",
     0xF01: "First Alpha",
     0xBD0: "Wading Pool",
+    
     0xA00: "First Acid",
     0xA90: "No Swimming Zone",
     0xA22: "No Diving Zone",
     0xB31: "Acid Pancakes",
+    
     0xB11: "Temple Access",
     0xBA1: "Cullugg Pillar Room",
     0x95D: "Temple Exterior",
@@ -77,14 +79,30 @@ room_names = {
     0xD83: "Bomb Tutorial",
     0xDBD: "Wallfire Shaft",
     0xD54: "Bomb Access",
-    0xD95: "Ice Beam Access",
+    0xD44: "Bomb Room",
+    0xB11: "Pre-Temple Corridor",
+    0xC20: "Pre-Temple Shaft",
+    0xDB1: "Temple Shaft East",
+    0xD72: "Temple Shaft West",
+    0xD83: "Temple E-Tank Room",
+    0xD95: "Temple Ice Beam Access",
+    0xD85: "Temple Ice Beam Room",
+    0xD81: "Double Missile Room",
     0xB1A: "Spider Access",
+    0xE30: "Spider Room",
+    0xDC4: "Triple Missile Room",
     0xE70: "Post-Spider Alpha",
     0xC31: "Cobweb's Treasure",
+    0xB9A: "Pancake Access Shaft",
     0xBAB: "Pancake Room",
+    0xBDB: "Pancake Alpha",
+    0xB8B: "Not Pancake Access Shaft",
     0xB5C: "Not Pancake Room",
+    0xB4C: "Not Pancake Alpha",
+    0xB9C: "Not Not Pancake Alpha",
     0xB42: "Septogg Sandpits",
     0xB22: "Cawron Alpha",
+    
     0x9D3: "Hydro Exterior",
     0xD75: "Hydro Save East",
     0xD25: "Hydro Save West",
@@ -122,11 +140,11 @@ room_names = {
     0xEA2: "Screw Attack Room",
     0xEA3: "Screw Zeta",
     0xEA4: "Non-Euclidean Room",
-    0xEB5: "Armory Shaft",
-    0xEA5: "Armory Plasma Room",
-    0xEA6: "Armory Spazer Room",
-    0xEA7: "Armory Wave Beam Room",
-    0xEA8: "Armory Ice Beam Room",
+    0xEB5: "Tower Shaft",
+    0xEA5: "Tower Plasma Room",
+    0xEA6: "Tower Spazer Room",
+    0xEA7: "Tower Wave Beam Room",
+    0xEA8: "Tower Ice Beam Room",
     0xB76: "Tower Access",
     0xEAA: "Tower Save",
     0xA7E: "Loop Acid",
@@ -137,7 +155,7 @@ room_names = {
     0xD02: "Egg Viewing Shaft",
     0xE3D: "Queen Recharge Room",
     0xE1D: "Queen's Retreat",
-    0xE31: "Throne Room",
+    0xE31: "Queen's Hallway",
     0xFEF: "Queen Fight",
 }
 
@@ -1071,6 +1089,19 @@ def identify_duplicate_rooms():
                         if cloc_other != cloc:
                             cell_other = cells[uncompressed_location(cloc_other)]
                             room.duplicates.append(cell_other.room)
+    
+    for i in range(10):
+        for ridx, room in rooms.items():
+            if room.duplicates is not None:
+                for r in room.duplicates:
+                    if r.duplicates is None:
+                        r.duplicates = []
+                    for r2 in room.duplicates:
+                        if r is not r2 and r2 not in r.duplicates:
+                            r.duplicates.append(r2)
+                    if room not in r.duplicates:
+                        r.duplicates.append(room)
+                
 
 class Area:
     def __init__(self, name):
