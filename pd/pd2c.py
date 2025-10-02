@@ -193,6 +193,7 @@ feature_name_to_tile_name = {
     "energy-recharge": ("fixtures", "TILE_RECHARGE_ENERGY"),
     "missile-recharge": ("fixtures", "TILE_RECHARGE_MISSILE"),
     "alpha": ("alphas", "TILE_METROID_ALPHA"),
+    "hatch-alpha": ("alphas", "TILE_METROID_ALPHA"),
     "gamma": ("metroids", "TILE_METROID_GAMMA"),
     "zeta": ("metroids", "TILE_METROID_ZETA"),
     "omega": ("metroids", "TILE_METROID_OMEGA"),

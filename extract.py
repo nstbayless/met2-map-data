@@ -190,7 +190,7 @@ object_names = {
     
     0xA0: "alpha",
     0xA3: "gamma",
-    0xA4: "alpha",
+    0xA4: "hatch-alpha",
     0xA6: "egg",
     0xAD: "zeta",
     0xB3: "omega",

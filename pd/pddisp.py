@@ -127,6 +127,7 @@ FEATURE_TILES = {
     "both-recharge": RECHARGE_BOTH,
     
     "alpha": ALPHA,
+    "hatch-alpha": ALPHA,
     "gamma": GAMMA,
     "zeta": ZETA,
     "omega": OMEGA,
