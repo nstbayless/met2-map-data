@@ -1317,6 +1317,15 @@ def layout_to_json(layout: Table, path="met2.json"):
         
         if name:
             jroom["name"] = name
+        else:
+            basename = "ROOM"
+            if jroom['w'] == 1 and jroom['h'] > 1:
+                basename = "SHAFT"
+            elif jroom['h'] == 1 and jroom['w'] > 1:
+                basename = "CORRIDOR"
+            repcx, repcy = list(myrooms[0].cells)[0]
+            repcell = cells[(myrooms[0].bank, repcx, repcy)]
+            jroom['name'] = f"{basename}_{repcell.bank:X}{repcell.x:X}{repcell.y:X}"
         
         combined_doors = dict()
         
