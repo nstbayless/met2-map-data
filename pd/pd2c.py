@@ -302,6 +302,12 @@ for ridx, room in enumerate(met2["rooms"]):
                 name = feature["type"]
                 slot = feature["slot"] if "slot" in feature else None
                 feature_em = feature["state"] if "state" in feature else None
+                
+                def lowest_set_bit_index(x: int) -> int:
+                    return (x & -x).bit_length() - 1
+                
+                feature_em = lowest_set_bit_index(feature_em)
+                
                 xoff = feature["x"]
                 yoff = feature["y"]
                 if "recharge" in name and (xoff, yoff) in recharges and recharges[(xoff, yoff)] >= 2:

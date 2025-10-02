@@ -114,6 +114,9 @@ room_names = {
     0xD75: "Hydro Save East",
     0xD25: "Hydro Save West",
     0xD7D: "High Jump Cache",
+    0xD97: "Missile Pipe Hook",
+    0xD36: "Empty Pipe Hook",
+    
     0xA47: "Caves Fork",
     0xBBF: "Lower Octroll Alley",
     0xCA5: "Octroll Alley Shaft",
@@ -1317,6 +1320,8 @@ def layout_to_json(layout: Table, path="met2.json"):
         
         combined_doors = dict()
         
+        slots_used = dict()
+        
         for i, r in enumerate(myrooms):
             statebit = 1 << i
             embedding = [[0 for _ in range(x1-x0)] for _2 in range(y1-y0)]
@@ -1330,7 +1335,13 @@ def layout_to_json(layout: Table, path="met2.json"):
                 if cell.has_save:
                     jroom["features"].append({"type": "save", "x": roomx, "y": roomy})
                 for feature in cell.contents:
-                    jroom["features"].append({"type": feature[0], "slot": feature[1], "state": i, "x": roomx, "y": roomy, "sx": feature[2], "sy": feature[3]})
+                    fkey = (feature[1], roomx, roomy)
+                    if fkey in slots_used:
+                        slots_used[fkey]["states"] |= 1 << i
+                    else:
+                        fj = {"type": feature[0], "slot": feature[1], "states": 1 << i, "x": roomx, "y": roomy, "sx": feature[2], "sy": feature[3]}
+                        jroom["features"].append(fj)
+                        slots_used[fkey] = fj
                 
                 tile = 1
                 cloc = compressed_location(r.bank, cx, cy)

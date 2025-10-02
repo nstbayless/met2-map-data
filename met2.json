@@ -284,7 +284,7 @@
         {
           "type": "ship",
           "slot": null,
-          "state": 0,
+          "states": 1,
           "x": 7,
           "y": 5,
           "sx": null,
@@ -293,7 +293,7 @@
         {
           "type": "egg",
           "slot": 66,
-          "state": 1,
+          "states": 2,
           "x": 1,
           "y": 10,
           "sx": 172,
@@ -866,7 +866,7 @@
         {
           "type": "queen",
           "slot": null,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": null,
@@ -1040,7 +1040,7 @@
         {
           "type": "alpha",
           "slot": 65,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 144,
@@ -1049,7 +1049,7 @@
         {
           "type": "energy-recharge",
           "slot": 14,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 200,
@@ -1058,7 +1058,7 @@
         {
           "type": "missile-recharge",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 232,
@@ -1391,7 +1391,7 @@
         {
           "type": "larva",
           "slot": 64,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 1,
           "sx": 128,
@@ -1400,7 +1400,7 @@
         {
           "type": "larva",
           "slot": 71,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 160,
@@ -1828,7 +1828,7 @@
         {
           "type": "hatch-alpha",
           "slot": 64,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -2016,7 +2016,7 @@
         {
           "type": "larva",
           "slot": 65,
-          "state": 0,
+          "states": 1,
           "x": 2,
           "y": 0,
           "sx": 160,
@@ -2025,7 +2025,7 @@
         {
           "type": "larva",
           "slot": 66,
-          "state": 0,
+          "states": 1,
           "x": 4,
           "y": 0,
           "sx": 128,
@@ -2178,7 +2178,7 @@
         {
           "type": "larva",
           "slot": 65,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 1,
           "sx": 128,
@@ -2187,7 +2187,7 @@
         {
           "type": "larva",
           "slot": 66,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 2,
           "sx": 112,
@@ -2322,7 +2322,7 @@
         {
           "type": "larva",
           "slot": 67,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 1,
           "sx": 112,
@@ -2633,7 +2633,7 @@
         {
           "type": "energy-recharge",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 2,
           "y": 0,
           "sx": 40,
@@ -2770,7 +2770,7 @@
         {
           "type": "larva",
           "slot": 68,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -2882,7 +2882,7 @@
         {
           "type": "energy-recharge",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 24,
@@ -2891,7 +2891,7 @@
         {
           "type": "hatch-alpha",
           "slot": 70,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 128,
@@ -3109,7 +3109,7 @@
         {
           "type": "missile-tank",
           "slot": 120,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 152,
@@ -3178,7 +3178,7 @@
         {
           "type": "alpha",
           "slot": 68,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 192,
@@ -3681,7 +3681,7 @@
         {
           "type": "ice",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 44,
@@ -3870,7 +3870,7 @@
         {
           "type": "spring-ball",
           "slot": 112,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 76,
@@ -4014,7 +4014,7 @@
         {
           "type": "hatch-alpha",
           "slot": 69,
-          "state": 0,
+          "states": 1,
           "x": 2,
           "y": 0,
           "sx": 120,
@@ -4023,7 +4023,7 @@
         {
           "type": "missile-tank",
           "slot": 109,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 56,
@@ -4077,7 +4077,7 @@
         {
           "type": "gamma",
           "slot": 69,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -4147,7 +4147,7 @@
         {
           "type": "gamma",
           "slot": 71,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 128,
@@ -4624,7 +4624,7 @@
         {
           "type": "missile-tank",
           "slot": 97,
-          "state": 0,
+          "states": 1,
           "x": 2,
           "y": 0,
           "sx": 72,
@@ -4633,7 +4633,7 @@
         {
           "type": "missile-tank",
           "slot": 96,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 184,
@@ -4785,7 +4785,7 @@
         {
           "type": "hatch-alpha",
           "slot": 73,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 176,
@@ -5107,7 +5107,7 @@
         {
           "type": "hatch-alpha",
           "slot": 83,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -5223,7 +5223,7 @@
         {
           "type": "energy-recharge",
           "slot": 14,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 72,
@@ -5232,7 +5232,7 @@
         {
           "type": "missile-recharge",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 184,
@@ -5501,7 +5501,7 @@
         {
           "type": "missile-recharge",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 3,
           "y": 7,
           "sx": 24,
@@ -5510,7 +5510,7 @@
         {
           "type": "energy-tank",
           "slot": 96,
-          "state": 0,
+          "states": 1,
           "x": 2,
           "y": 2,
           "sx": 120,
@@ -5519,7 +5519,7 @@
         {
           "type": "missile-tank",
           "slot": 101,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 136,
@@ -5528,7 +5528,7 @@
         {
           "type": "missile-tank",
           "slot": 97,
-          "state": 0,
+          "states": 1,
           "x": 4,
           "y": 8,
           "sx": 232,
@@ -5537,7 +5537,7 @@
         {
           "type": "missile-tank",
           "slot": 99,
-          "state": 0,
+          "states": 1,
           "x": 3,
           "y": 15,
           "sx": 32,
@@ -5546,7 +5546,7 @@
         {
           "type": "energy-tank",
           "slot": 103,
-          "state": 0,
+          "states": 1,
           "x": 2,
           "y": 0,
           "sx": 72,
@@ -5661,7 +5661,7 @@
         {
           "type": "energy-recharge",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 1,
           "sx": 24,
@@ -5670,7 +5670,7 @@
         {
           "type": "hatch-alpha",
           "slot": 64,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 1,
           "sx": 152,
@@ -5727,7 +5727,7 @@
         {
           "type": "gamma",
           "slot": 65,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 1,
           "sx": 128,
@@ -5736,7 +5736,7 @@
         {
           "type": "missile-recharge",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 1,
           "sx": 232,
@@ -5807,7 +5807,7 @@
         {
           "type": "gamma",
           "slot": 70,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -5877,7 +5877,7 @@
         {
           "type": "gamma",
           "slot": 79,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 128,
@@ -6002,7 +6002,7 @@
         {
           "type": "missile-tank",
           "slot": 98,
-          "state": 0,
+          "states": 1,
           "x": 7,
           "y": 3,
           "sx": 72,
@@ -6011,7 +6011,7 @@
         {
           "type": "missile-recharge",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 5,
           "sx": 40,
@@ -6020,7 +6020,7 @@
         {
           "type": "energy-recharge",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 6,
           "y": 0,
           "sx": 144,
@@ -6412,7 +6412,7 @@
         {
           "type": "hatch-alpha",
           "slot": 80,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -6467,7 +6467,7 @@
         {
           "type": "hatch-alpha",
           "slot": 82,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -6581,7 +6581,7 @@
         {
           "type": "gamma",
           "slot": 84,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -6768,7 +6768,7 @@
         {
           "type": "wave",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 92,
@@ -6984,7 +6984,7 @@
         {
           "type": "zeta",
           "slot": 69,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 64,
@@ -7401,7 +7401,7 @@
         {
           "type": "energy-recharge",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 24,
@@ -7410,7 +7410,7 @@
         {
           "type": "gamma",
           "slot": 74,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 128,
@@ -7697,7 +7697,7 @@
         {
           "type": "space-jump",
           "slot": 99,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 92,
@@ -7771,7 +7771,7 @@
         {
           "type": "missile-tank",
           "slot": 109,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 120,
@@ -7825,7 +7825,7 @@
         {
           "type": "energy-tank",
           "slot": 100,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 56,
@@ -7889,7 +7889,7 @@
         {
           "type": "gamma",
           "slot": 65,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 3,
           "sx": 128,
@@ -7943,7 +7943,7 @@
         {
           "type": "bombs",
           "slot": 99,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 92,
@@ -7952,7 +7952,7 @@
         {
           "type": "missile-tank",
           "slot": 122,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 168,
@@ -8007,7 +8007,7 @@
         {
           "type": "ice",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 92,
@@ -8062,7 +8062,7 @@
         {
           "type": "hatch-alpha",
           "slot": 81,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 128,
@@ -8190,7 +8190,7 @@
         {
           "type": "gamma",
           "slot": 85,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 128,
@@ -8244,7 +8244,7 @@
         {
           "type": "varia",
           "slot": 105,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 72,
@@ -8375,7 +8375,7 @@
         {
           "type": "missile-tank",
           "slot": 114,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 104,
@@ -8384,7 +8384,7 @@
         {
           "type": "missile-tank",
           "slot": 115,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 120,
@@ -8438,7 +8438,7 @@
         {
           "type": "screw-attack",
           "slot": 97,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 92,
@@ -8618,7 +8618,7 @@
         {
           "type": "gamma",
           "slot": 66,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -8672,7 +8672,7 @@
         {
           "type": "zeta",
           "slot": 78,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -8726,7 +8726,7 @@
         {
           "type": "gamma",
           "slot": 68,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -8780,7 +8780,7 @@
         {
           "type": "zeta",
           "slot": 69,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 128,
@@ -9106,7 +9106,7 @@
         {
           "type": "hatch-alpha",
           "slot": 67,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -9253,7 +9253,7 @@
         {
           "type": "hatch-alpha",
           "slot": 86,
-          "state": 0,
+          "states": 1,
           "x": 2,
           "y": 0,
           "sx": 128,
@@ -9307,7 +9307,7 @@
         {
           "type": "energy-recharge",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 72,
@@ -9376,7 +9376,7 @@
         {
           "type": "high-jump",
           "slot": 117,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 92,
@@ -9490,7 +9490,7 @@
         {
           "type": "plasma",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 92,
@@ -9545,7 +9545,7 @@
         {
           "type": "spazer",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 92,
@@ -9600,7 +9600,7 @@
         {
           "type": "wave",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 92,
@@ -9655,7 +9655,7 @@
         {
           "type": "ice",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 92,
@@ -9982,7 +9982,7 @@
         {
           "type": "gamma",
           "slot": 68,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 128,
@@ -10056,7 +10056,7 @@
         {
           "type": "missile-tank",
           "slot": 110,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 32,
@@ -10065,7 +10065,7 @@
         {
           "type": "gamma",
           "slot": 70,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 1,
           "sx": 104,
@@ -10406,7 +10406,7 @@
         {
           "type": "alpha",
           "slot": 73,
-          "state": 0,
+          "states": 1,
           "x": 2,
           "y": 0,
           "sx": 128,
@@ -10415,7 +10415,7 @@
         {
           "type": "omega",
           "slot": 76,
-          "state": 1,
+          "states": 2,
           "x": 2,
           "y": 0,
           "sx": 128,
@@ -10495,7 +10495,7 @@
         {
           "type": "gamma",
           "slot": 64,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 4,
           "sx": 128,
@@ -10504,7 +10504,7 @@
         {
           "type": "energy-recharge",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 5,
           "sx": 232,
@@ -10589,7 +10589,7 @@
         {
           "type": "missile-tank",
           "slot": 112,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -10643,7 +10643,7 @@
         {
           "type": "spazer",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 92,
@@ -10933,7 +10933,7 @@
         {
           "type": "gamma",
           "slot": 71,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 40,
@@ -11141,7 +11141,7 @@
         {
           "type": "gamma",
           "slot": 65,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -11448,7 +11448,7 @@
         {
           "type": "plasma",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 92,
@@ -11737,7 +11737,7 @@
         {
           "type": "energy-tank",
           "slot": 106,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 168,
@@ -11938,7 +11938,7 @@
         {
           "type": "omega",
           "slot": 64,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 64,
@@ -12491,7 +12491,7 @@
         {
           "type": "omega",
           "slot": 74,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 128,
@@ -12618,7 +12618,7 @@
         {
           "type": "hatch-alpha",
           "slot": 72,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 128,
@@ -12747,7 +12747,7 @@
         {
           "type": "missile-tank",
           "slot": 123,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 184,
@@ -12756,7 +12756,7 @@
         {
           "type": "missile-tank",
           "slot": 116,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 24,
@@ -12765,7 +12765,7 @@
         {
           "type": "energy-tank",
           "slot": 119,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 24,
@@ -12878,7 +12878,7 @@
         {
           "type": "omega",
           "slot": 67,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 64,
@@ -13030,7 +13030,7 @@
         {
           "type": "missile-tank",
           "slot": 96,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 136,
@@ -13101,7 +13101,7 @@
         {
           "type": "spider",
           "slot": 96,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 1,
           "sx": 72,
@@ -13171,7 +13171,7 @@
         {
           "type": "missile-tank",
           "slot": 101,
-          "state": 0,
+          "states": 1,
           "x": 0,
           "y": 0,
           "sx": 184,
@@ -13180,7 +13180,7 @@
         {
           "type": "missile-tank",
           "slot": 102,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 104,
@@ -13189,7 +13189,7 @@
         {
           "type": "missile-tank",
           "slot": 103,
-          "state": 0,
+          "states": 1,
           "x": 1,
           "y": 0,
           "sx": 120,
@@ -13259,7 +13259,7 @@
         {
           "type": "energy-tank",
           "slot": 98,
-          "state": 0,
+          "states": 1,
           "x": 2,
           "y": 0,
           "sx": 88,
@@ -13401,7 +13401,8 @@
           "mask": 12582912,
           "dst_mask": 12582912
         }
-      ]
+      ],
+      "name": "Empty Pipe Hook"
     },
     {
       "x": 53,
@@ -13543,7 +13544,7 @@
         {
           "type": "missile-recharge",
           "slot": 14,
-          "state": 0,
+          "states": 1,
           "x": 3,
           "y": 0,
           "sx": 72,
@@ -13552,7 +13553,7 @@
         {
           "type": "energy-recharge",
           "slot": 15,
-          "state": 0,
+          "states": 1,
           "x": 7,
           "y": 0,
           "sx": 72,
@@ -13664,22 +13665,14 @@
         {
           "type": "missile-tank",
           "slot": 108,
-          "state": 0,
-          "x": 0,
-          "y": 0,
-          "sx": 168,
-          "sy": 184
-        },
-        {
-          "type": "missile-tank",
-          "slot": 108,
-          "state": 1,
+          "states": 3,
           "x": 0,
           "y": 0,
           "sx": 168,
           "sy": 184
         }
-      ]
+      ],
+      "name": "Missile Pipe Hook"
     },
     {
       "x": 27,
@@ -13975,7 +13968,7 @@
         {
           "type": "missile-tank",
           "slot": 102,
-          "state": 0,
+          "states": 1,
           "x": 2,
           "y": 2,
           "sx": 200,
