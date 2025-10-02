@@ -208,7 +208,18 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [214, 479]
+          "entrance_transitions": [
+            [214, 10, 4, 4],
+            null,
+            null
+          ],
+          "exit_transitions": [
+            [479, 10, 4, 4],
+            null,
+            null
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         },
         {
           "x": 2,
@@ -216,7 +227,18 @@
           "dir": 1,
           "entrance_states": 2,
           "exit_states": 2,
-          "transitions": [492, 414, 491],
+          "entrance_transitions": [
+            null,
+            [414, 15, 14, 15],
+            null
+          ],
+          "exit_transitions": [
+            null,
+            [491, 15, 9, 10],
+            null
+          ],
+          "mask": 1040384,
+          "dst_mask": 4190208,
           "to-area": 12
         },
         {
@@ -225,7 +247,18 @@
           "dir": 8,
           "entrance_states": 4,
           "exit_states": 4,
-          "transitions": [255, 322]
+          "entrance_transitions": [
+            null,
+            null,
+            [255, 13, 0, 2]
+          ],
+          "exit_transitions": [
+            null,
+            null,
+            [322, 13, 0, 2]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 2,
@@ -233,7 +266,18 @@
           "dir": 8,
           "entrance_states": 4,
           "exit_states": 4,
-          "transitions": [354, 353]
+          "entrance_transitions": [
+            null,
+            null,
+            [354, 14, 2, 3]
+          ],
+          "exit_transitions": [
+            null,
+            null,
+            [353, 14, 2, 3]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         }
       ],
       "features": [
@@ -242,14 +286,18 @@
           "slot": null,
           "state": 0,
           "x": 7,
-          "y": 5
+          "y": 5,
+          "sx": null,
+          "sy": 128
         },
         {
           "type": "egg",
           "slot": 66,
           "state": 1,
           "x": 1,
-          "y": 10
+          "y": 10,
+          "sx": 172,
+          "sy": 167
         }
       ],
       "name": "Landing Site"
@@ -286,7 +334,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [479, 214]
+          "entrance_transitions": [
+            [479, 15, 7, 7]
+          ],
+          "exit_transitions": [
+            [214, 15, 7, 7]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         },
         {
           "x": 4,
@@ -294,7 +349,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [83, 82]
+          "entrance_transitions": [
+            [83, 15, 10, 6]
+          ],
+          "exit_transitions": [
+            [82, 15, 10, 6]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         }
       ],
       "name": "Surface Corridor"
@@ -331,7 +393,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [82, 83]
+          "entrance_transitions": [
+            [82, 10, 8, 4]
+          ],
+          "exit_transitions": [
+            [83, 10, 8, 4]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         },
         {
           "x": 2,
@@ -339,7 +408,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [176, 84]
+          "entrance_transitions": [
+            [176, 12, 1, 2]
+          ],
+          "exit_transitions": [
+            [84, 12, 1, 2]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         }
       ],
       "name": "Morph Tutorial"
@@ -380,7 +456,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [84, 176]
+          "entrance_transitions": [
+            [84, 15, 12, 6]
+          ],
+          "exit_transitions": [
+            [176, 15, 12, 6]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         },
         {
           "x": 0,
@@ -388,7 +471,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [73, 186]
+          "entrance_transitions": [
+            [73, 15, 3, 0]
+          ],
+          "exit_transitions": [
+            [186, 15, 3, 0]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         }
       ],
       "name": "Aim-Down Tutorial"
@@ -425,7 +515,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [186, 73]
+          "entrance_transitions": [
+            [186, 12, 1, 4]
+          ],
+          "exit_transitions": [
+            [73, 12, 1, 4]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -433,7 +530,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [486, 485]
+          "entrance_transitions": [
+            [486, 15, 1, 0]
+          ],
+          "exit_transitions": [
+            [485, 15, 1, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 3,
@@ -441,7 +545,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [85, 74],
+          "entrance_transitions": [
+            [85, 11, 13, 0]
+          ],
+          "exit_transitions": [
+            [74, 11, 13, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 1
         }
       ],
@@ -486,7 +597,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [485, 486]
+          "entrance_transitions": [
+            [485, 15, 2, 0]
+          ],
+          "exit_transitions": [
+            [486, 15, 2, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -494,7 +612,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [192, 72]
+          "entrance_transitions": [
+            [192, 12, 1, 5]
+          ],
+          "exit_transitions": [
+            [72, 12, 1, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -530,7 +655,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [74, 85],
+          "entrance_transitions": [
+            [74, 15, 5, 0]
+          ],
+          "exit_transitions": [
+            [85, 15, 5, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 0
         },
         {
@@ -539,7 +671,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [33, 86]
+          "entrance_transitions": [
+            [33, 10, 0, 0]
+          ],
+          "exit_transitions": [
+            [86, 10, 0, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Wading Pool"
@@ -582,7 +721,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [72, 192]
+          "entrance_transitions": [
+            [72, 15, 0, 0]
+          ],
+          "exit_transitions": [
+            [192, 15, 0, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -590,7 +736,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [78, 201]
+          "entrance_transitions": [
+            [78, 15, 5, 1]
+          ],
+          "exit_transitions": [
+            [201, 15, 5, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -656,7 +809,18 @@
           "dir": 4,
           "entrance_states": 5,
           "exit_states": 0,
-          "transitions": [315]
+          "entrance_transitions": [
+            [315, 14, 3, 1],
+            null,
+            [315, 14, 3, 1]
+          ],
+          "exit_transitions": [
+            null,
+            null,
+            null
+          ],
+          "mask": 0,
+          "dst_mask": 4294967040
         },
         {
           "x": 0,
@@ -664,7 +828,18 @@
           "dir": 8,
           "entrance_states": 0,
           "exit_states": 5,
-          "transitions": [414, 384]
+          "entrance_transitions": [
+            null,
+            null,
+            null
+          ],
+          "exit_transitions": [
+            [414, 14, 1, 13],
+            null,
+            [384, 14, 1, 13]
+          ],
+          "mask": 245760,
+          "dst_mask": 196608
         },
         {
           "x": 0,
@@ -672,7 +847,18 @@
           "dir": 2,
           "entrance_states": 2,
           "exit_states": 3,
-          "transitions": [414, 491, 492],
+          "entrance_transitions": [
+            null,
+            [491, 15, 8, 10],
+            null
+          ],
+          "exit_transitions": [
+            [414, 15, 8, 10],
+            [492, 15, 8, 10],
+            null
+          ],
+          "mask": 4190208,
+          "dst_mask": 1040384,
           "to-area": 0
         }
       ],
@@ -682,7 +868,9 @@
           "slot": null,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": null,
+          "sy": 128
         }
       ],
       "name": "Queen Fight"
@@ -719,7 +907,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [201, 78]
+          "entrance_transitions": [
+            [201, 12, 1, 8]
+          ],
+          "exit_transitions": [
+            [78, 12, 1, 8]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -727,7 +922,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [487, 463]
+          "entrance_transitions": [
+            [487, 15, 1, 1]
+          ],
+          "exit_transitions": [
+            [463, 15, 1, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Shallow Slime"
@@ -766,7 +968,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [39, 209]
+          "entrance_transitions": [
+            [39, 10, 1, 2]
+          ],
+          "exit_transitions": [
+            [209, 10, 1, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -774,7 +983,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [37, 217]
+          "entrance_transitions": [
+            [37, 10, 8, 0]
+          ],
+          "exit_transitions": [
+            [217, 10, 8, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -810,7 +1026,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [463, 487]
+          "entrance_transitions": [
+            [463, 15, 2, 1]
+          ],
+          "exit_transitions": [
+            [487, 15, 2, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -819,21 +1042,27 @@
           "slot": 65,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 144,
+          "sy": 230
         },
         {
           "type": "energy-recharge",
           "slot": 14,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 200,
+          "sy": 72
         },
         {
           "type": "missile-recharge",
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 232,
+          "sy": 72
         }
       ],
       "name": "First Alpha"
@@ -870,7 +1099,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [249, 314]
+          "entrance_transitions": [
+            [249, 13, 0, 1]
+          ],
+          "exit_transitions": [
+            [314, 13, 0, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 2,
@@ -878,7 +1114,14 @@
           "dir": 8,
           "entrance_states": 0,
           "exit_states": 1,
-          "transitions": [315]
+          "entrance_transitions": [
+            null
+          ],
+          "exit_transitions": [
+            [315, 15, 15, 15]
+          ],
+          "mask": 4294967040,
+          "dst_mask": 0
         }
       ],
       "name": "Queen's Hallway"
@@ -919,7 +1162,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [34, 42]
+          "entrance_transitions": [
+            [34, 10, 10, 3]
+          ],
+          "exit_transitions": [
+            [42, 10, 10, 3]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         },
         {
           "x": 1,
@@ -927,7 +1177,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [35, 435]
+          "entrance_transitions": [
+            [35, 10, 4, 5]
+          ],
+          "exit_transitions": [
+            [435, 10, 4, 5]
+          ],
+          "mask": 850944,
+          "dst_mask": 850944
         },
         {
           "x": 0,
@@ -935,7 +1192,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [159, 45]
+          "entrance_transitions": [
+            [159, 12, 5, 8]
+          ],
+          "exit_transitions": [
+            [45, 12, 5, 8]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "No Diving Zone"
@@ -972,7 +1236,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [38, 420]
+          "entrance_transitions": [
+            [38, 10, 11, 0]
+          ],
+          "exit_transitions": [
+            [420, 10, 11, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 2,
@@ -980,7 +1251,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [233, 88]
+          "entrance_transitions": [
+            [233, 12, 1, 14]
+          ],
+          "exit_transitions": [
+            [88, 12, 1, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Acid Pancakes"
@@ -1023,7 +1301,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [45, 159]
+          "entrance_transitions": [
+            [45, 10, 2, 4]
+          ],
+          "exit_transitions": [
+            [159, 10, 2, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -1031,7 +1316,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [94, 128],
+          "entrance_transitions": [
+            [94, 11, 5, 2]
+          ],
+          "exit_transitions": [
+            [128, 11, 5, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 4
         }
       ]
@@ -1070,7 +1362,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [309, 243]
+          "entrance_transitions": [
+            [309, 14, 1, 0]
+          ],
+          "exit_transitions": [
+            [243, 14, 1, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -1078,7 +1377,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [314, 249]
+          "entrance_transitions": [
+            [314, 14, 1, 1]
+          ],
+          "exit_transitions": [
+            [249, 14, 1, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -1087,14 +1393,18 @@
           "slot": 64,
           "state": 0,
           "x": 0,
-          "y": 1
+          "y": 1,
+          "sx": 128,
+          "sy": 128
         },
         {
           "type": "larva",
           "slot": 71,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 160,
+          "sy": 224
         }
       ]
     },
@@ -1134,7 +1444,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [88, 233]
+          "entrance_transitions": [
+            [88, 11, 5, 1]
+          ],
+          "exit_transitions": [
+            [233, 11, 5, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -1142,7 +1459,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [87, 222],
+          "entrance_transitions": [
+            [87, 11, 1, 1]
+          ],
+          "exit_transitions": [
+            [222, 11, 1, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 2
         }
       ]
@@ -1179,7 +1503,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [128, 94],
+          "entrance_transitions": [
+            [128, 12, 5, 5]
+          ],
+          "exit_transitions": [
+            [94, 12, 5, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 1
         },
         {
@@ -1188,7 +1519,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [421, 422]
+          "entrance_transitions": [
+            [421, 11, 3, 2]
+          ],
+          "exit_transitions": [
+            [422, 11, 3, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1057996863
         }
       ],
       "name": "Septogg Sandpits"
@@ -1258,7 +1596,16 @@
           "dir": 1,
           "entrance_states": 3,
           "exit_states": 3,
-          "transitions": [416, 391, 437]
+          "entrance_transitions": [
+            [416, 10, 4, 8],
+            [416, 10, 4, 8]
+          ],
+          "exit_transitions": [
+            [391, 10, 4, 8],
+            [437, 10, 4, 8]
+          ],
+          "mask": 1035264,
+          "dst_mask": 1035264
         },
         {
           "x": 0,
@@ -1266,7 +1613,16 @@
           "dir": 2,
           "entrance_states": 3,
           "exit_states": 3,
-          "transitions": [102, 393, 59]
+          "entrance_transitions": [
+            [102, 11, 15, 15],
+            [102, 11, 15, 15]
+          ],
+          "exit_transitions": [
+            [393, 11, 15, 15],
+            [59, 11, 15, 15]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -1274,7 +1630,16 @@
           "dir": 2,
           "entrance_states": 3,
           "exit_states": 3,
-          "transitions": [110, 397, 75],
+          "entrance_transitions": [
+            [110, 11, 4, 5],
+            [110, 11, 4, 5]
+          ],
+          "exit_transitions": [
+            [397, 11, 4, 5],
+            [75, 11, 4, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 8
         }
       ],
@@ -1314,7 +1679,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [54, 162],
+          "entrance_transitions": [
+            [54, 10, 5, 8]
+          ],
+          "exit_transitions": [
+            [162, 10, 5, 8]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 1
         },
         {
@@ -1323,7 +1695,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [330, 427]
+          "entrance_transitions": [
+            [330, 10, 0, 4]
+          ],
+          "exit_transitions": [
+            [427, 10, 0, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "East Caves Entrance"
@@ -1360,7 +1739,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [222, 87],
+          "entrance_transitions": [
+            [222, 12, 1, 12]
+          ],
+          "exit_transitions": [
+            [87, 12, 1, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 1
         },
         {
@@ -1369,7 +1755,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [170, 419]
+          "entrance_transitions": [
+            [170, 12, 2, 1]
+          ],
+          "exit_transitions": [
+            [419, 12, 2, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Pre-Temple Corridor"
@@ -1406,7 +1799,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [422, 421]
+          "entrance_transitions": [
+            [422, 11, 4, 2]
+          ],
+          "exit_transitions": [
+            [421, 11, 4, 2]
+          ],
+          "mask": 1057996863,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -1414,7 +1814,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [25, 93]
+          "entrance_transitions": [
+            [25, 9, 15, 5]
+          ],
+          "exit_transitions": [
+            [93, 9, 15, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -1423,7 +1830,9 @@
           "slot": 64,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ],
       "name": "Flying Flittway"
@@ -1460,7 +1869,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [393, 59, 102]
+          "entrance_transitions": [
+            [59, 10, 2, 10]
+          ],
+          "exit_transitions": [
+            [102, 10, 0, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -1468,7 +1884,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [429, 436]
+          "entrance_transitions": [
+            [429, 12, 10, 6]
+          ],
+          "exit_transitions": [
+            [436, 12, 10, 6]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Lower Octroll Alley"
@@ -1505,7 +1928,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [397, 75, 110],
+          "entrance_transitions": [
+            [75, 10, 2, 14]
+          ],
+          "exit_transitions": [
+            [110, 10, 0, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 1
         },
         {
@@ -1514,7 +1944,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [53, 109]
+          "entrance_transitions": [
+            [53, 10, 7, 7]
+          ],
+          "exit_transitions": [
+            [109, 10, 7, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -1550,7 +1987,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [250, 310]
+          "entrance_transitions": [
+            [250, 13, 3, 1]
+          ],
+          "exit_transitions": [
+            [310, 13, 3, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -1558,7 +2002,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [243, 309]
+          "entrance_transitions": [
+            [243, 13, 0, 0]
+          ],
+          "exit_transitions": [
+            [309, 13, 0, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -1567,14 +2018,18 @@
           "slot": 65,
           "state": 0,
           "x": 2,
-          "y": 0
+          "y": 0,
+          "sx": 160,
+          "sy": 144
         },
         {
           "type": "larva",
           "slot": 66,
           "state": 0,
           "x": 4,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ],
       "name": "Spider Room"
@@ -1615,7 +2070,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [419, 170]
+          "entrance_transitions": [
+            [419, 11, 2, 1]
+          ],
+          "exit_transitions": [
+            [170, 11, 2, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -1623,7 +2085,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [91, 111]
+          "entrance_transitions": [
+            [91, 11, 10, 1]
+          ],
+          "exit_transitions": [
+            [111, 11, 10, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -1631,7 +2100,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [89, 160],
+          "entrance_transitions": [
+            [89, 11, 6, 1]
+          ],
+          "exit_transitions": [
+            [160, 11, 6, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 3
         }
       ],
@@ -1672,8 +2148,15 @@
           "y": 2,
           "dir": 2,
           "entrance_states": 1,
-          "exit_states": 0,
-          "transitions": [0]
+          "exit_states": 1,
+          "entrance_transitions": [
+            [0, 13, 2, 3]
+          ],
+          "exit_transitions": [
+            [0, 13, 2, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -1681,7 +2164,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [310, 250]
+          "entrance_transitions": [
+            [310, 14, 5, 0]
+          ],
+          "exit_transitions": [
+            [250, 14, 5, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -1690,14 +2180,18 @@
           "slot": 65,
           "state": 0,
           "x": 0,
-          "y": 1
+          "y": 1,
+          "sx": 128,
+          "sy": 112
         },
         {
           "type": "larva",
           "slot": 66,
           "state": 0,
           "x": 0,
-          "y": 2
+          "y": 2,
+          "sx": 112,
+          "sy": 224
         }
       ]
     },
@@ -1737,7 +2231,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [436, 429]
+          "entrance_transitions": [
+            [436, 11, 9, 15]
+          ],
+          "exit_transitions": [
+            [429, 11, 9, 15]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -1745,7 +2246,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [46, 191]
+          "entrance_transitions": [
+            [46, 11, 0, 4]
+          ],
+          "exit_transitions": [
+            [191, 11, 0, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Octroll Alley Shaft"
@@ -1784,16 +2292,30 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [326, 267],
+          "entrance_transitions": [
+            [326, 14, 4, 3]
+          ],
+          "exit_transitions": [
+            [267, 14, 4, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 0
         },
         {
           "x": 0,
           "y": 0,
           "dir": 1,
-          "entrance_states": 0,
+          "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 3, 3]
+          ],
+          "exit_transitions": [
+            [0, 13, 3, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -1802,9 +2324,12 @@
           "slot": 67,
           "state": 0,
           "x": 0,
-          "y": 1
+          "y": 1,
+          "sx": 112,
+          "sy": 224
         }
-      ]
+      ],
+      "name": "Hive Shaft D23"
     },
     {
       "x": 43,
@@ -1848,7 +2373,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [51, 238],
+          "entrance_transitions": [
+            [51, 10, 0, 6]
+          ],
+          "exit_transitions": [
+            [238, 10, 0, 6]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "jump": [7, 0]
         },
         {
@@ -1857,7 +2389,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [136, 177]
+          "entrance_transitions": [
+            [136, 12, 4, 7]
+          ],
+          "exit_transitions": [
+            [177, 12, 4, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -1865,7 +2404,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [135, 206]
+          "entrance_transitions": [
+            [135, 12, 6, 6]
+          ],
+          "exit_transitions": [
+            [206, 12, 6, 6]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Acid Dive Main Climb"
@@ -1910,7 +2456,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [331, 332]
+          "entrance_transitions": [
+            [331, 10, 1, 4]
+          ],
+          "exit_transitions": [
+            [332, 10, 1, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -1918,7 +2471,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [334, 333],
+          "entrance_transitions": [
+            [334, 11, 12, 12]
+          ],
+          "exit_transitions": [
+            [333, 11, 12, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 6
         },
         {
@@ -1927,7 +2487,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 0,
-          "transitions": [336]
+          "entrance_transitions": [
+            [336, 11, 6, 10]
+          ],
+          "exit_transitions": [
+            null
+          ],
+          "mask": 0,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -1935,7 +2502,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [95, 163],
+          "entrance_transitions": [
+            [95, 11, 6, 2]
+          ],
+          "exit_transitions": [
+            [163, 11, 6, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 7
         }
       ]
@@ -1972,7 +2546,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [160, 89],
+          "entrance_transitions": [
+            [160, 12, 2, 0]
+          ],
+          "exit_transitions": [
+            [89, 12, 2, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 2
         },
         {
@@ -1981,7 +2562,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [32, 90]
+          "entrance_transitions": [
+            [32, 9, 5, 14]
+          ],
+          "exit_transitions": [
+            [90, 9, 5, 14]
+          ],
+          "mask": 1057996863,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -2017,7 +2605,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [111, 91]
+          "entrance_transitions": [
+            [111, 12, 2, 2]
+          ],
+          "exit_transitions": [
+            [91, 12, 2, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 4,
@@ -2025,7 +2620,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [144, 92]
+          "entrance_transitions": [
+            [144, 11, 9, 10]
+          ],
+          "exit_transitions": [
+            [92, 11, 9, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -2034,7 +2636,9 @@
           "slot": 15,
           "state": 0,
           "x": 2,
-          "y": 0
+          "y": 0,
+          "sx": 40,
+          "sy": 72
         }
       ],
       "name": "Cullugg Pillar Room"
@@ -2071,7 +2675,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [24, 263]
+          "entrance_transitions": [
+            [24, 9, 14, 5]
+          ],
+          "exit_transitions": [
+            [263, 9, 14, 5]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         },
         {
           "x": 0,
@@ -2079,7 +2690,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [323, 345]
+          "entrance_transitions": [
+            [323, 13, 5, 5]
+          ],
+          "exit_transitions": [
+            [345, 13, 5, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -2123,7 +2741,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [353, 354]
+          "entrance_transitions": [
+            [353, 14, 2, 2]
+          ],
+          "exit_transitions": [
+            [354, 14, 2, 2]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 2,
@@ -2131,7 +2756,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [267, 326],
+          "entrance_transitions": [
+            [267, 13, 2, 4]
+          ],
+          "exit_transitions": [
+            [326, 13, 2, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 12
         }
       ],
@@ -2141,7 +2773,9 @@
           "slot": 68,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -2177,7 +2811,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [22, 261]
+          "entrance_transitions": [
+            [22, 9, 11, 1]
+          ],
+          "exit_transitions": [
+            [261, 9, 11, 1]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -2185,7 +2826,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [291, 327]
+          "entrance_transitions": [
+            [291, 13, 0, 12]
+          ],
+          "exit_transitions": [
+            [327, 13, 0, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -2221,7 +2869,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [20, 409]
+          "entrance_transitions": [
+            [20, 9, 7, 1]
+          ],
+          "exit_transitions": [
+            [409, 9, 7, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -2230,14 +2885,18 @@
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 24,
+          "sy": 232
         },
         {
           "type": "alpha",
           "slot": 70,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -2281,7 +2940,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [16, 210]
+          "entrance_transitions": [
+            [16, 9, 4, 3]
+          ],
+          "exit_transitions": [
+            [210, 9, 4, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -2289,7 +2955,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [17, 223]
+          "entrance_transitions": [
+            [17, 9, 4, 5]
+          ],
+          "exit_transitions": [
+            [223, 9, 4, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -2297,7 +2970,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [153, 234]
+          "entrance_transitions": [
+            [153, 11, 11, 12]
+          ],
+          "exit_transitions": [
+            [234, 11, 11, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -2333,7 +3013,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [18, 258]
+          "entrance_transitions": [
+            [18, 9, 6, 5]
+          ],
+          "exit_transitions": [
+            [258, 9, 6, 5]
+          ],
+          "mask": 1044480,
+          "dst_mask": 202371840
         },
         {
           "x": 1,
@@ -2341,7 +3028,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [430, 344]
+          "entrance_transitions": [
+            [430, 13, 3, 5]
+          ],
+          "exit_transitions": [
+            [344, 13, 3, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -2387,7 +3081,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [19, 259]
+          "entrance_transitions": [
+            [19, 9, 6, 6]
+          ],
+          "exit_transitions": [
+            [259, 9, 6, 6]
+          ],
+          "mask": 1040384,
+          "dst_mask": 1040384
         },
         {
           "x": 0,
@@ -2395,7 +3096,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [287, 288]
+          "entrance_transitions": [
+            [287, 13, 1, 9]
+          ],
+          "exit_transitions": [
+            [288, 13, 1, 9]
+          ],
+          "mask": 1056964608,
+          "dst_mask": 1056964608
         }
       ],
       "features": [
@@ -2404,7 +3112,9 @@
           "slot": 120,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 152,
+          "sy": 72
         }
       ]
     },
@@ -2440,7 +3150,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [21, 260]
+          "entrance_transitions": [
+            [21, 9, 8, 3]
+          ],
+          "exit_transitions": [
+            [260, 9, 8, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -2448,7 +3165,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [284, 283]
+          "entrance_transitions": [
+            [284, 13, 7, 7]
+          ],
+          "exit_transitions": [
+            [283, 13, 7, 7]
+          ],
+          "mask": 12582912,
+          "dst_mask": 12582912
         }
       ],
       "features": [
@@ -2457,7 +3181,9 @@
           "slot": 68,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 192,
+          "sy": 118
         }
       ]
     },
@@ -2493,7 +3219,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [191, 46]
+          "entrance_transitions": [
+            [191, 12, 10, 4]
+          ],
+          "exit_transitions": [
+            [46, 12, 10, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 3,
@@ -2501,7 +3234,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [426, 496]
+          "entrance_transitions": [
+            [426, 11, 4, 4]
+          ],
+          "exit_transitions": [
+            [496, 11, 4, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Upper Octroll Alley"
@@ -2544,7 +3284,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [47, 184]
+          "entrance_transitions": [
+            [47, 10, 6, 6]
+          ],
+          "exit_transitions": [
+            [184, 10, 6, 6]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -2552,7 +3299,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [113, 166],
+          "entrance_transitions": [
+            [113, 11, 8, 5]
+          ],
+          "exit_transitions": [
+            [166, 11, 8, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 9
         }
       ]
@@ -2589,7 +3343,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [60, 139]
+          "entrance_transitions": [
+            [60, 10, 6, 10]
+          ],
+          "exit_transitions": [
+            [139, 10, 6, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -2597,7 +3358,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [213, 138]
+          "entrance_transitions": [
+            [213, 12, 6, 10]
+          ],
+          "exit_transitions": [
+            [138, 12, 6, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -2637,7 +3405,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [177, 136]
+          "entrance_transitions": [
+            [177, 12, 9, 11]
+          ],
+          "exit_transitions": [
+            [136, 12, 9, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -2645,7 +3420,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [155, 120]
+          "entrance_transitions": [
+            [155, 11, 4, 15]
+          ],
+          "exit_transitions": [
+            [120, 11, 4, 15]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Acid Dive Left Climb"
@@ -2686,7 +3468,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [206, 135]
+          "entrance_transitions": [
+            [206, 12, 9, 9]
+          ],
+          "exit_transitions": [
+            [135, 12, 9, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -2694,7 +3483,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [156, 119]
+          "entrance_transitions": [
+            [156, 11, 5, 15]
+          ],
+          "exit_transitions": [
+            [119, 11, 5, 15]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Acid Dive Right Climb"
@@ -2731,7 +3527,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [333, 334],
+          "entrance_transitions": [
+            [333, 12, 5, 2]
+          ],
+          "exit_transitions": [
+            [334, 12, 5, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 5
         },
         {
@@ -2740,7 +3543,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [211, 134]
+          "entrance_transitions": [
+            [211, 12, 3, 10]
+          ],
+          "exit_transitions": [
+            [134, 12, 3, 10]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         }
       ],
       "features": [
@@ -2784,7 +3594,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [163, 95],
+          "entrance_transitions": [
+            [163, 12, 5, 0]
+          ],
+          "exit_transitions": [
+            [95, 12, 5, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 5
         },
         {
@@ -2793,7 +3610,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [424, 423]
+          "entrance_transitions": [
+            [424, 11, 8, 2]
+          ],
+          "exit_transitions": [
+            [423, 11, 8, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -2829,7 +3653,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [359, 465]
+          "entrance_transitions": [
+            [359, 13, 1, 1]
+          ],
+          "exit_transitions": [
+            [465, 13, 1, 1]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -2837,7 +3668,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 0,
-          "transitions": [414, 384]
+          "entrance_transitions": [
+            [384, 15, 15, 15]
+          ],
+          "exit_transitions": [
+            null
+          ],
+          "mask": 196608,
+          "dst_mask": 245760
         }
       ],
       "features": [
@@ -2846,7 +3684,9 @@
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 44,
+          "sy": 96
         }
       ],
       "name": "Queen's Retreat"
@@ -2885,7 +3725,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [92, 144]
+          "entrance_transitions": [
+            [92, 11, 14, 1]
+          ],
+          "exit_transitions": [
+            [144, 11, 14, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -2893,7 +3740,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 11, 8, 11]
+          ],
+          "exit_transitions": [
+            [0, 11, 8, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -2901,7 +3755,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 11, 10, 11]
+          ],
+          "exit_transitions": [
+            [0, 11, 10, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Pancake Access Shaft"
@@ -2938,7 +3799,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [345, 323]
+          "entrance_transitions": [
+            [345, 13, 6, 5]
+          ],
+          "exit_transitions": [
+            [323, 13, 6, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -2946,7 +3814,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [344, 430]
+          "entrance_transitions": [
+            [344, 13, 2, 5]
+          ],
+          "exit_transitions": [
+            [430, 13, 2, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -2982,7 +3857,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [327, 291]
+          "entrance_transitions": [
+            [327, 13, 1, 12]
+          ],
+          "exit_transitions": [
+            [291, 13, 1, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -2991,7 +3873,9 @@
           "slot": 112,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 76,
+          "sy": 176
         }
       ]
     },
@@ -3029,7 +3913,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [234, 153]
+          "entrance_transitions": [
+            [234, 12, 2, 14]
+          ],
+          "exit_transitions": [
+            [153, 12, 2, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -3037,7 +3928,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [152, 151]
+          "entrance_transitions": [
+            [152, 11, 10, 13]
+          ],
+          "exit_transitions": [
+            [151, 11, 10, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -3045,7 +3943,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [195, 151]
+          "entrance_transitions": [
+            [195, 11, 12, 13]
+          ],
+          "exit_transitions": [
+            [151, 11, 12, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -3081,7 +3986,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [288, 287]
+          "entrance_transitions": [
+            [288, 13, 0, 9]
+          ],
+          "exit_transitions": [
+            [287, 13, 0, 9]
+          ],
+          "mask": 1056964608,
+          "dst_mask": 1056964608
         },
         {
           "x": 2,
@@ -3089,7 +4001,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [285, 286]
+          "entrance_transitions": [
+            [285, 13, 3, 8]
+          ],
+          "exit_transitions": [
+            [286, 13, 3, 8]
+          ],
+          "mask": 49152,
+          "dst_mask": 49152
         }
       ],
       "features": [
@@ -3098,14 +4017,18 @@
           "slot": 69,
           "state": 0,
           "x": 2,
-          "y": 0
+          "y": 0,
+          "sx": 120,
+          "sy": 204
         },
         {
           "type": "missile-tank",
           "slot": 109,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 56,
+          "sy": 40
         }
       ]
     },
@@ -3141,7 +4064,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [496, 426]
+          "entrance_transitions": [
+            [496, 11, 3, 4]
+          ],
+          "exit_transitions": [
+            [426, 11, 3, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -3150,7 +4080,9 @@
           "slot": 69,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -3186,7 +4118,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [166, 113],
+          "entrance_transitions": [
+            [166, 12, 10, 0]
+          ],
+          "exit_transitions": [
+            [113, 12, 10, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 8
         },
         {
@@ -3195,7 +4134,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [15, 112]
+          "entrance_transitions": [
+            [15, 9, 4, 14]
+          ],
+          "exit_transitions": [
+            [112, 9, 4, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -3204,7 +4150,9 @@
           "slot": 71,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -3248,7 +4196,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [138, 213]
+          "entrance_transitions": [
+            [138, 11, 11, 9]
+          ],
+          "exit_transitions": [
+            [213, 11, 11, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -3256,7 +4211,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [62, 193]
+          "entrance_transitions": [
+            [62, 11, 3, 12]
+          ],
+          "exit_transitions": [
+            [193, 11, 3, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -3292,7 +4254,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [120, 155]
+          "entrance_transitions": [
+            [120, 12, 4, 5]
+          ],
+          "exit_transitions": [
+            [155, 12, 4, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -3300,7 +4269,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [36, 154]
+          "entrance_transitions": [
+            [36, 10, 7, 0]
+          ],
+          "exit_transitions": [
+            [154, 10, 7, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -3336,7 +4312,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [119, 156]
+          "entrance_transitions": [
+            [119, 12, 6, 4]
+          ],
+          "exit_transitions": [
+            [156, 12, 6, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 3,
@@ -3344,7 +4327,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [41, 157]
+          "entrance_transitions": [
+            [41, 10, 6, 2]
+          ],
+          "exit_transitions": [
+            [157, 10, 6, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Vanishing Flittway"
@@ -3389,7 +4379,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [134, 211]
+          "entrance_transitions": [
+            [134, 11, 14, 12]
+          ],
+          "exit_transitions": [
+            [211, 11, 14, 12]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -3397,7 +4394,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [455, 182]
+          "entrance_transitions": [
+            [455, 11, 8, 10]
+          ],
+          "exit_transitions": [
+            [182, 11, 8, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -3405,7 +4409,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [145, 188]
+          "entrance_transitions": [
+            [145, 11, 11, 10]
+          ],
+          "exit_transitions": [
+            [188, 11, 11, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -3413,7 +4424,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 0,
-          "transitions": [97]
+          "entrance_transitions": [
+            [97, 11, 11, 2]
+          ],
+          "exit_transitions": [
+            null
+          ],
+          "mask": 0,
+          "dst_mask": 245760
         }
       ],
       "name": "Jungle Entrance"
@@ -3450,7 +4468,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [423, 424]
+          "entrance_transitions": [
+            [423, 11, 7, 2]
+          ],
+          "exit_transitions": [
+            [424, 11, 7, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 2,
@@ -3458,7 +4483,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [28, 96]
+          "entrance_transitions": [
+            [28, 9, 6, 8]
+          ],
+          "exit_transitions": [
+            [96, 9, 6, 8]
+          ],
+          "mask": 1057996863,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -3498,7 +4530,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [180, 268]
+          "entrance_transitions": [
+            [180, 9, 6, 14]
+          ],
+          "exit_transitions": [
+            [268, 9, 6, 14]
+          ],
+          "mask": 4177920,
+          "dst_mask": 4178688
         },
         {
           "x": 1,
@@ -3506,7 +4545,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [324, 476]
+          "entrance_transitions": [
+            [324, 13, 8, 3]
+          ],
+          "exit_transitions": [
+            [476, 13, 8, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -3514,7 +4560,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [477, 325]
+          "entrance_transitions": [
+            [477, 13, 6, 4]
+          ],
+          "exit_transitions": [
+            [325, 13, 6, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -3558,7 +4611,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [244, 269]
+          "entrance_transitions": [
+            [244, 9, 8, 13]
+          ],
+          "exit_transitions": [
+            [269, 9, 8, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -3567,14 +4627,18 @@
           "slot": 97,
           "state": 0,
           "x": 2,
-          "y": 0
+          "y": 0,
+          "sx": 72,
+          "sy": 232
         },
         {
           "type": "missile-tank",
           "slot": 96,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 184,
+          "sy": 232
         }
       ],
       "name": "Double Missile Room"
@@ -3619,7 +4683,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [245, 270]
+          "entrance_transitions": [
+            [245, 9, 13, 14]
+          ],
+          "exit_transitions": [
+            [270, 9, 13, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -3627,7 +4698,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 12, 4]
+          ],
+          "exit_transitions": [
+            [0, 13, 12, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -3635,7 +4713,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 10, 5]
+          ],
+          "exit_transitions": [
+            [0, 13, 10, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -3643,7 +4728,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 10, 3]
+          ],
+          "exit_transitions": [
+            [0, 13, 10, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Temple Shaft East"
@@ -3680,7 +4772,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [246, 271]
+          "entrance_transitions": [
+            [246, 9, 14, 13]
+          ],
+          "exit_transitions": [
+            [271, 9, 14, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -3689,7 +4788,9 @@
           "slot": 73,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 176,
+          "sy": 128
         }
       ],
       "name": "Post-Spider Alpha"
@@ -3726,7 +4827,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [247, 140]
+          "entrance_transitions": [
+            [247, 9, 14, 14]
+          ],
+          "exit_transitions": [
+            [140, 9, 14, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -3734,7 +4842,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [161, 141]
+          "entrance_transitions": [
+            [161, 12, 3, 0]
+          ],
+          "exit_transitions": [
+            [141, 12, 3, 0]
+          ],
+          "mask": 4228104384,
+          "dst_mask": 245760
         }
       ],
       "name": "Spider Access"
@@ -3771,7 +4886,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 11, 9, 11]
+          ],
+          "exit_transitions": [
+            [0, 11, 9, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 2,
@@ -3779,7 +4901,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [149, 446]
+          "entrance_transitions": [
+            [149, 11, 13, 11]
+          ],
+          "exit_transitions": [
+            [446, 11, 13, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Pancake Room"
@@ -3818,7 +4947,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 11, 9, 11]
+          ],
+          "exit_transitions": [
+            [0, 11, 9, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -3826,7 +4962,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [142, 448]
+          "entrance_transitions": [
+            [142, 11, 7, 12]
+          ],
+          "exit_transitions": [
+            [448, 11, 7, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -3834,7 +4977,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [143, 448]
+          "entrance_transitions": [
+            [143, 11, 9, 12]
+          ],
+          "exit_transitions": [
+            [448, 11, 9, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Not Pancake Access Shaft"
@@ -3871,7 +5021,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [151, 195]
+          "entrance_transitions": [
+            [151, 11, 11, 13]
+          ],
+          "exit_transitions": [
+            [195, 11, 11, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -3879,7 +5036,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [425, 205]
+          "entrance_transitions": [
+            [425, 11, 14, 13]
+          ],
+          "exit_transitions": [
+            [205, 11, 14, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -3915,7 +5079,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [151, 152]
+          "entrance_transitions": [
+            [151, 11, 11, 13]
+          ],
+          "exit_transitions": [
+            [152, 11, 11, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -3923,7 +5094,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 11, 7, 13]
+          ],
+          "exit_transitions": [
+            [0, 11, 7, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -3932,7 +5110,9 @@
           "slot": 83,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -3970,7 +5150,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [358, 357],
+          "entrance_transitions": [
+            [358, 13, 1, 3]
+          ],
+          "exit_transitions": [
+            [357, 13, 1, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 12
         },
         {
@@ -3979,7 +5166,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [322, 255]
+          "entrance_transitions": [
+            [322, 14, 1, 2]
+          ],
+          "exit_transitions": [
+            [255, 14, 1, 2]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         }
       ],
       "name": "Egg Viewing Shaft"
@@ -4016,7 +5210,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [382, 462]
+          "entrance_transitions": [
+            [382, 15, 13, 11]
+          ],
+          "exit_transitions": [
+            [462, 15, 13, 11]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         }
       ],
       "features": [
@@ -4025,14 +5226,18 @@
           "slot": 14,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 72,
+          "sy": 136
         },
         {
           "type": "missile-recharge",
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 184,
+          "sy": 136
         }
       ],
       "name": "Queen Recharge Room"
@@ -4099,7 +5304,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [112, 15]
+          "entrance_transitions": [
+            [112, 11, 7, 5]
+          ],
+          "exit_transitions": [
+            [15, 11, 7, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 3,
@@ -4107,7 +5319,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [434, 14]
+          "entrance_transitions": [
+            [434, 14, 11, 12]
+          ],
+          "exit_transitions": [
+            [14, 14, 11, 12]
+          ],
+          "mask": 54509571,
+          "dst_mask": 4177920
         },
         {
           "x": 0,
@@ -4115,7 +5334,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [257, 11]
+          "entrance_transitions": [
+            [257, 14, 10, 10]
+          ],
+          "exit_transitions": [
+            [11, 14, 10, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -4123,7 +5349,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [106, 9]
+          "entrance_transitions": [
+            [106, 11, 12, 4]
+          ],
+          "exit_transitions": [
+            [9, 11, 12, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 4,
@@ -4131,7 +5364,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [114, 13]
+          "entrance_transitions": [
+            [114, 11, 9, 5]
+          ],
+          "exit_transitions": [
+            [13, 11, 9, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 3,
@@ -4139,7 +5379,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [252, 5]
+          "entrance_transitions": [
+            [252, 14, 11, 3]
+          ],
+          "exit_transitions": [
+            [5, 14, 11, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 2,
@@ -4147,7 +5394,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [248, 4]
+          "entrance_transitions": [
+            [248, 14, 11, 1]
+          ],
+          "exit_transitions": [
+            [4, 14, 11, 1]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 1,
@@ -4155,7 +5409,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [235, 3]
+          "entrance_transitions": [
+            [235, 14, 10, 1]
+          ],
+          "exit_transitions": [
+            [3, 14, 10, 1]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -4163,7 +5424,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [251, 6],
+          "entrance_transitions": [
+            [251, 14, 10, 4]
+          ],
+          "exit_transitions": [
+            [6, 14, 10, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "jump": [
             1,
             -1
@@ -4175,7 +5443,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [254, 10]
+          "entrance_transitions": [
+            [254, 14, 10, 9]
+          ],
+          "exit_transitions": [
+            [10, 14, 10, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 4,
@@ -4183,7 +5458,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [253, 8]
+          "entrance_transitions": [
+            [253, 14, 8, 0]
+          ],
+          "exit_transitions": [
+            [8, 14, 8, 0]
+          ],
+          "mask": 67107840,
+          "dst_mask": 67107840
         },
         {
           "x": 0,
@@ -4191,7 +5473,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [220, 12]
+          "entrance_transitions": [
+            [220, 11, 1, 13]
+          ],
+          "exit_transitions": [
+            [12, 11, 1, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 3,
@@ -4199,7 +5488,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [107, 2]
+          "entrance_transitions": [
+            [107, 11, 13, 4]
+          ],
+          "exit_transitions": [
+            [2, 11, 13, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -4208,42 +5504,54 @@
           "slot": 15,
           "state": 0,
           "x": 3,
-          "y": 7
+          "y": 7,
+          "sx": 24,
+          "sy": 136
         },
         {
           "type": "energy-tank",
           "slot": 96,
           "state": 0,
           "x": 2,
-          "y": 2
+          "y": 2,
+          "sx": 120,
+          "sy": 184
         },
         {
           "type": "missile-tank",
           "slot": 101,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 136,
+          "sy": 24
         },
         {
           "type": "missile-tank",
           "slot": 97,
           "state": 0,
           "x": 4,
-          "y": 8
+          "y": 8,
+          "sx": 232,
+          "sy": 232
         },
         {
           "type": "missile-tank",
           "slot": 99,
           "state": 0,
           "x": 3,
-          "y": 15
+          "y": 15,
+          "sx": 32,
+          "sy": 176
         },
         {
           "type": "energy-tank",
           "slot": 103,
           "state": 0,
           "x": 2,
-          "y": 0
+          "y": 0,
+          "sx": 72,
+          "sy": 24
         }
       ],
       "name": "Tower Exterior"
@@ -4280,7 +5588,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [193, 62]
+          "entrance_transitions": [
+            [193, 12, 6, 14]
+          ],
+          "exit_transitions": [
+            [62, 12, 6, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -4288,7 +5603,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [77, 63]
+          "entrance_transitions": [
+            [77, 10, 7, 14]
+          ],
+          "exit_transitions": [
+            [63, 10, 7, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -4326,7 +5648,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [154, 36]
+          "entrance_transitions": [
+            [154, 11, 1, 15]
+          ],
+          "exit_transitions": [
+            [36, 11, 1, 15]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -4335,14 +5664,18 @@
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 1
+          "y": 1,
+          "sx": 24,
+          "sy": 136
         },
         {
           "type": "alpha",
           "slot": 64,
           "state": 0,
           "x": 1,
-          "y": 1
+          "y": 1,
+          "sx": 152,
+          "sy": 160
         }
       ],
       "name": "Acid Alpha"
@@ -4381,7 +5714,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [157, 41]
+          "entrance_transitions": [
+            [157, 11, 8, 15]
+          ],
+          "exit_transitions": [
+            [41, 11, 8, 15]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -4390,14 +5730,18 @@
           "slot": 65,
           "state": 0,
           "x": 0,
-          "y": 1
+          "y": 1,
+          "sx": 128,
+          "sy": 128
         },
         {
           "type": "missile-recharge",
           "slot": 15,
           "state": 0,
           "x": 1,
-          "y": 1
+          "y": 1,
+          "sx": 232,
+          "sy": 120
         }
       ],
       "name": "Acid Gamma"
@@ -4434,7 +5778,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [182, 455]
+          "entrance_transitions": [
+            [182, 12, 3, 12]
+          ],
+          "exit_transitions": [
+            [455, 12, 3, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -4442,7 +5793,14 @@
           "dir": 4,
           "entrance_states": 0,
           "exit_states": 1,
-          "transitions": [336],
+          "entrance_transitions": [
+            null
+          ],
+          "exit_transitions": [
+            [336, 12, 5, 4]
+          ],
+          "mask": 245760,
+          "dst_mask": 0,
           "to-area": 5
         }
       ],
@@ -4452,7 +5810,9 @@
           "slot": 70,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ],
       "name": "Jungle Exit"
@@ -4489,7 +5849,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [188, 145]
+          "entrance_transitions": [
+            [188, 12, 3, 13]
+          ],
+          "exit_transitions": [
+            [145, 12, 3, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -4497,7 +5864,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [178, 146]
+          "entrance_transitions": [
+            [178, 12, 6, 2]
+          ],
+          "exit_transitions": [
+            [146, 12, 6, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -4506,7 +5880,9 @@
           "slot": 79,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -4552,7 +5928,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [96, 28]
+          "entrance_transitions": [
+            [96, 11, 10, 2]
+          ],
+          "exit_transitions": [
+            [28, 11, 10, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1057996863
         },
         {
           "x": 3,
@@ -4560,7 +5943,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [385, 29]
+          "entrance_transitions": [
+            [385, 14, 1, 7]
+          ],
+          "exit_transitions": [
+            [29, 14, 1, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 7,
@@ -4568,7 +5958,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [165, 31],
+          "entrance_transitions": [
+            [165, 12, 8, 0]
+          ],
+          "exit_transitions": [
+            [31, 12, 8, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "jump": [4, 0]
         },
         {
@@ -4577,7 +5974,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [264, 26]
+          "entrance_transitions": [
+            [264, 14, 5, 5]
+          ],
+          "exit_transitions": [
+            [26, 14, 5, 5]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 7,
@@ -4585,7 +5989,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [265, 30]
+          "entrance_transitions": [
+            [265, 14, 5, 6]
+          ],
+          "exit_transitions": [
+            [30, 14, 5, 6]
+          ],
+          "mask": 3158016,
+          "dst_mask": 3158016
         }
       ],
       "features": [
@@ -4594,21 +6005,27 @@
           "slot": 98,
           "state": 0,
           "x": 7,
-          "y": 3
+          "y": 3,
+          "sx": 72,
+          "sy": 168
         },
         {
           "type": "missile-recharge",
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 5
+          "y": 5,
+          "sx": 40,
+          "sy": 152
         },
         {
           "type": "energy-recharge",
           "slot": 15,
           "state": 0,
           "x": 6,
-          "y": 0
+          "y": 0,
+          "sx": 144,
+          "sy": 116
         }
       ],
       "name": "Facility Exterior"
@@ -4647,7 +6064,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [381, 256]
+          "entrance_transitions": [
+            [381, 15, 12, 11]
+          ],
+          "exit_transitions": [
+            [256, 15, 12, 11]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -4655,7 +6079,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [465, 359]
+          "entrance_transitions": [
+            [465, 14, 1, 13]
+          ],
+          "exit_transitions": [
+            [359, 14, 1, 13]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         }
       ]
     },
@@ -4691,7 +6122,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [325, 477]
+          "entrance_transitions": [
+            [325, 13, 7, 4]
+          ],
+          "exit_transitions": [
+            [477, 13, 7, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -4699,7 +6137,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 4, 4]
+          ],
+          "exit_transitions": [
+            [0, 13, 4, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Bomb Access"
@@ -4738,7 +6183,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [380, 266]
+          "entrance_transitions": [
+            [380, 15, 11, 11]
+          ],
+          "exit_transitions": [
+            [266, 15, 11, 11]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -4746,7 +6198,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [357, 358],
+          "entrance_transitions": [
+            [357, 13, 0, 3]
+          ],
+          "exit_transitions": [
+            [358, 13, 0, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 0
         }
       ]
@@ -4783,7 +6242,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 11, 5]
+          ],
+          "exit_transitions": [
+            [0, 13, 11, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -4791,7 +6257,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [279, 280]
+          "entrance_transitions": [
+            [279, 13, 8, 5]
+          ],
+          "exit_transitions": [
+            [280, 13, 8, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Temple Ice Beam Access"
@@ -4836,7 +6309,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [55, 383],
+          "entrance_transitions": [
+            [55, 10, 9, 9]
+          ],
+          "exit_transitions": [
+            [383, 10, 9, 9]
+          ],
+          "mask": 516096,
+          "dst_mask": 245760,
           "to-area": 11
         },
         {
@@ -4845,7 +6325,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [256, 381]
+          "entrance_transitions": [
+            [256, 13, 1, 2]
+          ],
+          "exit_transitions": [
+            [381, 13, 1, 2]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 1,
@@ -4853,7 +6340,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [266, 380]
+          "entrance_transitions": [
+            [266, 13, 1, 4]
+          ],
+          "exit_transitions": [
+            [380, 13, 1, 4]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 3,
@@ -4861,7 +6355,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [462, 382]
+          "entrance_transitions": [
+            [462, 14, 3, 13]
+          ],
+          "exit_transitions": [
+            [382, 14, 3, 13]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         }
       ],
       "name": "Soda Fountain"
@@ -4898,7 +6399,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [446, 149]
+          "entrance_transitions": [
+            [446, 11, 12, 11]
+          ],
+          "exit_transitions": [
+            [149, 11, 12, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -4907,7 +6415,9 @@
           "slot": 80,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ],
       "name": "Pancake Alpha"
@@ -4944,7 +6454,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [448, 143]
+          "entrance_transitions": [
+            [448, 11, 8, 12]
+          ],
+          "exit_transitions": [
+            [143, 11, 8, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -4953,7 +6470,9 @@
           "slot": 82,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ],
       "name": "Not Not Pancake Alpha"
@@ -4990,7 +6509,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [448, 142]
+          "entrance_transitions": [
+            [448, 11, 8, 12]
+          ],
+          "exit_transitions": [
+            [142, 11, 8, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -4998,7 +6524,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0, 447]
+          "entrance_transitions": [
+            [0, 11, 4, 12]
+          ],
+          "exit_transitions": [
+            [447, 11, 4, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Not Pancake Room"
@@ -5035,7 +6568,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [205, 425]
+          "entrance_transitions": [
+            [205, 11, 13, 13]
+          ],
+          "exit_transitions": [
+            [425, 11, 13, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -5044,7 +6584,9 @@
           "slot": 84,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -5082,7 +6624,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 11, 8, 13]
+          ],
+          "exit_transitions": [
+            [0, 11, 8, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -5090,7 +6639,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [349, 450]
+          "entrance_transitions": [
+            [349, 11, 6, 14]
+          ],
+          "exit_transitions": [
+            [450, 11, 6, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -5098,7 +6654,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [350, 450]
+          "entrance_transitions": [
+            [350, 11, 8, 14]
+          ],
+          "exit_transitions": [
+            [450, 11, 8, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -5134,7 +6697,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 3, 6]
+          ],
+          "exit_transitions": [
+            [0, 13, 3, 6]
+          ],
+          "mask": 12582912,
+          "dst_mask": 12582912
         },
         {
           "x": 0,
@@ -5142,7 +6712,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 1, 6]
+          ],
+          "exit_transitions": [
+            [0, 13, 1, 6]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -5178,7 +6755,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [290, 289]
+          "entrance_transitions": [
+            [290, 13, 5, 10]
+          ],
+          "exit_transitions": [
+            [289, 13, 5, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -5187,7 +6771,9 @@
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 92,
+          "sy": 96
         }
       ]
     },
@@ -5227,7 +6813,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 8, 10]
+          ],
+          "exit_transitions": [
+            [0, 13, 8, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -5235,7 +6828,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 8, 12]
+          ],
+          "exit_transitions": [
+            [0, 13, 8, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -5243,7 +6843,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 10, 11]
+          ],
+          "exit_transitions": [
+            [0, 13, 10, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -5283,7 +6890,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [14, 434]
+          "entrance_transitions": [
+            [14, 9, 3, 14]
+          ],
+          "exit_transitions": [
+            [434, 9, 3, 14]
+          ],
+          "mask": 4177920,
+          "dst_mask": 54509571
         },
         {
           "x": 0,
@@ -5291,7 +6905,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [11, 257]
+          "entrance_transitions": [
+            [11, 9, 0, 12]
+          ],
+          "exit_transitions": [
+            [257, 9, 0, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -5335,7 +6956,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [5, 252]
+          "entrance_transitions": [
+            [5, 9, 3, 5]
+          ],
+          "exit_transitions": [
+            [252, 9, 3, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -5343,7 +6971,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [294, 295]
+          "entrance_transitions": [
+            [294, 14, 10, 2]
+          ],
+          "exit_transitions": [
+            [295, 14, 10, 2]
+          ],
+          "mask": 49152,
+          "dst_mask": 49152
         }
       ],
       "features": [
@@ -5352,7 +6987,9 @@
           "slot": 69,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 64,
+          "sy": 136
         }
       ],
       "name": "Screw Zeta"
@@ -5389,7 +7026,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [219, 133]
+          "entrance_transitions": [
+            [219, 12, 7, 11]
+          ],
+          "exit_transitions": [
+            [133, 12, 7, 11]
+          ],
+          "mask": 1040576,
+          "dst_mask": 1040384
         },
         {
           "x": 1,
@@ -5397,7 +7041,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [383, 55],
+          "entrance_transitions": [
+            [383, 15, 12, 15]
+          ],
+          "exit_transitions": [
+            [55, 15, 12, 15]
+          ],
+          "mask": 245760,
+          "dst_mask": 516096,
           "to-area": 12
         }
       ],
@@ -5442,7 +7093,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [6, 251],
+          "entrance_transitions": [
+            [6, 9, 0, 7]
+          ],
+          "exit_transitions": [
+            [251, 9, 0, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "jump": [
             -1,
             1
@@ -5454,7 +7112,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [298, 362]
+          "entrance_transitions": [
+            [298, 14, 11, 5]
+          ],
+          "exit_transitions": [
+            [362, 14, 11, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Non-Euclidean Room"
@@ -5491,7 +7156,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [9, 106]
+          "entrance_transitions": [
+            [9, 9, 0, 9]
+          ],
+          "exit_transitions": [
+            [106, 9, 0, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -5499,7 +7171,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [52, 105]
+          "entrance_transitions": [
+            [52, 11, 1, 0]
+          ],
+          "exit_transitions": [
+            [105, 11, 1, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -5535,7 +7214,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [10, 254]
+          "entrance_transitions": [
+            [10, 9, 0, 11]
+          ],
+          "exit_transitions": [
+            [254, 9, 0, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -5543,7 +7229,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [307, 308]
+          "entrance_transitions": [
+            [307, 14, 11, 8]
+          ],
+          "exit_transitions": [
+            [308, 14, 11, 8]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -5579,7 +7272,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [12, 220]
+          "entrance_transitions": [
+            [12, 9, 0, 14]
+          ],
+          "exit_transitions": [
+            [220, 9, 0, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -5587,7 +7287,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [50, 61]
+          "entrance_transitions": [
+            [50, 11, 4, 0]
+          ],
+          "exit_transitions": [
+            [61, 11, 4, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -5623,7 +7330,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [2, 107]
+          "entrance_transitions": [
+            [2, 9, 3, 1]
+          ],
+          "exit_transitions": [
+            [107, 9, 3, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -5631,7 +7345,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [79, 108]
+          "entrance_transitions": [
+            [79, 10, 4, 15]
+          ],
+          "exit_transitions": [
+            [108, 10, 4, 15]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -5667,7 +7388,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [8, 253]
+          "entrance_transitions": [
+            [8, 9, 4, 8]
+          ],
+          "exit_transitions": [
+            [253, 9, 4, 8]
+          ],
+          "mask": 67107840,
+          "dst_mask": 67107840
         }
       ],
       "features": [
@@ -5676,14 +7404,18 @@
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 24,
+          "sy": 216
         },
         {
           "type": "gamma",
           "slot": 74,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -5719,7 +7451,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [13, 114]
+          "entrance_transitions": [
+            [13, 9, 4, 10]
+          ],
+          "exit_transitions": [
+            [114, 9, 4, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 3,
@@ -5727,7 +7466,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [339, 442]
+          "entrance_transitions": [
+            [339, 10, 8, 15]
+          ],
+          "exit_transitions": [
+            [442, 10, 8, 15]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -5767,7 +7513,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [63, 77]
+          "entrance_transitions": [
+            [63, 11, 0, 12]
+          ],
+          "exit_transitions": [
+            [77, 11, 0, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -5775,7 +7528,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [402, 115, 69]
+          "entrance_transitions": [
+            [115, 11, 2, 6]
+          ],
+          "exit_transitions": [
+            [69, 11, 2, 6]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -5783,7 +7543,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [232, 76]
+          "entrance_transitions": [
+            [232, 12, 13, 13]
+          ],
+          "exit_transitions": [
+            [76, 12, 13, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -5791,7 +7558,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [418, 390, 417]
+          "entrance_transitions": [
+            [390, 10, 9, 7]
+          ],
+          "exit_transitions": [
+            [417, 10, 9, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Loop Acid"
@@ -5834,7 +7608,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [146, 178]
+          "entrance_transitions": [
+            [146, 11, 12, 10]
+          ],
+          "exit_transitions": [
+            [178, 11, 12, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -5842,7 +7623,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [101, 164]
+          "entrance_transitions": [
+            [101, 11, 8, 3]
+          ],
+          "exit_transitions": [
+            [164, 11, 8, 3]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         },
         {
           "x": 0,
@@ -5850,7 +7638,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [147, 171]
+          "entrance_transitions": [
+            [147, 11, 13, 10]
+          ],
+          "exit_transitions": [
+            [171, 11, 13, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Jungle Heart"
@@ -5889,7 +7684,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [29, 385]
+          "entrance_transitions": [
+            [29, 9, 9, 9]
+          ],
+          "exit_transitions": [
+            [385, 9, 9, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -5898,7 +7700,9 @@
           "slot": 99,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 92,
+          "sy": 96
         }
       ]
     },
@@ -5934,7 +7738,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [26, 264]
+          "entrance_transitions": [
+            [26, 9, 12, 6]
+          ],
+          "exit_transitions": [
+            [264, 9, 12, 6]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -5942,7 +7753,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [329, 328]
+          "entrance_transitions": [
+            [329, 14, 4, 6]
+          ],
+          "exit_transitions": [
+            [328, 14, 4, 6]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         }
       ],
       "features": [
@@ -5956,7 +7774,9 @@
           "slot": 109,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 120,
+          "sy": 184
         }
       ]
     },
@@ -5992,7 +7812,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [30, 265]
+          "entrance_transitions": [
+            [30, 9, 13, 8]
+          ],
+          "exit_transitions": [
+            [265, 9, 13, 8]
+          ],
+          "mask": 3158016,
+          "dst_mask": 3158016
         }
       ],
       "features": [
@@ -6001,7 +7828,9 @@
           "slot": 100,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 56,
+          "sy": 104
         }
       ]
     },
@@ -6043,7 +7872,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [31, 165],
+          "entrance_transitions": [
+            [31, 9, 13, 10]
+          ],
+          "exit_transitions": [
+            [165, 9, 13, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "jump": [
             -4,
             0
@@ -6056,7 +7892,9 @@
           "slot": 65,
           "state": 0,
           "x": 0,
-          "y": 3
+          "y": 3,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -6092,7 +7930,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 5, 4]
+          ],
+          "exit_transitions": [
+            [0, 13, 5, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -6101,14 +7946,18 @@
           "slot": 99,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 92,
+          "sy": 96
         },
         {
           "type": "missile-tank",
           "slot": 122,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 168,
+          "sy": 200
         }
       ],
       "name": "Bomb Room"
@@ -6145,7 +7994,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [280, 279]
+          "entrance_transitions": [
+            [280, 13, 9, 5]
+          ],
+          "exit_transitions": [
+            [279, 13, 9, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -6154,7 +8010,9 @@
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 92,
+          "sy": 96
         }
       ],
       "name": "Temple Ice Beam Room"
@@ -6191,7 +8049,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [447, 0]
+          "entrance_transitions": [
+            [447, 11, 5, 12]
+          ],
+          "exit_transitions": [
+            [0, 11, 5, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -6200,7 +8065,9 @@
           "slot": 81,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ],
       "name": "Not Pancake Alpha"
@@ -6237,7 +8104,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [450, 350]
+          "entrance_transitions": [
+            [450, 11, 7, 14]
+          ],
+          "exit_transitions": [
+            [350, 11, 7, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -6245,7 +8119,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [451, 351]
+          "entrance_transitions": [
+            [451, 11, 10, 14]
+          ],
+          "exit_transitions": [
+            [351, 11, 10, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -6281,7 +8162,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [450, 349]
+          "entrance_transitions": [
+            [450, 11, 7, 14]
+          ],
+          "exit_transitions": [
+            [349, 11, 7, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -6289,7 +8177,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [449, 0]
+          "entrance_transitions": [
+            [449, 11, 3, 14]
+          ],
+          "exit_transitions": [
+            [0, 11, 3, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -6298,7 +8193,9 @@
           "slot": 85,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -6334,7 +8231,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 2, 6]
+          ],
+          "exit_transitions": [
+            [0, 13, 2, 6]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -6343,7 +8247,9 @@
           "slot": 105,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 72,
+          "sy": 232
         }
       ]
     },
@@ -6383,7 +8289,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 9, 11]
+          ],
+          "exit_transitions": [
+            [0, 13, 9, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -6391,7 +8304,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [352, 460]
+          "entrance_transitions": [
+            [352, 13, 9, 13]
+          ],
+          "exit_transitions": [
+            [460, 13, 9, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -6427,7 +8347,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 9, 12]
+          ],
+          "exit_transitions": [
+            [0, 13, 9, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -6435,7 +8362,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 5, 12]
+          ],
+          "exit_transitions": [
+            [0, 13, 5, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -6444,14 +8378,18 @@
           "slot": 114,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 104,
+          "sy": 88
         },
         {
           "type": "missile-tank",
           "slot": 115,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 120,
+          "sy": 232
         }
       ]
     },
@@ -6487,7 +8425,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [295, 294]
+          "entrance_transitions": [
+            [295, 14, 10, 3]
+          ],
+          "exit_transitions": [
+            [294, 14, 10, 3]
+          ],
+          "mask": 49152,
+          "dst_mask": 49152
         }
       ],
       "features": [
@@ -6496,7 +8441,9 @@
           "slot": 97,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 92,
+          "sy": 96
         }
       ],
       "name": "Screw Attack Room"
@@ -6539,7 +8486,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [362, 298]
+          "entrance_transitions": [
+            [362, 14, 11, 4]
+          ],
+          "exit_transitions": [
+            [298, 14, 11, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -6547,7 +8501,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [296, 299]
+          "entrance_transitions": [
+            [296, 14, 10, 6]
+          ],
+          "exit_transitions": [
+            [299, 14, 10, 6]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -6555,7 +8516,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [297, 298]
+          "entrance_transitions": [
+            [297, 14, 10, 5]
+          ],
+          "exit_transitions": [
+            [298, 14, 10, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -6563,7 +8531,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [311, 307]
+          "entrance_transitions": [
+            [311, 14, 10, 8]
+          ],
+          "exit_transitions": [
+            [307, 14, 10, 8]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -6571,7 +8546,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [308, 307]
+          "entrance_transitions": [
+            [308, 14, 11, 9]
+          ],
+          "exit_transitions": [
+            [307, 14, 11, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -6579,7 +8561,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [300, 301]
+          "entrance_transitions": [
+            [300, 14, 10, 7]
+          ],
+          "exit_transitions": [
+            [301, 14, 10, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Tower Shaft"
@@ -6616,7 +8605,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [105, 52]
+          "entrance_transitions": [
+            [105, 11, 9, 4]
+          ],
+          "exit_transitions": [
+            [52, 11, 9, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -6625,7 +8621,9 @@
           "slot": 66,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -6661,7 +8659,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [61, 50]
+          "entrance_transitions": [
+            [61, 11, 0, 13]
+          ],
+          "exit_transitions": [
+            [50, 11, 0, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -6670,7 +8675,9 @@
           "slot": 78,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -6706,7 +8713,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [108, 79]
+          "entrance_transitions": [
+            [108, 11, 14, 4]
+          ],
+          "exit_transitions": [
+            [79, 11, 14, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -6715,7 +8729,9 @@
           "slot": 68,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -6751,7 +8767,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [442, 339]
+          "entrance_transitions": [
+            [442, 11, 12, 5]
+          ],
+          "exit_transitions": [
+            [339, 11, 12, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -6760,7 +8783,9 @@
           "slot": 69,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -6800,7 +8825,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [76, 232]
+          "entrance_transitions": [
+            [76, 10, 6, 14]
+          ],
+          "exit_transitions": [
+            [232, 10, 6, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -6808,7 +8840,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [56, 242]
+          "entrance_transitions": [
+            [56, 11, 10, 9]
+          ],
+          "exit_transitions": [
+            [242, 11, 10, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -6846,7 +8885,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [57, 225]
+          "entrance_transitions": [
+            [57, 10, 11, 9]
+          ],
+          "exit_transitions": [
+            [225, 10, 11, 9]
+          ],
+          "mask": 1040384,
+          "dst_mask": 1040576
         },
         {
           "x": 0,
@@ -6854,7 +8900,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [133, 219]
+          "entrance_transitions": [
+            [133, 10, 8, 9]
+          ],
+          "exit_transitions": [
+            [219, 10, 8, 9]
+          ],
+          "mask": 1040384,
+          "dst_mask": 1040576
         }
       ]
     },
@@ -6905,7 +8958,16 @@
           "dir": 2,
           "entrance_states": 3,
           "exit_states": 3,
-          "transitions": [69, 115, 402]
+          "entrance_transitions": [
+            [69, 10, 7, 12],
+            [69, 10, 7, 12]
+          ],
+          "exit_transitions": [
+            [115, 10, 7, 12],
+            [402, 10, 7, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -6913,7 +8975,16 @@
           "dir": 1,
           "entrance_states": 3,
           "exit_states": 3,
-          "transitions": [207, 116, 410, 403]
+          "entrance_transitions": [
+            [207, 12, 11, 9],
+            [410, 12, 7, 9]
+          ],
+          "exit_transitions": [
+            [116, 12, 11, 9],
+            [403, 12, 7, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -6949,7 +9020,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [171, 147]
+          "entrance_transitions": [
+            [171, 12, 6, 1]
+          ],
+          "exit_transitions": [
+            [147, 12, 6, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -6957,7 +9035,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [173, 148]
+          "entrance_transitions": [
+            [173, 12, 9, 1]
+          ],
+          "exit_transitions": [
+            [148, 12, 9, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -6993,7 +9078,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [164, 101]
+          "entrance_transitions": [
+            [164, 12, 6, 0]
+          ],
+          "exit_transitions": [
+            [101, 12, 6, 0]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         },
         {
           "x": 2,
@@ -7001,7 +9093,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [441, 440]
+          "entrance_transitions": [
+            [441, 11, 11, 3]
+          ],
+          "exit_transitions": [
+            [440, 11, 11, 3]
+          ],
+          "mask": 806338560,
+          "dst_mask": 806338560
         }
       ],
       "features": [
@@ -7010,7 +9109,9 @@
           "slot": 67,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 144
         }
       ],
       "name": "Entangled Alpha"
@@ -7051,7 +9152,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [328, 329]
+          "entrance_transitions": [
+            [328, 14, 4, 5]
+          ],
+          "exit_transitions": [
+            [329, 14, 4, 5]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -7059,7 +9167,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 14, 3, 8]
+          ],
+          "exit_transitions": [
+            [0, 14, 3, 8]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -7067,7 +9182,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [305, 304]
+          "entrance_transitions": [
+            [305, 14, 5, 7]
+          ],
+          "exit_transitions": [
+            [304, 14, 5, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -7103,7 +9225,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [351, 451]
+          "entrance_transitions": [
+            [351, 11, 9, 14]
+          ],
+          "exit_transitions": [
+            [451, 11, 9, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 3,
@@ -7111,7 +9240,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [453, 452]
+          "entrance_transitions": [
+            [453, 11, 14, 14]
+          ],
+          "exit_transitions": [
+            [452, 11, 14, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -7120,7 +9256,9 @@
           "slot": 86,
           "state": 0,
           "x": 2,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -7156,7 +9294,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0, 449]
+          "entrance_transitions": [
+            [0, 11, 4, 14]
+          ],
+          "exit_transitions": [
+            [449, 11, 4, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -7165,7 +9310,9 @@
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 72,
+          "sy": 168
         }
       ]
     },
@@ -7201,7 +9348,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [459, 352]
+          "entrance_transitions": [
+            [459, 13, 8, 13]
+          ],
+          "exit_transitions": [
+            [352, 13, 8, 13]
+          ],
+          "mask": 12582912,
+          "dst_mask": 12582912
         },
         {
           "x": 0,
@@ -7209,7 +9363,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [460, 352]
+          "entrance_transitions": [
+            [460, 13, 10, 13]
+          ],
+          "exit_transitions": [
+            [352, 13, 10, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -7218,7 +9379,9 @@
           "slot": 117,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 92,
+          "sy": 96
         }
       ]
     },
@@ -7256,7 +9419,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 6, 12]
+          ],
+          "exit_transitions": [
+            [0, 13, 6, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -7264,7 +9434,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 6, 13]
+          ],
+          "exit_transitions": [
+            [0, 13, 6, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -7300,7 +9477,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [298, 297]
+          "entrance_transitions": [
+            [298, 14, 11, 5]
+          ],
+          "exit_transitions": [
+            [297, 14, 11, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -7309,7 +9493,9 @@
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 92,
+          "sy": 96
         }
       ],
       "name": "Tower Plasma Room"
@@ -7346,7 +9532,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [299, 296]
+          "entrance_transitions": [
+            [299, 14, 11, 6]
+          ],
+          "exit_transitions": [
+            [296, 14, 11, 6]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -7355,7 +9548,9 @@
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 92,
+          "sy": 96
         }
       ],
       "name": "Tower Spazer Room"
@@ -7392,7 +9587,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [301, 300]
+          "entrance_transitions": [
+            [301, 14, 11, 7]
+          ],
+          "exit_transitions": [
+            [300, 14, 11, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -7401,7 +9603,9 @@
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 92,
+          "sy": 96
         }
       ],
       "name": "Tower Wave Beam Room"
@@ -7438,7 +9642,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [307, 311]
+          "entrance_transitions": [
+            [307, 14, 11, 8]
+          ],
+          "exit_transitions": [
+            [311, 14, 11, 8]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -7447,7 +9658,9 @@
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 92,
+          "sy": 96
         }
       ],
       "name": "Tower Ice Beam Room"
@@ -7484,7 +9697,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [242, 56]
+          "entrance_transitions": [
+            [242, 12, 13, 15]
+          ],
+          "exit_transitions": [
+            [56, 12, 13, 15]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -7492,7 +9712,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [130, 49]
+          "entrance_transitions": [
+            [130, 12, 10, 12]
+          ],
+          "exit_transitions": [
+            [49, 12, 10, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -7546,7 +9773,16 @@
           "dir": 1,
           "entrance_states": 3,
           "exit_states": 3,
-          "transitions": [66, 175, 389, 407]
+          "entrance_transitions": [
+            [66, 10, 4, 11],
+            [389, 10, 8, 6]
+          ],
+          "exit_transitions": [
+            [175, 10, 4, 11],
+            [407, 10, 8, 6]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -7554,7 +9790,16 @@
           "dir": 1,
           "entrance_states": 3,
           "exit_states": 3,
-          "transitions": [117, 168, 400, 405]
+          "entrance_transitions": [
+            [117, 11, 4, 6],
+            [400, 11, 11, 8]
+          ],
+          "exit_transitions": [
+            [168, 11, 4, 6],
+            [405, 11, 11, 8]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -7608,7 +9853,16 @@
           "dir": 2,
           "entrance_states": 3,
           "exit_states": 3,
-          "transitions": [116, 207, 403, 410]
+          "entrance_transitions": [
+            [116, 11, 3, 6],
+            [403, 11, 15, 9]
+          ],
+          "exit_transitions": [
+            [207, 11, 3, 6],
+            [410, 11, 15, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -7656,7 +9910,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [148, 173]
+          "entrance_transitions": [
+            [148, 11, 14, 10]
+          ],
+          "exit_transitions": [
+            [173, 11, 14, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -7664,7 +9925,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [347, 457]
+          "entrance_transitions": [
+            [347, 12, 8, 7]
+          ],
+          "exit_transitions": [
+            [457, 12, 8, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Jungle Descent"
@@ -7701,7 +9969,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [440, 441]
+          "entrance_transitions": [
+            [440, 11, 10, 3]
+          ],
+          "exit_transitions": [
+            [441, 11, 10, 3]
+          ],
+          "mask": 806338560,
+          "dst_mask": 806338560
         }
       ],
       "features": [
@@ -7710,7 +9985,9 @@
           "slot": 68,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ],
       "name": "Entangled Gamma"
@@ -7751,7 +10028,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [304, 305]
+          "entrance_transitions": [
+            [304, 14, 4, 7]
+          ],
+          "exit_transitions": [
+            [305, 14, 4, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -7759,7 +10043,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [306, 386]
+          "entrance_transitions": [
+            [306, 14, 5, 10]
+          ],
+          "exit_transitions": [
+            [386, 14, 5, 10]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         }
       ],
       "features": [
@@ -7768,14 +10059,18 @@
           "slot": 110,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 32,
+          "sy": 40
         },
         {
           "type": "gamma",
           "slot": 70,
           "state": 0,
           "x": 0,
-          "y": 1
+          "y": 1,
+          "sx": 104,
+          "sy": 104
         }
       ]
     },
@@ -7811,7 +10106,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 14, 4, 8]
+          ],
+          "exit_transitions": [
+            [0, 14, 4, 8]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -7819,7 +10121,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [302, 303]
+          "entrance_transitions": [
+            [302, 14, 1, 8]
+          ],
+          "exit_transitions": [
+            [303, 14, 1, 8]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -7855,7 +10164,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [452, 453]
+          "entrance_transitions": [
+            [452, 11, 13, 14]
+          ],
+          "exit_transitions": [
+            [453, 11, 13, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -7891,7 +10207,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [237, 58]
+          "entrance_transitions": [
+            [237, 12, 8, 14]
+          ],
+          "exit_transitions": [
+            [58, 12, 8, 14]
+          ],
+          "mask": 1040384,
+          "dst_mask": 1040384
         },
         {
           "x": 0,
@@ -7899,7 +10222,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [225, 57]
+          "entrance_transitions": [
+            [225, 12, 7, 12]
+          ],
+          "exit_transitions": [
+            [57, 12, 7, 12]
+          ],
+          "mask": 1040576,
+          "dst_mask": 1040384
         },
         {
           "x": 2,
@@ -7907,7 +10237,14 @@
           "dir": 8,
           "entrance_states": 0,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            null
+          ],
+          "exit_transitions": [
+            [0, 10, 13, 10]
+          ],
+          "mask": 245760,
+          "dst_mask": 516096
         },
         {
           "x": 1,
@@ -7915,7 +10252,14 @@
           "dir": 8,
           "entrance_states": 0,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            null
+          ],
+          "exit_transitions": [
+            [0, 10, 12, 10]
+          ],
+          "mask": 245760,
+          "dst_mask": 516096
         }
       ]
     },
@@ -7957,7 +10301,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [49, 130]
+          "entrance_transitions": [
+            [49, 11, 7, 9]
+          ],
+          "exit_transitions": [
+            [130, 11, 7, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -7965,7 +10316,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [239, 40]
+          "entrance_transitions": [
+            [239, 12, 11, 14]
+          ],
+          "exit_transitions": [
+            [40, 12, 11, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -8016,7 +10374,16 @@
           "dir": 2,
           "entrance_states": 3,
           "exit_states": 3,
-          "transitions": [168, 117, 405, 400]
+          "entrance_transitions": [
+            [168, 12, 13, 0],
+            [405, 12, 14, 0]
+          ],
+          "exit_transitions": [
+            [117, 12, 13, 0],
+            [400, 12, 14, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 4,
@@ -8024,7 +10391,16 @@
           "dir": 1,
           "entrance_states": 3,
           "exit_states": 3,
-          "transitions": [200, 118, 408, 401]
+          "entrance_transitions": [
+            [200, 12, 10, 7],
+            [408, 12, 6, 7]
+          ],
+          "exit_transitions": [
+            [118, 12, 10, 7],
+            [401, 12, 6, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -8033,14 +10409,18 @@
           "slot": 73,
           "state": 0,
           "x": 2,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 182
         },
         {
           "type": "omega",
           "slot": 76,
           "state": 1,
           "x": 2,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ],
       "name": "Tower Access"
@@ -8087,7 +10467,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [457, 347]
+          "entrance_transitions": [
+            [457, 12, 9, 7]
+          ],
+          "exit_transitions": [
+            [347, 12, 9, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -8095,7 +10482,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [456, 346]
+          "entrance_transitions": [
+            [456, 12, 7, 5]
+          ],
+          "exit_transitions": [
+            [346, 12, 7, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -8104,14 +10498,18 @@
           "slot": 64,
           "state": 0,
           "x": 0,
-          "y": 4
+          "y": 4,
+          "sx": 128,
+          "sy": 128
         },
         {
           "type": "energy-recharge",
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 5
+          "y": 5,
+          "sx": 232,
+          "sy": 120
         }
       ],
       "name": "Jungle Floor"
@@ -8148,7 +10546,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [386, 306]
+          "entrance_transitions": [
+            [386, 14, 5, 9]
+          ],
+          "exit_transitions": [
+            [306, 14, 5, 9]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         },
         {
           "x": 0,
@@ -8156,15 +10561,29 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [360, 306]
+          "entrance_transitions": [
+            [360, 14, 4, 10]
+          ],
+          "exit_transitions": [
+            [306, 14, 4, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 2,
           "y": 0,
           "dir": 1,
-          "entrance_states": 0,
+          "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 14, 8, 10]
+          ],
+          "exit_transitions": [
+            [0, 14, 8, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -8173,7 +10592,9 @@
           "slot": 112,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 168
         }
       ]
     },
@@ -8209,7 +10630,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [303, 302]
+          "entrance_transitions": [
+            [303, 14, 2, 8]
+          ],
+          "exit_transitions": [
+            [302, 14, 2, 8]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -8218,7 +10646,9 @@
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 92,
+          "sy": 96
         }
       ]
     },
@@ -8262,7 +10692,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [40, 239]
+          "entrance_transitions": [
+            [40, 12, 10, 9]
+          ],
+          "exit_transitions": [
+            [239, 12, 10, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -8270,7 +10707,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [228, 129],
+          "entrance_transitions": [
+            [228, 12, 12, 12]
+          ],
+          "exit_transitions": [
+            [129, 12, 12, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 10
         }
       ]
@@ -8309,7 +10753,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [118, 200]
+          "entrance_transitions": [
+            [118, 11, 8, 6]
+          ],
+          "exit_transitions": [
+            [200, 11, 8, 6]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -8347,7 +10798,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [401, 408]
+          "entrance_transitions": [
+            [401, 11, 15, 8]
+          ],
+          "exit_transitions": [
+            [408, 11, 15, 8]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -8389,7 +10847,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [346, 456]
+          "entrance_transitions": [
+            [346, 12, 8, 5]
+          ],
+          "exit_transitions": [
+            [456, 12, 8, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -8397,7 +10862,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [98, 190]
+          "entrance_transitions": [
+            [98, 11, 14, 2]
+          ],
+          "exit_transitions": [
+            [190, 11, 14, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -8433,7 +10905,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [306, 360]
+          "entrance_transitions": [
+            [306, 14, 5, 10]
+          ],
+          "exit_transitions": [
+            [360, 14, 5, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -8441,7 +10920,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [317, 318]
+          "entrance_transitions": [
+            [317, 14, 2, 10]
+          ],
+          "exit_transitions": [
+            [318, 14, 2, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -8450,7 +10936,9 @@
           "slot": 71,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 40,
+          "sy": 104
         }
       ],
       "name": "Plasma Gamma"
@@ -8488,8 +10976,15 @@
           "y": 1,
           "dir": 2,
           "entrance_states": 1,
-          "exit_states": 0,
-          "transitions": [0]
+          "exit_states": 1,
+          "entrance_transitions": [
+            [0, 14, 7, 10]
+          ],
+          "exit_transitions": [
+            [0, 14, 7, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -8497,7 +10992,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [274, 275]
+          "entrance_transitions": [
+            [274, 14, 7, 11]
+          ],
+          "exit_transitions": [
+            [275, 14, 7, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -8545,7 +11047,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [129, 228],
+          "entrance_transitions": [
+            [129, 12, 11, 10]
+          ],
+          "exit_transitions": [
+            [228, 12, 11, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 8
         },
         {
@@ -8554,7 +11063,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [221, 197]
+          "entrance_transitions": [
+            [221, 12, 13, 11]
+          ],
+          "exit_transitions": [
+            [197, 12, 13, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -8597,7 +11113,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [190, 98]
+          "entrance_transitions": [
+            [190, 12, 7, 4]
+          ],
+          "exit_transitions": [
+            [98, 12, 7, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -8605,7 +11128,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [438, 348]
+          "entrance_transitions": [
+            [438, 11, 12, 2]
+          ],
+          "exit_transitions": [
+            [348, 11, 12, 2]
+          ],
+          "mask": 806338560,
+          "dst_mask": 806338560
         }
       ],
       "features": [
@@ -8614,7 +11144,9 @@
           "slot": 65,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -8650,7 +11182,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [318, 317]
+          "entrance_transitions": [
+            [318, 14, 3, 10]
+          ],
+          "exit_transitions": [
+            [317, 14, 3, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -8658,7 +11197,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [313, 316]
+          "entrance_transitions": [
+            [313, 14, 0, 10]
+          ],
+          "exit_transitions": [
+            [316, 14, 0, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -8696,7 +11242,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [68, 241]
+          "entrance_transitions": [
+            [68, 10, 13, 11]
+          ],
+          "exit_transitions": [
+            [241, 10, 13, 11]
+          ],
+          "mask": 1040384,
+          "dst_mask": 1040384
         },
         {
           "x": 0,
@@ -8704,7 +11257,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [58, 237]
+          "entrance_transitions": [
+            [58, 10, 14, 9]
+          ],
+          "exit_transitions": [
+            [237, 10, 14, 9]
+          ],
+          "mask": 1040384,
+          "dst_mask": 1040384
         }
       ]
     },
@@ -8744,7 +11304,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [197, 221]
+          "entrance_transitions": [
+            [197, 12, 12, 6]
+          ],
+          "exit_transitions": [
+            [221, 12, 12, 6]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -8752,7 +11319,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [121, 216]
+          "entrance_transitions": [
+            [121, 15, 0, 12]
+          ],
+          "exit_transitions": [
+            [216, 15, 0, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -8760,7 +11334,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [125, 208]
+          "entrance_transitions": [
+            [125, 15, 5, 14]
+          ],
+          "exit_transitions": [
+            [208, 15, 5, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -8796,7 +11377,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [348, 438]
+          "entrance_transitions": [
+            [348, 11, 13, 2]
+          ],
+          "exit_transitions": [
+            [438, 11, 13, 2]
+          ],
+          "mask": 806338560,
+          "dst_mask": 806338560
         },
         {
           "x": 0,
@@ -8804,7 +11392,14 @@
           "dir": 4,
           "entrance_states": 0,
           "exit_states": 1,
-          "transitions": [97]
+          "entrance_transitions": [
+            null
+          ],
+          "exit_transitions": [
+            [97, 12, 3, 14]
+          ],
+          "mask": 245760,
+          "dst_mask": 0
         }
       ]
     },
@@ -8840,7 +11435,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [316, 313]
+          "entrance_transitions": [
+            [316, 14, 1, 10]
+          ],
+          "exit_transitions": [
+            [313, 14, 1, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -8849,7 +11451,9 @@
           "slot": 15,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 92,
+          "sy": 96
         }
       ]
     },
@@ -8885,7 +11489,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [226, 67]
+          "entrance_transitions": [
+            [226, 12, 8, 12]
+          ],
+          "exit_transitions": [
+            [67, 12, 8, 12]
+          ],
+          "mask": 1040576,
+          "dst_mask": 1040384
         },
         {
           "x": 4,
@@ -8893,7 +11504,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [241, 68]
+          "entrance_transitions": [
+            [241, 12, 8, 15]
+          ],
+          "exit_transitions": [
+            [68, 12, 8, 15]
+          ],
+          "mask": 1040384,
+          "dst_mask": 1040384
         },
         {
           "x": 1,
@@ -8901,7 +11519,14 @@
           "dir": 8,
           "entrance_states": 0,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            null
+          ],
+          "exit_transitions": [
+            [0, 10, 10, 12]
+          ],
+          "mask": 245760,
+          "dst_mask": 0
         },
         {
           "x": 3,
@@ -8909,7 +11534,14 @@
           "dir": 8,
           "entrance_states": 0,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            null
+          ],
+          "exit_transitions": [
+            [0, 10, 12, 12]
+          ],
+          "mask": 245760,
+          "dst_mask": 0
         },
         {
           "x": 2,
@@ -8917,7 +11549,14 @@
           "dir": 8,
           "entrance_states": 0,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            null
+          ],
+          "exit_transitions": [
+            [0, 10, 11, 12]
+          ],
+          "mask": 245760,
+          "dst_mask": 0
         }
       ]
     },
@@ -8953,7 +11592,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [216, 121]
+          "entrance_transitions": [
+            [216, 12, 13, 10]
+          ],
+          "exit_transitions": [
+            [121, 12, 13, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 3,
@@ -8961,7 +11607,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [185, 123]
+          "entrance_transitions": [
+            [185, 12, 12, 3]
+          ],
+          "exit_transitions": [
+            [123, 12, 12, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -8969,7 +11622,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [203, 122],
+          "entrance_transitions": [
+            [203, 12, 4, 8]
+          ],
+          "exit_transitions": [
+            [122, 12, 4, 8]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480,
           "to-area": 11
         }
       ]
@@ -9006,7 +11666,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [208, 125]
+          "entrance_transitions": [
+            [208, 12, 13, 9]
+          ],
+          "exit_transitions": [
+            [125, 12, 13, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -9014,7 +11681,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [342, 343]
+          "entrance_transitions": [
+            [342, 15, 1, 14]
+          ],
+          "exit_transitions": [
+            [343, 15, 1, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -9050,7 +11724,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 14, 2, 11]
+          ],
+          "exit_transitions": [
+            [0, 14, 2, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -9059,7 +11740,9 @@
           "slot": 106,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 168,
+          "sy": 88
         }
       ],
       "name": "Autom E-Tank Room"
@@ -9102,7 +11785,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [122, 203],
+          "entrance_transitions": [
+            [122, 15, 1, 12]
+          ],
+          "exit_transitions": [
+            [203, 15, 1, 12]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480,
           "to-area": 10
         },
         {
@@ -9111,7 +11801,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [229, 412, 212]
+          "entrance_transitions": [
+            [412, 12, 15, 13]
+          ],
+          "exit_transitions": [
+            [212, 12, 0, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -9155,7 +11852,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [123, 185]
+          "entrance_transitions": [
+            [123, 15, 3, 12]
+          ],
+          "exit_transitions": [
+            [185, 15, 3, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -9163,15 +11867,29 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [126, 174]
+          "entrance_transitions": [
+            [126, 11, 0, 8]
+          ],
+          "exit_transitions": [
+            [174, 11, 0, 8]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         },
         {
           "x": 0,
           "y": 4,
           "dir": 1,
-          "entrance_states": 0,
+          "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 12, 13, 4]
+          ],
+          "exit_transitions": [
+            [0, 12, 13, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -9207,7 +11925,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [343, 342]
+          "entrance_transitions": [
+            [343, 15, 2, 14]
+          ],
+          "exit_transitions": [
+            [342, 15, 2, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -9216,7 +11941,9 @@
           "slot": 64,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 64,
+          "sy": 128
         }
       ]
     },
@@ -9282,7 +12009,16 @@
           "dir": 2,
           "entrance_states": 3,
           "exit_states": 3,
-          "transitions": [212, 412, 229]
+          "entrance_transitions": [
+            [212, 12, 4, 11],
+            [212, 12, 4, 11]
+          ],
+          "exit_transitions": [
+            [412, 12, 4, 11],
+            [229, 12, 4, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -9290,7 +12026,16 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 3,
-          "transitions": [71, 169, 137]
+          "entrance_transitions": [
+            [71, 10, 14, 12],
+            null
+          ],
+          "exit_transitions": [
+            [169, 10, 14, 12],
+            [137, 10, 14, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Spike Barrier Room"
@@ -9327,7 +12072,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [174, 126]
+          "entrance_transitions": [
+            [174, 12, 12, 0]
+          ],
+          "exit_transitions": [
+            [126, 12, 12, 0]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         }
       ],
       "features": [
@@ -9373,8 +12125,15 @@
           "y": 0,
           "dir": 2,
           "entrance_states": 1,
-          "exit_states": 0,
-          "transitions": [0]
+          "exit_states": 1,
+          "entrance_transitions": [
+            [0, 12, 12, 4]
+          ],
+          "exit_transitions": [
+            [0, 12, 12, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -9382,7 +12141,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [48, 198]
+          "entrance_transitions": [
+            [48, 15, 5, 11]
+          ],
+          "exit_transitions": [
+            [198, 15, 5, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -9390,7 +12156,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [124, 194]
+          "entrance_transitions": [
+            [124, 15, 0, 13]
+          ],
+          "exit_transitions": [
+            [194, 15, 0, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -9426,7 +12199,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [137, 169, 71]
+          "entrance_transitions": [
+            [169, 12, 15, 8]
+          ],
+          "exit_transitions": [
+            [71, 12, 15, 8]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -9434,7 +12214,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [231, 70]
+          "entrance_transitions": [
+            [231, 12, 8, 13]
+          ],
+          "exit_transitions": [
+            [70, 12, 8, 13]
+          ],
+          "mask": 1040576,
+          "dst_mask": 1040384
         },
         {
           "x": 1,
@@ -9442,7 +12229,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 0,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 10, 10, 11]
+          ],
+          "exit_transitions": [
+            null
+          ],
+          "mask": 0,
+          "dst_mask": 245760
         },
         {
           "x": 3,
@@ -9450,7 +12244,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 0,
-          "transitions": [65, 0]
+          "entrance_transitions": [
+            [0, 10, 12, 11]
+          ],
+          "exit_transitions": [
+            null
+          ],
+          "mask": 0,
+          "dst_mask": 516096
         },
         {
           "x": 2,
@@ -9458,7 +12259,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 0,
-          "transitions": [0, 64]
+          "entrance_transitions": [
+            [64, 10, 12, 10]
+          ],
+          "exit_transitions": [
+            null
+          ],
+          "mask": 0,
+          "dst_mask": 516096
         }
       ]
     },
@@ -9494,7 +12302,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [194, 124]
+          "entrance_transitions": [
+            [194, 12, 13, 5]
+          ],
+          "exit_transitions": [
+            [124, 12, 13, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 3,
@@ -9502,7 +12317,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [337, 338]
+          "entrance_transitions": [
+            [337, 11, 5, 7]
+          ],
+          "exit_transitions": [
+            [338, 11, 5, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -9538,7 +12360,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [198, 48]
+          "entrance_transitions": [
+            [198, 12, 13, 6]
+          ],
+          "exit_transitions": [
+            [48, 12, 13, 6]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -9546,7 +12375,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [355, 356]
+          "entrance_transitions": [
+            [355, 15, 1, 11]
+          ],
+          "exit_transitions": [
+            [356, 15, 1, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -9584,7 +12420,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [70, 231]
+          "entrance_transitions": [
+            [70, 10, 9, 12]
+          ],
+          "exit_transitions": [
+            [231, 10, 9, 12]
+          ],
+          "mask": 1040384,
+          "dst_mask": 1040576
         },
         {
           "x": 0,
@@ -9592,7 +12435,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [67, 226]
+          "entrance_transitions": [
+            [67, 10, 9, 11]
+          ],
+          "exit_transitions": [
+            [226, 10, 9, 11]
+          ],
+          "mask": 1040384,
+          "dst_mask": 1040576
         }
       ]
     },
@@ -9628,7 +12478,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [338, 337]
+          "entrance_transitions": [
+            [338, 15, 3, 13]
+          ],
+          "exit_transitions": [
+            [337, 15, 3, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -9637,7 +12494,9 @@
           "slot": 74,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 128
         }
       ]
     },
@@ -9673,7 +12532,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 0,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 10, 13, 9]
+          ],
+          "exit_transitions": [
+            null
+          ],
+          "mask": 516096,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -9681,7 +12547,14 @@
           "dir": 8,
           "entrance_states": 0,
           "exit_states": 1,
-          "transitions": [65]
+          "entrance_transitions": [
+            null
+          ],
+          "exit_transitions": [
+            [65, 10, 12, 12]
+          ],
+          "mask": 516096,
+          "dst_mask": 0
         }
       ]
     },
@@ -9717,7 +12590,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [320, 319]
+          "entrance_transitions": [
+            [320, 14, 5, 11]
+          ],
+          "exit_transitions": [
+            [319, 14, 5, 11]
+          ],
+          "mask": 3072,
+          "dst_mask": 3072
         },
         {
           "x": 0,
@@ -9725,7 +12605,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 14, 1, 11]
+          ],
+          "exit_transitions": [
+            [0, 14, 1, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -9734,7 +12621,9 @@
           "slot": 72,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 128,
+          "sy": 192
         }
       ],
       "name": "Autom Alpha"
@@ -9771,7 +12660,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [275, 274]
+          "entrance_transitions": [
+            [275, 14, 8, 9]
+          ],
+          "exit_transitions": [
+            [274, 14, 8, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -9779,7 +12675,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [319, 320]
+          "entrance_transitions": [
+            [319, 14, 4, 11]
+          ],
+          "exit_transitions": [
+            [320, 14, 4, 11]
+          ],
+          "mask": 3072,
+          "dst_mask": 3072
         }
       ],
       "name": "Autom Alley"
@@ -9816,7 +12719,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 5, 13]
+          ],
+          "exit_transitions": [
+            [0, 13, 5, 13]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 2,
@@ -9824,7 +12734,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [352, 459]
+          "entrance_transitions": [
+            [352, 13, 9, 13]
+          ],
+          "exit_transitions": [
+            [459, 13, 9, 13]
+          ],
+          "mask": 12582912,
+          "dst_mask": 12582912
         }
       ],
       "features": [
@@ -9833,21 +12750,27 @@
           "slot": 123,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 184,
+          "sy": 232
         },
         {
           "type": "missile-tank",
           "slot": 116,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 24,
+          "sy": 232
         },
         {
           "type": "energy-tank",
           "slot": 119,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 24,
+          "sy": 88
         }
       ],
       "name": "High Jump Cache"
@@ -9884,7 +12807,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 0,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 10, 12, 9]
+          ],
+          "exit_transitions": [
+            null
+          ],
+          "mask": 516096,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -9892,7 +12822,14 @@
           "dir": 8,
           "entrance_states": 0,
           "exit_states": 1,
-          "transitions": [64]
+          "entrance_transitions": [
+            null
+          ],
+          "exit_transitions": [
+            [64, 10, 11, 12]
+          ],
+          "mask": 516096,
+          "dst_mask": 0
         }
       ]
     },
@@ -9928,7 +12865,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [356, 355]
+          "entrance_transitions": [
+            [356, 15, 2, 11]
+          ],
+          "exit_transitions": [
+            [355, 15, 2, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -9937,7 +12881,9 @@
           "slot": 67,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 64,
+          "sy": 128
         }
       ]
     },
@@ -9994,7 +12940,16 @@
           "dir": 1,
           "entrance_states": 3,
           "exit_states": 3,
-          "transitions": [417, 418, 390]
+          "entrance_transitions": [
+            [417, 10, 6, 12],
+            [417, 10, 6, 12]
+          ],
+          "exit_transitions": [
+            [418, 10, 6, 12],
+            [390, 10, 6, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -10002,7 +12957,16 @@
           "dir": 2,
           "entrance_states": 3,
           "exit_states": 3,
-          "transitions": [175, 66, 407, 389]
+          "entrance_transitions": [
+            [175, 12, 13, 1],
+            [407, 12, 14, 1]
+          ],
+          "exit_transitions": [
+            [66, 12, 13, 1],
+            [389, 12, 14, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -10038,7 +13002,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [4, 248]
+          "entrance_transitions": [
+            [4, 9, 2, 2]
+          ],
+          "exit_transitions": [
+            [248, 9, 2, 2]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -10046,7 +13017,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [3, 235]
+          "entrance_transitions": [
+            [3, 9, 1, 2]
+          ],
+          "exit_transitions": [
+            [235, 9, 1, 2]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         }
       ],
       "features": [
@@ -10055,7 +13033,9 @@
           "slot": 96,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 136,
+          "sy": 200
         }
       ]
     },
@@ -10093,7 +13073,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [141, 161]
+          "entrance_transitions": [
+            [141, 11, 2, 10]
+          ],
+          "exit_transitions": [
+            [161, 11, 2, 10]
+          ],
+          "mask": 245760,
+          "dst_mask": 4228104384
         },
         {
           "x": 0,
@@ -10101,7 +13088,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [272, 276]
+          "entrance_transitions": [
+            [272, 13, 14, 4]
+          ],
+          "exit_transitions": [
+            [276, 13, 14, 4]
+          ],
+          "mask": 817889280,
+          "dst_mask": 12582912
         }
       ],
       "features": [
@@ -10110,7 +13104,9 @@
           "slot": 96,
           "state": 0,
           "x": 0,
-          "y": 1
+          "y": 1,
+          "sx": 72,
+          "sy": 200
         }
       ],
       "name": "Cobweb's Treasure"
@@ -10147,7 +13143,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [276, 272]
+          "entrance_transitions": [
+            [276, 12, 3, 1]
+          ],
+          "exit_transitions": [
+            [272, 12, 3, 1]
+          ],
+          "mask": 12582912,
+          "dst_mask": 817889280
         },
         {
           "x": 0,
@@ -10155,7 +13158,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 11, 4]
+          ],
+          "exit_transitions": [
+            [0, 13, 11, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -10164,21 +13174,27 @@
           "slot": 101,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 184,
+          "sy": 232
         },
         {
           "type": "missile-tank",
           "slot": 102,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 104,
+          "sy": 88
         },
         {
           "type": "missile-tank",
           "slot": 103,
           "state": 0,
           "x": 1,
-          "y": 0
+          "y": 0,
+          "sx": 120,
+          "sy": 232
         }
       ],
       "name": "Triple Missile Room"
@@ -10215,7 +13231,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 11, 3]
+          ],
+          "exit_transitions": [
+            [0, 13, 11, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -10223,7 +13246,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [476, 324]
+          "entrance_transitions": [
+            [476, 13, 7, 3]
+          ],
+          "exit_transitions": [
+            [324, 13, 7, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -10232,7 +13262,9 @@
           "slot": 98,
           "state": 0,
           "x": 2,
-          "y": 0
+          "y": 0,
+          "sx": 88,
+          "sy": 120
         }
       ],
       "name": "Temple E-Tank Room"
@@ -10269,7 +13301,14 @@
           "dir": 4,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 7, 9]
+          ],
+          "exit_transitions": [
+            [0, 13, 7, 9]
+          ],
+          "mask": 49152,
+          "dst_mask": 49152
         },
         {
           "x": 3,
@@ -10277,7 +13316,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 9, 10]
+          ],
+          "exit_transitions": [
+            [0, 13, 9, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -10285,7 +13331,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [289, 290]
+          "entrance_transitions": [
+            [289, 13, 4, 10]
+          ],
+          "exit_transitions": [
+            [290, 13, 4, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ]
     },
@@ -10325,7 +13378,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [286, 285]
+          "entrance_transitions": [
+            [286, 13, 3, 9]
+          ],
+          "exit_transitions": [
+            [285, 13, 3, 9]
+          ],
+          "mask": 49152,
+          "dst_mask": 49152
         },
         {
           "x": 0,
@@ -10333,7 +13393,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [0]
+          "entrance_transitions": [
+            [0, 13, 2, 6]
+          ],
+          "exit_transitions": [
+            [0, 13, 2, 6]
+          ],
+          "mask": 12582912,
+          "dst_mask": 12582912
         }
       ]
     },
@@ -10388,7 +13455,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [90, 32]
+          "entrance_transitions": [
+            [90, 11, 8, 1]
+          ],
+          "exit_transitions": [
+            [32, 11, 8, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1057996863
         },
         {
           "x": 3,
@@ -10396,7 +13470,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [269, 244]
+          "entrance_transitions": [
+            [269, 13, 8, 1]
+          ],
+          "exit_transitions": [
+            [244, 13, 8, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 9,
@@ -10404,7 +13485,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [140, 247]
+          "entrance_transitions": [
+            [140, 11, 1, 10]
+          ],
+          "exit_transitions": [
+            [247, 11, 1, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 8,
@@ -10412,7 +13500,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [270, 245]
+          "entrance_transitions": [
+            [270, 13, 11, 2]
+          ],
+          "exit_transitions": [
+            [245, 13, 11, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -10420,7 +13515,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [268, 180]
+          "entrance_transitions": [
+            [268, 13, 6, 2]
+          ],
+          "exit_transitions": [
+            [180, 13, 6, 2]
+          ],
+          "mask": 4178688,
+          "dst_mask": 4177920
         },
         {
           "x": 9,
@@ -10428,7 +13530,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [271, 246]
+          "entrance_transitions": [
+            [271, 14, 7, 0]
+          ],
+          "exit_transitions": [
+            [246, 14, 7, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -10437,14 +13546,18 @@
           "slot": 14,
           "state": 0,
           "x": 3,
-          "y": 0
+          "y": 0,
+          "sx": 72,
+          "sy": 151
         },
         {
           "type": "energy-recharge",
           "slot": 15,
           "state": 0,
           "x": 7,
-          "y": 0
+          "y": 0,
+          "sx": 72,
+          "sy": 148
         }
       ],
       "name": "Temple Exterior"
@@ -10502,7 +13615,16 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [23, 262]
+          "entrance_transitions": [
+            [23, 9, 12, 3],
+            null
+          ],
+          "exit_transitions": [
+            [262, 9, 12, 3],
+            null
+          ],
+          "mask": 12582912,
+          "dst_mask": 12582912
         },
         {
           "x": 0,
@@ -10510,7 +13632,16 @@
           "dir": 2,
           "entrance_states": 2,
           "exit_states": 2,
-          "transitions": [283, 284]
+          "entrance_transitions": [
+            null,
+            [283, 13, 6, 7]
+          ],
+          "exit_transitions": [
+            null,
+            [284, 13, 6, 7]
+          ],
+          "mask": 12582912,
+          "dst_mask": 12582912
         },
         {
           "x": 0,
@@ -10518,7 +13649,16 @@
           "dir": 8,
           "entrance_states": 2,
           "exit_states": 2,
-          "transitions": [0]
+          "entrance_transitions": [
+            null,
+            [0, 13, 7, 10]
+          ],
+          "exit_transitions": [
+            null,
+            [0, 13, 7, 10]
+          ],
+          "mask": 49152,
+          "dst_mask": 49152
         }
       ],
       "features": [
@@ -10527,14 +13667,18 @@
           "slot": 108,
           "state": 0,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 168,
+          "sy": 184
         },
         {
           "type": "missile-tank",
           "slot": 108,
           "state": 1,
           "x": 0,
-          "y": 0
+          "y": 0,
+          "sx": 168,
+          "sy": 184
         }
       ]
     },
@@ -10584,7 +13728,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [109, 53]
+          "entrance_transitions": [
+            [109, 11, 1, 5]
+          ],
+          "exit_transitions": [
+            [53, 11, 1, 5]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -10592,7 +13743,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [184, 47]
+          "entrance_transitions": [
+            [184, 12, 10, 3]
+          ],
+          "exit_transitions": [
+            [47, 12, 10, 3]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -10600,7 +13758,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [139, 60]
+          "entrance_transitions": [
+            [139, 11, 12, 9]
+          ],
+          "exit_transitions": [
+            [60, 11, 12, 9]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Missile Block Room"
@@ -10662,7 +13827,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [93, 25]
+          "entrance_transitions": [
+            [93, 11, 1, 2]
+          ],
+          "exit_transitions": [
+            [25, 11, 1, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 2,
@@ -10670,7 +13842,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [259, 19]
+          "entrance_transitions": [
+            [259, 13, 0, 8]
+          ],
+          "exit_transitions": [
+            [19, 13, 0, 8]
+          ],
+          "mask": 1040384,
+          "dst_mask": 1040384
         },
         {
           "x": 10,
@@ -10678,7 +13857,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [263, 24]
+          "entrance_transitions": [
+            [263, 13, 7, 5]
+          ],
+          "exit_transitions": [
+            [24, 13, 7, 5]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         },
         {
           "x": 2,
@@ -10686,7 +13872,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [258, 18]
+          "entrance_transitions": [
+            [258, 13, 1, 5]
+          ],
+          "exit_transitions": [
+            [18, 13, 1, 5]
+          ],
+          "mask": 202371840,
+          "dst_mask": 1044480
         },
         {
           "x": 7,
@@ -10694,7 +13887,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [261, 22]
+          "entrance_transitions": [
+            [261, 13, 2, 12]
+          ],
+          "exit_transitions": [
+            [22, 13, 2, 12]
+          ],
+          "mask": 245760,
+          "dst_mask": 245760
         },
         {
           "x": 0,
@@ -10702,7 +13902,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [210, 16]
+          "entrance_transitions": [
+            [210, 12, 2, 10]
+          ],
+          "exit_transitions": [
+            [16, 12, 2, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -10710,7 +13917,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [223, 17]
+          "entrance_transitions": [
+            [223, 12, 2, 12]
+          ],
+          "exit_transitions": [
+            [17, 12, 2, 12]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 8,
@@ -10718,7 +13932,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [262, 23]
+          "entrance_transitions": [
+            [262, 13, 9, 7]
+          ],
+          "exit_transitions": [
+            [23, 13, 9, 7]
+          ],
+          "mask": 12582912,
+          "dst_mask": 12582912
         },
         {
           "x": 3,
@@ -10726,7 +13947,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [409, 20]
+          "entrance_transitions": [
+            [409, 13, 5, 0]
+          ],
+          "exit_transitions": [
+            [20, 13, 5, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 4,
@@ -10734,7 +13962,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [260, 21]
+          "entrance_transitions": [
+            [260, 13, 5, 7]
+          ],
+          "exit_transitions": [
+            [21, 13, 5, 7]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -10743,7 +13978,9 @@
           "slot": 102,
           "state": 0,
           "x": 2,
-          "y": 2
+          "y": 2,
+          "sx": 200,
+          "sy": 24
         }
       ],
       "name": "Hydro Exterior"
@@ -10790,7 +14027,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [427, 330]
+          "entrance_transitions": [
+            [427, 12, 4, 1]
+          ],
+          "exit_transitions": [
+            [330, 12, 4, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 0,
@@ -10798,7 +14042,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [238, 51],
+          "entrance_transitions": [
+            [238, 12, 9, 14]
+          ],
+          "exit_transitions": [
+            [51, 12, 9, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "jump": [
             -7,
             0
@@ -10810,7 +14061,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [332, 331]
+          "entrance_transitions": [
+            [332, 12, 5, 4]
+          ],
+          "exit_transitions": [
+            [331, 12, 5, 4]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "Acid Dive Start"
@@ -10856,7 +14114,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [435, 35]
+          "entrance_transitions": [
+            [435, 10, 3, 4]
+          ],
+          "exit_transitions": [
+            [35, 10, 3, 4]
+          ],
+          "mask": 850944,
+          "dst_mask": 850944
         },
         {
           "x": 0,
@@ -10864,7 +14129,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [437, 391, 416]
+          "entrance_transitions": [
+            [391, 10, 1, 8]
+          ],
+          "exit_transitions": [
+            [416, 10, 1, 8]
+          ],
+          "mask": 1035264,
+          "dst_mask": 1035264
         },
         {
           "x": 1,
@@ -10872,7 +14144,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [162, 54],
+          "entrance_transitions": [
+            [162, 12, 4, 0]
+          ],
+          "exit_transitions": [
+            [54, 12, 4, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192,
           "to-area": 5
         }
       ],
@@ -10931,7 +14210,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [217, 37]
+          "entrance_transitions": [
+            [217, 12, 1, 11]
+          ],
+          "exit_transitions": [
+            [37, 12, 1, 11]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 2,
@@ -10939,7 +14225,14 @@
           "dir": 8,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [42, 34]
+          "entrance_transitions": [
+            [42, 10, 2, 2]
+          ],
+          "exit_transitions": [
+            [34, 10, 2, 2]
+          ],
+          "mask": 1044480,
+          "dst_mask": 1044480
         },
         {
           "x": 3,
@@ -10947,7 +14240,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [420, 38]
+          "entrance_transitions": [
+            [420, 11, 3, 1]
+          ],
+          "exit_transitions": [
+            [38, 11, 3, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "No Swimming Zone"
@@ -10994,7 +14294,14 @@
           "dir": 2,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [86, 33]
+          "entrance_transitions": [
+            [86, 11, 14, 0]
+          ],
+          "exit_transitions": [
+            [33, 11, 14, 0]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         },
         {
           "x": 1,
@@ -11002,7 +14309,14 @@
           "dir": 1,
           "entrance_states": 1,
           "exit_states": 1,
-          "transitions": [209, 39]
+          "entrance_transitions": [
+            [209, 12, 1, 10]
+          ],
+          "exit_transitions": [
+            [39, 12, 1, 10]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "name": "First Acid"

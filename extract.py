@@ -13,6 +13,13 @@ BIT_WEST = 2
 BIT_NORTH = 4
 BIT_SOUTH = 8
 
+DIRS = [
+    BIT_EAST,
+    BIT_WEST,
+    BIT_NORTH,
+    BIT_SOUTH,
+]
+
 REVERSE_DIRECTIONS = {
     BIT_EAST : BIT_WEST,
     BIT_WEST : BIT_EAST,
@@ -281,6 +288,13 @@ special_transitions = {
     (0xF8A, BIT_EAST): (-FDX, -FDY, FINAL_AREA),
 }
 
+special_door_masks = {
+    # TODO: double-check these
+    (0xFEF, BIT_WEST): 0b0000000000001111111111000000000000,
+    (0xFEF, BIT_SOUTH): 0b0000000000000000110000000000000000,
+    (0xE1D, BIT_NORTH): 0b0000000000000000110000000000000000,
+}
+
 # no warp, but we count it anyway
 exceptional_null_transitions = {
     0xE38,
@@ -309,6 +323,7 @@ exceptional_null_transitions = {
     0xB4C,
     0xA44,
     0xE7A,
+    0xE8A,
     0xD36,
     0xD54,
     0xDB5,
@@ -320,9 +335,11 @@ exceptional_null_transitions = {
     0xD9B,
     0xD9C,
     0xD23,
+    0xD33,
     0xD6C,
     0xD6D,
     0xCC4,
+    0xCD4,
     0xE48,
     0xAC9,
     0xAD9,
@@ -774,6 +791,8 @@ class Cell:
         self.room: Room = None
         self.style = style
         self.exit_bits = None
+        # map: dir bit -> list[(door x/y, door length/height)]
+        self.door_shapes = {dir: 0 for dir in DIRS}
         idx = y*16 + x
         
         # points to 16x16 meta-tile data (in same bank)
@@ -817,7 +836,6 @@ class Cell:
             elif objn in range(0x40, 0x80):
                 print(f"unrecognized object: {objt:x}, {self.bank:x}:{self.x},{self.y}")
                 
-            
     def print(self):
         print(f"Cell ({self.bank:x}:{self.x},{self.y}), {pretty_style(self.style)}:")
         #if self.exit_bit:
@@ -870,8 +888,8 @@ class Cell:
         sides = ((0, 0, 1, 0, BIT_NORTH), (0, CELL_TILE_SIZE-1, 1, 0, BIT_SOUTH), (0, 0, 0, 1, BIT_WEST), (CELL_TILE_SIZE-1, 0, 0, 1, BIT_EAST))
         side_door_tiles = [0, 0, 0, 0]
         exits = set()
-        for i, side in enumerate(sides):
-            x0, y0, dx, dy, side_bit = side
+        
+        for i, (x0, y0, dx, dy, side_bit) in enumerate(sides):
             if self.scroll_blockers & side_bit:
                 for j in range(CELL_TILE_SIZE):
                     x = x0 + dx * j
@@ -880,9 +898,15 @@ class Cell:
                     region = self.region_map[y][x]
                     if region != 0:
                         side_door_tiles[i] += 1
+                        self.door_shapes[side_bit] |= (1 << j)
                         if side_door_tiles[i] >= 2:
-                            exits.add(side_bit)
+                            exits.add(side_bit)    
                             
+            key = (compressed_location(self.bank, self.x, self.y), side_bit)
+            if key in special_door_masks:
+                self.door_shapes[side_bit] = special_door_masks[key]
+                
+        
         self.exit_bits = list(exits)
     
     # returns 32x32 array, where 1 represents solid (for samus)
@@ -1306,7 +1330,7 @@ def layout_to_json(layout: Table, path="met2.json"):
                 if cell.has_save:
                     jroom["features"].append({"type": "save", "x": roomx, "y": roomy})
                 for feature in cell.contents:
-                    jroom["features"].append({"type": feature[0], "slot": feature[1], "state": i, "x": roomx, "y": roomy})
+                    jroom["features"].append({"type": feature[0], "slot": feature[1], "state": i, "x": roomx, "y": roomy, "sx": feature[2], "sy": feature[3]})
                 
                 tile = 1
                 cloc = compressed_location(r.bank, cx, cy)
@@ -1343,6 +1367,8 @@ def layout_to_json(layout: Table, path="met2.json"):
                 roomy = mapy - y0
                 key = (roomx, roomy, direction)
                 
+                cell = cells[(r.bank, cx, cy)]
+                
                 transition, nbank, nx, ny = instance
                 ncell = cells[(nbank, nx, ny)]
                 nroom = ncell.room
@@ -1357,12 +1383,16 @@ def layout_to_json(layout: Table, path="met2.json"):
                         "dir": direction,
                         "entrance_states": 0,
                         "exit_states": 0,
-                        "transitions": [],
+                        "entrance_transitions": [None for q in myrooms],
+                        "exit_transitions": [None for q in myrooms],
+                        "mask": 0,
+                        "dst_mask": 0,
                     }
                 
                 door = combined_doors[key]
-                if transition not in door["transitions"]:
-                    door["transitions"].append(transition)
+                door['mask'] |= cell.door_shapes[direction]
+                door['dst_mask'] |= ncell.door_shapes[REVERSE_DIRECTIONS[direction]]
+                door["entrance_transitions" if entrance else "exit_transitions"][i] = ((transition, nbank, nx, ny))
                 door["entrance_states" if entrance else "exit_states"] |= statebit
                 if ncell.room.style[STYLE_IDX_NAME] != room.style[STYLE_IDX_NAME] and not entrance:
                     door["to-area"] = area_names.index(ncell.room.style[STYLE_IDX_NAME])
