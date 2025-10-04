@@ -96,7 +96,7 @@ room_names = {
     0xD85: "Temple Ice Beam Room",
     0xD81: "Double Missile Room",
     0xB1A: "Spider Access",
-    0xE30: "Spider Room",
+    0xC30: "Spider Room",
     0xDC4: "Triple Missile Room",
     0xE70: "Post-Spider Alpha",
     0xC31: "Cobweb's Treasure",
@@ -111,6 +111,7 @@ room_names = {
     0xB22: "Cawron Alpha",
     
     0x9D3: "Hydro Exterior",
+    0xD0C: "Arachnus' Room",
     0xD75: "Hydro Save East",
     0xD25: "Hydro Save West",
     0xD7D: "High Jump Cache",
@@ -126,7 +127,7 @@ room_names = {
     0xC9C: "Acid Dive Main Climb",
     0xC47: "Acid Dive Left Climb",
     0xC66: "Acid Dive Right Climb",
-    0xB12: "Flying Flittway",
+    0xB3F: "Flying Flittway",
     0xA61: "Acid Alpha",
     0xB5F: "Vanishing Flittway",
     0xA62: "Acid Gamma",
@@ -166,7 +167,7 @@ room_names = {
     0xE3D: "Queen Recharge Room",
     0xE1D: "Queen's Retreat",
     0xE31: "Queen's Hallway",
-    0xFEF: "Queen Fight",
+    0xFEF: "Queen's Room",
 }
 
 object_names = {
@@ -185,10 +186,11 @@ object_names = {
     
     0x90: "space-jump",
     0x93: "spider",
+    0x94: "spring-ball",
     0x97: "energy-tank",
     0x99: "missile-tank",
     0x9B: "energy-recharge",
-    0x9C: "spring-ball",
+    0x9C: "arachnus",
     0x9D: "missile-recharge",
     
     0xA0: "alpha",
@@ -233,8 +235,11 @@ AREA_COLORS = {
 }
 
 special_objects = {
-    0xFEF: [("queen", None, None, 0x80, 0x80)],
-    0xF57: [("ship", None, None, 0x80, 0x80)],
+    0xFEF: [("queen", None, 0x80, 0x80)],
+    0xF57: [("ship", None, 0x80, 0x80)],
+    # TODO: is spring-ball slot really None?
+    # note: this script doesn't support two features with same id in same cell.
+    0xD0C: [("spring-ball", None, 76, 176), ("arachnus", 112, 76, 176)],
     0xFD5: [],
     0xF67: [],
     0xFE5: [],
@@ -435,6 +440,18 @@ COMBINE_ROOMS = [
     # egg
     {0xE12, 0xF7A},
 ]
+
+TILE_EMPTY = 0
+TILE_WATER = 1
+TILE_HSF = 2
+TILE_HSC = 4
+TILE_SPIKE = 8
+TILE_ACID = 0x10
+TILE_SHOT_PERMANENT = 0x20
+TILE_BOMB_BLOCK = 0x40
+TILE_SAVE = 0x80
+TILE_SHOT_RESPAWN = 0x100
+TILE_SOLID = 0x200
 
 EMPTY = -1
 NORMAL = 1
@@ -932,7 +949,7 @@ class Cell:
                         t = peek_u8(mtrom + mt*4 + yi*2 + xi)
                         colt = peek_u8(colrom + t)
                         
-                        if (colt & 0x80):
+                        if (colt & TILE_SAVE):
                             self.has_save = True
                         
                         # t < 4: shot block
@@ -952,7 +969,10 @@ class Cell:
                             self.collision[y*2 + yi][x*2 + xi] = 1
                             
                         if (t < 4):
-                            self.colflags[y*2 + yi][x*2 + xi] |= 0x100
+                            self.colflags[y*2 + yi][x*2 + xi] |= TILE_SHOT_RESPAWN
+                            
+                        if self.collision[y*2 + yi][x*2 + xi]:
+                            self.colflags[y*2 + yi][x*2 + xi] |= TILE_SOLID
                             
                         self.colflags[y*2 + yi][x*2 + xi] |= colt
         
@@ -1269,6 +1289,20 @@ def rooms_display(layout: Table):
         grid[y - layout.miny][x - layout.minx] = v
     display_grid(grid, [(b, x - layout.minx, y - layout.miny, x2 - layout.minx, y2 - layout.miny) for b, x, y, x2, y2 in layout.jumps], cells)
 
+def remove_underscored_fields(q):
+    if type(q) == list:
+        for elt in q:
+            remove_underscored_fields(elt)
+    elif type(q) == dict:
+        will_dell = set()
+        for (key, value) in q.items():
+            if key.startswith("_"):
+                will_dell.add(key)
+            else:
+                remove_underscored_fields(value)
+        for key in will_dell:
+            del q[key]
+
 def layout_to_json(layout: Table, path="met2.json"):
     j = {"areas": [], "rooms": [], "world": {"w": layout.w, "h": layout.h}}
     
@@ -1368,6 +1402,7 @@ def layout_to_json(layout: Table, path="met2.json"):
             bgrom, sprrom, col, sol, mt, area_name = r.style
             jroom["states"].append({
                 "bank": r.bank,
+                "_ridx": r.idx,
                 "x": x0 - r.offset[0],
                 "y": y0 - r.offset[1],
                 "cells": embedding,
@@ -1469,7 +1504,10 @@ def layout_to_json(layout: Table, path="met2.json"):
         })
     
     with open(path, 'w') as json_file:
-        s = json.dumps(j, indent=2)
+        q = copy.deepcopy(j)
+        # remove any underscore fields
+        remove_underscored_fields(q)
+        s = json.dumps(q, indent=2)
 
         def collapse_numeric_lists(match):
             full = match.group(0)           # like "[ 1,\n  2,\n  3 ]"
@@ -1484,7 +1522,152 @@ def layout_to_json(layout: Table, path="met2.json"):
         )
 
         json_file.write(s)
+    return j
+
+def split_into_contiguous_1s(n: int):
+    regions = []
+    idx = 0
+    while n:
+        if n & 1:
+            start = idx
+            width = 0
+            while n & 1:
+                n >>= 1
+                idx += 1
+                width += 1
+            regions.append((start, width))
+        else:
+            n >>= 1
+            idx += 1
+    return regions
+    
+def get_canonical_door_mask(door2):
+    door_mask = 0xFFFFFFFF
+    if door2['exit_states']:
+        door_mask = door2['mask']
+    if door2['entrance_states']:
+        door_mask &= door2['dst_mask']
+    door_mask &= (door_mask << 1) | (door_mask >> 1) # remove 8px islands
+    return door_mask
+
+location_features = {
+    "plasma",
+    "ice",
+    "wave",
+    "spazer",
+    "bombs",
+    "screw-attack",
+    "varia",
+    "high-jump",
+    
+    "space-jump",
+    "spider",
+    "spring-ball",
+    "energy-tank",
+    "missile-tank",
+    "energy-recharge",
+    "missile-recharge",
+    
+    'ship',
+}
+
+location_onscreen_features = {
+    "alpha",
+    "gamma",
+    "hatch-alpha",
+    "zeta",
+    "omega",
+    "larva",
+}
+
+def get_collision(jstate, x, y):
+    room: Room = rooms[jstate['_ridx']]
+    bank = room.bank
+    cx = jstate['x'] + x // 256
+    cy = jstate['y'] + y // 256
+    scx = (x % 256) // 8
+    scy = (y % 256) // 8
+    if (cx, cy) in room.cells:
+        cell = cells[(bank, cx, cy)]
+        return cell.colflags[scy][scx]
+    else:
+        return TILE_SOLID
+
+def extract_strats(j, path="strats.json"):
+    jstrat = {
+        'rooms': []
+    }
+    for jroom in j['rooms']:
         
+        if 'features' in jroom and 'queen' in [feature['type'] for feature in jroom['features']]:
+            continue
+        
+        jstroom = {
+            'locations': [],
+            'strats': [],
+            'name': jroom['name'],
+        }
+        locations = []
+        for didx, door in enumerate(jroom['doors']):
+            dir = door['dir']
+            for (d0, dh) in split_into_contiguous_1s(get_canonical_door_mask(door)):
+                if dir == BIT_NORTH:
+                    g8dx = d0*8
+                    g8dy = 0
+                    g8dw = dh*8
+                    g8dh = 8
+                elif dir == BIT_SOUTH:
+                    g8dx = d0*8
+                    g8dy = 248
+                    g8dw = dh*8
+                    g8dh = 8
+                elif dir == BIT_WEST:
+                    g8dx = 0
+                    g8dy = d0*8
+                    g8dw = 8
+                    g8dh = dh*8
+                elif dir == BIT_EAST:
+                    g8dx = 248
+                    g8dy = d0*8
+                    g8dw = 8
+                    g8dh = dh*8
+                    
+                locations.append({
+                    'idx': None,
+                    'door': didx,
+                    'door-shape': [d0, dh],
+                    'dir': dir,
+                    'states': door['exit_states'],
+                    'x': door['x'] * 256 + g8dx,
+                    'y': door['y'] * 256 + g8dy,
+                    'w': g8dw,
+                    'h': g8dh,
+                })
+        
+        if 'features' in jroom:
+            for fidx, feature in enumerate(jroom['features']):
+                fname = feature['type']
+                if fname in location_features or fname in location_onscreen_features:
+                    r = 8 if fname in location_features else 60
+                    locations.append({
+                        'idx': None,
+                        'feature': fidx,
+                        'type': fname,
+                        'x': feature['x'] * 256 + feature['sx'] - r,
+                        'y': feature['y'] * 256 + feature['sy'] - r,
+                        'w': 2*r,
+                        'h': 2*r,
+                    })
+                    
+        for i, location in enumerate(locations):
+            location['idx'] = i
+        jstroom['locations'] = locations
+        
+        jstrat['rooms'].append(jstroom)
+    
+    with open(path, 'w') as f:
+        remove_underscored_fields(jstrat)
+        json.dump(jstrat, f, indent=4)
 
 def main(rom_path):
     global data
@@ -1495,7 +1678,8 @@ def main(rom_path):
     identify_rooms()
     identify_duplicate_rooms()
     layout = rooms_layout()
-    layout_to_json(layout)
+    j = layout_to_json(layout)
+    #extract_strats(j)
     rooms_display(layout)
 
 if __name__ == "__main__":

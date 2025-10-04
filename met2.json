@@ -287,7 +287,7 @@
           "states": 1,
           "x": 7,
           "y": 5,
-          "sx": null,
+          "sx": 128,
           "sy": 128
         },
         {
@@ -871,7 +871,7 @@
           "states": 1,
           "x": 0,
           "y": 0,
-          "sx": null,
+          "sx": 128,
           "sy": 128
         }
       ],
@@ -3890,6 +3890,15 @@
       "features": [
         {
           "type": "spring-ball",
+          "slot": null,
+          "states": 1,
+          "x": 0,
+          "y": 0,
+          "sx": 76,
+          "sy": 176
+        },
+        {
+          "type": "arachnus",
           "slot": 112,
           "states": 1,
           "x": 0,

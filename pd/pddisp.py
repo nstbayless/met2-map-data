@@ -377,6 +377,8 @@ for area in met2["areas"] + [None]:
                 elif ftype == "ship":
                     roomfeatures[(x,y)] = {"ship-left"}
                     roomfeatures[(x+1,y)] = {"ship-right"}
+                elif ftype == "arachnus":
+                    roomfeatures[(x,y)] = {"unknown"}
                 else:
                     print(f"unrecognized feature: {ftype}")
         
