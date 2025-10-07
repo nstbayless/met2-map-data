@@ -88,36 +88,36 @@
                 "start": 3,
                 "end": 4,
                 "requires": ["ball", "spider"],
-                "entrance_conditions": {"spider-left": true},
-                "exit_conditions": {"spider-right": true}
+                "entrance-condition": {"spider-left": true},
+                "exit-condition": {"spider-right": true}
             }, {
                 "start": 3,
                 "end": 4,
                 "requires": ["ball", "spider"],
-                "entrance_conditions": ["spider-left"],
-                "exit_conditions": ["spider-right"]
+                "entrance-condition": ["spider-left"],
+                "exit-condition": ["spider-right"]
             }, {
                 "start": 3,
                 "end": 4,
                 "requires": ["ball"],
-                "entrance_conditions": {"ball": true, "jump": 32}
+                "entrance-condition": {"ball": true, "jump": 32}
             }, {
                 "start": 4,
                 "end": 3,
                 "requires": ["ball", "spider"],
-                "entrance_conditions": {"spider-left": true},
-                "exit_conditions": {"spider-right": true}
+                "entrance-condition": {"spider-left": true},
+                "exit-condition": {"spider-right": true}
             }, {
                 "start": 4,
                 "end": 3,
                 "requires": ["ball", "spider"],
-                "entrance_conditions": ["spider-left"],
-                "exit_conditions": ["spider-right"]
+                "entrance-condition": ["spider-left"],
+                "exit-condition": ["spider-right"]
             }, {
                 "start": 4,
                 "end": 3,
                 "requires": ["ball"],
-                "entrance_conditions": {"ball": true, "jump": 32}
+                "entrance-condition": {"ball": true, "jump": 32}
             }, {
                 "start": 5,
                 "end": 0,
@@ -170,7 +170,7 @@
                 "start": 1,
                 "end": 0,
                 "requires": [],
-                "entrance_conditions": {"jump": 32}
+                "entrance-condition": {"jump": 32}
             }],
             "name": "Surface Corridor"
         },
@@ -214,8 +214,8 @@
                     "start": 1,
                     "end": 0,
                     "requires": [],
-                    "entrance_conditions": {"jump": 32},
-                    "exit_conditions": {"jump": 48}
+                    "entrance-condition": {"jump": 32},
+                    "exit-condition": {"jump": 48}
                 }
             ],
             "name": "Morph Tutorial"
@@ -259,8 +259,8 @@
                 "start": 1,
                 "end": 0,
                 "requires": [],
-                "entrance_conditions": {"jump": 32},
-                "exit_conditions": {"jump": 64}
+                "entrance-condition": {"jump": 32},
+                "exit-condition": {"jump": 64}
             }],
             "name": "Aim-Down Tutorial"
         },
@@ -313,12 +313,12 @@
                 "start": 1,
                 "end": 0,
                 "requires": [],
-                "exit_conditions": {"jump": 64}
+                "exit-condition": {"jump": 64}
             }, {
                 "start": 2,
                 "end": 0,
                 "requires": [],
-                "exit_conditions": {"jump": 64}
+                "exit-condition": {"jump": 64}
             }, {
                 "start": 0,
                 "end": 1,
@@ -746,7 +746,7 @@
                         "high": 5
                     },
                     "requires": ["ball"],
-                    "entrance_conditions": ["ball"]
+                    "entrance-condition": ["ball"]
                 }, {
                     "start": 3,
                     "end": 2,
@@ -1041,25 +1041,25 @@
                 "start": 0,
                 "end": 1,
                 "requires": ["ball"],
-                "entrance_conditions": ["ball"],
+                "entrance-condition": ["ball"],
                 "acid": {"high": 5}
             }, {
                 "start": 1,
                 "end": 0,
                 "requires": ["ball"],
-                "exit_conditions": ["ball"],
+                "exit-condition": ["ball"],
                 "acid": {"high": 7}
             }, {
                 "start": 0,
                 "end": 2,
                 "requires": ["ball"],
-                "entrance_conditions": ["ball"],
-                "acid": {"med": 11, "high": 14},
+                "entrance-condition": ["ball"],
+                "acid": {"med": 11, "high": 14}
             }, {
                 "start": 0,
                 "end": 3,
                 "requires": ["ball"],
-                "entrance_conditions": ["ball"],
+                "entrance-condition": ["ball"],
                 "acid": {"med": 35, "high": 38}
             }, {
                 "start": 1,
@@ -1085,13 +1085,13 @@
                 "start": 3,
                 "end": 0,
                 "requires": ["ball"],
-                "exit_conditions": ["ball"],
+                "exit-condition": ["ball"],
                 "acid": {"med": 75, "high": 83, "low": 70}
             }, {
                 "start": 2,
                 "end": 0,
                 "requires": ["ball"],
-                "exit_conditions": ["ball"],
+                "exit-condition": ["ball"],
                 "acid": {"med": 35, "high": 40}
             }],
             "TODO": "acid",
@@ -1384,15 +1384,15 @@
                 {
                     "start": 1,
                     "end": 0,
-                    "entrance_conditions": {"spider-up": true},
-                    "exit_conditions": {"spider-up": true},
+                    "entrance-condition": {"spider-up": true},
+                    "exit-condition": {"spider-up": true},
                     "requires": ["ball", "spider"]
                 },
                 {
                     "start": 0,
                     "end": 1,
-                    "entrance_conditions": {"spider-up": true},
-                    "exit_conditions": {"spider-up": true},
+                    "entrance-condition": {"spider-up": true},
+                    "exit-condition": {"spider-up": true},
                     "requires": ["ball", "spider"]
                 }
             ],
@@ -1587,7 +1587,7 @@
                     "h": 120
                 }
             ],
-            "copmlete": true,
+            "complete": true,
             "name": "SHAFT_D23"
         },
         {
@@ -1855,7 +1855,7 @@
                 "requires": ["ball", "spider"]
             }],
             "TODO": "possible with just ball?",
-            "name": "Cullugg Pillar Room"
+            "name": "Gullugg Pillar Room"
         },
         {
             "locations": [
@@ -1935,17 +1935,17 @@
             "strats": [{
                 "start": 1,
                 "end": 0,
-                "exit_conditions": {"jump": 64}
+                "exit-condition": {"jump": 64}
             }, {
                 "start": 1,
                 "end": 0,
                 "requires": ["ball", "spider"],
-                "exit_conditions": {"spider-left": true}
+                "exit-condition": {"spider-left": true}
             }, {
                 "start": 1,
                 "end": 0,
                 "requires": ["ball", "spider"],
-                "exit_conditions": {"spider-right": true}
+                "exit-condition": {"spider-right": true}
             }, {
                 "start": 0,
                 "end": 1
@@ -1994,12 +1994,12 @@
                 "start": 1,
                 "end": 0,
                 "requires": ["spider"],
-                "exit_conditions": {"spider-right": true}
+                "exit-condition": {"spider-right": true}
             }, {
                 "start": 1,
                 "end": 0,
-                "requires": ["spider", "spider-jump"],
-                "exit_conditions": {"spider-left": true}
+                "requires": ["spider", "spider-latch"],
+                "exit-condition": {"spider-left": true}
             }],
             "name": "CORRIDOR_D1C"
         },
@@ -2192,7 +2192,11 @@
             }, {
                 "start": 0,
                 "end": 1,
-                "requires": ["orbless", "spider"]
+                "requires": ["unorbed", "ball", "spider"]
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["wave", "ball", "spider"]
             }, {
                 "start": 0,
                 "end": 1,
@@ -2251,19 +2255,19 @@
             ],
             "strats": [{
                 "start": 0, "end": 1,
-                "exit_conditions": {"ball": true},
+                "exit-condition": {"ball": true},
                 "requires": ["ball", "spider"]
             }, {
                 "start": 0, "end": 1,
-                "exit_conditions": {"ball": true},
+                "exit-condition": {"ball": true},
                 "requires": ["ball", "spring-ball"]
             }, {
                 "start": 1, "end": 0,
-                "entrance_conditions": {"ball": true},
+                "entrance-condition": {"ball": true},
                 "requires": ["ball", "spider"]
             }, {
                 "start": 1, "end": 0,
-                "entrance_conditions": {"ball": true},
+                "entrance-condition": {"ball": true},
                 "requires": ["ball", "spring-ball"]
             }],
             "complete": [0, 2],
@@ -2303,7 +2307,7 @@
             "strats": [
                 {"start": 0, "end": 1, "acid": {"high": 21}},
                 {"start": 1, "end": 0, "requirements": ["spider", "ball"], "acid": {"high": 35, "med": 4}},
-                {"start": 1, "end": 0, "requirements": ["spider", "ball", "spider-jump"], "acid": {"high": 34}},
+                {"start": 1, "end": 0, "requirements": ["spider", "ball", "spider-latch"], "acid": {"high": 34}},
                 {"start": 1, "end": 0, "requirements": ["high-jump"], "acid": {"high": 29}},
                 {"start": 1, "end": 0, "requirements": ["space-jump"], "acid": {"high": 29}}
             ],
@@ -2567,7 +2571,7 @@
             "strats": [{
                 "start": 0,
                 "end": 2,
-                "entrance_conditions": ["jump": 32]
+                "entrance-condition": {"jump": 32}
             }, {
                 "start": 2,
                 "end": 0
@@ -2793,14 +2797,14 @@
                 }
             ],
             "strats": [
-                {"start": 0, "end": 1, "exit_conditions": {"jump": 80}},
-                {"start": 0, "end": 1, "exit_conditions": {"spider-left": true}, "requires": ["ball", "spider"]},
-                {"start": 0, "end": 1, "exit_conditions": {"spider-right": true}, "requires": ["ball", "spider", "spider-jump"]},
+                {"start": 0, "end": 1, "exit-condition": {"jump": 80}},
+                {"start": 0, "end": 1, "exit-condition": {"spider-left": true}, "requires": ["ball", "spider"]},
+                {"start": 0, "end": 1, "exit-condition": {"spider-right": true}, "requires": ["ball", "spider", "spider-latch"]},
                 {"start": 1, "end": 0},
                 {"start": 1, "end": 2},
                 {"start": 2, "end": 1},
-                {"start": 1, "end": 3, "requires": "ball"},
-                {"start": 3, "end": 1, "requires": "ball"}
+                {"start": 1, "end": 3, "requires": ["ball"]},
+                {"start": 3, "end": 1, "requires": ["ball"]}
             ],
             "name": "CORRIDOR_D29"
         },
@@ -2957,7 +2961,20 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "acid": {
+                    "high": 30
+                }
+            }, {
+                "start": 1,
+                "end": 0,
+                "acid": {
+                    "high": 30
+                }
+            }],
+            "TODO": "acid",
             "name": "CORRIDOR_B4F"
         },
         {
@@ -2991,7 +3008,20 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "acid": {
+                    "high": 30
+                }
+            }, {
+                "start": 1,
+                "end": 0,
+                "acid": {
+                    "high": 30
+                }
+            }],
+            "TODO": "acid",
             "name": "Vanishing Flittway"
         },
         {
@@ -3053,7 +3083,7 @@
                     "h": 8
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "Jungle Entrance"
         },
         {
@@ -3087,7 +3117,7 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "CORRIDOR_B82"
         },
         {
@@ -3135,7 +3165,7 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "Temple Shaft West"
         },
         {
@@ -3156,6 +3186,16 @@
                 },
                 {
                     "idx": 1,
+                    "door": 1,
+                    "door-shape": [
+                        14,
+                        6
+                    ],
+                    "dir": 2,
+                    "states": 1
+                },
+                {
+                    "idx": 2,
                     "feature": 0,
                     "type": "missile-tank",
                     "x": 576,
@@ -3164,7 +3204,7 @@
                     "h": 16
                 },
                 {
-                    "idx": 2,
+                    "idx": 3,
                     "feature": 1,
                     "type": "missile-tank",
                     "x": 176,
@@ -3173,7 +3213,16 @@
                     "h": 16
                 }
             ],
-            "strats": [],
+            "complete": [0, 1, 2],
+            "strats": [{
+                "start": 0,
+                "end": 3,
+                "requires": ["ball"]
+            }, {
+                "start": 3,
+                "end": 0,
+                "requires": ["ball"]
+            }],
             "name": "Double Missile Room"
         },
         {
@@ -3233,9 +3282,31 @@
                     "y": 624,
                     "w": 8,
                     "h": 48
+                },
+                {
+                    "idx": 4,
+                    "door": 4,
+                    "dir": 2,
+                    "states": 1
                 }
             ],
-            "strats": [],
+            "complete": [0, 1, 2, 3],
+            "strats": [{
+                "start": 4,
+                "end": 1
+            }, {
+                "start": 1,
+                "end": 4,
+                "requires": ["space-jump"]
+            }, {
+                "start": 1,
+                "end": 4,
+                "requires": ["high-jump"]
+            }, {
+                "start": 1,
+                "end": 4,
+                "requires": ["spider", "ball"]
+            }],
             "name": "Temple Shaft East"
         },
         {
@@ -3264,7 +3335,7 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "Post-Spider Alpha"
         },
         {
@@ -3298,7 +3369,16 @@
                     "h": 8
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "requires": ["ball"]
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["ball"],
+                "entrance-condition": {"jump": 32}
+            }],
             "name": "Spider Access"
         },
         {
@@ -3332,7 +3412,7 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "complete": "true",
             "name": "Pancake Room"
         },
         {
@@ -3380,7 +3460,7 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "Not Pancake Access Shaft"
         },
         {
@@ -3414,7 +3494,7 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "CORRIDOR_BCD"
         },
         {
@@ -3457,7 +3537,7 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "complete": "true",
             "name": "CORRIDOR_B8D"
         },
         {
@@ -3491,7 +3571,24 @@
                     "h": 8
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "exit-condition": {"jump": 64}
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["ball", "spider"],
+                "exit-condition": {"spider-left": true}
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["ball", "spider"],
+                "exit-condition": {"spider-right": true}
+            }, {
+                "start": 1,
+                "end": 0
+            }],
             "name": "Egg Viewing Shaft"
         },
         {
@@ -3529,7 +3626,30 @@
                     "h": 16
                 }
             ],
-            "strats": [],
+            "complete": [1, 2],
+            "strats": [{
+                "start": 1,
+                "end": 0
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["high-jump"],
+                "entrance-condition": {"jump": 32}
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["space-jump"]
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["ball", "spider"],
+                "entrance-condition": {"spider-right": true}
+            }, {
+                "start": 0,
+                "end": 2,
+                "requires": ["ball", "spider"],
+                "entrance-condition": {"spider-left": true}
+            }],
             "name": "Queen Recharge Room"
         },
         {
@@ -3769,9 +3889,197 @@
                     "y": 16,
                     "w": 16,
                     "h": 16
+                },
+                {
+                    "idx": 19,
+                    "name": "summit",
+                    "x": 256,
+                    "y": 700,
+                    "w": 200,
+                    "h": 32
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1
+            }, {
+                "start": 1,
+                "end": 0
+            }, {
+                "start": 2,
+                "end": 3,
+                "requires-any": [["ball", "spider"], ["high-jump"], ["space-jump"]]
+            }, {
+                "start": 3,
+                "end": 2
+            }, {
+                "start": 0,
+                "end": 4,
+                "requires": ["space-jump"]
+            }, {
+                "start": 4,
+                "end": 10,
+                "requires": ["space-jump"]
+            }, {
+                "start": 4,
+                "end": 0
+            }, {
+                "start": 10,
+                "end": 4
+            }, {
+                "start": 10,
+                "end": 13,
+                "requires": ["ball", "spider"],
+                "entrance-condition": {"spider-left": true}
+            }, {
+                "start": 5,
+                "end": 0,
+                "requires": ["ball"]
+            }, {
+                "start": 5,
+                "end": 13,
+                "requires": ["ball"]
+            }, {
+                "start": 13,
+                "end": 5,
+                "requires": ["ball", "spider", "bombs"]
+            }, {
+                "start": 13,
+                "end": 19,
+                "requires-any": [["ball", "spider"], ["space-jump"]]
+            }, {
+                "start": 13,
+                "end": 0
+            }, {
+                "start": 13,
+                "end": 4,
+                "requires-any": [["ball", "spider"], ["space-jump"]]
+            }, {
+                "start": 13,
+                "end": 10,
+                "requires": ["ball", "spider"],
+                "exit-condition": {"spider-left": true}
+            }, {
+                "start": 19,
+                "end": 0
+            }, {
+                "start": 19,
+                "end": 0
+            }, {
+                "start": 6,
+                "end": 14,
+                "entrance-condition": {"jump": 64}
+            }, {
+                "start": 6,
+                "end": 14,
+                "requires": ["ball", "spider"],
+                "entrance-condition": {"spider-left": true}
+            }, {
+                "start": 6,
+                "end": 14,
+                "requires": ["ball", "spider"],
+                "entrance-condition": {"spider-right": true}
+            }, {
+                "start": 14,
+                "end": 6
+            }, {
+                "start": 19,
+                "end": 7
+            }, {
+                "start": 12,
+                "end": 19
+            }, {
+                "start": 19,
+                "end": 12,
+                "requires-any": [["ball", "spider"], ["space-jump"]]
+            }, {
+                "start": 7,
+                "end": 19,
+                "entrance-condition": {"jump": 96}
+            }, {
+                "start": 7,
+                "end": 19,
+                "requires": ["ball", "spider", "unorbed"],
+                "entrance-condition": {"spider-left": true}
+            }, {
+                "start": 7,
+                "end": 19,
+                "requires": ["ball", "spider", "unorbed"],
+                "entrance-condition": {"spider-right": true}
+            }, {
+                "start": 19,
+                "end": 8
+            }, {
+                "start": 8,
+                "end": 19,
+                "requires-any": [["ball", "spider"], ["high-jump"], ["space-jump"]]
+            }, {
+                "start": 8,
+                "end": 3
+            }, {
+                "start": 3,
+                "end": 9
+            }, {
+                "start": 9,
+                "end": 2
+            }, {
+                "start": 2,
+                "end": 11
+            }, {
+                "start": 11,
+                "end": 2,
+                "requires-any": [["ball", "spider"], ["high-jump"], ["space-jump"]]
+            }, {
+                "start": 2,
+                "end": 9,
+                "requires-any": [["ball", "spider"], ["high-jump"], ["space-jump"]]
+            }, {
+                "start": 9,
+                "end": 3,
+                "requires-any": [["ball", "spider"], ["high-jump"], ["space-jump"]]
+            }, {
+                "start": 3,
+                "end": 8,
+                "requires-any": [["ball", "spider"], ["high-jump"], ["space-jump"]]
+            }, {
+                "start": 19,
+                "end": 15,
+                "requires": ["ball", "spider"]
+            }, {
+                "start": 15,
+                "end": 19,
+                "requires": ["ball"]
+            }, {
+                "start": 18,
+                "end": 15,
+                "requires": ["ball"]
+            }, {
+                "start": 15,
+                "end": 18,
+                "requires": ["ball"]
+            }, {
+                "start": 10,
+                "end": 16,
+                "requires": ["ball"]
+            }, {
+                "start": 16,
+                "end": 10,
+                "requires": ["ball", "spider"],
+                "exit-condition": {"spider-right": true}
+            }, {
+                "start": 16,
+                "end": 4,
+                "requires": ["ball", "spider"]
+            }, {
+                "start": 0,
+                "end": 17,
+                "requires-any": [["ball", "spider"], ["ball", "spring-ball"], ["ball", "bomb"]]
+            }, {
+                "start": 17,
+                "end": 0,
+                "requires-any": [["ball", "high-jump"], ["ball", "spider-ball"]]
+            }],
+            "TODO": "Is there a way to get from 13 to 4 with only morph? Is there a tricky way to get from 19 to 5 with just morph and bomb? Can 16 be escaped without spider?",
             "name": "Tower Exterior"
         },
         {
@@ -3805,7 +4113,15 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "acid": {"high": 25}
+            }, {
+                "start": 1,
+                "end": 0,
+                "acid": {"high": 25}
+            }],
             "name": "CORRIDOR_B3C"
         },
         {
@@ -3843,7 +4159,26 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "requires": ["ball"]
+            }, {
+                "start": 2,
+                "end": 1,
+                "requires": ["ball"]
+            }, {
+                "start": 1,
+                "end": 2,
+                "requires": ["ball"]
+            }, {
+                "start": 2,
+                "end": 0,
+                "requires-any": [["ball", "spider"], ["high-jump"], ["space-jump"]]
+            }, {
+                "start": 0,
+                "end": 2
+            }],
             "name": "Acid Alpha"
         },
         {
@@ -3881,7 +4216,26 @@
                     "h": 16
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 2,
+                "requires": ["ball"]
+            }, {
+                "start": 1,
+                "end": 2,
+                "requires": ["ball"]
+            }, {
+                "start": 2,
+                "end": 1,
+                "requires": ["ball"]
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires-any": [["ball", "spider"], ["high-jump"], ["space-jump"]]
+            }, {
+                "start": 0,
+                "end": 1
+            }],
             "name": "Acid Gamma"
         },
         {
@@ -3924,7 +4278,26 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "complete": [0, 2],
+            "strats": [{
+                "start": 1,
+                "end": 2
+            }, {
+                "start": 2,
+                "end": 1,
+                "requires-any": [["high-jump"], ["space-jump"]],
+                "exit-condition": {"jump": 72}
+            }, {
+                "start": 2,
+                "end": 1,
+                "requires": ["spider"],
+                "exit-condition": {"spider-left": true}
+            }, {
+                "start": 2,
+                "end": 1,
+                "requires": ["spider"],
+                "exit-condition": {"spider-right": true}
+            }],
             "name": "Jungle Exit"
         },
         {
@@ -3967,7 +4340,7 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "CORRIDOR_BCA"
         },
         {
@@ -4084,8 +4457,62 @@
                     "h": 16
                 }
             ],
-            "strats": [],
-            "name": "Facility Exterior"
+            "strats": [{
+                "start": 0,
+                "end": 7
+            }, {
+                "start": 7,
+                "end": 0,
+                "requires-any": [["ball", "spider"], ["space-jump"]]
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires-any": [["ball", "spider"], ["space-jump"]]
+            }, {
+                "start": 1,
+                "end": 2,
+                "requires-any": [["ball", "spider"], ["space-jump"]]
+            }, {
+                "start": 2,
+                "end": 1,
+                "requires-any": [["ball", "spider"], ["space-jump"]]
+            }, {
+                "start": 2,
+                "end": 3,
+                "requires-any": [["ball", "spider"], ["space-jump"]]
+            }, {
+                "start": 1,
+                "end": 3,
+                "requires-any": [["ball", "spider"], ["space-jump"]]
+            }, {
+                "start": 3,
+                "end": 1,
+                "entrance-condition": {"jump": 96}
+            }, {
+                "start": 3,
+                "end": 2
+            }, {
+                "start": 4,
+                "end": 2,
+                "entrance-condition": ["ball"],
+                "requires": ["bombs", "ball"]
+            }, {
+                "start": 2,
+                "end": 4,
+                "exit-condition": ["ball"],
+                "requires": ["bombs", "ball", "spider"]
+            }, {
+                "start": 5,
+                "end": 6,
+                "entrance-condition": ["ball"],
+                "requires": ["ball"]
+            }, {
+                "start": 6,
+                "end": 5,
+                "exit-condition": ["ball"]
+            }],
+            "name": "Facility Exterior",
+            "TODO": "what can be achieved with just high jump?"
         },
         {
             "locations": [
@@ -4118,7 +4545,20 @@
                     "h": 8
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 1,
+                "end": 0
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["ball", "spider"],
+                "exit-condition": {"spider-either": true}
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires-any": ["high-jump", "space-jump"],
+                "exit-condition": {"jump": 128}
+            }],
             "name": "SHAFT_D11"
         },
         {
@@ -4152,7 +4592,7 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "Bomb Access"
         },
         {
@@ -4186,7 +4626,15 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 1,
+                "end": 0
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires-any": [["ball", "spider"], ["space-jump"], ["high-jump"]],
+                "exit-condition": {"spider-either": true}
+            }],
             "name": "SHAFT_D13"
         },
         {
@@ -4220,7 +4668,7 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "Temple Ice Beam Access"
         },
         {
@@ -4280,9 +4728,115 @@
                     "y": 0,
                     "w": 32,
                     "h": 8
+                },
+                {
+                    "idx": 4,
+                    "name": "base",
+                    "x": 580,
+                    "y": 1000,
+                    "w": 300,
+                    "h": 100
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 4,
+                "entrance-condition": {"jump": 32}
+            }, {
+                "start": 1,
+                "end": 4
+            }, {
+                "start": 2,
+                "end": 4
+            }, {
+                "start": 3,
+                "end": 4
+            }, {
+                "start": 2,
+                "end": 1,
+                "requires": ["spider", "ball"],
+                "entrance-condition": {"spider-right": true},
+                "exit-condition": {"spider-left": true}
+            }, {
+                "start": 3,
+                "end": 1,
+                "requires": ["spider", "ball"],
+                "entrance-condition": {"spider-left": true},
+                "exit-condition": {"spider-right": true}
+            }, {
+                "start": 1,
+                "end": 2,
+                "requires": ["spider", "ball"],
+                "entrance-condition": {"spider-left": true},
+                "exit-condition": {"spider-right": true}
+            }, {
+                "start": 2,
+                "end": 3,
+                "requires": ["spider", "ball"],
+                "entrance-condition": {"spider-right": true},
+                "exit-condition": {"spider-left": true}
+            }, {
+                "start": 1,
+                "end": 2,
+                "requires": ["spider", "ball", "spider-latch"],
+                "entrance-condition": {"spider-right": true},
+                "exit-condition": {"spider-either": true}
+            }, {
+                "start": 1,
+                "end": 3,
+                "requires": ["spider", "ball", "spider-latch"],
+                "entrance-condition": {"spider-left": true},
+                "exit-condition": {"spider-either": true}
+            }, {
+                "start": 2,
+                "end": 1,
+                "requires": ["spider", "ball", "spider-latch"],
+                "entrance-condition": {"spider-left": true},
+                "exit-condition": {"spider-either": true}
+            }, {
+                "start": 3,
+                "end": 1,
+                "requires": ["spider", "ball", "spider-latch"],
+                "entrance-condition": {"spider-left": true},
+                "exit-condition": {"spider-either": true}
+            }, {
+                "start": 4,
+                "end": 1,
+                "requires": ["spider", "ball", "spider-latch"],
+                "exit-condition": {"spider-either": true}
+            }, {
+                "start": 4,
+                "end": 2,
+                "requires": ["spider", "ball", "spider-latch"],
+                "exit-condition": {"spider-either": true}
+            }, {
+                "start": 4,
+                "end": 3,
+                "requires": ["spider", "ball", "spider-latch"],
+                "exit-condition": {"spider-either": true}
+            }, {
+                "start": 4,
+                "end": 2,
+                "requires": ["spider", "ball"],
+                "exit-condition": {"spider-left": true}
+            }, {
+                "start": 4,
+                "end": 3,
+                "requires": ["spider", "ball"],
+                "exit-condition": {"spider-right": true}
+            }, {
+                "start": 4,
+                "end": 1,
+                "requires": ["space-jump"]
+            }, {
+                "start": 4,
+                "end": 2,
+                "requires": ["space-jump"]
+            }, {
+                "start": 4,
+                "end": 3,
+                "requires": ["space-jump"]
+            }],
             "name": "Soda Fountain"
         },
         {
@@ -4311,7 +4865,7 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "Pancake Alpha"
         },
         {
@@ -4340,7 +4894,7 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "Not Not Pancake Alpha"
         },
         {
@@ -4374,7 +4928,7 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "Not Pancake Room"
         },
         {
@@ -4403,7 +4957,7 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "CORRIDOR_BED"
         },
         {
@@ -4451,7 +5005,7 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "SHAFT_B7D"
         },
         {
@@ -4485,8 +5039,18 @@
                     "h": 48
                 }
             ],
-            "strats": [],
-            "name": "ROOM_D26"
+            "strats": [{
+                "start": 1,
+                "end": 0,
+                "requires": ["ball"],
+                "exit-condition": {"ball": true}
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["ball"],
+                "exit-condition": {"ball": true}
+            }],
+            "name": "Bath Tub"
         },
         {
             "locations": [
@@ -4514,8 +5078,8 @@
                     "h": 16
                 }
             ],
-            "strats": [],
-            "name": "ROOM_D4A"
+            "complete": true,
+            "name": "Hydro Wave Room"
         },
         {
             "locations": [
@@ -4562,8 +5126,8 @@
                     "h": 48
                 }
             ],
-            "strats": [],
-            "name": "SHAFT_D9A"
+            "complete": true,
+            "name": "Shot Block Shaft"
         },
         {
             "locations": [
@@ -4596,7 +5160,14 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 1,
+                "end": 0
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires-any": [["spider", "ball"], ["space-jump"], ["high-jump"]]
+            }],
             "name": "Tower Save"
         },
         {
@@ -4639,7 +5210,16 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "complete": [0, 2],
+            "strats": [{
+                "start": 1,
+                "end": 0
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["ball", "spider"],
+                "exit-condition": {"spider-either": true}
+            }],
             "name": "Screw Zeta"
         },
         {
@@ -4673,7 +5253,30 @@
                     "h": 8
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 1,
+                "end": 0
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["space-jump"]
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["spider", "spider-latch"],
+                "exit-condition": {"spider-either": true}
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["spider"],
+                "exit-condition": {"spider-right": true}
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["spider"],
+                "entrance-condition": {"spider-up": true},
+                "exit-condition": {"spider-left": true}
+            }],
             "name": "Final Save"
         },
         {
@@ -4707,7 +5310,14 @@
                     "h": 8
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1
+            }, {
+                "start": 1,
+                "end": 0,
+                "entrance-condition": {"jump": 48}
+            }],
             "name": "Non-Euclidean Room"
         },
         {
@@ -4741,7 +5351,16 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "requires": ["space-jump"]
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["space-jump"]
+            }],
+            "TODO": "tricky non-space-jump strat?",
             "name": "CORRIDOR_BC4"
         },
         {
@@ -4775,8 +5394,15 @@
                     "h": 8
                 }
             ],
-            "strats": [],
-            "name": "CORRIDOR_EA9"
+            "strats": [{
+                "start": 1,
+                "end": 0
+            }, {
+                "start": 0,
+                "end": 1,
+                "exit-condition": {"jump": 112}
+            }],
+            "name": "Euclidean Room"
         },
         {
             "locations": [
@@ -4809,7 +5435,16 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "requires": ["space-jump"]
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["space-jump"]
+            }],
+            "TODO": "tricky non-space-jump strat?",
             "name": "CORRIDOR_B0D"
         },
         {
@@ -4843,7 +5478,16 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "requires": ["space-jump"]
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["space-jump"]
+            }],
+            "TODO": "tricky non-space-jump strat?",
             "name": "CORRIDOR_BD4"
         },
         {
@@ -4881,7 +5525,29 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 2,
+                "entrance-condition": {"jump": 64}
+            }, {
+                "start": 2,
+                "end": 0
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["ball", "spider"],
+                "entrance-condition": {"spider-either": true}
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["ball", "spring-ball"],
+                "entrance-condition": {"jump": 64}
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["ball", "spider"]
+            }],
+            "TODO": "escape from 1 without spider?",
             "name": "ROOM_E80"
         },
         {
@@ -4915,7 +5581,16 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "requires": ["space-jump"]
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["space-jump"]
+            }],
+            "TODO": "tricky non-space-jump strat?",
             "name": "CORRIDOR_BC5"
         },
         {
@@ -4977,7 +5652,37 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "complete": [1, 3],
+            "strats": [{
+                "start": 0,
+                "end": 2,
+                "acid": {
+                    "high": 13,
+                    "mid": 13
+                }
+            }, {
+                "start": 2,
+                "end": 0,
+                "acid": {
+                    "high": 13,
+                    "mid": 13
+                }
+            }, {
+                "start": 2,
+                "end": 1,
+                "acid": {
+                    "high": 22,
+                    "mid": 18
+                }
+            }, {
+                "start": 1,
+                "end": 2,
+                "acid": {
+                    "high": 18,
+                    "mid": 15
+                }
+            }],
+            "TODO": "verify",
             "name": "Loop Acid"
         },
         {
@@ -5025,7 +5730,17 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "complete": [0, 2],
+            "strats": [{
+                "start": 2,
+                "end": 1,
+                "exit-condition": {"jump": 64}
+            }, {
+                "start": 2,
+                "end": 1,
+                "requires": ["spider", "ball"],
+                "exit-condition": {"spider-either": true}
+            }, {"start": 1, "end": 2}],
             "name": "Jungle Heart"
         },
         {
@@ -5054,7 +5769,18 @@
                     "h": 16
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 1,
+                "end": 0
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["ball", "spider"]
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["high-jump"]
+            }],
             "name": "SHAFT_E16"
         },
         {
@@ -5097,8 +5823,22 @@
                     "h": 16
                 }
             ],
-            "strats": [],
-            "name": "CORRIDOR_E45"
+            "strats": [{
+                "start": 1,
+                "end": 2,
+                "entrance-condition": {"jump": 32}
+            }, {
+                "start": 2,
+                "end": 1
+            }, {
+                "start": 0,
+                "end": 2
+            }, {
+                "start": 2,
+                "end": 0,
+                "exit-condition": {"jump": 80}
+            }],
+            "name": "Facility Save"
         },
         {
             "locations": [
@@ -5140,8 +5880,29 @@
                     "h": 16
                 }
             ],
-            "strats": [],
-            "name": "ROOM_E56"
+            "strats": [{
+                "start": 0,
+                "end": 2,
+                "requires": ["bombs", "ball", "spider"],
+                "entrance-condition": {"ball": true}
+            }, {
+                "start": 2,
+                "end": 0,
+                "requires": ["bombs", "ball", "spider"],
+                "entrance-condition": {"ball": true}
+            }, {
+                "start": 2,
+                "end": 1,
+                "requires": ["bombs", "ball", "spider"],
+                "entrance-condition": {"ball": true}
+            }, {
+                "start": 1,
+                "end": 2,
+                "requires": ["bombs", "ball", "spider"],
+                "entrance-condition": {"ball": true}
+            }],
+            "TODO": "verify",
+            "name": "Facility Pipe Maze"
         },
         {
             "locations": [
@@ -5169,7 +5930,15 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "requires-any": [["spider", "ball"], "high-jump", "space-jump"]
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires-any": [["spider", "ball"], "high-jump", "space-jump"]
+            }],
             "name": "SHAFT_C82"
         },
         {
@@ -5207,7 +5976,16 @@
                     "h": 16
                 }
             ],
-            "strats": [],
+            "complete": [0, 1],
+            "strats": [{
+                "start": 1,
+                "end": 2,
+                "requires": ["bomb"]
+            }, {
+                "start": 2,
+                "end": 1,
+                "requires": ["bomb"]
+            }],
             "name": "Bomb Room"
         },
         {
@@ -5236,7 +6014,7 @@
                     "h": 16
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "Temple Ice Beam Room"
         },
         {
@@ -5265,7 +6043,7 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "Not Pancake Alpha"
         },
         {
@@ -5299,8 +6077,8 @@
                     "h": 48
                 }
             ],
-            "strats": [],
-            "name": "CORRIDOR_B8E"
+            "complete": true,
+            "name": "Double Sand Room"
         },
         {
             "locations": [
@@ -5342,8 +6120,8 @@
                     "h": 120
                 }
             ],
-            "strats": [],
-            "name": "CORRIDOR_B5E"
+            "complete": true,
+            "name": "Triple Sand Room"
         },
         {
             "locations": [
@@ -5371,8 +6149,16 @@
                     "h": 16
                 }
             ],
-            "strats": [],
-            "name": "CORRIDOR_D16"
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "requires": ["bomb"]
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["bomb"]
+            }],
+            "name": "Varia Room"
         },
         {
             "locations": [
@@ -5405,7 +6191,14 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires-any": [["ball", "spider"], ["space-jump"]]
+            }],
             "name": "SHAFT_DAB"
         },
         {
@@ -5457,7 +6250,17 @@
                     "h": 16
                 }
             ],
-            "strats": [],
+            "complete": [0, 1],
+            "strats": [{
+                "start": 0,
+                "end": 2,
+                "requires-any": [["ball", "spider"], ["high-jump"]]
+            }, {
+                "start": 0,
+                "end": 3,
+                "requires": ["bomb"]
+            }],
+            "TODO": "verify",
             "name": "CORRIDOR_D6C"
         },
         {
@@ -5486,7 +6289,12 @@
                     "h": 16
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "entrance-condition": {"jump": 64},
+                "requires": ["ball", "bomb"]
+            }],
             "name": "Screw Attack Room"
         },
         {
@@ -5576,7 +6384,47 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 2
+            }, {
+                "start": 2,
+                "end": 1
+            }, {
+                "start": 1,
+                "end": 5
+            }, {
+                "start": 5,
+                "end": 3
+            }, {
+                "start": 3,
+                "end": 4
+            }, {
+                "start": 4,
+                "end": 3,
+                "entrance-condition": {"jump": 32}
+            }, {
+                "start": 4,
+                "end": 3,
+                "requires": ["ball", "spider"],
+                "entrance-condition": {"spider-either": true}
+            }, {
+                "start": 3,
+                "end": 5,
+                "requires-any": [["ball", "spider"], ["high-jump"], ["space-jump"]]
+            }, {
+                "start": 5,
+                "end": 1,
+                "requires-any": [["ball", "spider"], ["high-jump"], ["space-jump"]]
+            }, {
+                "start": 1,
+                "end": 2,
+                "requires-any": [["ball", "spider"], ["high-jump"], ["space-jump"]]
+            }, {
+                "start": 2,
+                "end": 0,
+                "requires-any": [["ball", "spider"], ["space-jump"]]
+            }],
             "name": "Tower Shaft"
         },
         {
@@ -5605,7 +6453,7 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "CORRIDOR_B10"
         },
         {
@@ -5634,7 +6482,7 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "CORRIDOR_B40"
         },
         {
@@ -5663,7 +6511,7 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "CORRIDOR_A4F"
         },
         {
@@ -5692,7 +6540,7 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "CORRIDOR_A8F"
         },
         {
@@ -5726,7 +6574,21 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "acid": {
+                    "mid": 11,
+                    "high": 14
+                }
+            }, {
+                "start": 1,
+                "end": 0,
+                "acid": {
+                    "mid": 7,
+                    "high": 9
+                }
+            }],
             "name": "SHAFT_CDE"
         },
         {
@@ -5760,7 +6622,14 @@
                     "h": 56
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 1,
+                "end": 0
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires-any": [["spider", "ball"], ["space-jump"]]
+            }],
             "name": "SHAFT_C7B"
         },
         {
@@ -5794,7 +6663,19 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "acid": {
+                    "high": 10
+                }
+            }, {
+                "start": 0,
+                "end": 1,
+                "acid": {
+                    "end": 10
+                }
+            }],
             "name": "CORRIDOR_B26"
         },
         {
@@ -5828,7 +6709,7 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "complete": true,
             "name": "CORRIDOR_BDA"
         },
         {
@@ -5885,7 +6766,32 @@
                     "h": 120
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "requires": ["ball", "spider"],
+                "entrance-condition": {"spider-either": true}
+            }, {
+                "start": 0,
+                "end": 1,
+                "requires": ["ball", "spider"],
+                "entrance-condition": {"jump": 32}
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["ball", "spider"]
+            }, {
+                "start": 1,
+                "end": 2,
+                "requires": ["ball"],
+                "exit-condition": {"ball": true}
+            }, {
+                "start": 2,
+                "end": 1,
+                "requires": ["ball"],
+                "entrance-condition": {"ball": true}
+            }],
+            "TODO": "verify",
             "name": "Entangled Alpha"
         },
         {
@@ -5933,7 +6839,48 @@
                     "h": 48
                 }
             ],
-            "strats": [],
+            "strats": [{
+                "start": 0,
+                "end": 2
+            }, {
+                "start": 2,
+                "end": 1
+            }, {
+                "start": 1,
+                "end": 2,
+                "requires-any": [["spider", "ball"], ["space-jump"]]
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["space-jump"]
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["spider", "ball"],
+                "exit-condition": {"spider-left": true},
+                "entrance-condition": {"spider-top": true}
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["spider", "ball"],
+                "exit-condition": {"jump": 80},
+                "entrance-condition": {"spider-top": true}
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["spider", "ball", "spider-latch"],
+                "exit-condition": {"spider-either": true}
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires": ["spider", "ball", "spider-latch"],
+                "exit-condition": {"jump": 80}
+            }, {
+                "start": 1,
+                "end": 2,
+                "requires": ["spider", "ball", "spider-latch"],
+                "exit-condition": {"spider-either": true}
+            }],
             "name": "SHAFT_E46"
         },
         {

@@ -875,7 +875,7 @@
           "sy": 128
         }
       ],
-      "name": "Queen Fight"
+      "name": "Queen's Room"
     },
     {
       "x": 16,
@@ -1841,7 +1841,7 @@
           "sy": 128
         }
       ],
-      "name": "Flying Flittway"
+      "name": "Cawron Alpha"
     },
     {
       "x": 31,
@@ -2039,7 +2039,7 @@
           "sy": 128
         }
       ],
-      "name": "Spider Room"
+      "name": "CORRIDOR_E40"
     },
     {
       "x": 48,
@@ -3907,7 +3907,7 @@
           "sy": 176
         }
       ],
-      "name": "ROOM_D0C"
+      "name": "Arachnus' Room"
     },
     {
       "x": 18,
@@ -4314,7 +4314,7 @@
           "dst_mask": 1032192
         }
       ],
-      "name": "CORRIDOR_B4F"
+      "name": "Flying Flittway"
     },
     {
       "x": 45,
@@ -4656,6 +4656,21 @@
           ],
           "mask": 1032192,
           "dst_mask": 1032192
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "entrance_transitions": [
+            [0, 13, 11, 1]
+          ],
+          "exit_transitions": [
+            [0, 13, 11, 1]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
         }
       ],
       "features": [
@@ -4725,6 +4740,21 @@
           ],
           "exit_transitions": [
             [270, 9, 13, 14]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 2,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "entrance_transitions": [
+            [0, 13, 10, 1]
+          ],
+          "exit_transitions": [
+            [0, 13, 10, 1]
           ],
           "mask": 1032192,
           "dst_mask": 1032192
@@ -13185,21 +13215,6 @@
       "doors": [
         {
           "x": 0,
-          "y": 0,
-          "dir": 4,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "entrance_transitions": [
-            [141, 11, 2, 10]
-          ],
-          "exit_transitions": [
-            [161, 11, 2, 10]
-          ],
-          "mask": 245760,
-          "dst_mask": 4228104384
-        },
-        {
-          "x": 0,
           "y": 1,
           "dir": 2,
           "entrance_states": 1,
@@ -13212,6 +13227,21 @@
           ],
           "mask": 817889280,
           "dst_mask": 12582912
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "dir": 4,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "entrance_transitions": [
+            [141, 11, 2, 10]
+          ],
+          "exit_transitions": [
+            [161, 11, 2, 10]
+          ],
+          "mask": 245760,
+          "dst_mask": 4228104384
         }
       ],
       "features": [
@@ -13254,21 +13284,6 @@
       ],
       "doors": [
         {
-          "x": 2,
-          "y": 0,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "entrance_transitions": [
-            [276, 12, 3, 1]
-          ],
-          "exit_transitions": [
-            [272, 12, 3, 1]
-          ],
-          "mask": 12582912,
-          "dst_mask": 817889280
-        },
-        {
           "x": 0,
           "y": 0,
           "dir": 2,
@@ -13282,6 +13297,21 @@
           ],
           "mask": 1032192,
           "dst_mask": 1032192
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "entrance_transitions": [
+            [276, 12, 3, 1]
+          ],
+          "exit_transitions": [
+            [272, 12, 3, 1]
+          ],
+          "mask": 12582912,
+          "dst_mask": 817889280
         }
       ],
       "features": [
@@ -13598,21 +13628,6 @@
           "dst_mask": 1032192
         },
         {
-          "x": 9,
-          "y": 3,
-          "dir": 1,
-          "entrance_states": 1,
-          "exit_states": 1,
-          "entrance_transitions": [
-            [140, 11, 1, 10]
-          ],
-          "exit_transitions": [
-            [247, 11, 1, 10]
-          ],
-          "mask": 1032192,
-          "dst_mask": 1032192
-        },
-        {
           "x": 8,
           "y": 3,
           "dir": 2,
@@ -13623,6 +13638,21 @@
           ],
           "exit_transitions": [
             [245, 13, 11, 2]
+          ],
+          "mask": 1032192,
+          "dst_mask": 1032192
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "dir": 1,
+          "entrance_states": 1,
+          "exit_states": 1,
+          "entrance_transitions": [
+            [140, 11, 1, 10]
+          ],
+          "exit_transitions": [
+            [247, 11, 1, 10]
           ],
           "mask": 1032192,
           "dst_mask": 1032192
