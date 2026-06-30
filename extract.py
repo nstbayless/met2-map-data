@@ -454,6 +454,7 @@ COMBINE_ROOMS = [
     
     # nest's acid caves
     {0xC08, 0xCF8},
+    {0xCA7, 0xC67}, # alpha omega state-swap shaft
     
     # queen
     {0xFFF, 0xFEF, 0xF9A},
@@ -530,6 +531,88 @@ SPECIAL_DISPLAY = {
     # nest
     0xACA: VPIPE,
     0xADA: VPIPE,
+}
+
+ACID_HIGH = "high"
+ACID_MED = "med"
+ACID_LOW = "low"
+
+# the lowest acid level at which the door is covered in acid
+acid_doors = {
+    0xBD0: ACID_HIGH,
+    0xBE0: ACID_HIGH,
+    0xA00: ACID_HIGH,
+    0xA12: ACID_MED,
+    0xC1A: ACID_HIGH,
+    0xC1B: ACID_MED,
+    0xA80: ACID_HIGH,
+    0xAB0: ACID_HIGH,
+    0xAA3: ACID_MED,
+    0xA28: ACID_HIGH,
+    0xA24: ACID_MED,
+    0xA34: ACID_MED,
+    0xC55: ACID_HIGH,
+    0xC58: ACID_MED,
+    0xA45: ACID_HIGH,
+    0xA48: ACID_HIGH,
+    0xA58: ACID_HIGH,
+    0xA38: ACID_HIGH,
+    0xA2A: ACID_MED,
+    0xA2E: ACID_LOW,
+    0xBFF: ACID_HIGH,
+    0xB9F: ACID_HIGH,
+    0xCA6: ACID_MED,
+    0xCA4: ACID_HIGH,
+    0xB04: ACID_HIGH,
+    0xB34: ACID_HIGH,
+    0xB44: ACID_HIGH,
+    0xC40: ACID_MED,
+    0xC41: ACID_MED,
+    0xA04: ACID_HIGH,
+    0xA14: ACID_HIGH,
+    0xA06: ACID_MED,
+    0xC54: ACID_MED,
+    0xC52: ACID_MED,
+    0xC50: ACID_HIGH,
+    0xB45: ACID_HIGH,
+    0xB15: ACID_HIGH,
+    0xA77: ACID_HIGH,
+    0xA66: ACID_HIGH,
+    0xA6A: ACID_MED,
+    0xBC9: ACID_HIGH,
+    0xBB9: ACID_HIGH,
+    0xC6A: ACID_HIGH,
+    0xC6E: ACID_MED,
+    0xB3C: ACID_HIGH,
+    0xB0C: ACID_HIGH,
+    0xA7E: ACID_MED,
+    0xA6E: ACID_MED,
+    0xA7C: ACID_HIGH,
+    0xA6C: ACID_HIGH,
+    0xB26: ACID_HIGH,
+    0xB36: ACID_HIGH,
+    0xCB9: ACID_MED,
+    0xCB8: ACID_HIGH,
+    0xC68: ACID_MED,
+    0xC67: ACID_HIGH,
+    0xB86: ACID_HIGH,
+    0xB46: ACID_HIGH,
+    0xCD0: ACID_HIGH,
+    0xCD1: ACID_MED,
+    0xA4B: ACID_HIGH,
+    0xA5C: ACID_MED,
+    0xCDD: ACID_HIGH,
+    0xCDF: ACID_MED,
+    0xBA9: ACID_HIGH,
+    0xB79: ACID_HIGH,
+    0xCAC: ACID_MED,
+    0xCA9: ACID_HIGH,
+    0xCBE: ACID_MED,
+    0xCBA: ACID_HIGH,
+    0xC48: ACID_HIGH,
+    0xC4B: ACID_MED,
+    0xCFD: ACID_MED,
+    0xCF8: ACID_HIGH,
 }
 
 def compressed_location(bank, x, y):
@@ -1465,6 +1548,7 @@ def layout_to_json(layout: Table, path="met2.json"):
                         "dst_mask": 0,
                     }
                 
+                cloc = compressed_location(cell.bank, cell.x, cell.y) 
                 door = combined_doors[key]
                 door['mask'] |= cell.door_shapes[direction]
                 door['dst_mask'] |= ncell.door_shapes[REVERSE_DIRECTIONS[direction]]
@@ -1474,6 +1558,8 @@ def layout_to_json(layout: Table, path="met2.json"):
                     door["to-area"] = area_names.index(ncell.room.style[STYLE_IDX_NAME])
                 elif abs(nmapx - mapx) + abs(nmapy - mapy) > 1 and not entrance:
                     door["jump"] = [nmapx - mapx, nmapy - mapy]
+                if cloc in acid_doors:
+                    door["acid"] = acid_doors[cloc]
             
             # add entrances
             for (cx, cy, direction), instances in r.entrances.items():

@@ -410,11 +410,15 @@
             "strats": [{
                 "start": 0,
                 "end": 1,
-                "requires": []
+                "acid": {
+                    "high": 9
+                }
             }, {
                 "start": 1,
                 "end": 0,
-                "requires": []
+                "acid": {
+                    "high": 9
+                }
             }],
             "name": "Wading Pool"
         },
@@ -1844,11 +1848,11 @@
             "strats": [{
                 "start": 0,
                 "end": 2,
-                "requires": ["ball", "spider"]
+                "requires": ["ball", "spider", "bomb"]
             }, {
                 "start": 2,
                 "end": 0,
-                "requires": ["ball", "spider"]
+                "requires": ["ball", "spider", "bomb"]
             }, {
                 "start": 1,
                 "end": 2,
@@ -7668,7 +7672,59 @@
                     "h": 120
                 }
             ],
-            "complete": true,
+            "complete": [2, 3],
+            "strats": [{
+                "start": 0,
+                "end": 1,
+                "requires-any": ["spider-ball", "space-jump"]
+            }, {
+                "start": 1,
+                "end": 0,
+                "requires-any": ["spider-ball", "space-jump"]
+            }, {
+                "start": 0,
+                "end": 1,
+                "acid": {
+                    "high": 30,
+                    "med": 8
+                }
+            }, {
+                "start": 1,
+                "end": 10,
+                "acid": {
+                    "high": 30,
+                    "med": 8
+                }
+            }, {
+                "start": 0,
+                "end": 2,
+                "acid": {
+                    "high": 100,
+                    "med": 40
+                }
+            }, {
+                "start": 2,
+                "end": 0,
+                "acid": {
+                    "high": 1,
+                    "med": 1
+                }
+            }, {
+                "start": 1,
+                "end": 2,
+                "acid": {
+                    "high": 100,
+                    "med": 40
+                }
+            }, {
+                "start": 2,
+                "end": 1,
+                "acid": {
+                    "high": 1,
+                    "med": 1
+                }
+            }], 
+            "notes": "acid values are an intentional overestimate.",
             "name": "Alpha Omega Room"
         },
         {
